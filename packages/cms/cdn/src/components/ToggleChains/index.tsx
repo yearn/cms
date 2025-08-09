@@ -2,10 +2,10 @@ import { chains } from '@webops/core'
 import { cn } from '../../lib/cn'
 import ChainIcon from '../ChainIcon'
 import Button from '../elements/Button'
-import { useToggleStore } from './useToggleStore'
+import { useToggleChainStore } from './useToggleStore'
 
 function Toggle({ chainId }: { chainId: number }) {
-  const { toggledChains, toggleChain } = useToggleStore()
+  const { toggledChains, toggleChain } = useToggleChainStore()
   const isToggled = toggledChains.has(chainId)
 
   return (
@@ -31,7 +31,7 @@ function Toggle({ chainId }: { chainId: number }) {
 }
 
 function ToggleAll() {
-  const { toggledChains, toggleChain } = useToggleStore()
+  const { toggledChains, toggleChain } = useToggleChainStore()
   const anyToggled = Array.from(toggledChains).length > 0
   const toggleAll = () => {
     if (anyToggled) {

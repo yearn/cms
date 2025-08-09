@@ -1,9 +1,0 @@
-{
-  "//": "Optional Biome auto-fix settings - remove or modify as needed",
-  "editor.codeActionsOnSave": {
-    "quickfix.biome": "explicit",
-    "source.organizeImports.biome": "explicit"
-  },
-  "editor.formatOnSave": true,
-  "biome.lsp.bin": "./node_modules/.bin/biome"
-}

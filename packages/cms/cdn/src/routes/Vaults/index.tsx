@@ -2,10 +2,11 @@ import type { VaultMetadata } from '@webops/cms/core'
 import { useVaultsMeta } from '@webops/cms/react'
 import { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
+import BackUp from '../../components/BackUp'
 import Link from '../../components/elements/Link'
 import Skeleton from '../../components/Skeleton'
 import ToggleChains from '../../components/ToggleChains'
-import { useToggleStore } from '../../components/ToggleChains/useToggleStore'
+import { useToggleChainStore } from '../../components/ToggleChains/useToggleStore'
 import TokenIcon from '../../components/TokenIcon'
 import Finder, { useFinder } from './Finder'
 
@@ -13,7 +14,7 @@ const INFINTE_SCROLL_FRAME_SIZE = 20
 
 function List() {
   const { finderString } = useFinder()
-  const { toggledChains } = useToggleStore()
+  const { toggledChains } = useToggleChainStore()
   const { vaults } = useVaultsMeta()
 
   const filter: VaultMetadata[] = useMemo(() => {
@@ -79,6 +80,7 @@ function Vaults() {
       <Suspense fallback={<VaultsSkeleton />}>
         <List />
       </Suspense>
+      <BackUp />
     </div>
   )
 }

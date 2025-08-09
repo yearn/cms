@@ -1,6 +1,6 @@
 import { create } from 'zustand'
 
-const STORAGE_KEY = 'toggleStore'
+const STORAGE_KEY = 'toggleChainStore'
 
 const loadState = () => {
   try {
@@ -13,7 +13,7 @@ const loadState = () => {
   return new Set([1])
 }
 
-export const useToggleStore = create<{
+export const useToggleChainStore = create<{
   toggledChains: Set<number>
   toggleChain: (chainId: number, on?: boolean) => void
 }>((set) => ({
