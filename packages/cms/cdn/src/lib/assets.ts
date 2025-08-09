@@ -1,3 +1,5 @@
+import { getAddress } from 'viem'
+
 const BASE_URL = import.meta.env.VITE_ASSETS_CDN_URL?.endsWith('/') ? import.meta.env.VITE_ASSETS_CDN_URL : `${import.meta.env.VITE_ASSETS_CDN_URL}/`
 
 export function getChainIconUrl(chainId: number) {
@@ -5,5 +7,5 @@ export function getChainIconUrl(chainId: number) {
 }
 
 export function getTokenIconUrl(chainId: number, address: string) {
-  return `${BASE_URL}tokens/${chainId}/${address}/logo.svg`
+  return `${BASE_URL}tokens/${chainId}/${getAddress(address)}/logo.svg`
 }

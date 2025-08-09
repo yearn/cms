@@ -1,18 +1,22 @@
 import type { VaultMetadata } from '@webops/cms/core'
 import { useVaultsMeta } from '@webops/cms/react'
-import { Suspense, useMemo } from 'react'
+import { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import InfiniteScroll from 'react-infinite-scroll-component'
 import Link from '../../components/elements/Link'
 import Skeleton from '../../components/Skeleton'
-import ToggleChains, { useToggleStore } from '../../components/ToggleChains'
+import ToggleChains from '../../components/ToggleChains'
+import { useToggleStore } from '../../components/ToggleChains/useToggleStore'
 import TokenIcon from '../../components/TokenIcon'
 import Finder, { useFinder } from './Finder'
+
+const INFINTE_SCROLL_FRAME_SIZE = 20
 
 function List() {
   const { finderString } = useFinder()
   const { toggledChains } = useToggleStore()
   const { vaults } = useVaultsMeta()
 
-  const filteredVaults = useMemo(() => {
+  const filter: VaultMetadata[] = useMemo(() => {
     return vaults.filter((vault: VaultMetadata) => 
       toggledChains.has(vault.chainId)
       && (
@@ -22,15 +26,33 @@ function List() {
     )
   }, [vaults, finderString, toggledChains])
 
-  return <div className="flex flex-col items-start justify-start gap-6">{filteredVaults.map((vault: VaultMetadata) => (
-    <Link key={`${vault.chainId}-${vault.address}`} 
-      to={`/vaults/${vault.chainId}/${vault.address}`} 
-      className="flex items-center gap-6 text-lg">
-      <TokenIcon chainId={vault.chainId} address={vault.address as `0x${string}`} showChain size={48} />
-      <div>{vault.address.slice(0, 6)}..{vault.address.slice(-6)}</div>
-      <div>{vault.name}</div>
-    </Link>
-  ))}</div>
+  const [items, setItems] = useState<VaultMetadata[]>(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE))
+  useEffect(() => setItems(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE)), [filter])
+  const hasMoreFrames = useMemo(() => items.length < filter.length, [items, filter])
+  const fetchFrame = useCallback(() => {
+    setItems(prevItems => [
+      ...prevItems,
+      ...filter.slice(prevItems.length, prevItems.length + INFINTE_SCROLL_FRAME_SIZE)
+    ])
+  }, [filter])
+
+  return <InfiniteScroll 
+    scrollableTarget="main-scroll"
+    dataLength={items.length}
+    next={fetchFrame}
+    hasMore={hasMoreFrames}
+    loader={null}
+    className="flex flex-col items-start justify-start gap-6">
+    {items.map((vault: VaultMetadata) => (
+      <Link key={`${vault.chainId}-${vault.address}`} 
+        to={`/vaults/${vault.chainId}/${vault.address}`} 
+        className="flex items-center gap-6 text-lg">
+        <TokenIcon chainId={vault.chainId} address={vault.address as `0x${string}`} showChain size={48} />
+        <div>{vault.address.slice(0, 6)}..{vault.address.slice(-6)}</div>
+        <div>{vault.name}</div>
+      </Link>
+    ))}
+  </InfiniteScroll>
 }
 
 function VaultsSkeleton() {
@@ -50,8 +72,10 @@ function VaultsSkeleton() {
 function Vaults() {
   return (
     <div className="px-8 pt-5 pb-16 flex flex-col">
-      <Finder className="mx-3 mt-4 mb-8" />
-      <ToggleChains className="mx-3 mb-8" />
+      <div className="mt-6 mb-12 flex flex-col gap-6 w-fit">
+        <Finder className="w-full" />
+        <ToggleChains />
+      </div>
       <Suspense fallback={<VaultsSkeleton />}>
         <List />
       </Suspense>

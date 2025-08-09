@@ -1,24 +1,8 @@
 import { chains } from '@webops/core'
-import { create } from 'zustand'
-import { cn } from '../lib/cn'
-import ChainIcon from './ChainIcon'
-import Button from './elements/Button'
-
-export const useToggleStore = create<{
-  toggledChains: Set<number>
-  toggleChain: (chainId: number, on?: boolean) => void
-}>((set) => ({
-  toggledChains: new Set([1]),
-  toggleChain: (chainId: number, on?: boolean) => set((state) => {
-    const newToggledChains = new Set(state.toggledChains)
-    if (newToggledChains.has(chainId) && !on) {
-      newToggledChains.delete(chainId)
-    } else if (on === undefined || on) {
-      newToggledChains.add(chainId)
-    }
-    return { toggledChains: newToggledChains }
-  }),
-}))
+import { cn } from '../../lib/cn'
+import ChainIcon from '../ChainIcon'
+import Button from '../elements/Button'
+import { useToggleStore } from './useToggleStore'
 
 function Toggle({ chainId }: { chainId: number }) {
   const { toggledChains, toggleChain } = useToggleStore()
@@ -26,10 +10,11 @@ function Toggle({ chainId }: { chainId: number }) {
 
   return (
     <Button 
-      className={cn(
-        "relative w-[48px] h-[24px] p-0 overflow-hidden rounded-xl outline-2 outline-offset-2",
-        isToggled ? "outline-primary-400" : "outline-transparent"
-      )}
+      data-toggled={isToggled}
+      className={cn(`
+        group relative w-[48px] h-[24px] p-0 overflow-hidden rounded-xl outline-3 outline-offset-3
+        data-[toggled=true]:outline-primary-400 data-[toggled=false]:outline-transparent
+      `)}
       onClick={() => toggleChain(chainId)}
     >
       <ChainIcon 
@@ -37,6 +22,7 @@ function Toggle({ chainId }: { chainId: number }) {
         size={64} 
         className={cn(
           "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
+          'group-hover:scale-200 transition-transform',
           isToggled ? "opacity-100" : "grayscale opacity-50"
         )} 
       />
@@ -54,7 +40,9 @@ function ToggleAll() {
       Object.values(chains).map(chain => chain.id).forEach(chainId => toggleChain(chainId, true))
     }
   }
-  return <Button className="w-[24px] h-[24px] p-0" onClick={toggleAll}></Button>
+  return <div className="w-[48px] flex items-center justify-center">
+    <Button className="w-[24px] h-[24px] p-0" onClick={toggleAll}></Button>
+  </div>
 }
 
 export default function ToggleChains({ className }: { className?: string }) {
