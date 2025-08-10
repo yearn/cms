@@ -1,34 +1,34 @@
 [
   {
     "chainId": 42161,
-    "address": "0x034f12A217405D54bf2654b66A96fa74aD715951",
+    "address": "0x034f12a217405d54bf2654b66a96fa74ad715951",
     "name": "USDC.e/wstETH Silo LP",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x127A7F610cc704Be6122dfa76eb61E84C9cb0Efd",
+    "address": "0x127a7f610cc704be6122dfa76eb61e84c9cb0efd",
     "name": "Silo Lender wstETH/USDC.e",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x172dD6fd105B9Fda87a238d110c92bb0Ae30305D",
+    "address": "0x172dd6fd105b9fda87a238d110c92bb0ae30305d",
     "name": "yPT-mPENDLE (auto-rolling Pendle PT)",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x19e70E3195fEC1A33745D9260Bf26c3f915Bb0CC",
+    "address": "0x19e70e3195fec1a33745d9260bf26c3f915bb0cc",
     "name": "StrategyCurveTricrypto",
     "isRetired": true,
     "displayName": "Curve Gauge",
@@ -39,367 +39,367 @@
   },
   {
     "chainId": 42161,
-    "address": "0x1bd173F9a1186A1AbE680071E0F57d4D83c18430",
+    "address": "0x1bd173f9a1186a1abe680071e0f57d4d83c18430",
     "name": "Compound V3 USDC.e Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x24F16FD4309DeA35Ef5cE440fd42B6CEcb61AfFF",
+    "address": "0x24f16fd4309dea35ef5ce440fd42b6cecb61afff",
     "name": "yPT-MUXLP (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x28bA44d8e8FD06C448497423b460129780527604",
+    "address": "0x28ba44d8e8fd06c448497423b460129780527604",
     "name": "yPT-HLP (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x2d25Ce68AAd6Ffef1585ff05bC621db1F9F2E499",
+    "address": "0x2d25ce68aad6ffef1585ff05bc621db1f9f2e499",
     "name": "Silo Lender wBTC/USDC.e",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x2e505E3Bc847895FF4Ae0021a1B0E739848A1a8f",
+    "address": "0x2e505e3bc847895ff4ae0021a1b0e739848a1a8f",
     "name": "yPT-USDC-Dolomite (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x3518fffF84e40229D9925afd57A6F4BdF1fA5879",
+    "address": "0x3518ffff84e40229d9925afd57a6f4bdf1fa5879",
     "name": "yPT-rsETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x3833Edd36492e29C53766282eC66500ae00C4789",
+    "address": "0x3833edd36492e29c53766282ec66500ae00c4789",
     "name": "TestManualStrategy-1",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x39Ce72aCE7722fe38A4AfF02bfbe7789B58c6905",
+    "address": "0x39ce72ace7722fe38a4aff02bfbe7789b58c6905",
     "name": "AaveV3 ARB Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x3FfA0C3fba4Adfe2b6e4D7E2f8E6e6324bE5305B",
+    "address": "0x3ffa0c3fba4adfe2b6e4d7e2f8e6e6324be5305b",
     "name": "USDC.e/SILO Silo LP",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x3cE71021cCA8a2902764a43C60ff5F8A312245f9",
+    "address": "0x3ce71021cca8a2902764a43c60ff5f8a312245f9",
     "name": "yPT-weETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x445300a0B0FCde8081F311c2991dE613299DF4D7",
+    "address": "0x445300a0b0fcde8081f311c2991de613299df4d7",
     "name": "yPT-USDe (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x45aCEAA535830C921316085E355E4a32385E53f2",
+    "address": "0x45aceaa535830c921316085e355e4a32385e53f2",
     "name": "USDT CompoundV3 Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x48Bf6f6F1cccBf22D3DCB7cDA68Fa14ba55b78f2",
+    "address": "0x48bf6f6f1cccbf22d3dcb7cda68fa14ba55b78f2",
     "name": "yPT-ezETH (auto-rolling Pendle PT)",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x4aE5CE819e7D678b07E8D0f483d351E2c8e8B8D3",
+    "address": "0x4ae5ce819e7d678b07e8d0f483d351e2c8e8b8d3",
     "name": "AaveV3 USDT Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x5108DB0852C0CAA2Df797DcF31f8A73bFb335452",
+    "address": "0x5108db0852c0caa2df797dcf31f8a73bfb335452",
     "name": "yearn-V3-Stargate-USDT",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x54A77d0628e472643753ccb6CD929ac768F5f634",
+    "address": "0x54a77d0628e472643753ccb6cd929ac768f5f634",
     "name": "TestTokenV1-1 TestCBDevOps1",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x571293fD9d9716D50ba48Aa1628840D7FA166B20",
+    "address": "0x571293fd9d9716d50ba48aa1628840d7fa166b20",
     "name": "yPT-rETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x62a6d4B860f43D1e52529e21C9C74dDfeAaFC168",
+    "address": "0x62a6d4b860f43d1e52529e21c9c74ddfeaafc168",
     "name": "yPT-rsETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x635E3b274b37175BCd67c94A5093387aFF96cf3d",
+    "address": "0x635e3b274b37175bcd67c94a5093387aff96cf3d",
     "name": "FluidLendeer USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x637e74B654105a3646B20DCe34197D88f336AB1A",
+    "address": "0x637e74b654105a3646b20dce34197d88f336ab1a",
     "name": "yPT-PENDLE-ETH-Camelot (auto-rolling Pendle PT)",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x682026D39414eaa2fE081bc6A4105D2f92A39A7B",
+    "address": "0x682026d39414eaa2fe081bc6a4105d2f92a39a7b",
     "name": "TestManualStrat-1",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x6aC368E13F893b14e2b4dc01EB83C89a06b9a039",
+    "address": "0x6ac368e13f893b14e2b4dc01eb83c89a06b9a039",
     "name": "yPT-wstETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x85968BF0f1f110C707fEF10a59f80118F349c058",
+    "address": "0x85968bf0f1f110c707fef10a59f80118f349c058",
     "name": "AaveV3 USDC.e Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x8B25CFbAC2aC634071CbcCb20F298b176fd86007",
+    "address": "0x8b25cfbac2ac634071cbccb20f298b176fd86007",
     "name": "yPT-wstETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x952B1487195B976A0B4aDCbaE418402eF9830Fd7",
+    "address": "0x952b1487195b976a0b4adcbae418402ef9830fd7",
     "name": "TestTokenStaker 20250221",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0x9a5eca1b228e47a15BD9fab07716a9FcE9Eebfb5",
+    "address": "0x9a5eca1b228e47a15bd9fab07716a9fce9eebfb5",
     "name": "USDC.e/SILO Silo LP",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xA4B8873B4629c20f2167c0A2bC33B6AF8699dDc1",
+    "address": "0xa4b8873b4629c20f2167c0a2bc33b6af8699ddc1",
     "name": "Silo Lender wstETH/USDC.e",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xCACc53bAcCe744ac7b5C1eC7eb7e3Ab01330733b",
+    "address": "0xcacc53bacce744ac7b5c1ec7eb7e3ab01330733b",
     "name": "USDC CompoundV3 Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xCcFfF90a596fCC0B549a5f69a70DE0a9c5295352",
+    "address": "0xccfff90a596fcc0b549a5f69a70de0a9c5295352",
     "name": "VstFraxStaker",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xDA9889B85831aB8841EDd3618e1595a7FeF96fa8",
+    "address": "0xda9889b85831ab8841edd3618e1595a7fef96fa8",
     "name": "yPT-aUSDC (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xDF9640332bcfd3b16Cb80C1287Ed04B875D9A384",
+    "address": "0xdf9640332bcfd3b16cb80c1287ed04b875d9a384",
     "name": "yPT-aUSDC (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xDa3b69a45797DCA697Ff5bB2c10682f14373c063",
+    "address": "0xda3b69a45797dca697ff5bb2c10682f14373c063",
     "name": "USDC-1 yVault",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xE43C0bbbfC34575927798B8Ba9d58AE58F2Be3C6",
+    "address": "0xe43c0bbbfc34575927798b8ba9d58ae58f2be3c6",
     "name": "yPT-weETH (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xE82D060687C014B280b65df24AcD94A77251C784",
+    "address": "0xe82d060687c014b280b65df24acd94a77251c784",
     "name": "Silo Lender wBTC/USDC.e",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xF1fD82C38F1cA1B256F54302FbAcC2448e5da143",
+    "address": "0xf1fd82c38f1ca1b256f54302fbacc2448e5da143",
     "name": "yPT-gDAI (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xF992FCEF771dF908f9B09Bb2619092f70AB21957",
+    "address": "0xf992fcef771df908f9b09bb2619092f70ab21957",
     "name": "StrategyCurveTwoPool",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xa8f222b7fC14eDe5A7B0B085fb790791F98944E9",
+    "address": "0xa8f222b7fc14ede5a7b0b085fb790791f98944e9",
     "name": "yPT-dUSDC (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xaa4342C2693Ab5DE6D3663FE87d9a92Cf18CB9b6",
+    "address": "0xaa4342c2693ab5de6d3663fe87d9a92cf18cb9b6",
     "name": "yPT-USDe (auto-rolling Pendle PT)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xb739AE19620f7ECB4fb84727f205453aa5bc1AD2",
+    "address": "0xb739ae19620f7ecb4fb84727f205453aa5bc1ad2",
     "name": "Silo Lender ARB/USDC.e",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xc21A609C0fCe6C97332f5f63996525D15b7e0cf4",
+    "address": "0xc21a609c0fce6c97332f5f63996525d15b7e0cf4",
     "name": "yPT-ezETH (auto-rolling Pendle PT)",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xcDD989d84f9B63D2f0B1906A2d9B22355316dE31",
+    "address": "0xcdd989d84f9b63d2f0b1906a2d9b22355316de31",
     "name": "StrategyCurveTricrypto",
     "isRetired": false,
     "displayName": "Curve Gauge",
@@ -410,38 +410,38 @@
   },
   {
     "chainId": 42161,
-    "address": "0xd89ee1E95f7728f6964CF321E2648cCd29a881f1",
+    "address": "0xd89ee1e95f7728f6964cf321e2648ccd29a881f1",
     "name": "AaveV3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xe060f2200627dDdcEAfae1266385183681600A9e",
+    "address": "0xe060f2200627dddceafae1266385183681600a9e",
     "name": "Aave USDC Supply Strategy",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xe27B0768cbf63c87918D5F7a64457111A5177863",
+    "address": "0xe27b0768cbf63c87918d5f7a64457111a5177863",
     "name": "TestManualStrat-2",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 42161,
-    "address": "0xf1C3047C6310806de1d25535BC50748815066a7b",
+    "address": "0xf1c3047c6310806de1d25535bc50748815066a7b",
     "name": "StrategyCurveStakerSpell",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   }
 ]

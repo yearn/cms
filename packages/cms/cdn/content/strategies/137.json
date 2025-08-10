@@ -1,25 +1,25 @@
 [
   {
     "chainId": 137,
-    "address": "0x06eD7C67755344548FAFe1822bEE365C4208a57F",
+    "address": "0x06ed7c67755344548fafe1822bee365c4208a57f",
     "name": "yearn-V3-Stargate-DAI",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x0fEFEe13864c431717f5B2678607b6ce532a170C",
+    "address": "0x0fefee13864c431717f5b2678607b6ce532a170c",
     "name": "USDT CompoundV3 Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x12c3Ad898e8eB1C0ec0Bb74f9748F36C46593F68",
+    "address": "0x12c3ad898e8eb1c0ec0bb74f9748f36c46593f68",
     "name": "Aave V3 WMATIC Lender",
     "isRetired": false,
     "displayName": "Aave V3 WMATIC Lender",
@@ -30,7 +30,7 @@
   },
   {
     "chainId": 137,
-    "address": "0x2a42A69F48EfffDF2d4Fb079Af60D98D3e34D49C",
+    "address": "0x2a42a69f48efffdf2d4fb079af60d98d3e34d49c",
     "name": "CompV3 WMATIC Lender USDC Borrower",
     "isRetired": false,
     "displayName": "CompV3 WMATIC Lender Borrower",
@@ -41,43 +41,43 @@
   },
   {
     "chainId": 137,
-    "address": "0x2c5d0c3DB75D2f8A4957c74BE09194a9271Cf28D",
+    "address": "0x2c5d0c3db75d2f8a4957c74be09194a9271cf28d",
     "name": "yearn-V3-Stargate-USDT",
     "isRetired": false,
     "displayName": "Stargate USDT Staker",
     "description": "Supplies {{token}} to the corresponding [Stargate](https://stargate.finance/) pool and stakes the LP token to earn STG. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x34b9421Fe3d52191B64bC32ec1aB764dcBcDbF5e",
+    "address": "0x34b9421fe3d52191b64bc32ec1ab764dcbcdbf5e",
     "name": "USDC-1 yVault",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734",
+    "address": "0x3bd8c987286d8ad00c05fdb2ae3e8c9a0f054734",
     "name": "AaveV3 USDT Lender",
     "isRetired": false,
     "displayName": "Aave V3 USDT Lender",
     "description": "Supplies {{token}} to [Aave V3](https://app.aave.com/) to generate interest and earn any applicable rewards. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x479974977BdFf289a4157f56EE29401523Ae4c0F",
+    "address": "0x479974977bdff289a4157f56ee29401523ae4c0f",
     "name": "ajna-yvusdca-usdc",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x5136c2F7aB13E202eD42bc1AE82Dd63475919653",
+    "address": "0x5136c2f7ab13e202ed42bc1ae82dd63475919653",
     "name": "CompV3 WETH Lender USDC Borrower",
     "isRetired": true,
     "displayName": "CompV3 WETH Lender Borrower",
@@ -88,52 +88,52 @@
   },
   {
     "chainId": 137,
-    "address": "0x52367C8E381EDFb068E9fBa1e7E9B2C847042897",
+    "address": "0x52367c8e381edfb068e9fba1e7e9b2c847042897",
     "name": "Aave V3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x53Da2A29Dc8EFfD4707e0bc0fbf70A8dc63BB5A3",
+    "address": "0x53da2a29dc8effd4707e0bc0fbf70a8dc63bb5a3",
     "name": "ajna-wusdm-usdc",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x5452bA13a65D20fdf21220a397Bbe40830C7418A",
+    "address": "0x5452ba13a65d20fdf21220a397bbe40830c7418a",
     "name": "ajna-yvusdc-a-usdc",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x56b33795C24b1c46049031EA9bB8466C5B6cB3Fb",
+    "address": "0x56b33795c24b1c46049031ea9bb8466c5b6cb3fb",
     "name": "USDC-2 RombusDAO",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x6E9ac188DbCC14632a253aA9Ce2783cD712aB3cA",
+    "address": "0x6e9ac188dbcc14632a253aa9ce2783cd712ab3ca",
     "name": "Morpho Compound USDC Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x6Ed737EF2Ef74e04005dC9810366De5ad38Cf7D6",
+    "address": "0x6ed737ef2ef74e04005dc9810366de5ad38cf7d6",
     "name": "yearn-V3-LST",
     "isRetired": false,
     "displayName": "Staked MATIC Accumulator",
@@ -144,7 +144,7 @@
   },
   {
     "chainId": 137,
-    "address": "0x7486325A843590b84c98563c6962C58655569EcA",
+    "address": "0x7486325a843590b84c98563c6962c58655569eca",
     "name": "yearn-V3-LST-WSTETH",
     "isRetired": false,
     "displayName": "Staked ETH Accumulator",
@@ -155,34 +155,34 @@
   },
   {
     "chainId": 137,
-    "address": "0x8BBa7AFd0f9B1b664C161EC31d812a8Ec15f7e1a",
+    "address": "0x8bba7afd0f9b1b664c161ec31d812a8ec15f7e1a",
     "name": "yearn-V3-Stargate-USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0x9d1046ceCB0662037b13dECF1CD125C4Aa3fb65B",
+    "address": "0x9d1046cecb0662037b13decf1cd125c4aa3fb65b",
     "name": "Morpho Compound USDT Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0",
+    "address": "0xa013fbd4b711f9ded6fb09c1c0d358e2fbc2eaa0",
     "name": "USDC yVault-A",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0xBEDA9A5300393e00229dc15cC54D5185E7646c56",
+    "address": "0xbeda9a5300393e00229dc15cc54d5185e7646c56",
     "name": "AaveV3 WETH Lender",
     "isRetired": false,
     "displayName": "Aave V3 WETH Lender",
@@ -193,47 +193,47 @@
   },
   {
     "chainId": 137,
-    "address": "0xD4a0AA006e0f70580Aaa7ee1FD04Fa447c36B259",
+    "address": "0xd4a0aa006e0f70580aaa7ee1fd04fa447c36b259",
     "name": "Morpho Compound WETH Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0xb1403908F772E4374BB151F7C67E88761a0Eb4f1",
+    "address": "0xb1403908f772e4374bb151f7c67e88761a0eb4f1",
     "name": "Compound V3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0xdB92B89Ca415c0dab40Dc96E99Fc411C08F20780",
+    "address": "0xdb92b89ca415c0dab40dc96e99fc411c08f20780",
     "name": "Aave V3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0xf4F9d5697341B4C9B0Cc8151413e05A90f7dc24F",
+    "address": "0xf4f9d5697341b4c9b0cc8151413e05a90f7dc24f",
     "name": "AaveV3 DAI Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 137,
-    "address": "0xf7464410C1ccF86b19711c9B6599336b00641c8f",
+    "address": "0xf7464410c1ccf86b19711c9b6599336b00641c8f",
     "name": "stMATIC accumulator",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   }
 ]

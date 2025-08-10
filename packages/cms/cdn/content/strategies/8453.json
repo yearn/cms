@@ -1,722 +1,722 @@
 [
   {
     "chainId": 8453,
-    "address": "0x0157852e7762aC8Feb9F64617F0a8d6E07994E5d",
+    "address": "0x0157852e7762ac8feb9f64617f0a8d6e07994e5d",
     "name": "StrategyAerodromeFactory-vAMM-USDC/AERO",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x03c5AfF0cd5e40889d689fD9D9Caff286b1BD7Fb",
+    "address": "0x03c5aff0cd5e40889d689fd9d9caff286b1bd7fb",
     "name": "Moonwell cbBTC Lender WETH Borrower",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x091e6D9d86e60580dB1Eb833B804B0BEd1417d1a",
+    "address": "0x091e6d9d86e60580db1eb833b804b0bed1417d1a",
     "name": "StrategyAerodromeFactory-vAMM-WETH/bsdETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x0AAc66214D40a3D41BD2da53F6D6894E27744bd7",
+    "address": "0x0aac66214d40a3d41bd2da53f6d6894e27744bd7",
     "name": "StrategyAerodromeFactory-vAMM-wUSDR/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x0ace53f57A14ACfD4D43C7d4c46BE4b4a5347efF",
+    "address": "0x0ace53f57a14acfd4d43c7d4c46be4b4a5347eff",
     "name": "LevMoonwell USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x17880284d5d186Ece3C53B0E487B0Dd404283c8B",
+    "address": "0x17880284d5d186ece3c53b0e487b0dd404283c8b",
     "name": "StrategyAerodromeFactory-vAMM-WETH/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x1816545343590701DC29c379BcAC06e92D1e1C79",
+    "address": "0x1816545343590701dc29c379bcac06e92d1e1c79",
     "name": "StrategyAerodromeFactory-vAMM-tBTC/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x19D2ed1c127800Db4eA982E8a00BBf518bbBF90f",
+    "address": "0x19d2ed1c127800db4ea982e8a00bbf518bbbf90f",
     "name": "StrategyAerodromeFactory-vAMM-cbETH/WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x1B1387a79064AE13385F160606E9228fD303B4a4",
+    "address": "0x1b1387a79064ae13385f160606e9228fd303b4a4",
     "name": "StrategyAerodromeFactory-vAMM-WETH/DEUS",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x1CB10c063D2d5583ca631F597A39a84F8Ef0e115",
+    "address": "0x1cb10c063d2d5583ca631f597a39a84f8ef0e115",
     "name": "StrategyAerodromeFactory-vAMM-AERO/wstETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x243c75a526D62d759eAAA0A9E02574F4d55FE699",
+    "address": "0x243c75a526d62d759eaaa0a9e02574f4d55fe699",
     "name": "StrategyAerodromeFactory-vAMM-WETH/AERO",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x2CF6561B1F3124f0236993720c2A2FCE8BCFEb8A",
+    "address": "0x2cf6561b1f3124f0236993720c2a2fce8bcfeb8a",
     "name": "Compound V3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x2E5109aa82a4ebcc776E89abeb68f5D0b91CCEa1",
+    "address": "0x2e5109aa82a4ebcc776e89abeb68f5d0b91ccea1",
     "name": "Peapods Interest Bearing USDC - 65",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x34eDb20bd93d14cbb9F5D9Da7D2CB2440Dd6dbB9",
+    "address": "0x34edb20bd93d14cbb9f5d9da7d2cb2440dd6dbb9",
     "name": "StrategyAerodromeFactory-vAMM-WETH/DAI",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x39242517DEA0589B7294a5D8d109FaBf6DE22c41",
+    "address": "0x39242517dea0589b7294a5d8d109fabf6de22c41",
     "name": "Peapods Interest Bearing USDC - 35",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x3E07e1187f5F89E60950E8Ee7e66C1eF37B3E1DE",
+    "address": "0x3e07e1187f5f89e60950e8ee7e66c1ef37b3e1de",
     "name": "StrategyAerodromeFactory-sAMM-DAI+/USD+",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x4161255639d94ee0a1D4c27fE0F863293F6a9798",
+    "address": "0x4161255639d94ee0a1d4c27fe0f863293f6a9798",
     "name": "StrategyAerodromeFactory-vAMM-hyUSD/eUSD",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x444156051744eC4b6c6337E72ccCf24772d7ee3d",
+    "address": "0x444156051744ec4b6c6337e72cccf24772d7ee3d",
     "name": "Euler Base eWETH-1 Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x4598A02e26C578fCbB6a03F4f7Ba600f209D9D0C",
+    "address": "0x4598a02e26c578fcbb6a03f4f7ba600f209d9d0c",
     "name": "StrategyAerodromeFactory-sAMM-USDC/MAI",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x45d7D3Fd5B8406122bB18476f14A131497310c49",
+    "address": "0x45d7d3fd5b8406122bb18476f14a131497310c49",
     "name": "StrategyAerodromeFactory-sAMM-eUSD/USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x489A60748a8B74cd32c13D090F60314797b218d9",
+    "address": "0x489a60748a8b74cd32c13d090f60314797b218d9",
     "name": "StrategyAerodromeFactory-vAMM-ERN/stERN",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x4B5c90DC6Bc08A10a24487726e614e9d148362E1",
+    "address": "0x4b5c90dc6bc08a10a24487726e614e9d148362e1",
     "name": "Peapods Interest Bearing USDC - 42",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x59acb98B9E7b015457559F76A10a432D48AAEe4a",
+    "address": "0x59acb98b9e7b015457559f76a10a432d48aaee4a",
     "name": "FluidLendeer USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x5d9C5209b8da57fcf5f5e4027bFBB478a9f98754",
+    "address": "0x5d9c5209b8da57fcf5f5e4027bfbb478a9f98754",
     "name": "Aave V3 cbBTC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x5f6511489c9e770a07fB1aE2969ABe350a3d2Cf4",
+    "address": "0x5f6511489c9e770a07fb1ae2969abe350a3d2cf4",
     "name": "Peapods Interest Bearing USDC - 67",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x616a4E1db48e22028f6bbf20444Cd3b8e3273738",
+    "address": "0x616a4e1db48e22028f6bbf20444cd3b8e3273738",
     "name": "Seamless USDC Vault",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x630dB4ae19219025dF594c943B638B5aCb5e9D18",
+    "address": "0x630db4ae19219025df594c943b638b5acb5e9d18",
     "name": "WETH-1 yVault",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x639C57cAf76C5a77cb657BD68e0174f67CDd542A",
+    "address": "0x639c57caf76c5a77cb657bd68e0174f67cdd542a",
     "name": "StrategyAerodromeFactory-sAMM-LUSD/USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x64feEC8993286D0D7ee4aF2C5885C47b0Ea9D6a4",
+    "address": "0x64feec8993286d0d7ee4af2c5885c47b0ea9d6a4",
     "name": "StrategyAerodromeFactory-vAMM-EXTRA/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x6C3C4447E1a2C87B47d58CF007706bB1835134da",
+    "address": "0x6c3c4447e1a2c87b47d58cf007706bb1835134da",
     "name": "StrategyAerodromeFactory-vAMM-agEUR/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x6ea0BFFf586F2F226c80cc98275b810D2Cd95771",
+    "address": "0x6ea0bfff586f2f226c80cc98275b810d2cd95771",
     "name": "Peapods Interest Bearing USDC - 15",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x7333b5F5F4eA8185b9C3Bd3Cb740159D3e529Eaa",
+    "address": "0x7333b5f5f4ea8185b9c3bd3cb740159d3e529eaa",
     "name": "StrategyAerodromeFactory-vAMM-WETH/UNIDX",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x7753E6Ea61bEE08DaE2373117a48b0104B7989b4",
+    "address": "0x7753e6ea61bee08dae2373117a48b0104b7989b4",
     "name": "StrategyAerodromeFactory-sAMM-eUSD/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x7c0Fa3905B38D44C0F29150FD61f182d1e097EC2",
+    "address": "0x7c0fa3905b38d44c0f29150fd61f182d1e097ec2",
     "name": "LevMoonwell WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x8062cDAd4B0c5aDa2877fbc85Eb928Fbc587CF79",
+    "address": "0x8062cdad4b0c5ada2877fbc85eb928fbc587cf79",
     "name": "StrategyAerodromeFactory-vAMM-WETH/WELL",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x8078737665364a09073Ca4917073e5e52845c4Fd",
+    "address": "0x8078737665364a09073ca4917073e5e52845c4fd",
     "name": "Aave V3 cbETH Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x81bDd5E8FbDE5A85A2D38761D03d2307FE69A329",
+    "address": "0x81bdd5e8fbde5a85a2d38761d03d2307fe69a329",
     "name": "Aave V3 WETH Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x830E78f60B87590150575CA204a143A122669508",
+    "address": "0x830e78f60b87590150575ca204a143a122669508",
     "name": "StrategyAerodromeFactory-vAMM-WETH/wstETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x8436027a799Ac6c8B512E68b4d3852217c63647d",
+    "address": "0x8436027a799ac6c8b512e68b4d3852217c63647d",
     "name": "Moonwell WETH Lender cbBTC Borrower",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x8470d97ADbAfe4b7dA66dec6C33B60AD9420D318",
+    "address": "0x8470d97adbafe4b7da66dec6c33b60ad9420d318",
     "name": "StrategyAerodromeFactory-sAMM-USD+/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x89468E36a687E842699644dc12B986c79AF9ED1F",
+    "address": "0x89468e36a687e842699644dc12b986c79af9ed1f",
     "name": "StrategyAerodromeFactory-sAMM-DOLA/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x8e462a2b3A8c2713B5E157f5f3a3Cd503588E59A",
+    "address": "0x8e462a2b3a8c2713b5e157f5f3a3cd503588e59a",
     "name": "USDS MkDedz",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x945Df73d55557Ea23c0c35CD350d8DE3b745287E",
+    "address": "0x945df73d55557ea23c0c35cd350d8de3b745287e",
     "name": "Moonwell USDC Lender cbBTC Borrower",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0x9552efb15A33F4c98444447b856A464C6d4ab8F5",
+    "address": "0x9552efb15a33f4c98444447b856a464c6d4ab8f5",
     "name": "Aave V3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xA12CAE02a71B84ccc28532d24f45f1c0f7dFba28",
+    "address": "0xa12cae02a71b84ccc28532d24f45f1c0f7dfba28",
     "name": "StrategyAerodromeFactory-vAMM-USD+/stERN",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xB9acb02818BDDD3aC178fa51a0587101E54748B0",
+    "address": "0xb9acb02818bddd3ac178fa51a0587101e54748b0",
     "name": "Morpho Moonwell Frontier cbBTC Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xBDD79a7DF622E9d9e19a7d92Bc7ea212FA0D2F3E",
+    "address": "0xbdd79a7df622e9d9e19a7d92bc7ea212fa0d2f3e",
     "name": "Morpho Y-WETH Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xBb808A822dD7aEd1635956b85ca5e55478cCa957",
+    "address": "0xbb808a822dd7aed1635956b85ca5e55478cca957",
     "name": "LevMoonwell cbBTC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xC070f47c1D92167a1a24B4bC7B2749af3410E93F",
+    "address": "0xc070f47c1d92167a1a24b4bc7b2749af3410e93f",
     "name": "StrategyAerodromeFactory-vAMM-AERO/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xC31Dc3Ca0f638c6DB8992906CF96a5B13BEFDD91",
+    "address": "0xc31dc3ca0f638c6db8992906cf96a5b13befdd91",
     "name": "Peapods Interest Bearing USDC - 54",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xCE09d93285ee64b98292F532B563CB0931028BEB",
+    "address": "0xce09d93285ee64b98292f532b563cb0931028beb",
     "name": "StrategyAerodromeFactory-vAMM-WETH/TAROT",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xD2982F4836e00c6f7cB8283C5f25b9D74a188b08",
+    "address": "0xd2982f4836e00c6f7cb8283c5f25b9d74a188b08",
     "name": "StrategyAerodromeFactory-sAMM-DOLA/MAI",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xD9CA6B6e09Bf8DA4D26bEDB0B9718390bc10Bd21",
+    "address": "0xd9ca6b6e09bf8da4d26bedb0b9718390bc10bd21",
     "name": "StrategyAerodromeFactory-vAMM-pHAM/pwBLT",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xDd120ded7c1c9E4978f92847bcb24847A9dBb071",
+    "address": "0xdd120ded7c1c9e4978f92847bcb24847a9dbb071",
     "name": "LevMoonwell cbETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xE0E65A3d8AE24B86f2ac531adD317533C0FF0d03",
+    "address": "0xe0e65a3d8ae24b86f2ac531add317533c0ff0d03",
     "name": "StrategyAerodromeFactory-vAMM-WETH/USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xE8f9880604Db1CcdFcDCb093Fe89702b44Be144B",
+    "address": "0xe8f9880604db1ccdfcdcb093fe89702b44be144b",
     "name": "StrategyAerodromeFactory-sAMM-DOLA/USDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xEF34B4Dcb851385b8F3a8ff460C34aDAFD160802",
+    "address": "0xef34b4dcb851385b8f3a8ff460c34adafd160802",
     "name": "Morpho Moonwell Flagship ETH Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xF115C134c23C7A05FBD489A8bE3116EbF54B0D9f",
+    "address": "0xf115c134c23c7a05fbd489a8be3116ebf54b0d9f",
     "name": "Morpho Yearn Morpho Vault 1 Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xF1AB463f264c229cE648c2052ebfFCd98a6f325c",
+    "address": "0xf1ab463f264c229ce648c2052ebffcd98a6f325c",
     "name": "yPT-LBTC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xF3100B8cE14B4bd5BB369105Ab6527011aF384eb",
+    "address": "0xf3100b8ce14b4bd5bb369105ab6527011af384eb",
     "name": "FluidLendeer EURC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xa40950D3f5b80d42Aaa64f45004cCB0e45Dc1887",
+    "address": "0xa40950d3f5b80d42aaa64f45004ccb0e45dc1887",
     "name": "Euler Base eUSDC-1 Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xb3F14E3fda2147fa7574fd003BA40Df266E0B90c",
+    "address": "0xb3f14e3fda2147fa7574fd003ba40df266e0b90c",
     "name": "Aave V3 USDC Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xb5A0E42154E23bf21EEd060411cE613bBcfF8Ea5",
+    "address": "0xb5a0e42154e23bf21eed060411ce613bbcff8ea5",
     "name": "StrategyAerodromeFactory-vAMM-wBLT/BMX",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xb641e33c8EA9caA71b856f81051bC71a0fb3c3ea",
+    "address": "0xb641e33c8ea9caa71b856f81051bc71a0fb3c3ea",
     "name": "StrategyAerodromeFactory-vAMM-SONNE/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xb7A16c8e4343f1a6c946821B811D1438813c1147",
+    "address": "0xb7a16c8e4343f1a6c946821b811d1438813c1147",
     "name": "StrategyAerodromeFactory-sAMM-MAI/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xc057051b552f999287008EE386F6e31EEc74e582",
+    "address": "0xc057051b552f999287008ee386f6e31eec74e582",
     "name": "StrategyAerodromeFactory-vAMM-ION/WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xc0c5689e6f4D256E861F65465b691aeEcC0dEb12",
+    "address": "0xc0c5689e6f4d256e861f65465b691aeecc0deb12",
     "name": "Gauntlet USDC Core",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xc3BD0A2193c8F027B82ddE3611D18589ef3f62a9",
+    "address": "0xc3bd0a2193c8f027b82dde3611d18589ef3f62a9",
     "name": "USDC Horizon yVault",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xcE69Cd66755A33A8292190051480A95B96CB9e93",
+    "address": "0xce69cd66755a33a8292190051480a95b96cb9e93",
     "name": "Euler Base ecbBTC-1 Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xd43b78d3792a9Aa5037A88Bf7ba558CC48Ea9E10",
+    "address": "0xd43b78d3792a9aa5037a88bf7ba558cc48ea9e10",
     "name": "StrategyAerodromeFactory-vAMM-Mog/WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xd5428B889621Eee8060fc105AA0AB0Fa2e344468",
+    "address": "0xd5428b889621eee8060fc105aa0ab0fa2e344468",
     "name": "Morpho Moonwell Flagship USDC Compounder",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xd85267F4825A50d372322AA15E6F9B00481d04cD",
+    "address": "0xd85267f4825a50d372322aa15e6f9b00481d04cd",
     "name": "GHO-USR Aura Staker",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xd89A4f020C8d256a2A4B0dC40B36Ee0b27680776",
+    "address": "0xd89a4f020c8d256a2a4b0dc40b36ee0b27680776",
     "name": "Moonwell cbETH Lender WETH Borrower",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xda63765B94BC26dBca6183190A670063ff9C8040",
+    "address": "0xda63765b94bc26dbca6183190a670063ff9c8040",
     "name": "Aave V3 WETH Lender",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xe12BFdbce72dacD13692345a26c44dEc39580FFC",
+    "address": "0xe12bfdbce72dacd13692345a26c44dec39580ffc",
     "name": "StrategyAerodromeFactory-sAMM-USDC/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xe9F2a5F9f3c846f29066d7fB3564F8E6B6b2D65b",
+    "address": "0xe9f2a5f9f3c846f29066d7fb3564f8e6b6b2d65b",
     "name": "SuperUSDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xeAdaba9e1C71EAd10605c3903fA932Ddb554baCf",
+    "address": "0xeadaba9e1c71ead10605c3903fa932ddb554bacf",
     "name": "StrategyAerodromeFactory-vAMM-tBTC/WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xfD256a3522c1A4FC6456d9E71a5B39406d5245fe",
+    "address": "0xfd256a3522c1a4fc6456d9e71a5b39406d5245fe",
     "name": "StrategyAerodromeFactory-vAMM-sfrxETH/wstETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xfD995513DADA13c0948D853cd253375C3C93805d",
+    "address": "0xfd995513dada13c0948d853cd253375c3c93805d",
     "name": "StrategyAerodromeFactory-sAMM-DAI/USDbC",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 8453,
-    "address": "0xfdB431E661372fA1146efB70bf120ECDed944a78",
+    "address": "0xfdb431e661372fa1146efb70bf120ecded944a78",
     "name": "Moonwell USDC Lender WETH Borrower",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   }
 ]

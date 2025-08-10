@@ -77,9 +77,9 @@ function VaultDetails() {
   const { o: vault } = useMetaData()
   return (
     <div className="flex flex-col items-start justify-start gap-4 w-200">
-      <div className="flex flex-col gap-1 text-xs">
-        <h1 className="text-3xl font-bold">{vault.name}</h1>
-        <div>chain: {vault.chainId}, {chains[vault.chainId]?.name}</div>
+      <div className="flex flex-col">
+        <h1 className="text-3xl font-bold truncate">{vault.name}</h1>
+        <div>chain: {chains[vault.chainId]?.name} ({vault.chainId})</div>
         <div>address: {vault.address}</div>
         <div>registry: {vault.registry}</div>
       </div>

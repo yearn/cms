@@ -18,7 +18,7 @@ export const StrategyMetadataSchema = z.object({
     'Notional Finance', 'Pool Together', 'Scream', 'Solidex Finance', 'Sonne Finance', 'SpiritSwap',
     'SpookySwap', 'Stargate Finance', 'Sturdy Finance', 'Sushi', 'Synthetix', 'Tokemak', 'Uniswap',
     'Universe', 'Velodrome Finance', 'Vesper Finance', 'Yearn', 'dYdX', 'stMATIC', 'veDAO'
-  ])).nullish()
+  ]))
 })
 
 export type StrategyMetadata = z.infer<typeof StrategyMetadataSchema>

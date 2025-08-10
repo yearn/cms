@@ -1,7 +1,7 @@
 [
   {
     "chainId": 10,
-    "address": "0x02E0E677fAd4A8dC9007a7beD973bf0C70905929",
+    "address": "0x02e0e677fad4a8dc9007a7bed973bf0c70905929",
     "name": "StrategyVelodromeFactory-sAMMV2-alETH/WETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -12,7 +12,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x07Cc1061530Ed9228C92Ae3645A6305CD829CFe0",
+    "address": "0x07cc1061530ed9228c92ae3645a6305cd829cfe0",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -23,16 +23,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x0A73410BaFD08Ee99F307d0b86B9Eb87aAF0267d",
+    "address": "0x0a73410bafd08ee99f307d0b86b9eb87aaf0267d",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/sUSD",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x0F83D307A1DF560B13DF25D98F308BE403ba8FF7",
+    "address": "0x0f83d307a1df560b13df25d98f308be403ba8ff7",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/OP",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -43,7 +43,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x0fB0Ad6eb15A95cf44c8B76d713d4e208347FE47",
+    "address": "0x0fb0ad6eb15a95cf44c8b76d713d4e208347fe47",
     "name": "StrategyVelodromeFactory-sAMMV2-sfrxETH/frxETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -54,7 +54,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x140A60Fdee99289921e01ac0eAD73A92C4C97DE2",
+    "address": "0x140a60fdee99289921e01ac0ead73a92c4c97de2",
     "name": "Router-yvWBTC-044-045",
     "isRetired": true,
     "displayName": "Yearn Delegate",
@@ -65,25 +65,25 @@
   },
   {
     "chainId": 10,
-    "address": "0x1413bAEb8d2Da705886397044a586BD4750b6E87",
+    "address": "0x1413baeb8d2da705886397044a586bd4750b6e87",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x175bdeE5d28755A725ed77A869c7ccAdd4B606ac",
+    "address": "0x175bdee5d28755a725ed77a869c7ccadd4b606ac",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/alUSD",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x17Ca27b87AC43457D4a32455AA6119b9010B9032",
+    "address": "0x17ca27b87ac43457d4a32455aa6119b9010b9032",
     "name": "StrategyVelodromeFactory-sAMMV2-FRAX/USD+",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -94,7 +94,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x17Fd2C00144D179970dB9EE487d37f8A6C328eE1",
+    "address": "0x17fd2c00144d179970db9ee487d37f8a6c328ee1",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -105,7 +105,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x18128146C33d821A484F3D43fF2b986BEBd0c8F3",
+    "address": "0x18128146c33d821a484f3d43ff2b986bebd0c8f3",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -116,7 +116,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x19302FCC608C58D39cB4293FA0ab1af41471CdBd",
+    "address": "0x19302fcc608c58d39cb4293fa0ab1af41471cdbd",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -127,25 +127,25 @@
   },
   {
     "chainId": 10,
-    "address": "0x1E88B832e3E8247C38A088511F0bf243DFa00973",
+    "address": "0x1e88b832e3e8247c38a088511f0bf243dfa00973",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x1F2cbc45308489097Ea583B2989BC8e8355b4D4b",
+    "address": "0x1f2cbc45308489097ea583b2989bc8e8355b4d4b",
     "name": "Curve-sUSD-3CRV",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x1a841021ADE39b75B0900c17072d3D084449b664",
+    "address": "0x1a841021ade39b75b0900c17072d3d084449b664",
     "name": "StrategyVelodromeFactory-sAMMV2-FRAX/alUSD",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -156,7 +156,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x1b929f270346Efb14636Ce5749c471105E44a0aC",
+    "address": "0x1b929f270346efb14636ce5749c471105e44a0ac",
     "name": "StrategyVelodromeFactory-sAMMV2-DOLA/ERN",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -167,7 +167,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x1d3BE43C5621bdA29aB24101c54d434B9b3f29c8",
+    "address": "0x1d3be43c5621bda29ab24101c54d434b9b3f29c8",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -178,7 +178,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x20D27AC263A8B0f15D20614b0D63a4381997407c",
+    "address": "0x20d27ac263a8b0f15d20614b0d63a4381997407c",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -189,7 +189,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x255FcB7a1Fc53C2DEB3274BCCA5dA79d0eaBf098",
+    "address": "0x255fcb7a1fc53c2deb3274bcca5da79d0eabf098",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/MIM",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -200,16 +200,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x26fa3caB1DD17C946533cb3e694b56F11f78Aec2",
+    "address": "0x26fa3cab1dd17c946533cb3e694b56f11f78aec2",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x275a0cA8f321035a20C163B8dE079BaBd0c0992B",
+    "address": "0x275a0ca8f321035a20c163b8de079babd0c0992b",
     "name": "StrategyHopDAI",
     "isRetired": false,
     "displayName": "Hop Single Sided",
@@ -220,7 +220,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x2C25E16A3Bb0a00d2236E1981b4A6371961FFB80",
+    "address": "0x2c25e16a3bb0a00d2236e1981b4a6371961ffb80",
     "name": "StrategyVelodromeFactory-vAMMV2-STG/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -231,7 +231,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x2Ca0b2F1D00d6b70Da68D7C99B1dD08FF34D9c54",
+    "address": "0x2ca0b2f1d00d6b70da68d7c99b1dd08ff34d9c54",
     "name": "GenLevSonneNoFlash",
     "isRetired": true,
     "displayName": "Sonne Finance Lender Borrower",
@@ -242,16 +242,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x2D8660741CD4602ed4fe04e1eE16f5e63EB1f575",
+    "address": "0x2d8660741cd4602ed4fe04e1ee16f5e63eb1f575",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x2EBd8C6325591711280f2a735bc189509620349B",
+    "address": "0x2ebd8c6325591711280f2a735bc189509620349b",
     "name": "Router-yvUSDC-044-045",
     "isRetired": true,
     "displayName": "Yearn Delegate",
@@ -262,7 +262,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x2a28720B784cc85791c58A47eAEd3B569292C71F",
+    "address": "0x2a28720b784cc85791c58a47eaed3b569292c71f",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/VELO",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -273,7 +273,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x2a533D9c6faCC699CF808210544Db43d37E6203e",
+    "address": "0x2a533d9c6facc699cf808210544db43d37e6203e",
     "name": "StrategyVelodromeFactory-vAMMV2-THALES/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -284,7 +284,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x313c53037D105FF6142eE7887D2205322AaEAea6",
+    "address": "0x313c53037d105ff6142ee7887d2205322aaeaea6",
     "name": "StrategyVelodromeFactory-vAMMV2-TAROT/OP",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -295,7 +295,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x31cbdfd72DDb0d98C817a3E377D99074843Bf674",
+    "address": "0x31cbdfd72ddb0d98c817a3e377d99074843bf674",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -306,7 +306,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x332AC9e3eAd90E13399AC8EA4168ea27ec132fa9",
+    "address": "0x332ac9e3ead90e13399ac8ea4168ea27ec132fa9",
     "name": "StrategyVelodromeFactory-vAMMV2-wstETH/WETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -317,7 +317,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x33D54628051fCFAabb898aF9b1b375F1A991A927",
+    "address": "0x33d54628051fcfaabb898af9b1b375f1a991a927",
     "name": "StrategyGenLevAaveV3-Optimism",
     "isRetired": true,
     "displayName": "Aave Flashloan Folding",
@@ -328,7 +328,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x35A18609BBC01C1E75932FaB4F239AEAB4742199",
+    "address": "0x35a18609bbc01c1e75932fab4f239aeab4742199",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/LUSD",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -339,7 +339,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x35a54906e5fb0CEC74BF258150691A9450a56Ba2",
+    "address": "0x35a54906e5fb0cec74bf258150691a9450a56ba2",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/LUSD",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -350,7 +350,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x390978489417b984CeFDfde102F78e67F64B1091",
+    "address": "0x390978489417b984cefdfde102f78e67f64b1091",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -361,7 +361,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x3AB17cd58007e18bdBdc429496aDC3FEDA250483",
+    "address": "0x3ab17cd58007e18bdbdc429496adc3feda250483",
     "name": "StrategyVelodromeFactory-sAMMV2-LUSD/ERN",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -372,7 +372,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x3c023B5Fa6D003d72b32C92057c153b1a8e4Fe38",
+    "address": "0x3c023b5fa6d003d72b32c92057c153b1a8e4fe38",
     "name": "StrategyHopUSDT",
     "isRetired": true,
     "displayName": "Hop Single Sided",
@@ -383,7 +383,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x405B0E5eD26856F63344747C0a87dE549a334D75",
+    "address": "0x405b0e5ed26856f63344747c0a87de549a334d75",
     "name": "StrategyVelodromeFactory-vAMMV2-stERN/ERN",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -394,7 +394,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x41570EF430D5f507E97403f0De61D35D5Efa60F4",
+    "address": "0x41570ef430d5f507e97403f0de61d35d5efa60f4",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/DOLA",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -405,16 +405,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x421c11855F02f4921B0B6af273B55efA6fF6944b",
+    "address": "0x421c11855f02f4921b0b6af273b55efa6ff6944b",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x4276B479E851F76f95312CcE497Dc8fe37F1Befd",
+    "address": "0x4276b479e851f76f95312cce497dc8fe37f1befd",
     "name": "StrategyVelodromeFactory-vAMMV2-wstETH/LDO",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -425,16 +425,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x46F419C19EfC83665a0dd8FA522B1B16046AE201",
+    "address": "0x46f419c19efc83665a0dd8fa522b1b16046ae201",
     "name": "StrategyVelodromeFactory-vAMMV2-OATH/WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x47972c2f68C1FF6E34cD9B6c1a690938de91D80E",
+    "address": "0x47972c2f68c1ff6e34cd9b6c1a690938de91d80e",
     "name": "StrategyVelodromeFactory-sAMMV2-msETH/WETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -445,16 +445,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x479DcE9E0ae72583dB923C472EBe6a5FD86988E4",
+    "address": "0x479dce9e0ae72583db923c472ebe6a5fd86988e4",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/STG",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x4809143428Ed49D08978aDF209A4179d52ce5371",
+    "address": "0x4809143428ed49d08978adf209a4179d52ce5371",
     "name": "StrategyVelodromeUsdcDola",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -465,7 +465,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x495838C99A150066a78402cd620910e924c3fD4A",
+    "address": "0x495838c99a150066a78402cd620910e924c3fd4a",
     "name": "StrategyVelodromeFactory-sAMMV2-alETH/frxETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -476,7 +476,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x49D4224f3d896A40b678bb17641df47ad3DE0ca4",
+    "address": "0x49d4224f3d896a40b678bb17641df47ad3de0ca4",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": false,
     "displayName": "Aave Optimizer",
@@ -487,7 +487,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x4A3f4DFf2cDe557BaBAe2A7E1f7bd84092840631",
+    "address": "0x4a3f4dff2cde557babae2a7e1f7bd84092840631",
     "name": "StrategyVelodromeFactory-vAMMV2-UNLOCK/VELO",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -498,7 +498,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x4E93D2d16De8281E2646F90Db5525bB7ec2a6a75",
+    "address": "0x4e93d2d16de8281e2646f90db5525bb7ec2a6a75",
     "name": "StrategyCurve_sETH",
     "isRetired": false,
     "displayName": "Curve Boost",
@@ -509,16 +509,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x4de0b8EFac89d047d413260808832974BcF882c6",
+    "address": "0x4de0b8efac89d047d413260808832974bcf882c6",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x4e1a7A01a41D59Cd762beB26684b00762ac8e581",
+    "address": "0x4e1a7a01a41d59cd762beb26684b00762ac8e581",
     "name": "StrategyVelodromeFactory-vAMMV2-IB/WETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -529,7 +529,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x505c1010728B7442eF9FF2A23876Fe02f05954a1",
+    "address": "0x505c1010728b7442ef9ff2a23876fe02f05954a1",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -540,7 +540,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x5182ec82758feE0bD209e55BEEA2e61286F297C3",
+    "address": "0x5182ec82758fee0bd209e55beea2e61286f297c3",
     "name": "StrategyVelodromeFactory-vAMMV2-wUSDR/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -551,16 +551,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x53E3c96A5D3BCE2598ab928eEeb5518479092b6f",
+    "address": "0x53e3c96a5d3bce2598ab928eeeb5518479092b6f",
     "name": "V3 Aave Router",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x54E59FC1d7F24a42b82dBcFC160ab317b1D60B87",
+    "address": "0x54e59fc1d7f24a42b82dbcfc160ab317b1d60b87",
     "name": "StrategyVelodromeFactory-vAMMV2-TAROT/OP",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -571,7 +571,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x564dFB09f7fcBDBc25443F137218286BF1059b75",
+    "address": "0x564dfb09f7fcbdbc25443f137218286bf1059b75",
     "name": "StrategyHopUSDT",
     "isRetired": true,
     "displayName": "Hop Single Sided",
@@ -582,7 +582,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x57030B62dD04E4a2CCCc80E4714778a53ba47A2D",
+    "address": "0x57030b62dd04e4a2cccc80e4714778a53ba47a2d",
     "name": "StrategyVelodromeFactory-vAMMV2-LYRA/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -593,7 +593,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x57926e9cf3d7920aFE774DC1D040CcE0Cd3eD26A",
+    "address": "0x57926e9cf3d7920afe774dc1d040cce0cd3ed26a",
     "name": "StrategyVelodromeFactory-vAMMV2-wstETH/OP",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -604,7 +604,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x586f6Be1E0Ca1b30E29C2Fef61DCC526fd387A7d",
+    "address": "0x586f6be1e0ca1b30e29c2fef61dcc526fd387a7d",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/UNIDX",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -615,7 +615,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x5A8493F8222d0F5A6F050F9Ddc70a5E38626F8A6",
+    "address": "0x5a8493f8222d0f5a6f050f9ddc70a5e38626f8a6",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -626,16 +626,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x5Edc9A1D176De55133CF9779110005eFeE237885",
+    "address": "0x5edc9a1d176de55133cf9779110005efee237885",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x5F1620f50a79aF8B9829f87376AfCeBdc3DEB355",
+    "address": "0x5f1620f50a79af8b9829f87376afcebdc3deb355",
     "name": "StrategyHopWETH",
     "isRetired": false,
     "displayName": "Hop Single Sided",
@@ -646,25 +646,25 @@
   },
   {
     "chainId": 10,
-    "address": "0x5aa0D7821a23817D77cdBb7E4A0cA106f2583345",
+    "address": "0x5aa0d7821a23817d77cdbb7e4a0ca106f2583345",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x5c7660C1967d7315EeFe6c1101Ec03d4Cd04a4Ce",
+    "address": "0x5c7660c1967d7315eefe6c1101ec03d4cd04a4ce",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x6108591f070ff31809E1DA11FD5AEa9D3235735F",
+    "address": "0x6108591f070ff31809e1da11fd5aea9d3235735f",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": false,
     "displayName": "Aave Optimizer",
@@ -675,16 +675,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x62E396D4f398FD24cA7E8F028fEDcaeCf5e65266",
+    "address": "0x62e396d4f398fd24ca7e8f028fedcaecf5e65266",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/ERN",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x63bdFa16AF506f7e3e80176c282B2c004eE257E6",
+    "address": "0x63bdfa16af506f7e3e80176c282b2c004ee257e6",
     "name": "StrategyVelodromeFactory-sAMMV2-WBTC/tBTC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -695,16 +695,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x64d23f2efed691A86Db3603319562E8287bD342f",
+    "address": "0x64d23f2efed691a86db3603319562e8287bd342f",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x68AB4cD96F181e2C696C66c373CCC8d94585A57A",
+    "address": "0x68ab4cd96f181e2c696c66c373ccc8d94585a57a",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -715,7 +715,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x6F8Aee1E8a5D5038f8814e10E7D18a91B0F82068",
+    "address": "0x6f8aee1e8a5d5038f8814e10e7d18a91b0f82068",
     "name": "StrategyGenLevAaveV3-Optimism",
     "isRetired": true,
     "displayName": "Aave Flashloan Folding",
@@ -726,7 +726,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x6FE7fDD7142804289a2Ed8D0d4af6fe263852956",
+    "address": "0x6fe7fdd7142804289a2ed8d0d4af6fe263852956",
     "name": "StrategyVelodromeFactory-sAMMV2-USD+/DAI+",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -737,7 +737,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x6d094C2C5D3478a198f89B7f8eD6910DfB8842Ba",
+    "address": "0x6d094c2c5d3478a198f89b7f8ed6910dfb8842ba",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/MAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -748,16 +748,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x6dB00ED5be8Efc49fB9945DAbcc983F969768F3C",
+    "address": "0x6db00ed5be8efc49fb9945dabcc983f969768f3c",
     "name": "StrategyVelodromeUSDC-MAI",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x74B3d347eB1a3a086EEec6d929356FbE26E3F2CA",
+    "address": "0x74b3d347eb1a3a086eeec6d929356fbe26e3f2ca",
     "name": "StrategyVelodromeFactory-sAMMV2-WETH/frxETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -768,25 +768,25 @@
   },
   {
     "chainId": 10,
-    "address": "0x755aF28a97eb975F3EBE100926D4Bda8ecd58588",
+    "address": "0x755af28a97eb975f3ebe100926d4bda8ecd58588",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x77d34b5c0606cd9a88fBbf5842fBB3e64e8C9570",
+    "address": "0x77d34b5c0606cd9a88fbbf5842fbb3e64e8c9570",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x79AB263C0dBEFd8834f7292864aD6d405ba6793a",
+    "address": "0x79ab263c0dbefd8834f7292864ad6d405ba6793a",
     "name": "StrategyVelodromeFactory-vAMMV2-QI/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -797,16 +797,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x7C32EF61f0d6fE3858496bAd4c4EBFD291ECA2c4",
+    "address": "0x7c32ef61f0d6fe3858496bad4c4ebfd291eca2c4",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x7F20D98691a91771Bec4c9fC6302626B4Fc99b77",
+    "address": "0x7f20d98691a91771bec4c9fc6302626b4fc99b77",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/MTA",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -817,7 +817,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x7f3ED433fbf833748c7Cf8B584812ab1F288cd98",
+    "address": "0x7f3ed433fbf833748c7cf8b584812ab1f288cd98",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -828,7 +828,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x81ebdc2F60Df4d579bC0df8cb86609E885CAC5d3",
+    "address": "0x81ebdc2f60df4d579bc0df8cb86609e885cac5d3",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/tBTC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -839,16 +839,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x853aC1806f6b4C49cF5dCf7Dc7B2f372881567bA",
+    "address": "0x853ac1806f6b4c49cf5dcf7dc7b2f372881567ba",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x8651bA8416F97a27147E58423240cc786f5A0D32",
+    "address": "0x8651ba8416f97a27147e58423240cc786f5a0d32",
     "name": "Router-yvDAI-044-045",
     "isRetired": true,
     "displayName": "Yearn Delegate",
@@ -859,7 +859,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x877D377b289AEa8e0F8aC2470252D226417D9e21",
+    "address": "0x877d377b289aea8e0f8ac2470252d226417d9e21",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -870,7 +870,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x87A06DAAe50cEE4031A9F0dF6a7a5d819Da98c6E",
+    "address": "0x87a06daae50cee4031a9f0df6a7a5d819da98c6e",
     "name": "StrategyVelodromeFactory-sAMMV2-FRAX/DOLA",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -881,7 +881,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x8Ca13C966eAAdBCA7CaD81AecfDB1c52EC693F0a",
+    "address": "0x8ca13c966eaadbca7cad81aecfdb1c52ec693f0a",
     "name": "StrategyVelodromeFactory-vAMMV2-UNIDX/DAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -892,7 +892,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x8DeA764B81CeCE709c57ba3182782F1636AD6067",
+    "address": "0x8dea764b81cece709c57ba3182782f1636ad6067",
     "name": "StrategyGenLevAaveV3-Optimism",
     "isRetired": true,
     "displayName": "Aave Flashloan Folding",
@@ -903,7 +903,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x8a5aa8911442025EF14568DF25c822b4D74D3bB5",
+    "address": "0x8a5aa8911442025ef14568df25c822b4d74d3bb5",
     "name": "StrategyVelodromeFactory-sAMMV2-FRAX/MAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -914,7 +914,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x8eF1637079572d52EE8161C1Fbda8Bd399836FD0",
+    "address": "0x8ef1637079572d52ee8161c1fbda8bd399836fd0",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/wUSDR",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -925,7 +925,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x8fD559dfe1D64508290025e2312ca69eF172dfe3",
+    "address": "0x8fd559dfe1d64508290025e2312ca69ef172dfe3",
     "name": "StrategyVelodromeFactory-sAMMV2-DOLA/MAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -936,7 +936,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x90bB44D6AB538aF82f05Ee4d6cFFEF53FB18CB56",
+    "address": "0x90bb44d6ab538af82f05ee4d6cffef53fb18cb56",
     "name": "StrategyVelodromeFactory-sAMMV2-CHI/DAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -947,7 +947,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x94E747E1AA9a9c3b1B8ED388E207fe5424870d0d",
+    "address": "0x94e747e1aa9a9c3b1b8ed388e207fe5424870d0d",
     "name": "StrategyHopDAI",
     "isRetired": true,
     "displayName": "Hop Single Sided",
@@ -958,7 +958,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x9723876259A4fe4F2ab5365c4E8d6d969A532999",
+    "address": "0x9723876259a4fe4f2ab5365c4e8d6d969a532999",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/KWENTA",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -969,7 +969,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x9932559d1Da9e1F00571346d1e4aFB240BEF6EDE",
+    "address": "0x9932559d1da9e1f00571346d1e4afb240bef6ede",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/alUSD",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -980,7 +980,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x99519771c569bC11cd652A5415672f54476cDbFe",
+    "address": "0x99519771c569bc11cd652a5415672f54476cdbfe",
     "name": "StrategyHopUSDC",
     "isRetired": true,
     "displayName": "Hop Single Sided",
@@ -991,16 +991,16 @@
   },
   {
     "chainId": 10,
-    "address": "0x99E90b32Bf553bA40884d0fF834C419eA5D900F2",
+    "address": "0x99e90b32bf553ba40884d0ff834c419ea5d900f2",
     "name": "StrategyAerodromeFactory-sAMMV2-pxETH/WETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0x9A3142Bc20F7Fb318A76c16D438721f126F9d25F",
+    "address": "0x9a3142bc20f7fb318a76c16d438721f126f9d25f",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/sUSD",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1011,7 +1011,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x9B724a2896FE8f65F0de64e0E0d0bD63c9962Cc2",
+    "address": "0x9b724a2896fe8f65f0de64e0e0d0bd63c9962cc2",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/ERN",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1022,7 +1022,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x9F38E7866e1e8F82eBef9433F0131981d281ADec",
+    "address": "0x9f38e7866e1e8f82ebef9433f0131981d281adec",
     "name": "StrategyVelodromeFactory-vAMMV2-RED/OP",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1033,7 +1033,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x9d9350cef676A173b18fa76bC10845a938661265",
+    "address": "0x9d9350cef676a173b18fa76bc10845a938661265",
     "name": "StrategyVelodromeFactory-sAMMV2-FRAX/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1044,7 +1044,7 @@
   },
   {
     "chainId": 10,
-    "address": "0x9eDE0429c8ed578E5DdF1FE47717A5504C9A8fdb",
+    "address": "0x9ede0429c8ed578e5ddf1fe47717a5504c9a8fdb",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -1055,7 +1055,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xA54ACd42DCd92D85c0f518d21C6dd39A41cfA5Ad",
+    "address": "0xa54acd42dcd92d85c0f518d21c6dd39a41cfa5ad",
     "name": "StrategyVelodromeFactory-vAMMV2-TAROT/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1066,7 +1066,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xA7E553700273f35fDF3b4Fd66044C5E88b27F7e5",
+    "address": "0xa7e553700273f35fdf3b4fd66044c5e88b27f7e5",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -1077,16 +1077,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xAb9CB23b135aE489Aea28dBedeB082f10772D0c4",
+    "address": "0xab9cb23b135ae489aea28dbedeb082f10772d0c4",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xAcE439A7B6F7fdbD3BB0554006f044d21205Ab3E",
+    "address": "0xace439a7b6f7fdbd3bb0554006f044d21205ab3e",
     "name": "StrategyVelodromeFactory-vAMMV2-SONNE/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1097,7 +1097,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xAd782AF29Bfb5908CE7305042933EeB8Dfe95f1B",
+    "address": "0xad782af29bfb5908ce7305042933eeb8dfe95f1b",
     "name": "StrategyVelodromeFactory-sAMMV2-alUSD/MAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1108,7 +1108,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xAfccb36CAEEB089611c1085BCA783214A1a47691",
+    "address": "0xafccb36caeeb089611c1085bca783214a1a47691",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -1119,7 +1119,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xB92e56feA1F265cA6C85a9cD64A0d58800374985",
+    "address": "0xb92e56fea1f265ca6c85a9cd64a0d58800374985",
     "name": "StrategyVelodromeFactory-vAMMV2-RED/VELO",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1130,7 +1130,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xBFD5df2B57Cb9532A39931E4ed74b51CfA940bb0",
+    "address": "0xbfd5df2b57cb9532a39931e4ed74b51cfa940bb0",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": false,
     "displayName": "Aave Optimizer",
@@ -1141,7 +1141,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xBa8D1EFFeC605648024622c8bD7Bb9ab0A489909",
+    "address": "0xba8d1effec605648024622c8bd7bb9ab0a489909",
     "name": "Router-yvWETH-044-045",
     "isRetired": true,
     "displayName": "Yearn Delegate",
@@ -1152,7 +1152,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xC04924A5A7963cb4a2CaE4b42320A5A355649d2E",
+    "address": "0xc04924a5a7963cb4a2cae4b42320a5a355649d2e",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/USDT",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1163,7 +1163,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xC4Dd2622740eCd630F4e1b91655a84533A9b2e0B",
+    "address": "0xc4dd2622740ecd630f4e1b91655a84533a9b2e0b",
     "name": "StrategyVelodromeFactory-sAMMV2-USD+/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1174,7 +1174,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xC913A5Af4A949B18cde47cAb667347F9aE50f6eb",
+    "address": "0xc913a5af4a949b18cde47cab667347f9ae50f6eb",
     "name": "StrategyVelodromeFactory-vAMMV2-TAROT/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1185,7 +1185,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xC93CcF5fA33Bb2952bB28e0636974030ba039385",
+    "address": "0xc93ccf5fa33bb2952bb28e0636974030ba039385",
     "name": "StrategyHopWETH",
     "isRetired": true,
     "displayName": "Hop Single Sided",
@@ -1196,7 +1196,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xCa9912CAa94162191F1103A0239bd5be52534b96",
+    "address": "0xca9912caa94162191f1103a0239bd5be52534b96",
     "name": "StrategyVelodromeFactory-vAMMV2-THALES/WETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1207,7 +1207,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xCd90278862651EeD05EBCD5Cb34a87DEb2b47867",
+    "address": "0xcd90278862651eed05ebcd5cb34a87deb2b47867",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/SNX",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1218,7 +1218,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xD299aa23E8395F02f73D6B4E30dB579314440753",
+    "address": "0xd299aa23e8395f02f73d6b4e30db579314440753",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -1229,7 +1229,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xD8cfd133f557cAe59d493c4B5A0E83E88a8FB43b",
+    "address": "0xd8cfd133f557cae59d493c4b5a0e83e88a8fb43b",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": false,
     "displayName": "Iron Bank Lender Optimizer",
@@ -1240,7 +1240,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xE95b08F0aeae413f3b40e19CbaE16564c6802509",
+    "address": "0xe95b08f0aeae413f3b40e19cbae16564c6802509",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/BLU",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1251,7 +1251,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xEBa7737DD78212a37229f823c3f286bC57597C39",
+    "address": "0xeba7737dd78212a37229f823c3f286bc57597c39",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/DAI",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1262,7 +1262,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xF467ad93f7016D72cC7F2C657D187a18f7bD69e4",
+    "address": "0xf467ad93f7016d72cc7f2c657d187a18f7bd69e4",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/wTBT",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1273,25 +1273,25 @@
   },
   {
     "chainId": 10,
-    "address": "0xF9F8b5946B4c9c09ca286dc364e4782aAfb0Ca48",
+    "address": "0xf9f8b5946b4c9c09ca286dc364e4782aafb0ca48",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xFc8d063D9f14dB98d6e4a73432f9a9Bd8AE820bE",
+    "address": "0xfc8d063d9f14db98d6e4a73432f9a9bd8ae820be",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/DOLA",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xa7865398f102A80d984A6B52F963715eC1417368",
+    "address": "0xa7865398f102a80d984a6b52f963715ec1417368",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -1302,16 +1302,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xaAdF72c28Cf37e54FcADf589A9e91d90C3FCD27b",
+    "address": "0xaadf72c28cf37e54fcadf589a9e91d90c3fcd27b",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xb03922342068708281F772Bf561356629789bb07",
+    "address": "0xb03922342068708281f772bf561356629789bb07",
     "name": "GenLevSonneNoFlash",
     "isRetired": false,
     "displayName": "Sonne Finance Lender Borrower",
@@ -1322,7 +1322,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xb2093fDbeeB5c196a1F930b65bc64D935b778377",
+    "address": "0xb2093fdbeeb5c196a1f930b65bc64d935b778377",
     "name": "StrategyVelodromeUsdcClonable",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1333,7 +1333,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xb448dae03108dDd66374bAabCaA6d95E7dfEfD1D",
+    "address": "0xb448dae03108ddd66374baabcaa6d95e7dfefd1d",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -1344,16 +1344,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xb665db92245bf8044EE8b68DB4DD10AF5061A825",
+    "address": "0xb665db92245bf8044ee8b68db4dd10af5061a825",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xb83d27505064e73Ea7298f035FB7D9140C8da8aa",
+    "address": "0xb83d27505064e73ea7298f035fb7d9140c8da8aa",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/rETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1364,7 +1364,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xc28687693469c91F5d1Da48E4840e8f0362eACDc",
+    "address": "0xc28687693469c91f5d1da48e4840e8f0362eacdc",
     "name": "StrategyVelodromeFactory-sAMMV2-USD+/DOLA",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1375,25 +1375,25 @@
   },
   {
     "chainId": 10,
-    "address": "0xc724e1D3CD22e9F9e13413205211b3742CC07855",
+    "address": "0xc724e1d3cd22e9f9e13413205211b3742cc07855",
     "name": "StrategyVelodromeFactory-vAMMV2-OVN/USD+",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xcf91f16FA50902F3C123ddcbAa5e9541FA68b593",
+    "address": "0xcf91f16fa50902f3c123ddcbaa5e9541fa68b593",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xd028A40fBe0507678c8A821E038d6eEd90b4675B",
+    "address": "0xd028a40fbe0507678c8a821e038d6eed90b4675b",
     "name": "StrategyVelodromeFactory-vAMMV2-EXA/WETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1404,16 +1404,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xd13A1c75e5177F4932502aeF829493467B1844aB",
+    "address": "0xd13a1c75e5177f4932502aef829493467b1844ab",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/ERN",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xd22E21a1B9bdc392229fab7E878a10b5b6273fcB",
+    "address": "0xd22e21a1b9bdc392229fab7e878a10b5b6273fcb",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/agEUR",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1424,16 +1424,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xd5fBAca004aE9b6061B081D0dac370006cf032A1",
+    "address": "0xd5fbaca004ae9b6061b081d0dac370006cf032a1",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/GRAIN",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xd8177CaBbB13922206cCFEaCAB3060c5fE4Cb06b",
+    "address": "0xd8177cabbb13922206ccfeacab3060c5fe4cb06b",
     "name": "StrategyVelodromeFactory-vAMMV2-OP/USDC",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1444,7 +1444,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xe224d81E7159a1803B5Ad725DF2eB03aD20a103d",
+    "address": "0xe224d81e7159a1803b5ad725df2eb03ad20a103d",
     "name": "StrategyHopUSDC",
     "isRetired": true,
     "displayName": "Hop Single Sided",
@@ -1455,7 +1455,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xe59fDe0B442F42a773715106Ec03A2A04258E9B4",
+    "address": "0xe59fde0b442f42a773715106ec03a2a04258e9b4",
     "name": "StrategyVelodromeFactory-sAMMV2-WETH/sETH",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1466,7 +1466,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xe7036Cb72f21b1dFE422Ad79D54b3D611E2Bffa2",
+    "address": "0xe7036cb72f21b1dfe422ad79d54b3d611e2bffa2",
     "name": "StrategyVelodromeFactory-vAMMV2-OP/VELO",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1477,7 +1477,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xe82DEb62412DB78D00Cae77BE3d1334e26034Cf6",
+    "address": "0xe82deb62412db78d00cae77be3d1334e26034cf6",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -1488,7 +1488,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xe857A3CD7fd943dfB9F77B7519d22845E02f5976",
+    "address": "0xe857a3cd7fd943dfb9f77b7519d22845e02f5976",
     "name": "StrategyGenLevAaveV3-Optimism",
     "isRetired": true,
     "displayName": "Aave Flashloan Folding",
@@ -1499,7 +1499,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xeD6f24083D912c55Eb4b3dB2D492BdAc0C83Fad8",
+    "address": "0xed6f24083d912c55eb4b3db2d492bdac0c83fad8",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/PERP",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1510,7 +1510,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xecea68f6F84165C2349a704D3D3339d3D5158180",
+    "address": "0xecea68f6f84165c2349a704d3d3339d3d5158180",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/USX",
     "isRetired": false,
     "displayName": "Velodrome Reinvest",
@@ -1521,16 +1521,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xf10697B404Ba7E3C4A5D034b22614d682FF41809",
+    "address": "0xf10697b404ba7e3c4a5d034b22614d682ff41809",
     "name": "Strategy<ProtocolName><TokenType>",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xf1a2DAB4C02563137ff1Ba34a8C9f92C2F8eeE49",
+    "address": "0xf1a2dab4c02563137ff1ba34a8c9f92c2f8eee49",
     "name": "StrategyGenLevAaveV3-Optimism",
     "isRetired": true,
     "displayName": "Aave Flashloan Folding",
@@ -1541,16 +1541,16 @@
   },
   {
     "chainId": 10,
-    "address": "0xf8165806b386108daC5EbaF21b6798fcBF4f101D",
+    "address": "0xf8165806b386108dac5ebaf21b6798fcbf4f101d",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/msUSD",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 10,
-    "address": "0xf8aD69d578bd58c7d3Ff643A22355f0BFd5cA12A",
+    "address": "0xf8ad69d578bd58c7d3ff643a22355f0bfd5ca12a",
     "name": "StrategyLenderYieldOptimiser",
     "isRetired": true,
     "displayName": "Aave Optimizer",
@@ -1561,7 +1561,7 @@
   },
   {
     "chainId": 10,
-    "address": "0xffD4E5BB52fb81Ca7aDc1353894d1B7840e87050",
+    "address": "0xffd4e5bb52fb81ca7adc1353894d1b7840e87050",
     "name": "Router-yvsUSD-044-045",
     "isRetired": true,
     "displayName": "Yearn Delegate",

@@ -1,29 +1,29 @@
 [
   {
     "chainId": 146,
-    "address": "0x3FfA0C3fba4Adfe2b6e4D7E2f8E6e6324bE5305B",
+    "address": "0x3ffa0c3fba4adfe2b6e4d7e2f8e6e6324be5305b",
     "name": "Silo Lender S/USDC (8)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 146,
-    "address": "0xBe3E3Ca48525406063CB2CE9c7c848BCf24DC9fc",
+    "address": "0xbe3e3ca48525406063cb2ce9c7c848bcf24dc9fc",
     "name": "USDC Test",
     "isRetired": true,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   },
   {
     "chainId": 146,
-    "address": "0xf1dF9a0390Fd65984F311f17230B9F6B85497C6e",
+    "address": "0xf1df9a0390fd65984f311f17230b9f6b85497c6e",
     "name": "Silo Lender S/USDC (20)",
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": null
+    "protocols": []
   }
 ]

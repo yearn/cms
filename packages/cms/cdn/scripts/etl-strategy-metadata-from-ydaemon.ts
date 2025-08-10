@@ -58,6 +58,7 @@ async function main() {
       let strategies = Object.keys(records)
         .map(address => ({ ...records[address] }))
         .map(strategy => ({ chainId: strategy.chainID, ...strategy }))
+        .map(strategy => ({ ...strategy, protocols: strategy.protocols ?? [] }))
         .map(strategy => StrategyMetadataSchema.parse(strategy))
 
       // remove duplicates by address

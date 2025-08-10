@@ -78,9 +78,9 @@ function StrategyDetails() {
   const { o: strategy } = useMetaData()
   return (
     <div className="flex flex-col items-start justify-start gap-4 w-200">
-      <div className="flex flex-col gap-1 text-xs">
-        <h1 className="text-3xl font-bold">{strategy.name || 'No name onchain'}</h1>
-        <div>chain: {strategy.chainId}, {chains[strategy.chainId]?.name}</div>
+      <div className="flex flex-col">
+        <h1 className="text-3xl font-bold truncate">{strategy.name || 'No name onchain'}</h1>
+        <div>chain: {chains[strategy.chainId]?.name} ({strategy.chainId})</div>
         <div>address: {strategy.address}</div>
       </div>
       <MetaData className="w-200" />

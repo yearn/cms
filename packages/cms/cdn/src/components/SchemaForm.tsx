@@ -5,6 +5,7 @@ import z from 'zod'
 import { cn } from '../lib/cn'
 import Input from './elements/Input'
 import Switch from './elements/Switch'
+import Tags from './elements/Tags'
 import Textarea from './elements/Textarea'
 
 const TEXTAREA_FIELDS = ['description', 'uiNotice']
@@ -122,23 +123,39 @@ const renderField = (
           )}
         </fieldset>
       )
-    case 'array':
+    case 'array': {
+      // Convert array items to tag format for react-tag-autocomplete
+      const selected = (value || []).map((item: any) => ({
+        value: String(item || ''),
+        label: String(item || '')
+      }))
+      
+      const suggestions = schema.items?.enum?.map((item: string) => ({
+        value: item,
+        label: item
+      })) || []
+
       return (
-        <fieldset>
-          <legend>{key}</legend>
-          {(value || []).map((item: any, idx: number) =>
-            <div key={key}>
-              {renderField(`${idx}`, schema.items, item, update, fieldPath)}
-            </div>
-          )}
-          <button
-            type="button"
-            onClick={() => update(fieldPath, [...(value || []), null])}
-          >
-            Add
-          </button>
-        </fieldset>
+        <div className="w-128">
+          <Tags
+            selected={selected}
+            suggestions={suggestions}
+            onAdd={(tag) => {
+              if (value.includes(tag.label)) { return }
+              const newValue = [...(value || []), tag.label]
+              update(fieldPath, newValue)
+            }}
+            onDelete={(tagIndex) => {
+              const tag = value[tagIndex]
+              const newValue = (value || []).filter((t: string) => t !== tag)
+              update(fieldPath, newValue)
+            }}
+            allowNew={!schema.items?.enum}
+            placeholderText={`${key}..`}
+          />
+        </div>
       )
+    }
     default:
       return null
   }
@@ -152,7 +169,6 @@ export default function MetaData({ className }: MetaDataProps) {
   const { formState, updateField, schema } = useMetaData()
   const jsonSchema = z.toJSONSchema(schema)
   const readonlyFields = ['chainId', 'address', 'name', 'registry']
-
   return (
     <form className={cn('flex flex-col gap-6', className)}>
       {Object.entries(jsonSchema.properties || {}).filter(([key]) => !readonlyFields.includes(key)).map(([key, schema]) =>
