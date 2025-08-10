@@ -1,9 +1,9 @@
 [
   {
     "chainId": 100,
-    "address": "0x39B68451F05Aaa020611CF887a7338f0991fFd60",
+    "address": "0x39b68451f05aaa020611cf887a7338f0991ffd60",
     "name": "AJNA EURe yVault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -17,7 +17,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x39B68451F05Aaa020611CF887a7338f0991fFd60",
+      "target": "0x39b68451f05aaa020611cf887a7338f0991ffd60",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -44,9 +44,9 @@
   },
   {
     "chainId": 100,
-    "address": "0x5012C6bf79b3047ECFFf2F212DfFDA4d2128188f",
+    "address": "0x5012c6bf79b3047ecfff2f212dffda4d2128188f",
     "name": "EURe yVault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -60,7 +60,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x5012C6bf79b3047ECFFf2F212DfFDA4d2128188f",
+      "target": "0x5012c6bf79b3047ecfff2f212dffda4d2128188f",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -87,9 +87,9 @@
   },
   {
     "chainId": 100,
-    "address": "0xa21Cc1a4a239708690134bAeD3a1B93cAD55F625",
+    "address": "0xa21cc1a4a239708690134baed3a1b93cad55f625",
     "name": "Curve EURe yVault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -103,7 +103,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xa21Cc1a4a239708690134bAeD3a1B93cAD55F625",
+      "target": "0xa21cc1a4a239708690134baed3a1b93cad55f625",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {

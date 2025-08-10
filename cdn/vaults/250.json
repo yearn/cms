@@ -1,9 +1,9 @@
 [
   {
     "chainId": 250,
-    "address": "0x03B82e4070cA32FF63A03F2EcfC16c0165689a9d",
+    "address": "0x03b82e4070ca32ff63a03f2ecfc16c0165689a9d",
     "name": "Curve AVAX yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Legacy",
     "ydaemonEndorsed": true,
@@ -44,9 +44,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x0446acaB3e0242fCf33Aa526f1c95a88068d5042",
+    "address": "0x0446acab3e0242fcf33aa526f1c95a88068d5042",
     "name": "CRV yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -61,7 +61,7 @@
     "migration": {
       "available": false,
       "target": "0x0000000000000000000000000000000000000000",
-      "contract": "0x0446acaB3e0242fCf33Aa526f1c95a88068d5042"
+      "contract": "0x0446acab3e0242fcf33aa526f1c95a88068d5042"
     },
     "stability": {
       "stability": "Volatile"
@@ -87,9 +87,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x0A0b23D9786963DE69CB2447dC125c49929419d8",
+    "address": "0x0a0b23d9786963de69cb2447dc125c49929419d8",
     "name": "MIM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -103,7 +103,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x0A0b23D9786963DE69CB2447dC125c49929419d8",
+      "target": "0x0a0b23d9786963de69cb2447dc125c49929419d8",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -131,9 +131,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
+    "address": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
     "name": "WFTM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -147,7 +147,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
+      "target": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -175,9 +175,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x0fBbf9848D969776a5Eb842EdAfAf29ef4467698",
+    "address": "0x0fbbf9848d969776a5eb842edafaf29ef4467698",
     "name": "BOO yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -191,7 +191,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x0fBbf9848D969776a5Eb842EdAfAf29ef4467698",
+      "target": "0x0fbbf9848d969776a5eb842edafaf29ef4467698",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -218,9 +218,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x1482Faf8b5A9c458c94e6A561cCF93ed7A9f552E",
+    "address": "0x1482faf8b5a9c458c94e6a561ccf93ed7a9f552e",
     "name": "WFTM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -234,8 +234,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -262,9 +262,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x148c05caf1Bb09B5670f00D511718f733C54bC4c",
+    "address": "0x148c05caf1bb09b5670f00d511718f733c54bc4c",
     "name": "USDT yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -278,7 +278,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x148c05caf1Bb09B5670f00D511718f733C54bC4c",
+      "target": "0x148c05caf1bb09b5670f00d511718f733c54bc4c",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -306,9 +306,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x1b48641D8251c3E84ecbe3f2bD76B3701401906D",
+    "address": "0x1b48641d8251c3e84ecbe3f2bd76b3701401906d",
     "name": "DOLA yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -323,7 +323,7 @@
     "migration": {
       "available": false,
       "target": "0x0000000000000000000000000000000000000000",
-      "contract": "0x1b48641D8251c3E84ecbe3f2bD76B3701401906D"
+      "contract": "0x1b48641d8251c3e84ecbe3f2bd76b3701401906d"
     },
     "stability": {
       "stability": "Stable",
@@ -350,9 +350,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x1e2fe8074a5ce1Bb7394856B0C618E75D823B93b",
+    "address": "0x1e2fe8074a5ce1bb7394856b0c618e75d823b93b",
     "name": "fBEETS yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -366,7 +366,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x1e2fe8074a5ce1Bb7394856B0C618E75D823B93b",
+      "target": "0x1e2fe8074a5ce1bb7394856b0c618e75d823b93b",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -393,9 +393,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x209667B173fE4E9559bdA7818e53Bd5F5E0f9acD",
+    "address": "0x209667b173fe4e9559bda7818e53bd5f5e0f9acd",
     "name": "MIM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -409,8 +409,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x0A0b23D9786963DE69CB2447dC125c49929419d8",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0x0a0b23d9786963de69cb2447dc125c49929419d8",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -437,9 +437,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x27cbf0fddb356a2d1EBdef604Cfa90F8f300d34E",
+    "address": "0x27cbf0fddb356a2d1ebdef604cfa90f8f300d34e",
     "name": "WFTM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -453,8 +453,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -481,9 +481,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x2C850cceD00ce2b14AA9D658b7Cad5dF659493Db",
+    "address": "0x2c850cced00ce2b14aa9d658b7cad5df659493db",
     "name": "YFI yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -497,7 +497,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x2C850cceD00ce2b14AA9D658b7Cad5dF659493Db",
+      "target": "0x2c850cced00ce2b14aa9d658b7cad5df659493db",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -524,9 +524,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x357ca46da26E1EefC195287ce9D838A6D5023ef3",
+    "address": "0x357ca46da26e1eefc195287ce9d838a6d5023ef3",
     "name": "FRAX yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -541,7 +541,7 @@
     "migration": {
       "available": false,
       "target": "0x0000000000000000000000000000000000000000",
-      "contract": "0x357ca46da26E1EefC195287ce9D838A6D5023ef3"
+      "contract": "0x357ca46da26e1eefc195287ce9d838a6d5023ef3"
     },
     "stability": {
       "stability": "Stable",
@@ -568,9 +568,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x3D8473724287eB1D903fE62688D3734DE2B97Ee8",
+    "address": "0x3d8473724287eb1d903fe62688d3734de2b97ee8",
     "name": "Curve Geist yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -584,8 +584,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xF137D22d7B23eeB1950B3e19d1f578c053ed9715",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0xf137d22d7b23eeb1950b3e19d1f578c053ed9715",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Correlated",
@@ -614,9 +614,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x3F0e90A85EAB7F2C441379CFc9a080A4e864Ae82",
+    "address": "0x3f0e90a85eab7f2c441379cfc9a080a4e864ae82",
     "name": "fBEETS yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -630,8 +630,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x1e2fe8074a5ce1Bb7394856B0C618E75D823B93b",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0x1e2fe8074a5ce1bb7394856b0c618e75d823b93b",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Volatile"
@@ -659,9 +659,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x637eC617c86D24E421328e6CAEa1d92114892439",
+    "address": "0x637ec617c86d24e421328e6caea1d92114892439",
     "name": "DAI yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -675,7 +675,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x637eC617c86D24E421328e6CAEa1d92114892439",
+      "target": "0x637ec617c86d24e421328e6caea1d92114892439",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -703,9 +703,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x85611D071406a9e08Ba49c073087e3Eb57819839",
+    "address": "0x85611d071406a9e08ba49c073087e3eb57819839",
     "name": "WBTC yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -719,8 +719,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xd817A100AB8A29fE3DBd925c2EB489D67F758DA9",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0xd817a100ab8a29fe3dbd925c2eb489d67f758da9",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -747,9 +747,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x8853a6232e3DEBE12098Bf682898A92eC10C9921",
+    "address": "0x8853a6232e3debe12098bf682898a92ec10c9921",
     "name": "WFTM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -763,8 +763,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -791,9 +791,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x9e3922FCBb28F40026dA2E58926f0f249d8A138d",
+    "address": "0x9e3922fcbb28f40026da2e58926f0f249d8a138d",
     "name": "USDC yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -807,8 +807,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xEF0210eB96c7EB36AF8ed1c20306462764935607",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0xef0210eb96c7eb36af8ed1c20306462764935607",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -835,9 +835,9 @@
   },
   {
     "chainId": 250,
-    "address": "0x9f87fC463327021b510f7E84A5683e1bDCE02Dcc",
+    "address": "0x9f87fc463327021b510f7e84a5683e1bdce02dcc",
     "name": "USDC yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -851,8 +851,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xEF0210eB96c7EB36AF8ed1c20306462764935607",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0xef0210eb96c7eb36af8ed1c20306462764935607",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -879,9 +879,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xA946C861de1Dd6CB530a07687Da99E989b929139",
+    "address": "0xa946c861de1dd6cb530a07687da99e989b929139",
     "name": "Curve USDT yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -896,7 +896,7 @@
     "migration": {
       "available": false,
       "target": "0x0000000000000000000000000000000000000000",
-      "contract": "0xA946C861de1Dd6CB530a07687Da99E989b929139"
+      "contract": "0xa946c861de1dd6cb530a07687da99e989b929139"
     },
     "stability": {
       "stability": "Stable",
@@ -925,9 +925,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xA97E7dA01C7047D6a65f894c99bE8c832227a8BC",
+    "address": "0xa97e7da01c7047d6a65f894c99be8c832227a8bc",
     "name": "Curve MIM Pool Vault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -941,7 +941,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xA97E7dA01C7047D6a65f894c99bE8c832227a8BC",
+      "target": "0xa97e7da01c7047d6a65f894c99be8c832227a8bc",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -971,9 +971,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xc3Ca90f164d43E2053cCa591aC6e63FCAAD80782",
+    "address": "0xc3ca90f164d43e2053cca591ac6e63fcaad80782",
     "name": "WFTM yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -987,8 +987,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x0DEC85e74A92c52b7F708c4B10207D9560CEFaf0",
-      "contract": "0x28FDD4EEFCDF08de57D3BC848090CC46060c3eD4"
+      "target": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
+      "contract": "0x28fdd4eefcdf08de57d3bc848090cc46060c3ed4"
     },
     "stability": {
       "stability": "Stable",
@@ -1015,9 +1015,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xCbCaF8cB8cbeAFA927ECEE0c5C56560F83E9B7D9",
+    "address": "0xcbcaf8cb8cbeafa927ecee0c5c56560f83e9b7d9",
     "name": "Curve Tricrypto Pool yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1031,7 +1031,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xCbCaF8cB8cbeAFA927ECEE0c5C56560F83E9B7D9",
+      "target": "0xcbcaf8cb8cbeafa927ecee0c5c56560f83e9b7d9",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1060,9 +1060,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xCe2Fc0bDc18BD6a4d9A725791A3DEe33F3a23BB7",
+    "address": "0xce2fc0bdc18bd6a4d9a725791a3dee33f3a23bb7",
     "name": "WETH yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1076,7 +1076,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xCe2Fc0bDc18BD6a4d9A725791A3DEe33F3a23BB7",
+      "target": "0xce2fc0bdc18bd6a4d9a725791a3dee33f3a23bb7",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1104,9 +1104,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xD3c19eB022CAC706c898D60d756bf1535d605e1d",
+    "address": "0xd3c19eb022cac706c898d60d756bf1535d605e1d",
     "name": "SPELL yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1121,7 +1121,7 @@
     "migration": {
       "available": false,
       "target": "0x0000000000000000000000000000000000000000",
-      "contract": "0xD3c19eB022CAC706c898D60d756bf1535d605e1d"
+      "contract": "0xd3c19eb022cac706c898d60d756bf1535d605e1d"
     },
     "stability": {
       "stability": "Volatile"
@@ -1147,9 +1147,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xd817A100AB8A29fE3DBd925c2EB489D67F758DA9",
+    "address": "0xd817a100ab8a29fe3dbd925c2eb489d67f758da9",
     "name": "WBTC yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1163,7 +1163,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xd817A100AB8A29fE3DBd925c2EB489D67F758DA9",
+      "target": "0xd817a100ab8a29fe3dbd925c2eb489d67f758da9",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1191,9 +1191,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xEF0210eB96c7EB36AF8ed1c20306462764935607",
+    "address": "0xef0210eb96c7eb36af8ed1c20306462764935607",
     "name": "USDC yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1207,7 +1207,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xEF0210eB96c7EB36AF8ed1c20306462764935607",
+      "target": "0xef0210eb96c7eb36af8ed1c20306462764935607",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1235,9 +1235,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xF137D22d7B23eeB1950B3e19d1f578c053ed9715",
+    "address": "0xf137d22d7b23eeb1950b3e19d1f578c053ed9715",
     "name": "Curve Geist Pool yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1251,7 +1251,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xF137D22d7B23eeB1950B3e19d1f578c053ed9715",
+      "target": "0xf137d22d7b23eeb1950b3e19d1f578c053ed9715",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1281,9 +1281,9 @@
   },
   {
     "chainId": 250,
-    "address": "0xf2d323621785A066E64282d2B407eAc79cC04966",
+    "address": "0xf2d323621785a066e64282d2b407eac79cc04966",
     "name": "LINK yVault",
-    "registry": "0x727fe1759430df13655ddb0731dE0D0FDE929b04",
+    "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1297,7 +1297,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xf2d323621785A066E64282d2B407eAc79cC04966",
+      "target": "0xf2d323621785a066e64282d2b407eac79cc04966",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {

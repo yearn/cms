@@ -1,7 +1,7 @@
 [
   {
     "chainId": 146,
-    "address": "0x2F7397FD2D49E5b636eF44503771B17EDEd67620",
+    "address": "0x2f7397fd2d49e5b636ef44503771b17eded67620",
     "name": "basic USD strategy",
     "registry": "0x0000000000000000000000000000000000000000",
     "ydaemonType": "Yearn Vault",
@@ -17,7 +17,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x2F7397FD2D49E5b636eF44503771B17EDEd67620",
+      "target": "0x2f7397fd2d49e5b636ef44503771b17eded67620",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -44,7 +44,7 @@
   },
   {
     "chainId": 146,
-    "address": "0x8dB97437F8E28A11019128D7B2604A42e333025E",
+    "address": "0x8db97437f8e28a11019128d7b2604a42e333025e",
     "name": "USDC.e-1 RarityFinance",
     "registry": "0x0000000000000000000000000000000000000000",
     "ydaemonType": "Yearn Vault",
@@ -60,7 +60,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x8dB97437F8E28A11019128D7B2604A42e333025E",
+      "target": "0x8db97437f8e28a11019128d7b2604a42e333025e",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -87,7 +87,7 @@
   },
   {
     "chainId": 146,
-    "address": "0xA369c32fD1FA2CD265F0BdF76f39201FF333F6Ac",
+    "address": "0xa369c32fd1fa2cd265f0bdf76f39201ff333f6ac",
     "name": "USDC.e-3 RarityFinance",
     "registry": "0x0000000000000000000000000000000000000000",
     "ydaemonType": "Yearn Vault",
@@ -103,7 +103,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xA369c32fD1FA2CD265F0BdF76f39201FF333F6Ac",
+      "target": "0xa369c32fd1fa2cd265f0bdf76f39201ff333f6ac",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -130,9 +130,9 @@
   },
   {
     "chainId": 146,
-    "address": "0xb9228370e2fa4908FC2Bf559a50bB77ba66fDD66",
+    "address": "0xb9228370e2fa4908fc2bf559a50bb77ba66fdd66",
     "name": "USDC-2 yVault",
-    "registry": "0xd40ecF29e001c76Dcc4cC0D9cd50520CE845B038",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -146,7 +146,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xb9228370e2fa4908FC2Bf559a50bB77ba66fDD66",
+      "target": "0xb9228370e2fa4908fc2bf559a50bb77ba66fdd66",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -173,9 +173,9 @@
   },
   {
     "chainId": 146,
-    "address": "0xBe3E3Ca48525406063CB2CE9c7c848BCf24DC9fc",
+    "address": "0xbe3e3ca48525406063cb2ce9c7c848bcf24dc9fc",
     "name": "USDC Test",
-    "registry": "0xd40ecF29e001c76Dcc4cC0D9cd50520CE845B038",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -189,7 +189,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xBe3E3Ca48525406063CB2CE9c7c848BCf24DC9fc",
+      "target": "0xbe3e3ca48525406063cb2ce9c7c848bcf24dc9fc",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -216,7 +216,7 @@
   },
   {
     "chainId": 146,
-    "address": "0xe272e402D817c8F20AC4426aaC21b95A13F76C99",
+    "address": "0xe272e402d817c8f20ac4426aac21b95a13f76c99",
     "name": "wS RarityFinance",
     "registry": "0x0000000000000000000000000000000000000000",
     "ydaemonType": "Yearn Vault",
@@ -232,7 +232,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xe272e402D817c8F20AC4426aaC21b95A13F76C99",
+      "target": "0xe272e402d817c8f20ac4426aac21b95a13f76c99",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -259,7 +259,7 @@
   },
   {
     "chainId": 146,
-    "address": "0xf8815E49BD30c79d7a026EAe414Aa92faFf29541",
+    "address": "0xf8815e49bd30c79d7a026eae414aa92faff29541",
     "name": "USDC.e-2 RarityFinance",
     "registry": "0x0000000000000000000000000000000000000000",
     "ydaemonType": "Yearn Vault",
@@ -275,7 +275,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xf8815E49BD30c79d7a026EAe414Aa92faFf29541",
+      "target": "0xf8815e49bd30c79d7a026eae414aa92faff29541",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {

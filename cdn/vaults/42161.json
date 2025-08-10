@@ -1,9 +1,9 @@
 [
   {
     "chainId": 42161,
-    "address": "0x022061d81e42fcb59711193346Bab758D24D6c43",
+    "address": "0x022061d81e42fcb59711193346bab758d24d6c43",
     "name": "yPT-MUXLP (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -17,7 +17,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x022061d81e42fcb59711193346Bab758D24D6c43",
+      "target": "0x022061d81e42fcb59711193346bab758d24d6c43",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -44,9 +44,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x02822b7B6dE0bf087DcEa626f6f19a838AeDB7be",
+    "address": "0x02822b7b6de0bf087dcea626f6f19a838aedb7be",
     "name": "yPT-mPENDLE (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -60,7 +60,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x02822b7B6dE0bf087DcEa626f6f19a838AeDB7be",
+      "target": "0x02822b7b6de0bf087dcea626f6f19a838aedb7be",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -87,9 +87,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x044E75fCbF7BD3f8f4577FF317554e9c0037F145",
+    "address": "0x044e75fcbf7bd3f8f4577ff317554e9c0037f145",
     "name": "yPT-weETH (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -103,7 +103,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x044E75fCbF7BD3f8f4577FF317554e9c0037F145",
+      "target": "0x044e75fcbf7bd3f8f4577ff317554e9c0037f145",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -130,9 +130,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x074943fEfE3391D033A15557dfa1b6f246Ce5fD0",
+    "address": "0x074943fefe3391d033a15557dfa1b6f246ce5fd0",
     "name": "eETH LP (25 APR 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Automated Yearn Vault",
     "ydaemonKind": "Legacy",
     "ydaemonEndorsed": false,
@@ -146,7 +146,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x074943fEfE3391D033A15557dfa1b6f246Ce5fD0",
+      "target": "0x074943fefe3391d033a15557dfa1b6f246ce5fd0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -173,9 +173,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x075472D809aA98A4686D6F04E2c2663802653f2A",
+    "address": "0x075472d809aa98a4686d6f04e2c2663802653f2a",
     "name": "Stargate USDT LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -189,7 +189,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x075472D809aA98A4686D6F04E2c2663802653f2A",
+      "target": "0x075472d809aa98a4686d6f04e2c2663802653f2a",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -216,9 +216,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x08e3D13d50310aFbeA2da20A3DBD92aAcFc503Ac",
+    "address": "0x08e3d13d50310afbea2da20a3dbd92aacfc503ac",
     "name": "yPT-wstETH (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -232,7 +232,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x08e3D13d50310aFbeA2da20A3DBD92aAcFc503Ac",
+      "target": "0x08e3d13d50310afbea2da20a3dbd92aacfc503ac",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -259,9 +259,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x0A5e1394Ba0c23D71167233A3b4b55cb8d214279",
+    "address": "0x0a5e1394ba0c23d71167233a3b4b55cb8d214279",
     "name": "GLP LP (26 SEP 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -275,7 +275,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x0A5e1394Ba0c23D71167233A3b4b55cb8d214279",
+      "target": "0x0a5e1394ba0c23d71167233a3b4b55cb8d214279",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -302,9 +302,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x0d5E99A012415E22557f6df554e97159516e6d3C",
+    "address": "0x0d5e99a012415e22557f6df554e97159516e6d3c",
     "name": "aUSDC LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -318,7 +318,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x0d5E99A012415E22557f6df554e97159516e6d3C",
+      "target": "0x0d5e99a012415e22557f6df554e97159516e6d3c",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -345,9 +345,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x0F2ae7531A83982F15ff1D26B165E2bF3D7566da",
+    "address": "0x0f2ae7531a83982f15ff1d26b165e2bf3d7566da",
     "name": "yPT-ezETH (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -361,7 +361,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x0F2ae7531A83982F15ff1D26B165E2bF3D7566da",
+      "target": "0x0f2ae7531a83982f15ff1d26b165e2bf3d7566da",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -388,9 +388,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x127A7F610cc704Be6122dfa76eb61E84C9cb0Efd",
+    "address": "0x127a7f610cc704be6122dfa76eb61e84c9cb0efd",
     "name": "Silo Lender wstETH/USDC.e",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -404,7 +404,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x127A7F610cc704Be6122dfa76eb61E84C9cb0Efd",
+      "target": "0x127a7f610cc704be6122dfa76eb61e84c9cb0efd",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -431,9 +431,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x12bF88C63bF060355A8d2E4C6eE960365a5E8335",
+    "address": "0x12bf88c63bf060355a8d2e4c6ee960365a5e8335",
     "name": "usdc-vault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -447,7 +447,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x12bF88C63bF060355A8d2E4C6eE960365a5E8335",
+      "target": "0x12bf88c63bf060355a8d2e4c6ee960365a5e8335",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -474,9 +474,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x15943B95AF6BBe222C49F7501F39f1d2Da55CCdF",
+    "address": "0x15943b95af6bbe222c49f7501f39f1d2da55ccdf",
     "name": "Camelot GRAIL-ARB LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -490,7 +490,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x15943B95AF6BBe222C49F7501F39f1d2Da55CCdF",
+      "target": "0x15943b95af6bbe222c49f7501f39f1d2da55ccdf",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -517,9 +517,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x1864ff55cb8BDDcB063d226086e043EA671D19dd",
+    "address": "0x1864ff55cb8bddcb063d226086e043ea671d19dd",
     "name": "USDC-Revert",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Single Strategy",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": false,
@@ -533,7 +533,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x1864ff55cb8BDDcB063d226086e043EA671D19dd",
+      "target": "0x1864ff55cb8bddcb063d226086e043ea671d19dd",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -560,9 +560,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x1bd173F9a1186A1AbE680071E0F57d4D83c18430",
+    "address": "0x1bd173f9a1186a1abe680071e0f57d4d83c18430",
     "name": "Compound V3 USDC.e Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -576,7 +576,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x1bd173F9a1186A1AbE680071E0F57d4D83c18430",
+      "target": "0x1bd173f9a1186a1abe680071e0f57d4d83c18430",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -603,9 +603,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d",
+    "address": "0x1dba7641dc69188d6086a73b972ac4bda29ec35d",
     "name": "Curve MIM Pool Vault",
-    "registry": "0x3199437193625DCcD6F9C9e98BDf93582200Eb1f",
+    "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -619,7 +619,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x1dBa7641dc69188D6086a73B972aC4bda29Ec35d",
+      "target": "0x1dba7641dc69188d6086a73b972ac4bda29ec35d",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -649,9 +649,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x1Dd930ADD968ff5913C3627dAA1e6e6FCC9dc544",
+    "address": "0x1dd930add968ff5913c3627daa1e6e6fcc9dc544",
     "name": "yPT-rsETH (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -665,7 +665,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x1Dd930ADD968ff5913C3627dAA1e6e6FCC9dc544",
+      "target": "0x1dd930add968ff5913c3627daa1e6e6fcc9dc544",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -692,9 +692,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x20db1D8e053E448428B19dBC7C6eed1cCB851023",
+    "address": "0x20db1d8e053e448428b19dbc7c6eed1ccb851023",
     "name": "AJNA USDC yVault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -708,7 +708,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x20db1D8e053E448428B19dBC7C6eed1cCB851023",
+      "target": "0x20db1d8e053e448428b19dbc7c6eed1ccb851023",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -735,9 +735,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x232C7a26E0bB7b7922B291EbBd111570827a99F0",
+    "address": "0x232c7a26e0bb7b7922b291ebbd111570827a99f0",
     "name": "Prize USDC - Gains Network",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Single Strategy",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": false,
@@ -751,7 +751,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x232C7a26E0bB7b7922B291EbBd111570827a99F0",
+      "target": "0x232c7a26e0bb7b7922b291ebbd111570827a99f0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -778,9 +778,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x239e14A19DFF93a17339DCC444f74406C17f8E67",
+    "address": "0x239e14a19dff93a17339dcc444f74406c17f8e67",
     "name": "Curve Tricrypto Pool Vault",
-    "registry": "0x3199437193625DCcD6F9C9e98BDf93582200Eb1f",
+    "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -795,7 +795,7 @@
     "migration": {
       "available": false,
       "target": "0x0000000000000000000000000000000000000000",
-      "contract": "0x239e14A19DFF93a17339DCC444f74406C17f8E67"
+      "contract": "0x239e14a19dff93a17339dcc444f74406c17f8e67"
     },
     "stability": {
       "stability": "Volatile"
@@ -823,9 +823,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x244F22Dd5F309506129513D0954787d52D80ba3D",
+    "address": "0x244f22dd5f309506129513d0954787d52d80ba3d",
     "name": "TestTokenV1-1 LucasiaLLC",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -839,7 +839,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x244F22Dd5F309506129513D0954787d52D80ba3D",
+      "target": "0x244f22dd5f309506129513d0954787d52d80ba3d",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -866,9 +866,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x27aD7bBddf9e7735463189B3179221160B6cBa5d",
+    "address": "0x27ad7bbddf9e7735463189b3179221160b6cba5d",
     "name": "getLUCKED",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Single Strategy",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": false,
@@ -882,7 +882,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x27aD7bBddf9e7735463189B3179221160B6cBa5d",
+      "target": "0x27ad7bbddf9e7735463189b3179221160b6cba5d",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -909,9 +909,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x2B0B6376083c6E1F376C7439F328436A673F333c",
+    "address": "0x2b0b6376083c6e1f376c7439f328436a673f333c",
     "name": "yPT-aUSDC (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -925,7 +925,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x2B0B6376083c6E1F376C7439F328436A673F333c",
+      "target": "0x2b0b6376083c6e1f376c7439f328436a673f333c",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -952,9 +952,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x2d25Ce68AAd6Ffef1585ff05bC621db1F9F2E499",
+    "address": "0x2d25ce68aad6ffef1585ff05bc621db1f9f2e499",
     "name": "Silo Lender wBTC/USDC.e",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -968,7 +968,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x2d25Ce68AAd6Ffef1585ff05bC621db1F9F2E499",
+      "target": "0x2d25ce68aad6ffef1585ff05bc621db1f9f2e499",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -995,9 +995,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x2e48847FE29C3883c98125Cb2C44244d6602d549",
+    "address": "0x2e48847fe29c3883c98125cb2c44244d6602d549",
     "name": "Yearn-Silo USDC.e Vault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -1011,7 +1011,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x2e48847FE29C3883c98125Cb2C44244d6602d549",
+      "target": "0x2e48847fe29c3883c98125cb2c44244d6602d549",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1038,9 +1038,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x2Ec7FA7A87EbA241636B2C03bA287AC3897601FC",
+    "address": "0x2ec7fa7a87eba241636b2c03ba287ac3897601fc",
     "name": "Curve USDM-USDC yVault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -1054,7 +1054,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x2Ec7FA7A87EbA241636B2C03bA287AC3897601FC",
+      "target": "0x2ec7fa7a87eba241636b2c03ba287ac3897601fc",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1081,9 +1081,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x34a2b066AF16409648eF15d239E656edB8790ca0",
+    "address": "0x34a2b066af16409648ef15d239e656edb8790ca0",
     "name": "yPT-USDe (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -1097,7 +1097,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x34a2b066AF16409648eF15d239E656edB8790ca0",
+      "target": "0x34a2b066af16409648ef15d239e656edb8790ca0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1124,9 +1124,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x368d79018e525dB25dBA517a0b5d3cc34c87cAFa",
+    "address": "0x368d79018e525db25dba517a0b5d3cc34c87cafa",
     "name": "gDAI LP (26 SEP 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1140,7 +1140,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x368d79018e525dB25dBA517a0b5d3cc34c87cAFa",
+      "target": "0x368d79018e525db25dba517a0b5d3cc34c87cafa",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1167,9 +1167,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x39Ce72aCE7722fe38A4AfF02bfbe7789B58c6905",
+    "address": "0x39ce72ace7722fe38a4aff02bfbe7789b58c6905",
     "name": "AaveV3 ARB Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1183,7 +1183,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x39Ce72aCE7722fe38A4AfF02bfbe7789B58c6905",
+      "target": "0x39ce72ace7722fe38a4aff02bfbe7789b58c6905",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1210,7 +1210,7 @@
   },
   {
     "chainId": 42161,
-    "address": "0x3cE71021cCA8a2902764a43C60ff5F8A312245f9",
+    "address": "0x3ce71021cca8a2902764a43c60ff5f8a312245f9",
     "name": "yPT-weETH (auto-rolling Pendle PT)",
     "registry": "0x0000000000000000000000000000000000000000",
     "ydaemonType": "Automated Yearn Vault",
@@ -1226,7 +1226,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x3cE71021cCA8a2902764a43C60ff5F8A312245f9",
+      "target": "0x3ce71021cca8a2902764a43c60ff5f8a312245f9",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1253,9 +1253,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x45aCEAA535830C921316085E355E4a32385E53f2",
+    "address": "0x45aceaa535830c921316085e355e4a32385e53f2",
     "name": "USDT CompoundV3 Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1269,7 +1269,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x45aCEAA535830C921316085E355E4a32385E53f2",
+      "target": "0x45aceaa535830c921316085e355e4a32385e53f2",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1296,9 +1296,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x461Ad11A76b302f13ADA1296dA0178722A50838e",
+    "address": "0x461ad11a76b302f13ada1296da0178722a50838e",
     "name": "rETH LP (26 JUN 2025)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1312,7 +1312,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x461Ad11A76b302f13ADA1296dA0178722A50838e",
+      "target": "0x461ad11a76b302f13ada1296da0178722a50838e",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1339,9 +1339,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x482CC95BC6c92D6254529DC2d45095663Ae726A2",
+    "address": "0x482cc95bc6c92d6254529dc2d45095663ae726a2",
     "name": "Prize USDC.e - Yearn USDC.e-2",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Automated Yearn Vault",
     "ydaemonKind": "Legacy",
     "ydaemonEndorsed": false,
@@ -1355,7 +1355,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x482CC95BC6c92D6254529DC2d45095663Ae726A2",
+      "target": "0x482cc95bc6c92d6254529dc2d45095663ae726a2",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1382,9 +1382,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x49448d2B94fb9C4e41a30aD8315D32f46004A34b",
+    "address": "0x49448d2b94fb9c4e41a30ad8315d32f46004a34b",
     "name": "2CRV yVault",
-    "registry": "0x3199437193625DCcD6F9C9e98BDf93582200Eb1f",
+    "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": true,
@@ -1398,7 +1398,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x49448d2B94fb9C4e41a30aD8315D32f46004A34b",
+      "target": "0x49448d2b94fb9c4e41a30ad8315d32f46004a34b",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1428,9 +1428,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x4aE5CE819e7D678b07E8D0f483d351E2c8e8B8D3",
+    "address": "0x4ae5ce819e7d678b07e8d0f483d351e2c8e8b8d3",
     "name": "AaveV3 USDT Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1444,7 +1444,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x4aE5CE819e7D678b07E8D0f483d351E2c8e8B8D3",
+      "target": "0x4ae5ce819e7d678b07e8d0f483d351e2c8e8b8d3",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1471,9 +1471,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x4da30274267DeDc73A6A7eB233fBa81691f34Ef7",
+    "address": "0x4da30274267dedc73a6a7eb233fba81691f34ef7",
     "name": "Lido wstETH LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1487,7 +1487,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x4da30274267DeDc73A6A7eB233fBa81691f34Ef7",
+      "target": "0x4da30274267dedc73a6a7eb233fba81691f34ef7",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1514,9 +1514,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x5108DB0852C0CAA2Df797DcF31f8A73bFb335452",
+    "address": "0x5108db0852c0caa2df797dcf31f8a73bfb335452",
     "name": "yearn-V3-Stargate-USDT",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1530,7 +1530,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x5108DB0852C0CAA2Df797DcF31f8A73bFb335452",
+      "target": "0x5108db0852c0caa2df797dcf31f8a73bfb335452",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1557,9 +1557,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x54A77d0628e472643753ccb6CD929ac768F5f634",
+    "address": "0x54a77d0628e472643753ccb6cd929ac768f5f634",
     "name": "TestTokenV1-1 TestCBDevOps1",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -1573,7 +1573,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x54A77d0628e472643753ccb6CD929ac768F5f634",
+      "target": "0x54a77d0628e472643753ccb6cd929ac768f5f634",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1600,9 +1600,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x586FB80DdadFC01294751a7CD58625CCFf4BDb2f",
+    "address": "0x586fb80ddadfc01294751a7cd58625ccff4bdb2f",
     "name": "Camelot ARB-ETH LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1616,7 +1616,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x586FB80DdadFC01294751a7CD58625CCFf4BDb2f",
+      "target": "0x586fb80ddadfc01294751a7cd58625ccff4bdb2f",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1643,9 +1643,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x630c9050E6b0014C6Fe4C214D4840909345aDB7D",
+    "address": "0x630c9050e6b0014c6fe4c214d4840909345adb7d",
     "name": "Curve FRAX-VST Pool Vault",
-    "registry": "0x3199437193625DCcD6F9C9e98BDf93582200Eb1f",
+    "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "None",
     "ydaemonEndorsed": false,
@@ -1659,7 +1659,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x630c9050E6b0014C6Fe4C214D4840909345aDB7D",
+      "target": "0x630c9050e6b0014c6fe4c214d4840909345adb7d",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1689,9 +1689,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x65073e8C0A9c26d4280a43A3eCD3cDEdD36fDB89",
+    "address": "0x65073e8c0a9c26d4280a43a3ecd3cdedd36fdb89",
     "name": "Lido wstETH LP (26 JUN 2025)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -1705,7 +1705,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x65073e8C0A9c26d4280a43A3eCD3cDEdD36fDB89",
+      "target": "0x65073e8c0a9c26d4280a43a3ecd3cdedd36fdb89",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1732,9 +1732,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x67C2E47682D7b32c3294a67a0CD14c150cbC10F0",
+    "address": "0x67c2e47682d7b32c3294a67a0cd14c150cbc10f0",
     "name": "testdai",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -1748,7 +1748,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x67C2E47682D7b32c3294a67a0CD14c150cbC10F0",
+      "target": "0x67c2e47682d7b32c3294a67a0cd14c150cbc10f0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1775,9 +1775,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x6CB3f756516e8fe2De515eE0f9b6EC1352e96FFc",
+    "address": "0x6cb3f756516e8fe2de515ee0f9b6ec1352e96ffc",
     "name": "Prize BV - BankVault",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Single Strategy",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": false,
@@ -1791,7 +1791,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x6CB3f756516e8fe2De515eE0f9b6EC1352e96FFc",
+      "target": "0x6cb3f756516e8fe2de515ee0f9b6ec1352e96ffc",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1818,9 +1818,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x6FAF8b7fFeE3306EfcFc2BA9Fec912b4d49834C1",
+    "address": "0x6faf8b7ffee3306efcfc2ba9fec912b4d49834c1",
     "name": "USDC-A yVault",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -1834,7 +1834,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x6FAF8b7fFeE3306EfcFc2BA9Fec912b4d49834C1",
+      "target": "0x6faf8b7ffee3306efcfc2ba9fec912b4d49834c1",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1861,9 +1861,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x71B34b7c4A0592a186DDB2FDE1fCDEBe299150dd",
+    "address": "0x71b34b7c4a0592a186ddb2fde1fcdebe299150dd",
     "name": "Prize Compound WETH - Beefy",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Single Strategy",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": false,
@@ -1877,7 +1877,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x71B34b7c4A0592a186DDB2FDE1fCDEBe299150dd",
+      "target": "0x71b34b7c4a0592a186ddb2fde1fcdebe299150dd",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1904,9 +1904,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x723A85b4554d79ED20E061EfC64c5a6e04f196AA",
+    "address": "0x723a85b4554d79ed20e061efc64c5a6e04f196aa",
     "name": "Prize USDC.e - Yearn USDC.e-1",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Automated Yearn Vault",
     "ydaemonKind": "Legacy",
     "ydaemonEndorsed": false,
@@ -1920,7 +1920,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x723A85b4554d79ED20E061EfC64c5a6e04f196AA",
+      "target": "0x723a85b4554d79ed20e061efc64c5a6e04f196aa",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1947,9 +1947,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x7DEB119b92b76f78C212bc54FBBb34CEA75f4d4A",
+    "address": "0x7deb119b92b76f78c212bc54fbbb34cea75f4d4a",
     "name": "ARB-1 yVault",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -1963,7 +1963,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x7DEB119b92b76f78C212bc54FBBb34CEA75f4d4A",
+      "target": "0x7deb119b92b76f78c212bc54fbbb34cea75f4d4a",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -1990,9 +1990,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x7f9b714965cd915011e651F5CD9622315b60616a",
+    "address": "0x7f9b714965cd915011e651f5cd9622315b60616a",
     "name": "Smart Growers",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2006,7 +2006,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x7f9b714965cd915011e651F5CD9622315b60616a",
+      "target": "0x7f9b714965cd915011e651f5cd9622315b60616a",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2033,9 +2033,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x7fD798ED77368E787E216DfDb5Be5F6CAe4C5aD5",
+    "address": "0x7fd798ed77368e787e216dfdb5be5f6cae4c5ad5",
     "name": "yPT-HLP (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2049,7 +2049,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x7fD798ED77368E787E216DfDb5Be5F6CAe4C5aD5",
+      "target": "0x7fd798ed77368e787e216dfdb5be5f6cae4c5ad5",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2076,9 +2076,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x801c26fCfD916719631E0cf7D36ca1e049DF0373",
+    "address": "0x801c26fcfd916719631e0cf7d36ca1e049df0373",
     "name": "Prize USDT - Yearn USDT-1",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Automated Yearn Vault",
     "ydaemonKind": "Legacy",
     "ydaemonEndorsed": false,
@@ -2092,7 +2092,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x801c26fCfD916719631E0cf7D36ca1e049DF0373",
+      "target": "0x801c26fcfd916719631e0cf7d36ca1e049df0373",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2119,9 +2119,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x85968BF0f1f110C707fEF10a59f80118F349c058",
+    "address": "0x85968bf0f1f110c707fef10a59f80118f349c058",
     "name": "AaveV3 USDC.e Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2135,7 +2135,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x85968BF0f1f110C707fEF10a59f80118F349c058",
+      "target": "0x85968bf0f1f110c707fef10a59f80118f349c058",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2162,9 +2162,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x8A64111709Ce75434b9156e3878cDD5B1fBC2D13",
+    "address": "0x8a64111709ce75434b9156e3878cdd5b1fbc2d13",
     "name": "Silo PT-eETH LP (25 APR 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2178,7 +2178,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x8A64111709Ce75434b9156e3878cDD5B1fBC2D13",
+      "target": "0x8a64111709ce75434b9156e3878cdd5b1fbc2d13",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2205,9 +2205,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x8b5aa1688297BC2e4664a18Df6ad22a70c4178B8",
+    "address": "0x8b5aa1688297bc2e4664a18df6ad22a70c4178b8",
     "name": "Camelot PENDLE-ETH LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2221,7 +2221,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x8b5aa1688297BC2e4664a18Df6ad22a70c4178B8",
+      "target": "0x8b5aa1688297bc2e4664a18df6ad22a70c4178b8",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2248,9 +2248,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x92F1E6D904f21c05074952bbAD51D91fd9F8730f",
+    "address": "0x92f1e6d904f21c05074952bbad51d91fd9f8730f",
     "name": "ezETH LP (27 JUN 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2264,7 +2264,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x92F1E6D904f21c05074952bbAD51D91fd9F8730f",
+      "target": "0x92f1e6d904f21c05074952bbad51d91fd9f8730f",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2291,9 +2291,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x976a1C749cd8153909e0B04EebE931eF8957b15b",
+    "address": "0x976a1c749cd8153909e0b04eebe931ef8957b15b",
     "name": "PHPTest",
-    "registry": "0x3199437193625DCcD6F9C9e98BDf93582200Eb1f",
+    "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
     "ydaemonType": "Experimental Yearn Vault",
     "ydaemonKind": "Legacy",
     "ydaemonEndorsed": true,
@@ -2334,9 +2334,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x985c0271ad0bF0a45951b64EB6FC58010B050908",
+    "address": "0x985c0271ad0bf0a45951b64eb6fc58010b050908",
     "name": "yPT-Pendle-ETH-Camelot (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2350,7 +2350,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x985c0271ad0bF0a45951b64EB6FC58010B050908",
+      "target": "0x985c0271ad0bf0a45951b64eb6fc58010b050908",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2377,9 +2377,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x989b2A056DB791aCA934686EeBE9b0514D635a11",
+    "address": "0x989b2a056db791aca934686eebe9b0514d635a11",
     "name": "TestTokenV1-2 CBDevOps",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2393,7 +2393,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x989b2A056DB791aCA934686EeBE9b0514D635a11",
+      "target": "0x989b2a056db791aca934686eebe9b0514d635a11",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2420,9 +2420,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x9Cd4A7c7e7869AA8a2a6b28dA6B4CFA1f3E2F1F0",
+    "address": "0x9cd4a7c7e7869aa8a2a6b28da6b4cfa1f3e2f1f0",
     "name": "Yearn-Silo USDC Vault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -2436,7 +2436,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x9Cd4A7c7e7869AA8a2a6b28dA6B4CFA1f3E2F1F0",
+      "target": "0x9cd4a7c7e7869aa8a2a6b28da6b4cfa1f3e2f1f0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2463,9 +2463,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x9eD00a5dc4b8e96ECDa1B863975A597917948C38",
+    "address": "0x9ed00a5dc4b8e96ecda1b863975a597917948c38",
     "name": "yPT-dUSDC (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2479,7 +2479,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0x9eD00a5dc4b8e96ECDa1B863975A597917948C38",
+      "target": "0x9ed00a5dc4b8e96ecda1b863975a597917948c38",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2506,9 +2506,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0x9FA306b1F4a6a83FEC98d8eBbaBEDfF78C407f6B",
+    "address": "0x9fa306b1f4a6a83fec98d8ebbabedff78c407f6b",
     "name": "USDC-2 yVault",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2522,7 +2522,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0x9FA306b1F4a6a83FEC98d8eBbaBEDfF78C407f6B",
+      "target": "0x9fa306b1f4a6a83fec98d8ebbabedff78c407f6b",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2549,9 +2549,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xA4B8873B4629c20f2167c0A2bC33B6AF8699dDc1",
+    "address": "0xa4b8873b4629c20f2167c0a2bc33b6af8699ddc1",
     "name": "Silo Lender wstETH/USDC.e",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2565,7 +2565,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xA4B8873B4629c20f2167c0A2bC33B6AF8699dDc1",
+      "target": "0xa4b8873b4629c20f2167c0a2bc33b6af8699ddc1",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2592,9 +2592,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xa7FEa37aE7eb3fE0b26AB454399cf42Fe5E308A3",
+    "address": "0xa7fea37ae7eb3fe0b26ab454399cf42fe5e308a3",
     "name": "Asset Super Stakehouse",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2608,7 +2608,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xa7FEa37aE7eb3fE0b26AB454399cf42Fe5E308A3",
+      "target": "0xa7fea37ae7eb3fe0b26ab454399cf42fe5e308a3",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2635,9 +2635,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xAce460a8e3F5F219Ea9DDB10a0764AedeE8C09e1",
+    "address": "0xace460a8e3f5f219ea9ddb10a0764aedee8c09e1",
     "name": "usdc-vault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2651,7 +2651,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xAce460a8e3F5F219Ea9DDB10a0764AedeE8C09e1",
+      "target": "0xace460a8e3f5f219ea9ddb10a0764aedee8c09e1",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2678,9 +2678,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xAebA9F4a9293213e0E3ed18A2F688BDDd7f5FB0c",
+    "address": "0xaeba9f4a9293213e0e3ed18a2f688bddd7f5fb0c",
     "name": "yPT-gDAI (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2694,7 +2694,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0xAebA9F4a9293213e0E3ed18A2F688BDDd7f5FB0c",
+      "target": "0xaeba9f4a9293213e0e3ed18a2f688bddd7f5fb0c",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2721,9 +2721,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xb119e90Beb09Fcf9ABc92c20a8D84fe8bdfcc6E3",
+    "address": "0xb119e90beb09fcf9abc92c20a8d84fe8bdfcc6e3",
     "name": "Kelp rsETH LP (25 APR 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2737,7 +2737,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xb119e90Beb09Fcf9ABc92c20a8D84fe8bdfcc6E3",
+      "target": "0xb119e90beb09fcf9abc92c20a8d84fe8bdfcc6e3",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2764,9 +2764,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xB2C12a6C665BB8383b1EC21DA115015e0763d4df",
+    "address": "0xb2c12a6c665bb8383b1ec21da115015e0763d4df",
     "name": "Prize gUSDC",
-    "registry": "0x8020Fb37b21E0eF1707aDa7A914baf44F9045E52",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
     "ydaemonType": "Single Strategy",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": false,
@@ -2780,7 +2780,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xB2C12a6C665BB8383b1EC21DA115015e0763d4df",
+      "target": "0xb2c12a6c665bb8383b1ec21da115015e0763d4df",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2807,9 +2807,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xb739AE19620f7ECB4fb84727f205453aa5bc1AD2",
+    "address": "0xb739ae19620f7ecb4fb84727f205453aa5bc1ad2",
     "name": "Silo Lender ARB/USDC.e",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2823,7 +2823,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xb739AE19620f7ECB4fb84727f205453aa5bc1AD2",
+      "target": "0xb739ae19620f7ecb4fb84727f205453aa5bc1ad2",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2850,9 +2850,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xc0ba9bfED28aB46Da48d2B69316A3838698EF3f5",
+    "address": "0xc0ba9bfed28ab46da48d2b69316a3838698ef3f5",
     "name": "USDT-A yVault",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2866,7 +2866,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0xc0ba9bfED28aB46Da48d2B69316A3838698EF3f5",
+      "target": "0xc0ba9bfed28ab46da48d2b69316a3838698ef3f5",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2893,9 +2893,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xC40DA6a01Ac36F39736731ee50fb3b1B8204e2D3",
+    "address": "0xc40da6a01ac36f39736731ee50fb3b1b8204e2d3",
     "name": "yPT-rETH (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -2909,7 +2909,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0xC40DA6a01Ac36F39736731ee50fb3b1B8204e2D3",
+      "target": "0xc40da6a01ac36f39736731ee50fb3b1b8204e2d3",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2936,9 +2936,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xC80e7eee121570F36c629378De42EB80dc22eCAd",
+    "address": "0xc80e7eee121570f36c629378de42eb80dc22ecad",
     "name": "TestToken 20250221-1 LucasiaLLC",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -2952,7 +2952,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xC80e7eee121570F36c629378De42EB80dc22eCAd",
+      "target": "0xc80e7eee121570f36c629378de42eb80dc22ecad",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -2979,9 +2979,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xCACc53bAcCe744ac7b5C1eC7eb7e3Ab01330733b",
+    "address": "0xcacc53bacce744ac7b5c1ec7eb7e3ab01330733b",
     "name": "USDC CompoundV3 Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -2995,7 +2995,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xCACc53bAcCe744ac7b5C1eC7eb7e3Ab01330733b",
+      "target": "0xcacc53bacce744ac7b5c1ec7eb7e3ab01330733b",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3022,9 +3022,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xCB1A0a9C9cBBca82A395301267d525125cFBa557",
+    "address": "0xcb1a0a9c9cbbca82a395301267d525125cfba557",
     "name": "Silo wstETH LP (26 DEC 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -3038,7 +3038,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xCB1A0a9C9cBBca82A395301267d525125cFBa557",
+      "target": "0xcb1a0a9c9cbbca82a395301267d525125cfba557",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3065,9 +3065,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xD21E503d8aC357A7C8F8897BF84a4Bfd14fEc6E1",
+    "address": "0xd21e503d8ac357a7c8f8897bf84a4bfd14fec6e1",
     "name": "yPT-USDC-Dolomite (auto-rolling Pendle PT)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3081,7 +3081,7 @@
     "shouldUseV2APR": true,
     "migration": {
       "available": false,
-      "target": "0xD21E503d8aC357A7C8F8897BF84a4Bfd14fEc6E1",
+      "target": "0xd21e503d8ac357a7c8f8897bf84a4bfd14fec6e1",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3108,9 +3108,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xd49Afd20AFF04F86127C4b7b2eD893aAD82F8d9b",
+    "address": "0xd49afd20aff04f86127c4b7b2ed893aad82f8d9b",
     "name": "TestToken 20250221-1 CBDevOps",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3124,7 +3124,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xd49Afd20AFF04F86127C4b7b2eD893aAD82F8d9b",
+      "target": "0xd49afd20aff04f86127c4b7b2ed893aad82f8d9b",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3151,9 +3151,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xd89ee1E95f7728f6964CF321E2648cCd29a881f1",
+    "address": "0xd89ee1e95f7728f6964cf321e2648ccd29a881f1",
     "name": "AaveV3 USDC Lender",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -3167,7 +3167,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xd89ee1E95f7728f6964CF321E2648cCd29a881f1",
+      "target": "0xd89ee1e95f7728f6964cf321e2648ccd29a881f1",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3194,9 +3194,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xDa3b69a45797DCA697Ff5bB2c10682f14373c063",
+    "address": "0xda3b69a45797dca697ff5bb2c10682f14373c063",
     "name": "USDC-1 yVault",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3210,7 +3210,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xDa3b69a45797DCA697Ff5bB2c10682f14373c063",
+      "target": "0xda3b69a45797dca697ff5bb2c10682f14373c063",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3237,9 +3237,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xDfaa4001308F5eC4d06920cD0D2C649c6f930e2C",
+    "address": "0xdfaa4001308f5ec4d06920cd0d2c649c6f930e2c",
     "name": "mPENDLE LP (26 SEP 2024)",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -3253,7 +3253,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xDfaa4001308F5eC4d06920cD0D2C649c6f930e2C",
+      "target": "0xdfaa4001308f5ec4d06920cd0d2c649c6f930e2c",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3280,9 +3280,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xE6Dbfb035B44E94D07F7B3e4f6bfBf1C6e68e3d0",
+    "address": "0xe6dbfb035b44e94d07f7b3e4f6bfbf1c6e68e3d0",
     "name": "MUV001 - Flagship USDC",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3296,7 +3296,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xE6Dbfb035B44E94D07F7B3e4f6bfBf1C6e68e3d0",
+      "target": "0xe6dbfb035b44e94d07f7b3e4f6bfbf1c6e68e3d0",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3323,9 +3323,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xE82D060687C014B280b65df24AcD94A77251C784",
+    "address": "0xe82d060687c014b280b65df24acd94a77251c784",
     "name": "Silo Lender wBTC/USDC.e",
-    "registry": "0xff31A1B020c868F6eA3f61Eb953344920EeCA3af",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Single Strategy",
     "ydaemonEndorsed": true,
@@ -3339,7 +3339,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xE82D060687C014B280b65df24AcD94A77251C784",
+      "target": "0xe82d060687c014b280b65df24acd94a77251c784",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3366,9 +3366,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xEa7DD7285350d1153510069Ac4b382a96E479683",
+    "address": "0xea7dd7285350d1153510069ac4b382a96e479683",
     "name": "MUV001 - Terra Vault",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3382,7 +3382,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xEa7DD7285350d1153510069Ac4b382a96E479683",
+      "target": "0xea7dd7285350d1153510069ac4b382a96e479683",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3409,9 +3409,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xeAdB712d95f347c3223261ef0f67505579eAC159",
+    "address": "0xeadb712d95f347c3223261ef0f67505579eac159",
     "name": "USDC-1 TEST LucasiaLLC",
-    "registry": "0x770D0d1Fb036483Ed4AbB6d53c1C88fb277D812F",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3425,7 +3425,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xeAdB712d95f347c3223261ef0f67505579eAC159",
+      "target": "0xeadb712d95f347c3223261ef0f67505579eac159",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3452,9 +3452,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xEdC4949AdB7C6e7aeed4AE2545Cb4aeF82583Bd8",
+    "address": "0xedc4949adb7c6e7aeed4ae2545cb4aef82583bd8",
     "name": "Lumin Finance Arbitrum USDC",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -3468,7 +3468,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xEdC4949AdB7C6e7aeed4AE2545Cb4aeF82583Bd8",
+      "target": "0xedc4949adb7c6e7aeed4ae2545cb4aef82583bd8",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3495,9 +3495,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xf7d015BD465BeAf7360064f451Fdf16949199848",
+    "address": "0xf7d015bd465beaf7360064f451fdf16949199848",
     "name": "Usdc Kalani",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
@@ -3511,7 +3511,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xf7d015BD465BeAf7360064f451Fdf16949199848",
+      "target": "0xf7d015bd465beaf7360064f451fdf16949199848",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
@@ -3538,9 +3538,9 @@
   },
   {
     "chainId": 42161,
-    "address": "0xFE7AebD759C6e251afa44aF17de4cc88F83FF6a4",
+    "address": "0xfe7aebd759c6e251afa44af17de4cc88f83ff6a4",
     "name": "Lumin Finance Arbitrum USDT",
-    "registry": "0x444045c5C13C246e117eD36437303cac8E250aB0",
+    "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
@@ -3554,7 +3554,7 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
-      "target": "0xFE7AebD759C6e251afa44aF17de4cc88F83FF6a4",
+      "target": "0xfe7aebd759c6e251afa44af17de4cc88f83ff6a4",
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {

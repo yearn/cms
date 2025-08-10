@@ -147,7 +147,7 @@ async function updateNames(vaults: VaultMetadata[]) {
 
 async function main() {
   try {
-    const source = join(__dirname, '../../../../../ydaemon/data/meta/vaults')
+    const source = join(__dirname, '../../ydaemon/data/meta/vaults')
     const files = await readdir(source)
 
     for (const file of files.filter((file) => file.endsWith('.json'))) {
@@ -165,11 +165,11 @@ async function main() {
       const transformed = ydaemonVaults.map(transformYdaemonToYcms)
       await updateNames(transformed)
 
-      const contentpath = join(__dirname, '../content/vaults', `${chainId}.json`)
-      await mkdir(join(__dirname, '../content/vaults'), { recursive: true })
-      await writeFile(contentpath, JSON.stringify(transformed, null, 2))
+      const cdnpath = join(__dirname, '../cdn/vaults', `${chainId}.json`)
+      await mkdir(join(__dirname, '../cdn/vaults'), { recursive: true })
+      await writeFile(cdnpath, JSON.stringify(transformed, null, 2))
 
-      console.log(`content updated.. ${contentpath}`)
+      console.log(`content updated.. ${cdnpath}`)
     }
   } catch (error) {
     console.error('Error processing vault metadata:', error)

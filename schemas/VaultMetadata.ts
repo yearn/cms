@@ -1,5 +1,5 @@
 import { z } from 'zod'
-import { AddressSchema } from './index'
+import { AddressSchema } from '.'
 
 export const VaultMetadataSchema = z.object({
   chainId: z.number(),

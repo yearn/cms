@@ -36,7 +36,7 @@ async function updateNames(strategies: StrategyMetadata[]) {
 
 async function main() {
   try {
-    const source = join(__dirname, '../../../../../ydaemon/data/meta/strategies')
+    const source = join(__dirname, '../../ydaemon/data/meta/strategies')
     const files = await readdir(source)
     const protocols = new Set<string>()
 
@@ -68,11 +68,11 @@ async function main() {
 
       await updateNames(strategies)
 
-      const contentpath = join(__dirname, '../content/strategies', `${chainId}.json`)
-      await mkdir(join(__dirname, '../content/strategies'), { recursive: true })
-      await writeFile(contentpath, JSON.stringify(strategies, null, 2))
+      const cdnpath = join(__dirname, '../cdn/strategies', `${chainId}.json`)
+      await mkdir(join(__dirname, '../cdn/strategies'), { recursive: true })
+      await writeFile(cdnpath, JSON.stringify(strategies, null, 2))
 
-      console.log(`content updated.. ${contentpath}`)
+      console.log(`content updated.. ${cdnpath}`)
     }
 
     // print protocols

@@ -1,15 +1,14 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { useMemo } from 'react'
+import { getCdnUrl } from '../../lib/cdn'
 import { chains } from '../../lib/chains'
 import { VaultMetadataSchema } from '../../schemas/VaultMetadata'
-
-const CDN_URL = import.meta.env.VITE_CDN_URL?.endsWith('/') ? import.meta.env.VITE_CDN_URL : `${import.meta.env.VITE_CDN_URL}/`
 
 export function useVaultsMeta() {
   const query = useSuspenseQuery({
     queryKey: ['vaults-meta'],
     queryFn: async () => {
-      const promises = Object.values(chains).map(chain => fetch(`${CDN_URL}content/vaults/${chain.id}.json`))
+      const promises = Object.values(chains).map(chain => fetch(`${getCdnUrl()}vaults/${chain.id}.json`))
       const jsonPromises = (await Promise.all(promises)).flatMap(result => result.json())
       const jsons = await Promise.all(jsonPromises)
 

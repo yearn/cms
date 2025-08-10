@@ -1,15 +1,14 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { useMemo } from 'react'
+import { getCdnUrl } from '../../lib/cdn'
 import { chains } from '../../lib/chains'
 import { StrategyMetadataSchema } from '../../schemas/StrategyMetadata'
-
-const CDN_URL = import.meta.env.VITE_CDN_URL?.endsWith('/') ? import.meta.env.VITE_CDN_URL : `${import.meta.env.VITE_CDN_URL}/`
 
 export function useStrategyMeta() {
   const query = useSuspenseQuery({
     queryKey: ['strategies-meta'],
     queryFn: async () => {
-      const promises = Object.values(chains).map(chain => fetch(`${CDN_URL}content/strategies/${chain.id}.json`))
+      const promises = Object.values(chains).map(chain => fetch(`${getCdnUrl()}strategies/${chain.id}.json`))
       const jsonPromises = (await Promise.all(promises)).flatMap(result => result.json())
       const jsons = await Promise.all(jsonPromises)
 

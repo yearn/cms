@@ -21,7 +21,7 @@ export default function BackItUp() {
     onClick={() => mainScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })} 
     className={cn(`
       fixed bottom-32 right-32 
-      p-0 size-16 rounded-full!
+      p-0 size-20 rounded-full!
       data-[show=true]:opacity-100 data-[show=false]:opacity-0 
       transition-opacity duration-100
     `)}>
