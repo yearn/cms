@@ -36,7 +36,7 @@ async function updateNames(strategies: StrategyMetadata[]) {
 
 async function main() {
   try {
-    const source = join(__dirname, '../../../ydaemon/data/meta/strategies')
+    const source = join(__dirname, '../../../../ydaemon/data/meta/strategies')
     const files = await readdir(source)
     const protocols = new Set<string>()
 

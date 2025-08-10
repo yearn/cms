@@ -18,7 +18,7 @@ function PullRequestButton() {
   const createPullRequest = useMutation({
     mutationFn: async () => {
       const original = rawJsonChainMap[vault.chainId]
-      const path = `packages/cms/cdn/content/strategies/${vault.chainId}.json`
+      const path = `packages/cdn/strategies/${vault.chainId}.json`
       
       // Find and replace the specific vault
       const updatedArray = original.map((vaultObj: VaultMetadata) => 

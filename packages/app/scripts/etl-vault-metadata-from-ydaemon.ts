@@ -147,7 +147,7 @@ async function updateNames(vaults: VaultMetadata[]) {
 
 async function main() {
   try {
-    const source = join(__dirname, '../../../ydaemon/data/meta/vaults')
+    const source = join(__dirname, '../../../../ydaemon/data/meta/vaults')
     const files = await readdir(source)
 
     for (const file of files.filter((file) => file.endsWith('.json'))) {
