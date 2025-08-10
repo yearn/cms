@@ -3,6 +3,13 @@
   "workspaces": {
     "": {
       "name": "ycms",
+      "devDependencies": {
+        "@biomejs/biome": "^2.1.2",
+      },
+    },
+    "packages/app": {
+      "name": "@ycms/app",
+      "version": "0.0.0",
       "dependencies": {
         "@radix-ui/react-switch": "^1.2.5",
         "@tanstack/react-query": "^5.84.1",
@@ -32,6 +39,9 @@
         "typescript": "~5.8.3",
         "vite": "^7.0.4",
       },
+    },
+    "packages/cdn": {
+      "name": "@ycms/cdn",
     },
   },
   "packages": {
@@ -306,6 +316,10 @@
     "@types/yauzl": ["@types/yauzl@2.10.3", "", { "dependencies": { "@types/node": "*" } }, "sha512-oJoftv0LSuaDZE3Le4DbKX+KS9G36NzOeSap90UIK0yMA/NhKJhqlSGtNDORNRaIbQfzjXDrQa0ytJ6mNRGz/Q=="],
 
     "@vitejs/plugin-react": ["@vitejs/plugin-react@4.7.0", "", { "dependencies": { "@babel/core": "^7.28.0", "@babel/plugin-transform-react-jsx-self": "^7.27.1", "@babel/plugin-transform-react-jsx-source": "^7.27.1", "@rolldown/pluginutils": "1.0.0-beta.27", "@types/babel__core": "^7.20.5", "react-refresh": "^0.17.0" }, "peerDependencies": { "vite": "^4.2.0 || ^5.0.0 || ^6.0.0 || ^7.0.0" } }, "sha512-gUu9hwfWvvEDBBmgtAowQCojwZmJ5mcLn3aufeCsitijs3+f2NsrPtlAWIR6OPiqljl96GVCUbLe0HyqIpVaoA=="],
+
+    "@ycms/app": ["@ycms/app@workspace:packages/app"],
+
+    "@ycms/cdn": ["@ycms/cdn@workspace:packages/cdn"],
 
     "abitype": ["abitype@1.0.8", "", { "peerDependencies": { "typescript": ">=5.0.4", "zod": "^3 >=3.22.0" }, "optionalPeers": ["typescript", "zod"] }, "sha512-ZeiI6h3GnW06uYDLx0etQtX/p8E24UaHHBj57RSjK7YBFe7iuVn07EDpOeP451D06sF27VOz9JJPlIKJmXgkEg=="],
 

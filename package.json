@@ -1,47 +1,14 @@
 {
-	"name": "ycms",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "bun run dev:all",
-		"dev:client": "vite",
-		"dev:server": "bun run api/server.ts",
-		"dev:ngrok": "bun run api/ngrok.ts",
-		"dev:all": "concurrently \"bun --watch api/server.ts\" \"bun --watch api/ngrok.ts\" \"vite\"",
-		"build": "tsc -b && vite build",
-		"lint": "biome check .",
-		"lint:fix": "biome check --write .",
-		"preview": "vite preview",
-		"clean": "bash clean.sh"
-	},
-	"dependencies": {
-		"@radix-ui/react-switch": "^1.2.5",
-		"@tanstack/react-query": "^5.84.1",
-		"react": "^19.1.0",
-		"react-dom": "^19.1.0",
-		"react-icons": "^5.5.0",
-		"react-infinite-scroll-component": "^6.1.0",
-		"react-router-dom": "^7.7.1",
-		"react-tag-autocomplete": "^7.5.0",
-		"react-tooltip": "^5.29.1",
-		"viem": "^2.33.2",
-		"zod": "^4.0.5",
-		"zustand": "^5.0.7"
-	},
-	"devDependencies": {
-		"@biomejs/biome": "^2.1.2",
-		"@tailwindcss/vite": "^4.1.11",
-		"@types/bun": "^1.2.19",
-		"@types/react": "^19.1.8",
-		"@types/react-dom": "^19.1.6",
-		"@vitejs/plugin-react": "^4.6.0",
-		"clsx": "^2.1.1",
-		"concurrently": "^9.2.0",
-		"ngrok": "^5.0.0-beta.2",
-		"tailwind-merge": "^3.3.1",
-		"tailwindcss": "^4.1.11",
-		"typescript": "~5.8.3",
-		"vite": "^7.0.4"
-	}
+  "name": "ycms",
+  "private": true,
+  "scripts": {
+    "dev": "(cd packages/app && bun dev)",
+    "clean": "bash clean.sh"
+  },
+  "workspaces": [
+    "packages/**"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.1.2"
+  }
 }

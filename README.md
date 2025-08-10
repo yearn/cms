@@ -6,11 +6,15 @@
 
 ```bash
 
-cp .env.example .env
-# configure .env
+cp packages/app/.env.example packages/app/.env
+# configure packages/app/.env
+
+```
+
+```bash
 
 bun clean [--lockfiles]
-bun i
+bun install
 bun dev
 
 ```
@@ -19,6 +23,6 @@ bun dev
 
 ```url
 
-https://cdn.jsdelivr.net/gh/yearn/cms@main/cdn
+https://cdn.jsdelivr.net/gh/yearn/cms@main/packages/cdn
 
 ```
