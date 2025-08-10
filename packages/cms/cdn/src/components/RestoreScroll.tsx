@@ -8,4 +8,6 @@ export default function RestoreScroll() {
     const scrollcontainer = document.getElementById('main-scroll')
     if (scrollcontainer) scrollcontainer.scrollTo(0, 0)
   }, [pathname])
+
+  return null
 }

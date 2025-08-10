@@ -1,0 +1,56 @@
+[
+  {
+    "chainId": 100,
+    "address": "0x1b66B4a3a80eBCFA3eCaBf5580cD9929ABa57bb1",
+    "name": "StrategyCurveNoBoostEURe",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 100,
+    "address": "0x4B40C9FF9D654Fd7f1E24eD66d8f0f260b199b43",
+    "name": "Async-yvCurve-EURe",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 100,
+    "address": "0x5012C6bf79b3047ECFFf2F212DfFDA4d2128188f",
+    "name": "EURe yVault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 100,
+    "address": "0x99474363F03D21375dA1aF4C9694cabCF995e02a",
+    "name": "Aave V3 EURe Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 100,
+    "address": "0xA48359e7E970BE9f38fB6D183C57c8d0b28268B9",
+    "name": "ajna-yvEURe-1-EURe",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 100,
+    "address": "0xe0687d2AC4ED726FB408df0E2fdd82ce325B7Bc9",
+    "name": "StrategyCurveNoBoostEURe",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  }
+]

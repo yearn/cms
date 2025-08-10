@@ -1,5 +1,5 @@
 import { create } from 'zustand'
-import Input from '../../components/elements/Input'
+import Input from './elements/Input'
 
 export const useFinder = create<{
   finderString: string
@@ -18,6 +18,7 @@ export default function Finder({ className }: { className?: string }) {
       placeholder="Search by name or address"
       value={finderString}
       onChange={(e) => setFinderString(e.target.value)}
+      className="w-full"
     />
   </div>
 }

@@ -2,9 +2,12 @@ import type React from 'react'
 import type { ReactNode } from 'react'
 import { createContext, useContext, useState } from 'react'
 import z from 'zod'
-import Input from '../../components/elements/Input'
-import Switch from '../../components/elements/Switch'
-import { cn } from '../../lib/cn'
+import { cn } from '../lib/cn'
+import Input from './elements/Input'
+import Switch from './elements/Switch'
+import Textarea from './elements/Textarea'
+
+const TEXTAREA_FIELDS = ['description', 'uiNotice']
 
 type JSONSchema = any
 
@@ -88,7 +91,7 @@ const renderField = (
     case 'string':
       if (schema.enum) {
         return (
-          <select {...commonProps} className="w-96 h-12 text-primary-600">
+          <select {...commonProps} className="w-128 h-12 text-primary-600">
             {schema.enum.map((e: string) => (
               <option key={e} value={e}>
                 {e}
@@ -97,7 +100,10 @@ const renderField = (
           </select>
         )
       }
-      return <Input type="text" {...commonProps} className="w-96" autoComplete="off" />
+      if (TEXTAREA_FIELDS.includes(key)) {
+        return <Textarea {...commonProps} className="w-128 h-24 p-3 border rounded" />
+      }
+      return <Input type="text" {...commonProps} className="w-128" autoComplete="off" />
     case 'boolean':
       return (
         <Switch

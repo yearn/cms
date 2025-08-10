@@ -1,0 +1,239 @@
+[
+  {
+    "chainId": 137,
+    "address": "0x06eD7C67755344548FAFe1822bEE365C4208a57F",
+    "name": "yearn-V3-Stargate-DAI",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x0fEFEe13864c431717f5B2678607b6ce532a170C",
+    "name": "USDT CompoundV3 Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x12c3Ad898e8eB1C0ec0Bb74f9748F36C46593F68",
+    "name": "Aave V3 WMATIC Lender",
+    "isRetired": false,
+    "displayName": "Aave V3 WMATIC Lender",
+    "description": "Supplies {{token}} to [Aave V3](https://app.aave.com/) to generate interest and earn any applicable rewards. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Aave"
+    ]
+  },
+  {
+    "chainId": 137,
+    "address": "0x2a42A69F48EfffDF2d4Fb079Af60D98D3e34D49C",
+    "name": "CompV3 WMATIC Lender USDC Borrower",
+    "isRetired": false,
+    "displayName": "CompV3 WMATIC Lender Borrower",
+    "description": "Supplies {{token}} to [Compound Finance](https://app.compound.finance/markets/usdc.e-polygon) to use as collateral to borrow USDC.e which it deposits back in to earn COMP. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Compound Finance"
+    ]
+  },
+  {
+    "chainId": 137,
+    "address": "0x2c5d0c3DB75D2f8A4957c74BE09194a9271Cf28D",
+    "name": "yearn-V3-Stargate-USDT",
+    "isRetired": false,
+    "displayName": "Stargate USDT Staker",
+    "description": "Supplies {{token}} to the corresponding [Stargate](https://stargate.finance/) pool and stakes the LP token to earn STG. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x34b9421Fe3d52191B64bC32ec1aB764dcBcDbF5e",
+    "name": "USDC-1 yVault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x3bd8C987286D8Ad00c05fdb2Ae3E8C9a0f054734",
+    "name": "AaveV3 USDT Lender",
+    "isRetired": false,
+    "displayName": "Aave V3 USDT Lender",
+    "description": "Supplies {{token}} to [Aave V3](https://app.aave.com/) to generate interest and earn any applicable rewards. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x479974977BdFf289a4157f56EE29401523Ae4c0F",
+    "name": "ajna-yvusdca-usdc",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x5136c2F7aB13E202eD42bc1AE82Dd63475919653",
+    "name": "CompV3 WETH Lender USDC Borrower",
+    "isRetired": true,
+    "displayName": "CompV3 WETH Lender Borrower",
+    "description": "Supplies {{token}} to [Compound Finance](https://app.compound.finance/markets/usdc.e-polygon) to use as collateral to borrow USDC.e which it deposits back in to earn COMP. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Compound Finance"
+    ]
+  },
+  {
+    "chainId": 137,
+    "address": "0x52367C8E381EDFb068E9fBa1e7E9B2C847042897",
+    "name": "Aave V3 USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x53Da2A29Dc8EFfD4707e0bc0fbf70A8dc63BB5A3",
+    "name": "ajna-wusdm-usdc",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x5452bA13a65D20fdf21220a397Bbe40830C7418A",
+    "name": "ajna-yvusdc-a-usdc",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x56b33795C24b1c46049031EA9bB8466C5B6cB3Fb",
+    "name": "USDC-2 RombusDAO",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x6E9ac188DbCC14632a253aA9Ce2783cD712aB3cA",
+    "name": "Morpho Compound USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x6Ed737EF2Ef74e04005dC9810366De5ad38Cf7D6",
+    "name": "yearn-V3-LST",
+    "isRetired": false,
+    "displayName": "Staked MATIC Accumulator",
+    "description": "{{token}} is swapped for a corresponding staking derivative to earn the staking rewards.",
+    "protocols": [
+      "stMATIC"
+    ]
+  },
+  {
+    "chainId": 137,
+    "address": "0x7486325A843590b84c98563c6962C58655569EcA",
+    "name": "yearn-V3-LST-WSTETH",
+    "isRetired": false,
+    "displayName": "Staked ETH Accumulator",
+    "description": "{{token}} is swapped for a corresponding staking derivative to earn the staking rewards.",
+    "protocols": [
+      "LIDO"
+    ]
+  },
+  {
+    "chainId": 137,
+    "address": "0x8BBa7AFd0f9B1b664C161EC31d812a8Ec15f7e1a",
+    "name": "yearn-V3-Stargate-USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0x9d1046ceCB0662037b13dECF1CD125C4Aa3fb65B",
+    "name": "Morpho Compound USDT Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0xA013Fbd4b711f9ded6fB09C1c0d358E2FbC2EAA0",
+    "name": "USDC yVault-A",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0xBEDA9A5300393e00229dc15cC54D5185E7646c56",
+    "name": "AaveV3 WETH Lender",
+    "isRetired": false,
+    "displayName": "Aave V3 WETH Lender",
+    "description": "Supplies {{token}} to [Aave V3](https://app.aave.com/) to generate interest and earn any applicable rewards. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Aave"
+    ]
+  },
+  {
+    "chainId": 137,
+    "address": "0xD4a0AA006e0f70580Aaa7ee1FD04Fa447c36B259",
+    "name": "Morpho Compound WETH Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0xb1403908F772E4374BB151F7C67E88761a0Eb4f1",
+    "name": "Compound V3 USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0xdB92B89Ca415c0dab40Dc96E99Fc411C08F20780",
+    "name": "Aave V3 USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0xf4F9d5697341B4C9B0Cc8151413e05A90f7dc24F",
+    "name": "AaveV3 DAI Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 137,
+    "address": "0xf7464410C1ccF86b19711c9B6599336b00641c8f",
+    "name": "stMATIC accumulator",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  }
+]

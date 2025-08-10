@@ -20,6 +20,12 @@
       visibility: visible
     }
   }
+
+  .reset-truncate {
+    overflow: auto;
+    text-overflow: inherit;
+    white-space: inherit;
+  }
 }
 
 @theme {

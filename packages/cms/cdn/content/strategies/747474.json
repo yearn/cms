@@ -1,0 +1,200 @@
+[
+  {
+    "chainId": 747474,
+    "address": "0x069B9db656f6940dC55B08E96bE33c304AC18746",
+    "name": "Single Sided Steer vbWBTC-LBTC vbWBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x0a1937F0D7f15B9ADee5d96616f269a0C6749C6d",
+    "name": "Morpho Gauntlet WBTC Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x156C729C78076b7cd815D01Ca6967c00c5ac8D9C",
+    "name": "Morpho Yearn OG USDT Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x1Ea30764fF9ceaCe69E55e9bf49eB37CdBa8e1De",
+    "name": "Single Sided Steer AUSD-vbUSDC vbUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x31AF73cb8C49641c6294666A53A14a7a8f1bCA38",
+    "name": "Single Sided Steer weETH-vbETH vbETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x37a79Bfb9F645F8Ed0a9ead9c722710D8f47C431",
+    "name": "Morpho Yearn OG vbETH Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x38663f9A0e89eBc29A2906d355A0ab86964A0BAd",
+    "name": "Single Sided Steer weETH-vbETH vbETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x3e7236AA960155159A8d3D7303896Fc2A21D2154",
+    "name": "Single Sided Steer AUSD-vbUSDC AUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x4d38547d24e607C7390717F22ae373529cffF90C",
+    "name": "Single Sided Steer vbWBTC-BTCK vbWBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x543CC24962b540430DD1121E83E8564770Da6810",
+    "name": "Morpho Gauntlet USDT Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x58B369aEC52DD904f70122cF72ed311f7AAe3bAc",
+    "name": "Morpho Steakhouse Prime USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x7214Dad6D78561728bcB6053d0C1bd5C9D1D53d8",
+    "name": "Single Sided Steer AUSD-vbUSDT AUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x78EC25FBa1bAf6b7dc097Ebb8115A390A2a4Ee12",
+    "name": "Morpho Yearn OG USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0x9cd74e38036691a3E64E859C0DB27A9Fe038410d",
+    "name": "Single Sided Steer vbWBTC-LBTC vbWBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xC1B365011dd4a8Db71Eb7C5Aa016ee4E456D15C5",
+    "name": "Morpho Yearn OG WBTC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xC1Ec6d26902949Bf6cbb0c9859dbEAD1E87FB243",
+    "name": "Morpho Steakhouse Prime AUSD Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xD46dFDAA7cAA8739B0e3274e2C085dFFc8d4776A",
+    "name": "Morpho Gauntlet USDC Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xEA79C91540C7E884e6E0069Ce036E52f7BbB1194",
+    "name": "Morpho Gauntlet WETH Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xF0a8A393ABE6dC35E873FF795D013aDcc72604d2",
+    "name": "Single Sided Steer LP vbUSDC-vbUSDT vbUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xF7EDe5332c6b4A235be4aA3c019222CFe72e984F",
+    "name": "Morpho Gauntlet AUSD Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xb2f33a48F79cbc9d3f9b32FDA0cBC89cF67af0AC",
+    "name": "Single Sided Steer LP vbUSDC-vbUSDT vbUSDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 747474,
+    "address": "0xeeDbED5270791521969E1c693d81796b045dC483",
+    "name": "Single Sided Steer AUSD-vbUSDT vbUSDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  }
+]

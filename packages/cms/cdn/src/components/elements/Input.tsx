@@ -1,13 +1,8 @@
 import { forwardRef, type InputHTMLAttributes } from 'react'
 import { cn } from '../../lib/cn'
 
-type InputProps = InputHTMLAttributes<HTMLInputElement> & {
-  theme?: 'default' | 'warn' | 'error'
-  className?: string
-}
-
 export const InputClassName = cn(`
-relative w-full px-6 py-3 
+relative px-6 py-3 
 font-mono text-lg
 
 text-secondary-600 bg-primary-50 border-4 border-secondary-600
@@ -36,7 +31,12 @@ truncate
 outline-none focus:ring-0 focus:outline-none
 rounded-primary`)
 
-const Input = forwardRef<HTMLInputElement, InputProps>(({ className, theme, ...props }, ref) => {
+type Props = InputHTMLAttributes<HTMLInputElement> & {
+  theme?: 'default' | 'warn' | 'error'
+  className?: string
+}
+
+const Input = forwardRef<HTMLInputElement, Props>(({ className, theme, ...props }, ref) => {
   const borderClassName = theme === 'warn' ? '!border-yellow-400' : theme === 'error' ? '!border-red-500' : ''
   return <input data-disabled={props.disabled} ref={ref} {...props} className={cn(InputClassName, className, borderClassName)} />
 })

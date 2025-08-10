@@ -11,6 +11,8 @@ function Toggle({ chainId }: { chainId: number }) {
   return (
     <Button 
       data-toggled={isToggled}
+      data-tooltip-id="--tooltip--"
+      data-tooltip-content={chains[chainId].name}
       className={cn(`
         group relative w-[48px] h-[24px] p-0 overflow-hidden rounded-xl outline-3 outline-offset-3
         data-[toggled=true]:outline-primary-400 data-[toggled=false]:outline-transparent

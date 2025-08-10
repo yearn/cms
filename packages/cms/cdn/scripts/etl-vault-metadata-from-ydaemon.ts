@@ -133,12 +133,12 @@ async function updateNames(vaults: VaultMetadata[]) {
       })
       console.log(`update names, ${chainId}, ${i + batchSize}/${vaultsForChain.length} vaults processed`)
       for (let j = 0; j < batch.length; j++) {
-        if (batch[j] === undefined || names[j] === undefined || names[j].status !== 'success') { 
+        if (batch[j] === undefined || names[j] === undefined || names[j]!.status !== 'success') { 
           console.log(chainId, i, j, 'batch[j] !== undefined', batch[j] !== undefined)
           console.log(chainId, i, j, 'names[j] !== undefined', names[j] !== undefined)
           continue
         }
-        batch[j].name = names[j].result as string
+        batch[j]!.name = names[j]!.result as string
       }
     }
   }
@@ -146,14 +146,14 @@ async function updateNames(vaults: VaultMetadata[]) {
 
 async function main() {
   try {
-    const vaultsPath = join(__dirname, '../../../../../ydaemon/data/meta/vaults')
-    const files = await readdir(vaultsPath)
+    const source = join(__dirname, '../../../../../ydaemon/data/meta/vaults')
+    const files = await readdir(source)
 
     for (const file of files.filter((file) => file.endsWith('.json'))) {
       const chainId = parseInt(file.split('.')[0] ?? '0')
       if (chainId === 0) { throw new Error('chainId === 0') }
 
-      const filePath = join(vaultsPath, file)
+      const filePath = join(source, file)
       const content = await readFile(filePath, 'utf-8')
       const records = JSON.parse(content).vaults
 

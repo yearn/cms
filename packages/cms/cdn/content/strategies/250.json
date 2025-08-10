@@ -1,0 +1,1580 @@
+[
+  {
+    "chainId": 250,
+    "address": "0x00CB7bB3100dD17D4aE075F37367c5E6Fe960f77",
+    "name": "ssbeetV2.1 fUSDT BeetXLP_MIM_USDC_USDT",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x015B1AaE468fAFFEC1610ff820f90ED55294570a",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x04A67AdFF3D9E4b3F40915ea06aC797d490874E6",
+    "name": "SingleSidedBalancer BeetXLP_MIM_USDC_USDTPool MIM",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x0683B5B75bD0514B5604D3c79A61647d83A02A3f",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x098B187d4df62de7ff9f3366b1B280F06cE86A73",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(BOO-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x0B97CE1A627E78866a391c72d0c51465A48d61bc",
+    "name": "StrategySynapseUSDC",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x0F8201293Eb76eFb656fa43617eF6a5F0F523d89",
+    "name": "ssc_usdt_geist",
+    "isRetired": false,
+    "displayName": "Curve Yield Seeker",
+    "description": "Supplies {{token}} to [Curve Finance](https://ftm.curve.finance) to earn CRV. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Curve Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x0e207674E05dC6Ff7fE949eB57409bF3B980FF41",
+    "name": "GeistfUSDTLenderUSDC",
+    "isRetired": true,
+    "displayName": "Geist Borrow",
+    "description": "Supplies {{token}} to [Geist Finance](https://geist.finance/deposit) to generate interest and earn GEIST. This strategy also borrows tokens against {{token}}. Borrowed tokens are then deposited into the corresponding yVault to generate yield. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x108383E62992b9a90eD3A43c2c9FA26cA052D99b",
+    "name": "StrategyGenLevGeist",
+    "isRetired": false,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x15045FC686d1E597D5bb6390d33CEA99C809C9A3",
+    "name": "VeDaoMasterChefEthereum",
+    "isRetired": true,
+    "displayName": "veDAO Reinvest",
+    "description": "Supplies {{token}} to [veDAO](https://www.vedao.io) to earn WEVE. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "veDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x15faeCDDAD6f3073954b29761b94b0b28321586f",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(MIM-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x177E745771494F1FF8Ed3FCDcdfF02213A1AD761",
+    "name": "Strategy0xDAOStakerUSDC",
+    "isRetired": true,
+    "displayName": "0xDAO Reinvest",
+    "description": "Supplies {{token}} to [0xDAO](https://www.oxdao.fi) to earn OXD. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x1856f39AD2Dcc332f6090c01C307427d2635FcEa",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x1c13C43f8F2fa0CdDEE6DFF6F785757650B8c2BF",
+    "name": "SingleSidedBeethoven BPT-MIMUSDCUSTPool USDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x20B5e014F7251DfeE5e51b5d2d627dFa5Ff73824",
+    "name": "Rebalancer WFTM JointProvider USDC-WFTM",
+    "isRetired": true,
+    "displayName": "Beethoven-X Joint Provider",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a Liquidity Boot Strapping Pool on [Beethoven-X](https://beets.fi) which dynamically adjusts the pool's weights to limit Impermanent Loss while earning BEETS and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x2195810c2A937259053C25AFc8D221ae2369cBAC",
+    "name": "GeistMIMLenderUSDC",
+    "isRetired": true,
+    "displayName": "Geist Borrow",
+    "description": "Supplies {{token}} to [Geist Finance](https://geist.finance/deposit) to generate interest and earn GEIST. This strategy also borrows tokens against {{token}}. Borrowed tokens are then deposited into the corresponding yVault to generate yield. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x2327585bc4E6E505459C61CBF9a358a3558D6600",
+    "name": "Ripae WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x235750AF5Fdb77cA827c2ee0Ab469188bC877cC6",
+    "name": "VeDaoMasterChefMagic Internet Money",
+    "isRetired": true,
+    "displayName": "veDAO Reinvest",
+    "description": "Supplies {{token}} to [veDAO](https://www.vedao.io) to earn WEVE. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "veDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x24BC86a808D45f0AAd8008bd3ac2D9356007e833",
+    "name": "MIM Degenbox Kashi Lender",
+    "isRetired": false,
+    "displayName": "Kashi Lender",
+    "description": "Supplies {{token}} to Sushi via [Kashi](https://app.sushi.com/lend) to generate interest and earn SUSHI tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Sushi"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x26F698491Daf32771217ABc1356dae48c7230C75",
+    "name": "StrategyCurveStakerSpell",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x28F2fB6730d5dbeFc4FF9eB375Bbf33BcB36e774",
+    "name": "Printer WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x28eE7AB6C04f35C0518c99EBD97ddC1c8A247dCF",
+    "name": "GeistWFTMLenderUSDCBorrower ",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x2C64C89Bc373255Db29f0C53cfE3cCBf48C57467",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x2FC5f589B8b3e0Cd449490E0a2Db08054B8d04A8",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x2d960e1E1098681c124C111b206316772Fe023d8",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x31B946FfF07D742fA8DdD51630a28911b571aC4c",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x32aC76a38027C95662d727aee9D9Bb3028197ba7",
+    "name": "Scarface WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x32d1BC9133f46E4442b9666Bbc361bB90CE49a1A",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(USDC-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x3414247080142fFaA21bedCD0E63D219D794766D",
+    "name": "StrategySynapseSSSUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x364Af2812974358bBFb60D1Ac420CC53f584B669",
+    "name": "ssbeetV2 USDC BeetXLP_MIM_USDC_USDT",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x36E74086C388305CEcdeff83d6cf31a2762A3c91",
+    "name": "SingleSidedBeethoven BeetXLP_MIM_USDC_USDTPool fUSDT",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x36e2FC0Bc2457719770196B5ad40bceEEF2EefE0",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream v2](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x399Ee38023A914e953ab02Ba164DdF941Fe39BB9",
+    "name": "Rebalancer WFTM JointProvider WFTM-YFI",
+    "isRetired": true,
+    "displayName": "Beethoven-X Joint Provider",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a Liquidity Boot Strapping Pool on [Beethoven-X](https://beets.fi) which dynamically adjusts the pool's weights to limit Impermanent Loss while earning BEETS and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x3B9bc1f596844Ca8a30A7710Aac7155968Db7d13",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x3CF6F60de70F58A9fDa3072cab21E26f53eCd2FF",
+    "name": "ssbeetV2.1 USDC BPT-asUSDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x3F06a6c25eeD1A6EFB704a6ABDCAdCE11Bb405C5",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream v2](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x3f4100F690a435b63Ad5e27B7d0d2587128B12fe",
+    "name": "VeDaoMasterChefWrapped Fantom",
+    "isRetired": true,
+    "displayName": "veDAO Reinvest",
+    "description": "Supplies {{token}} to [veDAO](https://www.vedao.io) to earn WEVE. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "veDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x4003eE222d44953B0C3eB61318dD211a4A6f109f",
+    "name": "SingleSidedBeethoven BeetXLP_MIM_USDC_USDTPool USDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x4183e99e7C3874F85d195698AFb7ee1289DA0AFe",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(fUSDT-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x42639b59cf9db5339C1C5cfB5738D0ba4F828F94",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x44E0403e7Ee547F522BbBA5f49fd04a432d2ad82",
+    "name": "Strategy0xDAOStakerDAI",
+    "isRetired": true,
+    "displayName": "0xDAO Reinvest",
+    "description": "Supplies {{token}} to [0xDAO](https://www.oxdao.fi) to earn OXD. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x49D8b010243a4aD4B1dF53E3B3a2986861A0C8c3",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x4CE40A36A018457F8E0AA7C4a12Cc7ebf228B20F",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "Boo Lender Optimizer",
+    "description": "Stakes {{token}} in [SpookySwap](https://spookyswap.finance/pools) to receive xBOO which is staked to earn tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy. Strategy automatically switches to the most profitable xBOO staking pool.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x4E91a43190B90E0B6A19d6a94D4b664d4b56F61C",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": true,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream v2](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x4bd6976358e419Ce96103c70B776C273A9f4a8AD",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(BTC-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x4cF620a388d36Fb527ddc03a515b8677c14A967a",
+    "name": "Draco WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x526f9FcD4db76878B62a450F1BD79cF38f036cc1",
+    "name": "yfi_woofy_veLp_arb_Solidex",
+    "isRetired": false,
+    "displayName": "Solidex Joint Provider Arbitrager",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a [Solidex Finance](https://solidexfinance.com/#/pools) Volatile Pool which consists of pegged tokens to earn SOLID and SEX. Earned tokens are harvested, divided between the pair which is deposited back into the strategy. Checks before depositing, if the pool is off-peg. If so, it deposits to fix the balance and profit.",
+    "protocols": [
+      "Solidex Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x5583cB73e1831AF95787383B179467813A380b47",
+    "name": "ssbeetV2.1 DAI BPT-STABEET",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x56aF79e182a7f98ff6d0bF99d589ac2CabA24e2d",
+    "name": "SingleSidedBeethoven BPT-STABEETPool USDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x57b3255Af547b5efB9c7906D97E40659Dce0F5Ef",
+    "name": "ssbeetV2 USDC BPT-asUSDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x585D4024C6aB31b67Dfd1624F2cA01Eb1dBe8D22",
+    "name": "StrategyOxDAOStakerWFTM",
+    "isRetired": true,
+    "displayName": "0xDAO Reinvest",
+    "description": "Supplies {{token}} to [0xDAO](https://www.oxdao.fi) to earn OXD. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x5Df3E97e96FC04ae1F75A9D07A141348E4B07E45",
+    "name": "fbeets compounder",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x608eAA0d2dc7864E065930F09DDc541e0ABD9b60",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpiritJoint(WFTM-MIM)",
+    "isRetired": true,
+    "displayName": "Spirit Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpiritSwap](https://app.spiritswap.finance) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning SPIRIT and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpiritSwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x60fa432fc8494FE0b7A7654295e178F6F2f22405",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(DAI-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x61D5ed97b899347c1F286a9a67622d337D0e61fE",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(ETH-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x65f2605D8Fe21614b294791fAAE1d7d0a7579276",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x67ac0F693C80a37c5a9C2e943e05668615B4Dbeb",
+    "name": "Firefly WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x688BeA3cbcE2F6D20d380d6D9FaF239F3C3d184e",
+    "name": "StrategyCurveGeist",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x6F1563CAA81004E87a7F3c476E19B355A11fc4eD",
+    "name": "Centurian WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x6F5E2a5c4C3b9cB4Cf5769d35df079eCDA98d202",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x6Fb2Ab4dbdb655dE4096d10D2BfFE9960aa2889d",
+    "name": "ssbeetV2.1 USDC BPT-GUQINQI",
+    "isRetired": false,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x6a59081C7d5ac3e82c58D5f595ed25D55E71EBDa",
+    "name": "VeDaoMasterChefyearn.finance",
+    "isRetired": true,
+    "displayName": "veDAO Reinvest",
+    "description": "Supplies {{token}} to [veDAO](https://www.vedao.io) to earn WEVE. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "veDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x6fe678f97b594a18F8eE301C6064C532667AF316",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream v2](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x70184BFcED3fC09fa4205D9795005c7aFDDD9e96",
+    "name": "ssbeetV2.1 DAI BPT-GUQINQI",
+    "isRetired": false,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x7114cAD096731F4d0B8E0De6e7CeDc189A462dce",
+    "name": "Strategy_ProviderOfBTCToHedgilSpookyJoint(BTC-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x71304d618bd2F1334d25F3aC836a2BA94A0622Ae",
+    "name": "Strategy0xDAOStakerWBTC",
+    "isRetired": true,
+    "displayName": "0xDAO Reinvest",
+    "description": "Supplies {{token}} to [0xDAO](https://www.oxdao.fi) to earn OXD. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x72a043D4e401d0C537e46A44Fb1a73Eb41877B59",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x76821Cdcad8Cae7aff53680e215E63EB54d6e6ca",
+    "name": "StrategyHECStakerBoo",
+    "isRetired": false,
+    "displayName": "Boo Xboo Hec",
+    "description": "Stakes {{token}} in [SpookySwap](https://spookyswap.finance) to receive xBOO which is staked to earn HEC. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x768F43717899FD0f1B45Ea7f23b66e191348073E",
+    "name": "boo_Xboo_veLp_Solidex_v2",
+    "isRetired": true,
+    "displayName": "Solidex Volatile Yield Seeker",
+    "description": "Supplies {{token}} to a [Solidex Finance](https://solidexfinance.com/#/pools) Volatile Pool to earn SOLID and SEX. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Solidex Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x76e32c811Cad5b835B780461efd202D561723D14",
+    "name": "Strategy0xDAOStakerMIM",
+    "isRetired": true,
+    "displayName": "0xDAO Reinvest",
+    "description": "Supplies {{token}} to [0xDAO](https://www.oxdao.fi) to earn OXD. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x7ff6fe5bDa1b26fa46880dF8AF844326DAd50d13",
+    "name": "StrategyCurveGeist",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0x80332Ecdc7CcdB187b95C97d4b33A8E918F8dd70",
+    "name": "Strategy_ProviderOfUSDCToNoHedgeSolidexJoint(USDC-MIM)",
+    "isRetired": false,
+    "displayName": "Solidex Joint Provider",
+    "description": "Supplies {{token}} to a [Solidex Finance](https://solidexfinance.com/#/pools) Stable Pool to earn SOLID and SEX. Earned tokens are harvested, divided between the pair, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Solidex Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x82CbD2AF730D3dC3715873eA030851D7f3206Bcd",
+    "name": "Scarface WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x84A92b621897Bf7e4a95e80d91b3ab7491e9Db39",
+    "name": "Strategy_ProviderOfUSDCToHedgilSpookyJoint(WFTM-USDC)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x84f9E6d5D28Edf0AE873A4d84903716684f473D5",
+    "name": "Strategy_ProviderOfDAIToHedgilSpookyJoint(DAI-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x85c307D24da7086c41537b994de9bFc4C21BAEB5",
+    "name": "SingleSidedBeethoven BPT-GUQINQIPool DAI",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x860Ea5e0f8777CFA781873Ffb7fB3E8Ac6F5e63A",
+    "name": "ssbeetV2 USDC BPT-STABEET",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x8A807b5742587024783Df3Ed2F149725C197b5eE",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x8Bb79E595E1a21d160Ba3f7f6C94efF1484FB4c9",
+    "name": "SingleSidedBeethoven BPT-asUSDCPool USDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x8Eac5871B2145a15ab9bCBaC47c8A05DbD393684",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream v2](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x8Ee822d31c6F92063AA7EA723B94AC94D0cC9D64",
+    "name": "Strategy_ProviderOfCRVToHedgilSpookyJoint(CRV-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x8a08ABB97B88DF8bd0d26EE0Ee7d831ff6640aFA",
+    "name": "Strategy_ProviderOfMIMToNoHedgeSolidexJoint(USDC-MIM)",
+    "isRetired": true,
+    "displayName": "Solidex Joint Provider",
+    "description": "Supplies {{token}} to a [Solidex Finance](https://solidexfinance.com/#/pools) Stable Pool to earn SOLID and SEX. Earned tokens are harvested, divided between the pair, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Solidex Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x8b8b4018F1d1e28217A1c7432E729e58e1828D59",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x92Bfa94ab2c84bae8eC3cd1876ee69E86ce9b24d",
+    "name": "Strategy_ProviderOfMIMToHedgilSpiritJoint(WFTM-MIM)",
+    "isRetired": true,
+    "displayName": "Spirit Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpiritSwap](https://app.spiritswap.finance) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning SPIRIT and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpiritSwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x935601c5694f23491921c14aA235c65c2ea2c4DE",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x939dC1C32D89Ba771c1Eeee8f1a12bA9b766C532",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(CRV-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x9547d92861BcbA3e47B9aE923487AA7f396cEA08",
+    "name": "ssbeetV2 MIM BeetXLP_MIM_USDC_USDT",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x9732bfeebAaa8bB9953360FdbD07248146876bA5",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x99781f4324CF60D96195276822D2518fC85C11Fa",
+    "name": "Strategy_ProviderOfUSDCToHedgilSpookyJoint(USDC-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x9D304365Fd41e8E45bb04D5095e64a8a391EB56d",
+    "name": "ssbeetV2.1 USDC BeetXLP_MIM_USDC_USDT",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x9b536FD704944110d5F742840a206C45f6858920",
+    "name": "Strategy_ProviderOfWFTMToHedgilSpookyJoint(WFTM-USDC)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x9d32f2BfC5dda3e82F364bF2f8a30D73247A01d1",
+    "name": "Rebalancer USDC JointProvider USDC-WFTM",
+    "isRetired": true,
+    "displayName": "Beethoven-X Joint Provider",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a Liquidity Boot Strapping Pool on [Beethoven-X](https://beets.fi) which dynamically adjusts the pool's weights to limit Impermanent Loss while earning BEETS and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0x9e856E75Fe2F95e9907DFe5F98EA9Bd819B6ED93",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xA01Fa67B1681CDa1148E19a65D42Cc6c2D4215e1",
+    "name": "StrategyGenLevGeist",
+    "isRetired": false,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xA4F10BC80F6c5cf6A34F828cb53c243eB1976Da8",
+    "name": "Strategy_ProviderOfETHToHedgilSpookyJoint(ETH-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xA9a904B5567b5AFfb6bB334bea2f90F700EB221a",
+    "name": "StrategyCurveTricrypto",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xAA1C21F4Ab475b2E12bc7A56f7b60610E201dcF6",
+    "name": "ssbeetV2 DAI BPT-GUQINQI",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xAB1d2ABbe31FA5945BfA0864f29dadDcB9cd9eAc",
+    "name": "Rebalancer MIM JointProvider WFTM-MIM",
+    "isRetired": true,
+    "displayName": "Beethoven-X Joint Provider",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a Liquidity Boot Strapping Pool on [Beethoven-X](https://beets.fi) which dynamically adjusts the pool's weights to limit Impermanent Loss while earning BEETS and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xADE3BaC94177295329474aAd6A253Bae979BFA68",
+    "name": "boo_Xboo_veLp_Solidex",
+    "isRetired": true,
+    "displayName": "Solidex Volatile Yield Seeker",
+    "description": "Supplies {{token}} to a [Solidex Finance](https://solidexfinance.com/#/pools) Volatile Pool to earn SOLID and SEX. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Solidex Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xB905eabA7A23424265638bdACFFE55564c7B299B",
+    "name": "SingleSidedBeethoven BPT-STABEETPool DAI",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xBa2251912D29Cb608953808dCBFAc6D0F7f580FF",
+    "name": "wftm_anyftm_veLp_Solidex",
+    "isRetired": true,
+    "displayName": "Solidex Stable Yield Seeker",
+    "description": "Supplies {{token}} to a [Solidex Finance](https://solidexfinance.com/#/pools) Stable Pool to earn SOLID and SEX. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Solidex Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xBd3791F3Dcf9DD5633cd30662381C80a2Cd945bd",
+    "name": "SingleSidedBeethoven BPT-GUQINQIPool USDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xC0039d2a930b20552B323b5348689ab03532F9f4",
+    "name": "GeistWFTMLenderDAIBorrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xC395e256BDf89F2e9189dc67c9215e1949A22562",
+    "name": "StrategyMPH WFTM via Geist",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xC7A117E4d9Adf7A099a04edC8A631e775fa2Dd84",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xCed67Db2E9b93F2fa5Ac6909C4DdC13B4aFDC9E7",
+    "name": "ssbeetV2 MIM BPT-MIMUSDCUST",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xD0D1f041F93c0fF1091457618E529610C67A76de",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xD2bA4C3c2F3aa9228ab9d82d3695174f95EEe824",
+    "name": "SingleSidedBalancer BeetXLP_MIM_USDC_USDTPool MIM",
+    "isRetired": false,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xD40f7c65543152674652Ffa995b442C5573AF59a",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xD58003b2Bac011b67C108b24e5deb1B22c70Fd1f",
+    "name": "Strategy_ProviderOfMIMToHedgilSpookyJoint(MIM-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xE072D2CA60b5241cD7de33Efb843988055583057",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xE635905E321e404027bC369fF7FD5Ad63C26975f",
+    "name": "Ripae ETH Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xE6b7D27157673aD2ae21AFD23CC35DA766105431",
+    "name": "SingleSidedBeethoven STEADY-BEETPool DAI",
+    "isRetired": false,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xEEbB0577C33ca0167047Be543B5d56AF1C7221ff",
+    "name": "ssc_usdc_geist",
+    "isRetired": true,
+    "displayName": "Curve Yield Seeker",
+    "description": "Supplies {{token}} to [Curve Finance](https://ftm.curve.finance) to earn CRV. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Curve Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xEab6927BcAaefBDDC6c561e047575515f5fC9fce",
+    "name": "ssbeetV2.1 USDC BPT-MIMUSDCUST",
+    "isRetired": false,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xEc28a9708c94605AF291f6De29f291dF74877198",
+    "name": "Firefly USDC Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xF864f92e88054AA05639324090b411C1D55B4a5B",
+    "name": "ssbeetV2 DAI BPT-STABEET",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xFA01ca21239166701B6760d162257b449ba6D011",
+    "name": "Strategy_ProviderOfBOOToHedgilSpookyJoint(BOO-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xFd63Ba63baA9227A15e8692C719feC32A4F7f2Fa",
+    "name": "ssbeetV2.1 USDC BPT-STABEET",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xa09cC3C8b05eDC7eA9615fA8bb8e904814C73a15",
+    "name": "GeistUSDCLenderfUSDT",
+    "isRetired": true,
+    "displayName": "Geist Borrow",
+    "description": "Supplies {{token}} to [Geist Finance](https://geist.finance/deposit) to generate interest and earn GEIST. This strategy also borrows tokens against {{token}}. Borrowed tokens are then deposited into the corresponding yVault to generate yield. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xa48c616144FD4429b216A86388CAb0Eed990cE87",
+    "name": "ssc_dai_geist",
+    "isRetired": false,
+    "displayName": "Curve Yield Seeker",
+    "description": "Supplies {{token}} to [Curve Finance](https://ftm.curve.finance) to earn CRV. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Curve Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xaD389B9Caa1820eDE6703C499C59BC0a503F754E",
+    "name": "ssbeetV2 USDC BPT-GUQINQI",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xae6a4f5fC5C7e9C9AF50A0349E560C1b2e2fA9b9",
+    "name": "StrategyTarotWFTM",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xaf9D7B1732746f191662533ef36E3d2B569D7691",
+    "name": "StrategySynapseUSDC",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xb851D31fF1c2dD4fa2f4b584e833202F500c90a7",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xb86A6104BfBF1EF0bF56a8060866f922cAE5b151",
+    "name": "ssbeetV2.1 MIM BeetXLP_MIM_USDC_USDT",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xb99d6662127d9A3c68Bc949679f364E1739E2CA1",
+    "name": "yfi_woofy_veLp_Oxdao",
+    "isRetired": false,
+    "displayName": "0xDAO Joint Provider Arbitrager",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a [0xDAO](https://oxdao.fi) Volatile Pool which consists of pegged tokens to earn SOLID and OXD. Earned tokens are harvested, divided between the pair which is deposited back into the strategy. Checks before depositing, if the pool is off-peg. If so, it deposits to fix the balance and profit.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xbBdc83357287a29Aae30cCa520D4ed6C750a2a11",
+    "name": "SingleSidedBeethoven BeetXLP_MIM_USDC_USDTPool MIM",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xc5ba968BcaFD98f08112E31D105FDdfE2DD93254",
+    "name": "ssbeetV2.1 MIM BPT-MIMUSDCUST",
+    "isRetired": false,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xc7a336925674EFeef22cEB56364e3658B8a0D467",
+    "name": "Strategy_ProviderOffUSDTToHedgilSpookyJoint(fUSDT-WFTM)",
+    "isRetired": true,
+    "displayName": "Spooky Joint Provider Hedged",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a pool on [SpookySwap](https://spookyswap.finance/farms) also this strategy limits Impermanent Loss via Hedgil in a protected range while earning BOO and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "SpookySwap"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xcCd1938Ea67BFf58f859512F7C8E5b70928020E2",
+    "name": "GeistDAILenderfUSDT",
+    "isRetired": true,
+    "displayName": "Geist Borrow",
+    "description": "Supplies {{token}} to [Geist Finance](https://geist.finance/deposit) to generate interest and earn GEIST. This strategy also borrows tokens against {{token}}. Borrowed tokens are then deposited into the corresponding yVault to generate yield. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xcF37B4a55f06dDA65591B1AF56812c5bb7E6d336",
+    "name": "Strategy0xDAOStakerWETH",
+    "isRetired": true,
+    "displayName": "0xDAO Reinvest",
+    "description": "Supplies {{token}} to [0xDAO](https://www.oxdao.fi) to earn OXD. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "0xDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xcF3b91D83cD5FE15269E6461098fDa7d69138570",
+    "name": "StrategyCurveTricrypto",
+    "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xca25d703cD814E8f5cEF9aACEe0E7424BB4bCCC6",
+    "name": "Rebalancer YFI JointProvider WFTM-YFI",
+    "isRetired": true,
+    "displayName": "Beethoven-X Joint Provider",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a Liquidity Boot Strapping Pool on [Beethoven-X](https://beets.fi) which dynamically adjusts the pool's weights to limit Impermanent Loss while earning BEETS and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xcc94F866717093Bd60b9a58AD9ca343b1438c865",
+    "name": "VeDaoMasterChefFrax",
+    "isRetired": true,
+    "displayName": "veDAO Reinvest",
+    "description": "Supplies {{token}} to [veDAO](https://www.vedao.io) to earn WEVE. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "veDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xdC9D3bB76Df8bE1e9Ca68C7BF32293a86C829D81",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "Scream Folding",
+    "description": "Supplies and borrows {{token}} on [Scream](http://scream.sh) simultaneously to earn SCREAM. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Scream"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xdcfFee74ABDCf70453Bb798Be1b41462EDdbC692",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xeDC42841C4F98e2b1700970041888452D47f8832",
+    "name": "Printer WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xec51FFfE35f5B2B841103cFC5d4F5Eb22C8Fa33e",
+    "name": "StrategyGenLevGeist",
+    "isRetired": true,
+    "displayName": "Geist Folding",
+    "description": "Supplies and borrows {{token}} on [Geist Finance](https://geist.finance/deposit) simultaneously to earn GEIST. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Geist Finance"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xf17EE64eFfA317651bBd2b0937CE23F9a328f2Af",
+    "name": "MIM Degenbox Kashi Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": null
+  },
+  {
+    "chainId": 250,
+    "address": "0xf6ee87BedC9fE2c99Fed5AF90794806F53cF9f11",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": true,
+    "displayName": "Lender Optimizer",
+    "description": "Supplies {{token}} to [Iron Bank](https://beta.yearn.fi/#/ironbank) or [Scream](https://scream.sh) whichever has the best yield to generate interest. Earned tokens are harvested, sold for more {{token}}, then deposited back into the strategy.",
+    "protocols": [
+      "Scream",
+      "Iron Bank"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xf7BFd420CFa18449BabCe82C309033fE3Eb6A903",
+    "name": "ssbeetV2 USDC BPT-MIMUSDCUST",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xf84DD489ad9f55e95593eB266d9D4C1490ece915",
+    "name": "Ripae USDC Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xfD7E0cCc4dE0E3022F47834d7f0122274c37a0d1",
+    "name": "SingleSidedBeethoven BPT-MIMUSDCUSTPool MIM",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xfa9A5C7C27030602F1C03f7377553D1e694e1615",
+    "name": "SingleSidedBeethoven STEADY-BEETPool USDC",
+    "isRetired": true,
+    "displayName": "Beethoven-X Yield Seeker",
+    "description": "Supplies {{token}} to [Beethoven-X](https://beets.fi) Stable Pools to earn BEETS and trading fees. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xfeb61a9E0B4A55f65875486c61Bf313B32C48A46",
+    "name": "Addy WFTM Masterchef",
+    "isRetired": true,
+    "displayName": "Masterchef Generic Reinvest",
+    "description": "Supplies {{token}} to a generic masterchef genesis pool to earn protocol tokens. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xff0bCcA5848a063D3D23aC9d534CE4F5A8286BeE",
+    "name": "VeDaoMasterChefUSD Coin",
+    "isRetired": false,
+    "displayName": "veDAO Reinvest",
+    "description": "Supplies {{token}} to [veDAO](https://www.vedao.io) to earn WEVE. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "veDAO"
+    ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xff3AeA00d3d58ba1a3672c766cc5060FfCb8cca3",
+    "name": "Rebalancer WFTM JointProvider WFTM-MIM",
+    "isRetired": true,
+    "displayName": "Beethoven-X Joint Provider",
+    "description": "Supplies {{token}} as half of a joint liquidity provider for a Liquidity Boot Strapping Pool on [Beethoven-X](https://beets.fi) which dynamically adjusts the pool's weights to limit Impermanent Loss while earning BEETS and fees. Earned tokens are harvested, divided between the tokens, sold for more {{token}} which is deposited back into the strategy.",
+    "protocols": [
+      "Beethoven-X"
+    ]
+  }
+]
