@@ -3,7 +3,7 @@ export const config = {
 }
 
 const REPO_OWNER = 'yearn'
-const REPO_NAME = 'webops-sdk'
+const REPO_NAME = 'cms'
 
 interface CreatePRRequest {
   token: string
