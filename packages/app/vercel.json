@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
-    { "source": "/cdn/([vaults|strategies])/(.*)", "destination": "/api/cdn?schema=$1&file=$2" },
+    { "source": "/cdn/(vaults|strategies)/(.*)", "destination": "/api/cdn?schema=$1&file=$2" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
