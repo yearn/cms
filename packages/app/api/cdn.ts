@@ -35,13 +35,10 @@ async function getSha() {
 }
 
 function getPath(url: URL) {
-  const path = url.pathname.slice(9)
-  if (!path) {
-    const schema = url.searchParams.get('schema')
-    const file = url.searchParams.get('file')
-    return `${schema}/${file}`
-  }
-  return path
+  const schema = url.searchParams.get('schema')
+  const file = url.searchParams.get('file')
+  if (schema && file) { return `${schema}/${file}` }
+  return url.pathname.slice(9)
 }
 
 export default async function (req: Request): Promise<Response> {
