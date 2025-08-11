@@ -10,6 +10,7 @@ function Toggle({ chainId }: { chainId: number }) {
 
   return (
     <Button
+      h="secondary"
       data-toggled={isToggled}
       data-tooltip-id="--tooltip--"
       data-tooltip-content={chains[chainId].name}
@@ -43,7 +44,7 @@ function ToggleAll() {
     }
   }
   return <div className="w-[48px] flex items-center justify-center">
-    <Button className="w-[24px] h-[24px] p-0" onClick={toggleAll}></Button>
+    <Button h="secondary" data-tooltip-id="--tooltip--" data-tooltip-content={anyToggled ? 'Hide all' : 'Show all'} className="w-[24px] h-[24px] p-0" onClick={toggleAll}></Button>
   </div>
 }
 

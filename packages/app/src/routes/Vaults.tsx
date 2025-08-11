@@ -73,7 +73,7 @@ function VaultsSkeleton() {
 function Vaults() {
   return (
     <div className="px-8 pt-5 pb-16 flex flex-col">
-      <div className="mt-6 mb-12 flex flex-col gap-6 w-fit">
+      <div className="mt-6 mb-12 flex flex-col gap-8 w-fit">
         <Finder className="w-full" />
         <ToggleChains />
       </div>

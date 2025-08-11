@@ -10,6 +10,7 @@ import {
 import RestoreScroll from './components/RestoreScroll.tsx'
 import Providers from './providers.tsx'
 import Success from './routes/auth/github/Success.tsx'
+import Eg from './routes/Eg.tsx'
 import Layout from './routes/Layout.tsx'
 import Strategies from './routes/Strategies.tsx'
 import Strategy from './routes/Strategy.tsx'
@@ -29,7 +30,7 @@ createRoot(document.getElementById('root') ?? document.body).render(
           <Route path="strategies" element={<Strategies />} />
           <Route path="strategies/:chainId/:address" element={<Strategy />} />
           <Route path="auth/github/success" element={<Success />} />
-          <Route path="eg" element={<Vaults />} />
+          <Route path="eg" element={<Eg />} />
         </Route>
       </Routes>
     </Router>

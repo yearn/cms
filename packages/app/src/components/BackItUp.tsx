@@ -16,7 +16,7 @@ export default function BackItUp() {
     return () => element.removeEventListener('scroll', handleScroll)
   }, [mainScrollRef.current])
 
-  return <Button 
+  return <Button h="secondary"
     data-show={show} 
     onClick={() => mainScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })} 
     className={cn(`

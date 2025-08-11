@@ -46,7 +46,7 @@ export default function GithubSignIn({ className }: { className?: string }) {
     }
   }
 
-  return <Button onClick={onSignInWithGithub} className={cn('flex items-center gap-4', className)}>
+  return <Button h={signedIn ? 'secondary' : 'primary'} onClick={onSignInWithGithub} className={cn('flex items-center gap-4', className)}>
     {signedIn ? <Suspense fallback={<Skeleton className="w-6 h-6 rounded-full" />}><GithubAvatar /></Suspense> : <PiGithubLogoFill />}
     <span>{signedIn ? 'Sign out' : 'Sign in'}</span>
   </Button>

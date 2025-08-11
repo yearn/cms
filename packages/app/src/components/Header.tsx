@@ -10,8 +10,8 @@ export default function Header() {
       <h1 onClick={() => navigate('/')} onKeyDown={() => navigate('/')} className="my-6 text-5xl font-bold font-fancy text-primary-200 cursor-pointer">
         yCMS
       </h1>
-      <Button onClick={() => navigate('/vaults')}>vaults</Button>
-      <Button onClick={() => navigate('/strategies')}>strategies</Button>
+      <Button h="secondary" onClick={() => navigate('/vaults')}>vaults</Button>
+      <Button h="secondary" onClick={() => navigate('/strategies')}>strategies</Button>
     </div>
     <div>
       <GithubSignIn />

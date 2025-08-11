@@ -5,8 +5,8 @@ const Switch = ({ label, checked, onChange, className }: { label?: string, check
   <div className={cn('h-[60px] flex items-center', className)}>
     <label className="pr-4 text-xl select-none" htmlFor={label}>{label}</label>
     <_Switch.Root id={label} className={`
-      relative w-16 h-8 bg-secondary-800 
-      data-[state=checked]:bg-primary-400 
+      relative w-16 h-8 bg-primary-900 
+      data-[state=checked]:bg-primary-300 
       rounded-primary`} checked={checked} onCheckedChange={onChange}>
       <_Switch.Thumb className={`
         block w-8 h-8 bg-primary-50 rounded-primary cursor-pointer

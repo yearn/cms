@@ -10,7 +10,7 @@ type Props = InputHTMLAttributes<HTMLTextAreaElement> & {
 const TextareaClassName = cn(`
   text-sm
   reset-truncate
-  border-4!
+  border-1!
 `)
 
 const Textarea = forwardRef<HTMLTextAreaElement, Props>(({ className, theme, ...props }, ref) => {
