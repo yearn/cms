@@ -71,7 +71,7 @@ export default async function (req: Request): Promise<Response> {
     const upstreamRes = await fetch(upstream, { cache: 'no-store' })
 
     if (!upstreamRes.ok || !upstreamRes.body)
-      return new Response(`upstream ${upstreamRes.status} ${upstream}`, { status: upstreamRes.status })
+      return new Response(`upstream ${upstreamRes.status}`, { status: upstreamRes.status })
 
     const headers = new Headers()
     headers.set('content-type', upstreamRes.headers.get('content-type') || 'application/octet-stream')
