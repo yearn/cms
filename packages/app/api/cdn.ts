@@ -34,7 +34,7 @@ async function getSha() {
   return cachedSha
 }
 
-export default async function handler(req: Request) {
+export default async function (req: Request): Promise<Response> {
   if (req.method === 'OPTIONS') {
     return new Response(null, {
       status: 204,
@@ -51,10 +51,12 @@ export default async function handler(req: Request) {
 
   try {
     const url = new URL(req.url)
-    if (!url.pathname.startsWith('/api/cdn/'))
+    const startsWithApiCdn = url.pathname.startsWith('/api/cdn/')
+    const startsWithCdn = url.pathname.startsWith('/cdn/')
+    if (!(startsWithApiCdn || startsWithCdn))
       return new Response('bad path', { status: 400 })
 
-    const relPath = url.pathname.slice(9)
+    const relPath = startsWithApiCdn ? url.pathname.slice(9) : url.pathname.slice(5)
     if (!relPath) return new Response('missing path', { status: 400 })
 
     const sha = await getSha()

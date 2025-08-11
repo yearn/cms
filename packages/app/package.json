@@ -8,7 +8,7 @@
 		"dev:client": "vite",
 		"dev:server": "bun run api/server.ts",
 		"dev:ngrok": "bun run api/ngrok.ts",
-		"dev:all": "concurrently \"bun --watch api/server.ts\" \"bun --watch api/ngrok.ts\" \"vite\"",
+		"dev:all": "concurrently \"bun --watch api/server.ts\" \"bun --watch ngrok.ts\" \"vite\"",
 		"build": "tsc -b && vite build",
 		"lint": "biome check .",
 		"lint:fix": "biome check --write .",
