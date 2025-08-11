@@ -3,7 +3,7 @@
     "chainId": 1,
     "address": "0x000007252ab8d9120005d30aa15567ea8de9a110",
     "name": "StrategyConvexibCHF",
-    "isRetired": true,
+    "isRetired": false,
     "displayName": "Convex Reinvest",
     "description": "Supplies {{token}} to [Convex Finance](https://www.convexfinance.com/stake) boosted by Convex's veCRV to earn CRV and CVX (and any other available tokens). Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
     "protocols": [
