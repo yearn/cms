@@ -34,6 +34,16 @@ async function getSha() {
   return cachedSha
 }
 
+function getPath(url: URL) {
+  const path = url.pathname.slice(9)
+  if (!path) {
+    const schema = url.searchParams.get('schema')
+    const file = url.searchParams.get('file')
+    return `${schema}/${file}`
+  }
+  return path
+}
+
 export default async function (req: Request): Promise<Response> {
   if (req.method === 'OPTIONS') {
     return new Response(null, {
@@ -56,11 +66,11 @@ export default async function (req: Request): Promise<Response> {
     if (!(startsWithApiCdn || startsWithCdn))
       return new Response('bad path', { status: 400 })
 
-    const relPath = startsWithApiCdn ? url.pathname.slice(9) : url.pathname.slice(5)
-    if (!relPath) return new Response('missing path', { status: 400 })
+    const path = getPath(url)
+    if (!path) { return new Response('missing path', { status: 400 }) }
 
     const sha = await getSha()
-    const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${sha}/packages/cdn/${relPath}`
+    const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${sha}/packages/cdn/${path}`
     const upstreamRes = await fetch(upstream, { cache: 'no-store' })
 
     if (!upstreamRes.ok || !upstreamRes.body)
