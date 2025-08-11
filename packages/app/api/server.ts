@@ -1,5 +1,6 @@
 import { serve } from 'bun'
 import githubCallback from './auth/github/callback'
+import cdn from './cdn'
 import ping from './ping'
 import pr from './pr'
 
@@ -19,7 +20,13 @@ serve({
       return pr(req)
     }
 
+    if (url.pathname.startsWith('/api/cdn/')) {
+      return cdn(req)
+    }
+
     return new Response('Not found', { status: 404 })
   },
   port: 3001
 })
+
+console.log('🚀 api up')

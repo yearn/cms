@@ -2,7 +2,7 @@ import ngrok from 'ngrok'
 
 async function startNgrok(): Promise<string> {
   const url = await ngrok.connect(3001)
-  console.log(`ngrok tunnel opened at ${url}`)
+  console.log(`🔌 ngrok tunnel opened at ${url}`)
   return url
 }
 

@@ -1,9 +1,7 @@
-export const config = {
-  runtime: 'edge'
-}
+export const config = { runtime: 'edge' }
 
-const REPO_OWNER = 'yearn'
-const REPO_NAME = 'cms'
+const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
+const REPO_NAME = process.env.REPO_NAME || 'cms'
 
 interface CreatePRRequest {
   token: string
