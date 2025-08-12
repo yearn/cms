@@ -15,7 +15,6 @@
 		"preview": "vite preview"
 	},
 	"dependencies": {
-		"@octokit/auth-app": "^8.0.2",
 		"@radix-ui/react-switch": "^1.2.5",
 		"@tanstack/react-query": "^5.84.1",
 		"react": "^19.1.0",
