@@ -1,44 +1,23 @@
+import { fetchSha } from './lib/sha.js'
+
 export const config = { runtime: 'edge' }
 
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
-const SHA_TTL_MS = parseInt(process.env.SHA_TTL_MS || '300000', 10) // 5 minutes default
-
-let cachedSha = ''
-let cachedAt = 0
-let etag = ''
-
-async function getSha() {
-  const now = Date.now()
-  if (cachedSha && now - cachedAt < SHA_TTL_MS) return cachedSha
-
-  const headers: Record<string, string> = { 'user-agent': 'edge-fetch-sha' }
-  if (etag) headers['if-none-match'] = etag
-
-  // 👋 PSA: this is a rate limited public endpoint. please consider when chanding SHA_TTL_MS
-  const url = `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/commits/main`
-  const res = await fetch(url, { headers, cache: 'no-store' })
-
-  if (res.status === 304) {
-    cachedAt = now
-    return cachedSha
-  }
-
-  if (!res.ok) throw new Error(`github ${res.status}`)
-
-  etag = res.headers.get('etag') || ''
-  const data = await res.json()
-  cachedSha = data.sha
-  cachedAt = now
-  console.log('🔑', 'cachedSha', cachedSha)
-  return cachedSha
-}
 
 function getPath(url: URL) {
   const schema = url.searchParams.get('schema')
   const file = url.searchParams.get('file')
   if (schema && file) { return `${schema}/${file}` }
-  return url.pathname.slice(9)
+  
+  if (url.pathname.startsWith('/api/cdn/')) {
+    return url.pathname.slice(9) // Remove '/api/cdn/'
+  }
+  if (url.pathname.startsWith('/cdn/')) {
+    return url.pathname.slice(5) // Remove '/cdn/'
+  }
+  
+  return undefined
 }
 
 export default async function (req: Request): Promise<Response> {
@@ -65,10 +44,20 @@ export default async function (req: Request): Promise<Response> {
 
     const path = getPath(url)
     if (!path) { return new Response('missing path', { status: 400 }) }
+    
+    if (!/^[a-zA-Z0-9/_.-]+$/.test(path) || path.includes('..') || path.startsWith('/')) {
+      return new Response('invalid path', { status: 400 })
+    }
 
-    const sha = await getSha()
+    let sha: string
+    try {
+      sha = await fetchSha()
+    } catch (error) {
+      console.warn('fetchSha failed, falling back to main branch:', error)
+      sha = 'main'
+    }
     const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${sha}/packages/cdn/${path}`
-    const upstreamRes = await fetch(upstream, { cache: 'no-store' })
+    const upstreamRes = await fetch(upstream)
 
     if (!upstreamRes.ok || !upstreamRes.body)
       return new Response(`upstream ${upstreamRes.status}`, { status: upstreamRes.status })
