@@ -302,6 +302,49 @@
   },
   {
     "chainId": 42161,
+    "address": "0x0b8d33e599bd0a02a5bcd5a6a2e044966bc9be0c",
+    "name": "3994 Staking Vault",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+    "ydaemonType": "Single Strategy",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 42161,
     "address": "0x0d5e99a012415e22557f6df554e97159516e6d3c",
     "name": "aUSDC LP (27 JUN 2024)",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
@@ -866,6 +909,49 @@
   },
   {
     "chainId": 42161,
+    "address": "0x252b965400862d94bda35fecf7ee0f204a53cc36",
+    "name": "Yearn USND",
+    "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Multi Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": true,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": true
+    }
+  },
+  {
+    "chainId": 42161,
     "address": "0x27ad7bbddf9e7735463189b3179221160b6cba5d",
     "name": "getLUCKED",
     "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
@@ -984,6 +1070,49 @@
     "inclusion": {
       "isSet": true,
       "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 42161,
+    "address": "0x2d5cbf152cdc1352b2f8aecaa64e7c39ccbfa74e",
+    "name": "3994 Staking Vault",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+    "ydaemonType": "Single Strategy",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
@@ -1156,6 +1285,49 @@
     "inclusion": {
       "isSet": true,
       "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 42161,
+    "address": "0x37a79a52b0939d2b1a8bc168e53424d569323c36",
+    "name": "Prize wBAN",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+    "ydaemonType": "Single Strategy",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
@@ -1632,6 +1804,49 @@
     "inclusion": {
       "isSet": true,
       "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 42161,
+    "address": "0x5ed7f113b68d86530d97633e3c372da6fa15fc1b",
+    "name": "Prize UNI-V2 - wBAN Test Vault",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+    "ydaemonType": "Single Strategy",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
@@ -2893,6 +3108,49 @@
   },
   {
     "chainId": 42161,
+    "address": "0xc1637775c9f217ffeae03d8d707ee1c88363f8d6",
+    "name": "POOPSIES Staking Vault",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+    "ydaemonType": "Single Strategy",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 42161,
     "address": "0xc40da6a01ac36f39736731ee50fb3b1b8204e2d3",
     "name": "yPT-rETH (auto-rolling Pendle PT)",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
@@ -3491,6 +3749,49 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
+    }
+  },
+  {
+    "chainId": 42161,
+    "address": "0xf16c296c86034138f361a27641e33c1e3ee17f60",
+    "name": "Prize USDC - Morpho",
+    "registry": "0x8020fb37b21e0ef1707ada7a914baf44f9045e52",
+    "ydaemonType": "Single Strategy",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": false,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0000000000000000000000000000000000000000",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
     }
   },
   {

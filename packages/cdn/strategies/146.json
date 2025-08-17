@@ -1,6 +1,15 @@
 [
   {
     "chainId": 146,
+    "address": "0x2e89db6c06a3d958d54eb43e03bb872a6d94d1e3",
+    "name": "Aave V3 wS Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 146,
     "address": "0x3ffa0c3fba4adfe2b6e4d7e2f8e6e6324be5305b",
     "name": "Silo Lender S/USDC (8)",
     "isRetired": false,
@@ -10,9 +19,18 @@
   },
   {
     "chainId": 146,
+    "address": "0x47d4412f1b0844acf564cfca1b340809bf700681",
+    "name": "Aave V3 WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 146,
     "address": "0xbe3e3ca48525406063cb2ce9c7c848bcf24dc9fc",
     "name": "USDC Test",
-    "isRetired": true,
+    "isRetired": false,
     "displayName": "",
     "description": "",
     "protocols": []
