@@ -1,6 +1,15 @@
 [
   {
     "chainId": 42161,
+    "address": "0x013a32b271fa2e51d685ccbec5493b02162075a2",
+    "name": "USND ARB Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
     "address": "0x034f12a217405d54bf2654b66a96fa74ad715951",
     "name": "USDC.e/wstETH Silo LP",
     "isRetired": false,
@@ -10,8 +19,26 @@
   },
   {
     "chainId": 42161,
+    "address": "0x0d350027ae6fa715f17ea413d053eab94432d730",
+    "name": "USND weETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
     "address": "0x127a7f610cc704be6122dfa76eb61e84c9cb0efd",
     "name": "Silo Lender wstETH/USDC.e",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x15b89e3e1c19e76d6bbd39a7b7c1f2f83c9b3afc",
+    "name": "USND tBTC Stability Pool",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -102,6 +129,15 @@
   },
   {
     "chainId": 42161,
+    "address": "0x38bcb6856ad0f887fe05dbe341b8fbd9bbb65ce9",
+    "name": "USND COMP Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
     "address": "0x39ce72ace7722fe38a4aff02bfbe7789b58c6905",
     "name": "AaveV3 ARB Lender",
     "isRetired": false,
@@ -167,6 +203,15 @@
     "chainId": 42161,
     "address": "0x5108db0852c0caa2df797dcf31f8a73bfb335452",
     "name": "yearn-V3-Stargate-USDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x533337c57dfa768f4b4827048b320aa78d909d30",
+    "name": "USND wstETH Stability Pool",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -282,6 +327,15 @@
   },
   {
     "chainId": 42161,
+    "address": "0xae55fbdc3cce38464e6a7f23d19a143898451105",
+    "name": "USND rsETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
     "address": "0xcacc53bacce744ac7b5c1ec7eb7e3ab01330733b",
     "name": "USDC CompoundV3 Lender",
     "isRetired": false,
@@ -302,6 +356,15 @@
     "chainId": 42161,
     "address": "0xda9889b85831ab8841edd3618e1595a7fef96fa8",
     "name": "yPT-aUSDC (auto-rolling Pendle PT)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xdabdd3bd55d55927847510703c0fd7eb0af98f52",
+    "name": "USND rETH Stability Pool",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -412,6 +475,15 @@
     "chainId": 42161,
     "address": "0xd89ee1e95f7728f6964cf321e2648ccd29a881f1",
     "name": "AaveV3 USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xe037a8f2fa17293d94620c1846f84d047379660a",
+    "name": "USND WETH Stability Pool",
     "isRetired": false,
     "displayName": "",
     "description": "",

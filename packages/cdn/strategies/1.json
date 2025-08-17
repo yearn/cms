@@ -3,7 +3,7 @@
     "chainId": 1,
     "address": "0x000007252ab8d9120005d30aa15567ea8de9a110",
     "name": "StrategyConvexibCHF",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Convex Reinvest",
     "description": "Supplies {{token}} to [Convex Finance](https://www.convexfinance.com/stake) boosted by Convex's veCRV to earn CRV and CVX (and any other available tokens). Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
     "protocols": [
@@ -284,6 +284,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x0474c2a7577556d32f187430cca44a4c785870cb",
+    "name": "StrategyConvexFactory-USDafscrv",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x04824d4872949dfb6f256487459d3807a9a0599a",
     "name": "StrategyRouterV2-Curve-Compound",
     "isRetired": false,
@@ -371,7 +380,7 @@
     "chainId": 1,
     "address": "0x054f4b8fcb63c5c6abddb4496c129b03682de57b",
     "name": "Coinflakes BTC Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -798,6 +807,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x0f2948d1c728c3de28badaa0cf80eaf144b07fde",
+    "name": "USDaf scrvUSD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x0f5726c4b77ffeaee0a96ea0cf2e72bcfa460510",
     "name": "yPT-ezETH (auto-rolling Pendle PT)",
     "isRetired": false,
@@ -966,6 +984,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x0e297de4005883c757c9f09fdf7cf1363c20e626",
+    "name": "Morpho Yearn OG USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x0ef566227a2cc876120b749c8af0600d2e12143b",
     "name": "Strategy-xSushi-Staker",
     "isRetired": false,
@@ -1074,6 +1101,15 @@
       "Convex Finance",
       "Curve Finance"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0x11865dc38304688ed074866476aadf9bf185a16b",
+    "name": "StrategyCurveBoostedFactory-USD3sUSDS",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   },
   {
     "chainId": 1,
@@ -1554,6 +1590,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x1960322174daa9cf9838749c3c7a2008d410e6ee",
+    "name": "StrategyConvexFactory-ETH+ETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x1999a16ac3e128b5e4603844f631a23fd865a0b9",
     "name": "StrategyConvexFraxFactory-RSRcrvFRAX-f",
     "isRetired": false,
@@ -1788,6 +1833,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x1d53b127629af8df7da5488833a50c2f12692f5c",
+    "name": "USDaf WBTC18 Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x1de1401c71362c05c680c5fd073888719d8f4196",
     "name": "StrategyIdleV2 IdleUSDT v4 [Best yield]",
     "isRetired": true,
@@ -1905,6 +1959,15 @@
     "chainId": 1,
     "address": "0x20ba25a33aff2109c38e8d762578746d93ab1284",
     "name": "StrategyCurveBoostedFactory-CTRETH-f",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x20e76ea28e13867c008d319ba4ede86f6c1fed73",
+    "name": "Katana WETH STB Depositor",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -3126,6 +3189,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x347970203667d47cd187cda6699473046f329572",
+    "name": "StrategyConvexFactory-frxUSDUSDf",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x3493c07a475c7298b4d040e52b1e65713bf4dcb9",
     "name": "StrategyConvexFraxFactory-XAIFRAXBP3CRV-f",
     "isRetired": true,
@@ -3286,6 +3358,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x37f490f02cd2ebb55c27796802943bd080e0cc56",
+    "name": "Katana USDT STB Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x383aab29786e475c900cea49691934a89dbbea8b",
     "name": "StrategyCurveBoostedFactory-cvxFXSFXS-f",
     "isRetired": false,
@@ -3303,6 +3384,15 @@
     "protocols": [
       "Pool Together"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0x388095a341bf5767d3d3b7093cd89a82b816b507",
+    "name": "USDaf sfrxUSD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   },
   {
     "chainId": 1,
@@ -4250,6 +4340,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x46805e39ef046773f578ca0742d2a1bc6f6baa58",
+    "name": "StrategyConvexFxnFactory-reusdfxusd",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x46c138c1c0812dc78925ccbbb023c2045bc33733",
     "name": "StrategyCurveBoostedFactory-xETHETH-f",
     "isRetired": false,
@@ -4327,6 +4426,15 @@
     "chainId": 1,
     "address": "0x47e0872acc4f009fdc8422659eaf6fb0da8482fc",
     "name": "StrategyCurveBoostedFactory-revPool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x47efc8962250eb5142c8dd56d9df695260bccc1f",
+    "name": "StrategyConvexFactory-sdeUSDdeUS",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -4501,6 +4609,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x4d298a6659a4c24d79d6f4281bde2bea24eec3d5",
+    "name": "V2 Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x4d7d4485fd600c61d840ccbec328bfd76a050f87",
     "name": "StrategyGenericLevCompFarm",
     "isRetired": true,
@@ -4545,6 +4662,15 @@
     "chainId": 1,
     "address": "0x4e0ecff2d5500be57745281a893348f23739018a",
     "name": "StrategyConvexFactory-FXScrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4e539bf477912942d9e837757cc30b676f669b83",
+    "name": "StrategyConvexFactory-s/lvlUSD",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -5424,6 +5550,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x5b73e8d6ff1c148d7ebddcc85ebf82bbd87b3d14",
+    "name": "StrategyConvexFactory-reusdfxusd",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x5c20b550819128074fd538edf79791733ccedd18",
     "name": "Fluid Tether USD",
     "isRetired": false,
@@ -5787,6 +5922,15 @@
     "chainId": 1,
     "address": "0x617e25c70e5cb11088d781974b86dd313a933956",
     "name": "yPT-ezETH-Zircuit (auto-rolling Pendle PT)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x619280644d40403f56d8e965dea6a94990250b77",
+    "name": "StrategyCurveBoostedFactory-lvlUSDUSDC",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -6273,8 +6417,26 @@
   },
   {
     "chainId": 1,
+    "address": "0x69d91b5180df0495f240f91c51205d2ceea931c0",
+    "name": "StrategyCurveBoostedFactory-s/lvlUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x6abbda8243f4bf130a97beae759a6e91522520b9",
     "name": "Curve Boosted crvUSD-sUSDe Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6ad764389183b02eb234a3385af8ba98dcf2fbe5",
+    "name": "StrategyCurveBoostedFactory-sdeUSDdeUS",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -6420,6 +6582,15 @@
     "chainId": 1,
     "address": "0x6f03c615a3e609d2cf149754cc55462b6477965c",
     "name": "Sturdy TBTC/yearn curve TBTC-WBTC LP silo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6a0be83db035e39887066371c473f3a5de5b3e1a",
+    "name": "StrategyCurveBoostedFactory-ETH+ETH",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -6648,6 +6819,15 @@
       "Convex Finance",
       "Curve Finance"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0x7250b73fba85e991ef00e5e3c7d9461bf0489fb0",
+    "name": "StrategyCurveBoostedFactory-deUSDUSDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   },
   {
     "chainId": 1,
@@ -7228,6 +7408,15 @@
     "address": "0x7d25b0e0aceb8ca1e0b87387bd89eb5bb93f9eff",
     "name": "StrategyCurveBoostedFactory-fxUSDGHO",
     "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7d7f72d393f242da6e22d3b970491c06742984ff",
+    "name": "Aave V3 USDC Lender",
+    "isRetired": false,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -7976,6 +8165,15 @@
   },
   {
     "chainId": 1,
+    "address": "0x888239ffa9a0613f9142c808aa9f7d1948a14f75",
+    "name": "Morpho OEV-boosted USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0x88ac6a2a55ce6adb53a38e8be85e179a188dd7b1",
     "name": "V2 Router",
     "isRetired": false,
@@ -8087,6 +8285,15 @@
       "Convex Finance",
       "Curve Finance"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0x8c10487126a3553384d7fb1fbe7b0551bccaa596",
+    "name": "StrategyConvexFactory-lvlUSDUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   },
   {
     "chainId": 1,
@@ -8248,7 +8455,7 @@
     "chainId": 1,
     "address": "0x8aad3f849fe9e572125264267179245c52eab55b",
     "name": "StrategyCurveBoostedFactory-eursCRV",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Curve Boost",
     "description": "Supplies {{token}} to [Curve Finance](https://curve.finance) and stakes it in gauge to collect any available tokens and earn enhanced CRV rewards thanks to [Yearn's locked CRV boost](https://docs.yearn.fi/getting-started/guides/how-boost-works). Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
     "protocols": [
@@ -9963,6 +10170,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xaa45993d82c72e8eb3574c55773226e7c54ee863",
+    "name": "Coinflakes YieldFarming Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xaa9b343acce3195fa13bd2d6299ede939349f67e",
     "name": "StrategyCurveBoostedFactory-cvxprismlp-f",
     "isRetired": true,
@@ -10378,6 +10594,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xbc3f22f4862c1ea79ee4a090a4f451e42d1c1a35",
+    "name": "StrategyConvexFactory-deUSDUSDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xbc64210d565aabca8eb6eb795833cc505ac3647f",
     "name": "Katana USDT STB Depositor",
     "isRetired": false,
@@ -10414,6 +10639,15 @@
     "address": "0xbce343f34575683c5384e095b39d85794d7afe24",
     "name": "StrategyConvexDOLA",
     "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbd3932fc0a875b8e155b5b000cd4e96649d9700f",
+    "name": "V2 Router",
+    "isRetired": false,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -11568,6 +11802,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xe097f7f8a0e1aab662a7f9024dbf9ff0a3c24448",
+    "name": "StrategyConvexFactory-USD3sUSDS",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xe0e9d26db389058478249e9f759bc300802b3319",
     "name": "Aave Staking Aave Token",
     "isRetired": false,
@@ -12044,6 +12287,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xee35fa906abbdb09a5fa855e388a545ae84027d6",
+    "name": "StrategyCurveBoostedFactory-frxUSDUSDf",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xeef271a0071423ea56d38e4abe748165cc432e3f",
     "name": "Sturdy TBTC/SWBTC silo",
     "isRetired": false,
@@ -12315,6 +12567,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xf2fed48c12c6431fc4fc1da2cc447b657db2082f",
+    "name": "StrategyCurveBoostedFactory-USDafscrv",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xf36c83f6bf4cf656172f6dbc1220af6785362f0f",
     "name": "StrategyCurveBoostedFactory-crvUSDCWBTCWETH",
     "isRetired": false,
@@ -12373,6 +12634,15 @@
     "chainId": 1,
     "address": "0xf5cf7299906817faa72cdf8fa0026565756596c0",
     "name": "StrategyConvexFactory-crv2pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf6516d45a1625a6d9d3479902a5cb4c8b79f1887",
+    "name": "USDaf sUSDS Stability Pool",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -12522,6 +12792,15 @@
     "chainId": 1,
     "address": "0xfd5373f81705613181f6df1f4ca42f15a9f9418b",
     "name": "yGauge WETH-1 yVault Cove Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfdadc09f678755a84dfd01eeaf4a1709f224f5c3",
+    "name": "Katana USDC STB Depositor",
     "isRetired": false,
     "displayName": "",
     "description": "",
@@ -13031,6 +13310,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xad7d5d31ffcb96f6f719bb78209019d3d09e6baa",
+    "name": "USDaf ysyBOLD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xadc0078650b703548ffd4e2536d7816c2cb73c64",
     "name": "yPT-weETH (auto-rolling Pendle PT)",
     "isRetired": false,
@@ -13075,6 +13363,15 @@
     "protocols": [
       "Curve Finance"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0xb00a77045574f42b9aff25db275af4d5d25146bb",
+    "name": "USDaf tBTC Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   },
   {
     "chainId": 1,
@@ -13363,6 +13660,15 @@
     "address": "0xb938734509721b89003c551906109196a7263ac1",
     "name": "StrategyCurveBoostedFactory-FRAXUSDe",
     "isRetired": true,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb9cc748eb222cbf453dc64a1ce937b26ed5fbdc2",
+    "name": "StrategyCurveBoostedFactory-reusdfxusd",
+    "isRetired": false,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -13785,6 +14091,15 @@
   },
   {
     "chainId": 1,
+    "address": "0xc97781ba49a90c68d63f4d235d35cdbe029149d2",
+    "name": "Katana WBTC STB Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
     "address": "0xc9a62e09834cedcff8c136f33d0ae3406aea66bd",
     "name": "StrategySynthetixSusdMinter",
     "isRetired": true,
@@ -13805,6 +14120,15 @@
       "Convex Finance",
       "Curve Finance"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0xc9f01b5c6048b064e6d925d1c2d7206d4feef8a3",
+    "name": "Spark USDS Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   },
   {
     "chainId": 1,

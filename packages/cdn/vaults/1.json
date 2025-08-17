@@ -377,7 +377,7 @@
       "stability": "Volatile"
     },
     "category": "",
-    "displayName": "LINK yVault",
+    "displayName": "",
     "displaySymbol": "",
     "description": "",
     "sourceURI": "",
@@ -766,7 +766,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -864,7 +864,7 @@
       "stability": "Unknown"
     },
     "category": "Stablecoin",
-    "displayName": "👺👹😈👺👹😈👺👹👺😈👹",
+    "displayName": "",
     "displaySymbol": "",
     "description": "Deposits USDS into Sky's Rewards Token Module and auto-compounds the SKY Rewards into more USDS.",
     "sourceURI": "",
@@ -981,7 +981,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -1340,6 +1340,49 @@
       "stability": "Volatile"
     },
     "category": "auto",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0x0e297de4005883c757c9f09fdf7cf1363c20e626",
+    "name": "Morpho Yearn OG USDC Compounder",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x0e297de4005883c757c9f09fdf7cf1363c20e626",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
     "description": "",
@@ -7088,6 +7131,49 @@
   },
   {
     "chainId": 1,
+    "address": "0x3ed6aa32c930253fc990de58ff882b9186cd0072",
+    "name": "cap USDC",
+    "registry": "0x0000000000000000000000000000000000000000",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Multi Strategy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": true,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x3ed6aa32c930253fc990de58ff882b9186cd0072",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
     "address": "0x3f34a7ef4f17528cbffb7817060941bcdac924fa",
     "name": "Curve TriCRV Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
@@ -7604,6 +7690,49 @@
     "inclusion": {
       "isSet": true,
       "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0x44abee98cc69d9d81782dba715ae37ebbd381975",
+    "name": "cap USDC",
+    "registry": "0x0000000000000000000000000000000000000000",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Multi Strategy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": true,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x44abee98cc69d9d81782dba715ae37ebbd381975",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": false,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
@@ -8452,7 +8581,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -12207,7 +12336,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -13313,7 +13442,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -16335,6 +16464,49 @@
   },
   {
     "chainId": 1,
+    "address": "0x888239ffa9a0613f9142c808aa9f7d1948a14f75",
+    "name": "Morpho OEV-boosted USDC Compounder",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x888239ffa9a0613f9142c808aa9f7d1948a14f75",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
     "address": "0x89678540206e7d6964a4e22ae5cf4ac55926651a",
     "name": "Amplify Finance WETH",
     "registry": "0x0000000000000000000000000000000000000000",
@@ -16367,6 +16539,49 @@
     "inclusion": {
       "isSet": true,
       "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0x89e93172aef8261db8437b90c3dcb61545a05317",
+    "name": "Savings USDaf",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Multi Strategy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": true,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x89e93172aef8261db8437b90c3dcb61545a05317",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
@@ -16628,6 +16843,49 @@
     "protocols": [
       "Curve"
     ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0x8bb5491c0872445ec15d9b67cc6117811e0d8498",
+    "name": "Curve deUSDUSDT Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "ydaemonType": "Automated Yearn Vault",
+    "ydaemonKind": "Legacy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": true,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x8bb5491c0872445ec15d9b67cc6117811e0d8498",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "auto",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
     "inclusion": {
       "isSet": true,
       "isYearn": true,
@@ -17378,6 +17636,49 @@
     "inclusion": {
       "isSet": true,
       "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0x9289d26fd70867af2f4523ebada69a0d0deec6c3",
+    "name": "Curve frxUSDUSDf Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "ydaemonType": "Automated Yearn Vault",
+    "ydaemonKind": "Legacy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": true,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x9289d26fd70867af2f4523ebada69a0d0deec6c3",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "auto",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": false,
+      "isYearn": false,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
@@ -18459,7 +18760,7 @@
     "stability": {
       "stability": "Unknown"
     },
-    "category": "auto",
+    "category": "Curve",
     "displayName": "",
     "displaySymbol": "",
     "description": "",
@@ -19077,7 +19378,7 @@
     "stability": {
       "stability": "Unknown"
     },
-    "category": "auto",
+    "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
     "description": "",
@@ -19300,6 +19601,49 @@
       "stability": "Unknown"
     },
     "category": "Curve",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0xa7b68f2184b283cb494a6788c06bc5bbc09275e3",
+    "name": "Curve sdeUSDdeUS Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "ydaemonType": "Automated Yearn Vault",
+    "ydaemonKind": "Legacy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": true,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xa7b68f2184b283cb494a6788c06bc5bbc09275e3",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "auto",
     "displayName": "",
     "displaySymbol": "",
     "description": "",
@@ -24106,6 +24450,92 @@
   },
   {
     "chainId": 1,
+    "address": "0xc9e146b126f4ca0aa8eda3bdbcd76a960b4dcba7",
+    "name": "Curve USD3sUSDS Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "ydaemonType": "Automated Yearn Vault",
+    "ydaemonKind": "Legacy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": true,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xc9e146b126f4ca0aa8eda3bdbcd76a960b4dcba7",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "auto",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0xc9f01b5c6048b064e6d925d1c2d7206d4feef8a3",
+    "name": "Spark USDS Compounder",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "ydaemonType": "Yearn Vault",
+    "ydaemonKind": "Single Strategy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xc9f01b5c6048b064e6d925d1c2d7206d4feef8a3",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
     "address": "0xc9fb833f11d2d8169953b144fa5242e8aec25c01",
     "name": "yPT-sDAI (auto-rolling Pendle PT)",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
@@ -24872,7 +25302,7 @@
     "stability": {
       "stability": "Unknown"
     },
-    "category": "auto",
+    "category": "Curve",
     "displayName": "",
     "displaySymbol": "",
     "description": "",
@@ -27140,6 +27570,49 @@
   },
   {
     "chainId": 1,
+    "address": "0xe3bf2d04cd3b6e74613d36368c7d21b2d6c26d72",
+    "name": "Curve USDafscrv Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "ydaemonType": "Automated Yearn Vault",
+    "ydaemonKind": "Legacy",
+    "ydaemonEndorsed": true,
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": true,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xe3bf2d04cd3b6e74613d36368c7d21b2d6c26d72",
+      "contract": "0x0000000000000000000000000000000000000000"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Curve",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
     "address": "0xe3faed70ccaf49c9baa95ca8d41b1777d7ae440f",
     "name": "usdc-vaulty-moo",
     "registry": "0x0000000000000000000000000000000000000000",
@@ -28507,7 +28980,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {

@@ -223,7 +223,7 @@
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -247,14 +247,14 @@
     "protocols": [],
     "inclusion": {
       "isSet": true,
-      "isYearn": true,
+      "isYearn": false,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
       "isKatana": false,
-      "isPublicERC4626": false
+      "isPublicERC4626": true
     }
   },
   {
@@ -339,8 +339,8 @@
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
-      "isPublicERC4626": false
+      "isKatana": true,
+      "isPublicERC4626": true
     }
   },
   {
@@ -382,20 +382,20 @@
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
-      "isPublicERC4626": false
+      "isKatana": true,
+      "isPublicERC4626": true
     }
   },
   {
     "chainId": 747474,
     "address": "0x93fec6639717b6215a48e5a72a162c50dcc40d68",
     "name": "AUSD yVault",
-    "registry": "0x0000000000000000000000000000000000000000",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "ydaemonType": "Yearn Vault",
     "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
+    "ydaemonEndorsed": false,
     "isRetired": false,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -419,14 +419,14 @@
     "protocols": [],
     "inclusion": {
       "isSet": true,
-      "isYearn": false,
+      "isYearn": true,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
-      "isPublicERC4626": false
+      "isKatana": true,
+      "isPublicERC4626": true
     }
   },
   {
@@ -438,7 +438,7 @@
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
     "isRetired": false,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -462,14 +462,14 @@
     "protocols": [],
     "inclusion": {
       "isSet": true,
-      "isYearn": false,
+      "isYearn": true,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
-      "isPublicERC4626": false
+      "isKatana": true,
+      "isPublicERC4626": true
     }
   },
   {
@@ -481,7 +481,7 @@
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": true,
     "isRetired": false,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -505,14 +505,14 @@
     "protocols": [],
     "inclusion": {
       "isSet": true,
-      "isYearn": false,
+      "isYearn": true,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
-      "isPublicERC4626": false
+      "isKatana": true,
+      "isPublicERC4626": true
     }
   },
   {
@@ -683,8 +683,8 @@
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
-      "isPublicERC4626": false
+      "isKatana": true,
+      "isPublicERC4626": true
     }
   },
   {

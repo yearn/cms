@@ -85,7 +85,7 @@
     "chainId": 10,
     "address": "0x17ca27b87ac43457d4a32455aa6119b9010b9032",
     "name": "StrategyVelodromeFactory-sAMMV2-FRAX/USD+",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -158,7 +158,7 @@
     "chainId": 10,
     "address": "0x1b929f270346efb14636ce5749c471105e44a0ac",
     "name": "StrategyVelodromeFactory-sAMMV2-DOLA/ERN",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -191,7 +191,7 @@
     "chainId": 10,
     "address": "0x255fcb7a1fc53c2deb3274bcca5da79d0eabf098",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/MIM",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -275,7 +275,7 @@
     "chainId": 10,
     "address": "0x2a533d9c6facc699cf808210544db43d37e6203e",
     "name": "StrategyVelodromeFactory-vAMMV2-THALES/USDC",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -286,7 +286,7 @@
     "chainId": 10,
     "address": "0x313c53037d105ff6142ee7887d2205322aaeaea6",
     "name": "StrategyVelodromeFactory-vAMMV2-TAROT/OP",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -341,7 +341,7 @@
     "chainId": 10,
     "address": "0x35a54906e5fb0cec74bf258150691a9450a56ba2",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/LUSD",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -363,7 +363,7 @@
     "chainId": 10,
     "address": "0x3ab17cd58007e18bdbdc429496adc3feda250483",
     "name": "StrategyVelodromeFactory-sAMMV2-LUSD/ERN",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -385,7 +385,7 @@
     "chainId": 10,
     "address": "0x405b0e5ed26856f63344747c0a87de549a334d75",
     "name": "StrategyVelodromeFactory-vAMMV2-stERN/ERN",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -427,7 +427,7 @@
     "chainId": 10,
     "address": "0x46f419c19efc83665a0dd8fa522b1b16046ae201",
     "name": "StrategyVelodromeFactory-vAMMV2-OATH/WETH",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -478,7 +478,7 @@
     "chainId": 10,
     "address": "0x49d4224f3d896a40b678bb17641df47ad3de0ca4",
     "name": "StrategyLenderYieldOptimiser",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Aave Optimizer",
     "description": "Supplies {{token}} to [AAVE](https://app.aave.com/home) v3 to generate interest, earn OP tokens, and rewards. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
     "protocols": [
@@ -489,7 +489,7 @@
     "chainId": 10,
     "address": "0x4a3f4dff2cde557babae2a7e1f7bd84092840631",
     "name": "StrategyVelodromeFactory-vAMMV2-UNLOCK/VELO",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -542,7 +542,7 @@
     "chainId": 10,
     "address": "0x5182ec82758fee0bd209e55beea2e61286f297c3",
     "name": "StrategyVelodromeFactory-vAMMV2-wUSDR/USDC",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -584,7 +584,7 @@
     "chainId": 10,
     "address": "0x57030b62dd04e4a2cccc80e4714778a53ba47a2d",
     "name": "StrategyVelodromeFactory-vAMMV2-LYRA/USDC",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -606,7 +606,7 @@
     "chainId": 10,
     "address": "0x586f6be1e0ca1b30e29c2fef61dcc526fd387a7d",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/UNIDX",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -666,7 +666,7 @@
     "chainId": 10,
     "address": "0x6108591f070ff31809e1da11fd5aea9d3235735f",
     "name": "StrategyLenderYieldOptimiser",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Aave Optimizer",
     "description": "Supplies {{token}} to [AAVE](https://app.aave.com/home) v3 to generate interest, earn OP tokens, and rewards. Earned tokens are harvested, sold for more {{token}} which is deposited back into the strategy.",
     "protocols": [
@@ -728,7 +728,7 @@
     "chainId": 10,
     "address": "0x6fe7fdd7142804289a2ed8d0d4af6fe263852956",
     "name": "StrategyVelodromeFactory-sAMMV2-USD+/DAI+",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -788,7 +788,7 @@
     "chainId": 10,
     "address": "0x79ab263c0dbefd8834f7292864ad6d405ba6793a",
     "name": "StrategyVelodromeFactory-vAMMV2-QI/USDC",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -808,7 +808,7 @@
     "chainId": 10,
     "address": "0x7f20d98691a91771bec4c9fc6302626b4fc99b77",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/MTA",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -883,7 +883,7 @@
     "chainId": 10,
     "address": "0x8ca13c966eaadbca7cad81aecfdb1c52ec693f0a",
     "name": "StrategyVelodromeFactory-vAMMV2-UNIDX/DAI",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -927,7 +927,7 @@
     "chainId": 10,
     "address": "0x8fd559dfe1d64508290025e2312ca69ef172dfe3",
     "name": "StrategyVelodromeFactory-sAMMV2-DOLA/MAI",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -938,7 +938,7 @@
     "chainId": 10,
     "address": "0x90bb44d6ab538af82f05ee4d6cffef53fb18cb56",
     "name": "StrategyVelodromeFactory-sAMMV2-CHI/DAI",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1013,7 +1013,7 @@
     "chainId": 10,
     "address": "0x9b724a2896fe8f65f0de64e0e0d0bd63c9962cc2",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/ERN",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1165,7 +1165,7 @@
     "chainId": 10,
     "address": "0xc4dd2622740ecd630f4e1b91655a84533a9b2e0b",
     "name": "StrategyVelodromeFactory-sAMMV2-USD+/USDC",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1176,7 +1176,7 @@
     "chainId": 10,
     "address": "0xc913a5af4a949b18cde47cab667347f9ae50f6eb",
     "name": "StrategyVelodromeFactory-vAMMV2-TAROT/USDC",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1264,7 +1264,7 @@
     "chainId": 10,
     "address": "0xf467ad93f7016d72cc7f2c657d187a18f7bd69e4",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/wTBT",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1366,7 +1366,7 @@
     "chainId": 10,
     "address": "0xc28687693469c91f5d1da48e4840e8f0362eacdc",
     "name": "StrategyVelodromeFactory-sAMMV2-USD+/DOLA",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1377,7 +1377,7 @@
     "chainId": 10,
     "address": "0xc724e1d3cd22e9f9e13413205211b3742cc07855",
     "name": "StrategyVelodromeFactory-vAMMV2-OVN/USD+",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -1406,7 +1406,7 @@
     "chainId": 10,
     "address": "0xd13a1c75e5177f4932502aef829493467b1844ab",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/ERN",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -1415,7 +1415,7 @@
     "chainId": 10,
     "address": "0xd22e21a1b9bdc392229fab7e878a10b5b6273fcb",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/agEUR",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1426,7 +1426,7 @@
     "chainId": 10,
     "address": "0xd5fbaca004ae9b6061b081d0dac370006cf032a1",
     "name": "StrategyVelodromeFactory-vAMMV2-WETH/GRAIN",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "",
     "description": "",
     "protocols": []
@@ -1457,7 +1457,7 @@
     "chainId": 10,
     "address": "0xe59fde0b442f42a773715106ec03a2a04258e9b4",
     "name": "StrategyVelodromeFactory-sAMMV2-WETH/sETH",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1501,7 +1501,7 @@
     "chainId": 10,
     "address": "0xed6f24083d912c55eb4b3db2d492bdac0c83fad8",
     "name": "StrategyVelodromeFactory-vAMMV2-USDC/PERP",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [
@@ -1512,7 +1512,7 @@
     "chainId": 10,
     "address": "0xecea68f6f84165c2349a704d3d3339d3d5158180",
     "name": "StrategyVelodromeFactory-sAMMV2-USDC/USX",
-    "isRetired": false,
+    "isRetired": true,
     "displayName": "Velodrome Reinvest",
     "description": "Supplies {{token}} to [Velodrome Finance](https://app.velodrome.finance/liquidity) and stakes it in the gauge to collect any available tokens and earn VELO rewards. Rewards are harvested, sold for more {{token}}, and deposited back into the strategy.",
     "protocols": [

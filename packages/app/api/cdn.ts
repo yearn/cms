@@ -48,6 +48,7 @@ export default async function (req: Request): Promise<Response> {
     }
 
     const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
+    console.log('🤠', 'HEAD', HEAD)
     const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`
     const upstreamRes = await fetch(upstream)
 
