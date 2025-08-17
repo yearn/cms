@@ -6,7 +6,7 @@ const SHA_TTL_MS = parseInt(process.env.SHA_TTL_MS || '300000', 10) // 5 minutes
 
 const GITHUB_APP_ID = process.env.GITHUB_APP_ID
 const GITHUB_APP_PRIVATE_KEY = process.env.GITHUB_APP_PRIVATE_KEY
-const GITHUB_INSTALLATION_ID = process.env.GITHUB_INSTALLATION_ID
+const GITHUB_APP_INSTALLATION_ID = process.env.GITHUB_APP_INSTALLATION_ID
 
 let cachedSha = ''
 let cachedAt = 0
@@ -60,14 +60,15 @@ async function fetchGitHubAppToken(): Promise<string | undefined> {
     return cachedToken
   }
 
-  if (!GITHUB_APP_ID || !GITHUB_APP_PRIVATE_KEY || !GITHUB_INSTALLATION_ID) {
+  if (!GITHUB_APP_ID || !GITHUB_APP_PRIVATE_KEY || !GITHUB_APP_INSTALLATION_ID) {
     return undefined
   }
 
   try {
     const jwt = await createJWT(GITHUB_APP_ID, GITHUB_APP_PRIVATE_KEY)
+    console.log('🔑', 'jwt', 'ok')
     
-    const response = await fetch(`https://api.github.com/app/installations/${GITHUB_INSTALLATION_ID}/access_tokens`, {
+    const response = await fetch(`https://api.github.com/app/installations/${GITHUB_APP_INSTALLATION_ID}/access_tokens`, {
       method: 'POST',
       headers: {
         'Authorization': `Bearer ${jwt}`,
@@ -94,7 +95,10 @@ async function fetchGitHubAppToken(): Promise<string | undefined> {
 
 export async function fetchSha(): Promise<string> {
   const now = Date.now()
-  if (cachedSha && now - cachedAt < SHA_TTL_MS) return cachedSha
+  if (cachedSha && now - cachedAt < SHA_TTL_MS) {
+    console.log('🔑', 'cached sha', cachedSha)
+    return cachedSha
+  }
 
   const headers: Record<string, string> = { 'user-agent': 'yearn-cms' }
   
@@ -117,6 +121,6 @@ export async function fetchSha(): Promise<string> {
   const data = await res.json()
   cachedSha = data.sha
   cachedAt = now
-  console.log('🔑', 'cachedSha', cachedSha)
+  console.log('🔑', 'fetch sha', cachedSha)
   return cachedSha
 }
