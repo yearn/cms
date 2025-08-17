@@ -1,5 +1,3 @@
-import { fetchSha } from './lib/sha.js'
-
 export const config = { runtime: 'edge' }
 
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
@@ -49,14 +47,8 @@ export default async function (req: Request): Promise<Response> {
       return new Response('invalid path', { status: 400 })
     }
 
-    let sha: string
-    try {
-      sha = await fetchSha()
-    } catch (error) {
-      console.warn('fetchSha failed, falling back to main branch:', error)
-      sha = 'main'
-    }
-    const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${sha}/packages/cdn/${path}`
+    const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
+    const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`
     const upstreamRes = await fetch(upstream)
 
     if (!upstreamRes.ok || !upstreamRes.body)
