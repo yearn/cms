@@ -19,6 +19,25 @@ bun dev
 
 ```
 
+#### Manual vault sync
+```bash
+
+act -j sync-vaults
+# see https://github.com/nektos/act
+
+```
+
+or
+
+```bash
+
+bun packages/app/scripts/sync-vaults.ts
+git add packages/app/cdn
+git commit -m 'Sync vaults'
+git push
+
+```
+
 ### cdn url
 
 ```url
