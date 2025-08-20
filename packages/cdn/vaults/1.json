@@ -13086,7 +13086,7 @@
     "ydaemonKind": "Multi Strategy",
     "ydaemonEndorsed": false,
     "isRetired": false,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
