@@ -183,6 +183,54 @@ function determineVaultType(registry: string, vaultType?: number): { type: strin
   }
 }
 
+/**
+ * Automatically categorizes a vault based on its name, following ydaemon logic
+ * Checks for protocol patterns, then asset patterns, with fallback to "Volatile"
+ */
+function categorizeVault(name: string): string {
+  const lowerName = name.toLowerCase()
+  
+  // Protocol-specific patterns (order matters - first match wins)
+  const protocolPatterns = [
+    { keywords: ['curve', 'crv'], category: 'Curve' },
+    { keywords: ['balancer', 'bal'], category: 'Balancer' },
+    { keywords: ['velodrome', 'velo'], category: 'Velodrome' },
+    { keywords: ['aerodrome', 'aero'], category: 'Aerodrome' },
+    { keywords: ['gamma'], category: 'Gamma' },
+    { keywords: ['pendle'], category: 'Pendle' },
+    { keywords: ['prisma'], category: 'Prisma' }
+  ]
+  
+  // Check protocol patterns first
+  for (const pattern of protocolPatterns) {
+    if (pattern.keywords.some(keyword => lowerName.includes(keyword))) {
+      return pattern.category
+    }
+  }
+  
+  // Asset-based patterns
+  const bitcoinPatterns = ['btc', 'bitcoin']
+  const ethPatterns = ['eth', 'ethereum']
+  const stableCoinPatterns = [
+    'dai', 'rai', 'mim', 'dola', 'usd', 'eur', 'aud', 'chf', 'krw', 'gbp', 'jpy',
+    'usdc', 'usdt', 'busd', 'frax', 'lusd', 'susd'
+  ]
+  
+  // Check for stablecoin patterns
+  if (stableCoinPatterns.some(stable => lowerName.includes(stable))) {
+    return 'Stablecoin'
+  }
+  
+  // Check for volatile asset patterns
+  if (bitcoinPatterns.some(btc => lowerName.includes(btc)) || 
+      ethPatterns.some(eth => lowerName.includes(eth))) {
+    return 'Volatile'
+  }
+  
+  // Default fallback
+  return ''
+}
+
 function createVaultFromKong(kongVault: KongVault): VaultMetadata {
   const { type, kind } = determineVaultType(
     kongVault.registry,
@@ -194,6 +242,9 @@ function createVaultFromKong(kongVault: KongVault): VaultMetadata {
   const isYearn = registryData?.label === 'YEARN'
   const isYearnJuiced = registryData?.label === 'JUICED'
   const isPublicERC4626 = registryData?.label === 'PUBLIC_ERC4626'
+  
+  // Auto-categorize the vault based on its name
+  const category = categorizeVault(kongVault.name)
   
   return VaultMetadataSchema.parse({
     chainId: kongVault.chainId,
@@ -211,6 +262,12 @@ function createVaultFromKong(kongVault: KongVault): VaultMetadata {
     isHighlighted: false,
     isPool: false,
     shouldUseV2APR: false,
+    category: category,
+    displayName: "",
+    displaySymbol: "",
+    description: "",
+    sourceURI: "",
+    uiNotice: "",
     migration: {
       available: false,
     },
