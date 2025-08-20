@@ -259,9 +259,6 @@ async function updateVaultsForChain(chainId: number, kongVaults: KongVault[]): P
     ...newVaults.map(createVaultFromKong)
   ]
   
-  // Sort by address for consistency
-  updatedVaults.sort((a, b) => a.address.localeCompare(b.address))
-  
   await saveVaults(chainId, updatedVaults)
   
   return newVaults.length
