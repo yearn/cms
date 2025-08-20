@@ -21,6 +21,9 @@ export default function Header() {
             {getCollection(key).displayName.toLowerCase()}
           </Button>
         ))}
+        <Button h="secondary" onClick={() => navigate('/globals/yearnFi')}>
+          YearnFi
+        </Button>
       </div>
       <div>
         <GithubSignIn />

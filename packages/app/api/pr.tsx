@@ -180,7 +180,7 @@ export default async function (req: Request): Promise<Response> {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        message: `Update vault data in ${path}`,
+        message: `Update data in ${path}`,
         tree: treeData.sha,
         parents: [baseSha],
       }),
@@ -227,8 +227,8 @@ export default async function (req: Request): Promise<Response> {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify({
-        title: `Update vault data in ${path}`,
-        body: `This PR updates vault data in ${path}.\n\nUpdated by: ${username}`,
+        title: `Update data in ${path}`,
+        body: `This PR updates data in ${path}.\n\nUpdated by: ${username}`,
         head: branchName,
         base: defaultBranch,
       }),

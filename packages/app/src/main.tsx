@@ -4,6 +4,7 @@ import './index.css'
 
 import { Navigate, Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import CollectionList from './components/CollectionList.tsx'
+import Global from './components/Global.tsx'
 import RestoreScroll from './components/RestoreScroll.tsx'
 import Providers from './providers.tsx'
 import Success from './routes/auth/github/Success.tsx'
@@ -21,6 +22,7 @@ createRoot(document.getElementById('root') ?? document.body).render(
             <Route index element={<Navigate to="/vaults" replace />} />
             <Route path=":collection" element={<CollectionList />} />
             <Route path=":collection/:chainId/:address" element={<Collection />} />
+            <Route path="globals/:globalKey" element={<Global />} />
             <Route path="auth/github/success" element={<Success />} />
             <Route path="eg" element={<Eg />} />
           </Route>
