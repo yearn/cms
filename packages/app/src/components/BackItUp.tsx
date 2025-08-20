@@ -16,15 +16,19 @@ export default function BackItUp() {
     return () => element.removeEventListener('scroll', handleScroll)
   }, [mainScrollRef.current])
 
-  return <Button h="secondary"
-    data-show={show} 
-    onClick={() => mainScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })} 
-    className={cn(`
+  return (
+    <Button
+      h="secondary"
+      data-show={show}
+      onClick={() => mainScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })}
+      className={cn(`
       fixed bottom-32 right-32 
       p-0 size-20 rounded-full!
       data-[show=true]:opacity-100 data-[show=false]:opacity-0 
       transition-opacity duration-100
-    `)}>
+    `)}
+    >
       <PiArrowUp className="size-9" />
     </Button>
+  )
 }

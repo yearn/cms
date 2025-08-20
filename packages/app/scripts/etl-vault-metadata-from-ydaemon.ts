@@ -75,7 +75,7 @@ function transformYdaemonToYcms(yd: YDaemonVaultMetadata): VaultMetadata {
     name: '',
     registry: yd.registry ? AddressSchema.parse(yd.registry) : undefined,
     ydaemonType: yd.type,
-    ydaemonKind: yd.kind === '' ? 'None' : yd.kind as 'Multi Strategy' | 'Legacy' | 'Single Strategy' | 'None',
+    ydaemonKind: yd.kind === '' ? 'None' : (yd.kind as 'Multi Strategy' | 'Legacy' | 'Single Strategy' | 'None'),
     ydaemonEndorsed: yd.endorsed ?? false,
     isRetired: yd.metadata?.isRetired ?? false,
     isHidden: yd.metadata?.isHidden ?? false,
@@ -91,7 +91,10 @@ function transformYdaemonToYcms(yd: YDaemonVaultMetadata): VaultMetadata {
       contract: yd.metadata?.migration?.contract ? AddressSchema.parse(yd.metadata.migration.contract) : undefined,
     },
     stability: {
-      stability: yd.metadata?.stability?.stability === '' ? 'Unknown' : yd.metadata?.stability?.stability as 'Unknown' | 'Correlated' | 'Stable' | 'Volatile' | 'Unstable',
+      stability:
+        yd.metadata?.stability?.stability === ''
+          ? 'Unknown'
+          : (yd.metadata?.stability?.stability as 'Unknown' | 'Correlated' | 'Stable' | 'Volatile' | 'Unstable'),
       stableBaseAsset: yd.metadata?.stability?.stableBaseAsset ?? undefined,
     },
     category: yd.metadata?.category ?? undefined,
@@ -134,7 +137,7 @@ async function updateNames(vaults: VaultMetadata[]) {
       })
       console.log(`update names, ${chainId}, ${i + batchSize}/${vaultsForChain.length} vaults processed`)
       for (let j = 0; j < batch.length; j++) {
-        if (batch[j] === undefined || names[j] === undefined || names[j]!.status !== 'success') { 
+        if (batch[j] === undefined || names[j] === undefined || names[j]!.status !== 'success') {
           console.log(chainId, i, j, 'batch[j] !== undefined', batch[j] !== undefined)
           console.log(chainId, i, j, 'names[j] !== undefined', names[j] !== undefined)
           continue
@@ -152,7 +155,9 @@ async function main() {
 
     for (const file of files.filter((file) => file.endsWith('.json'))) {
       const chainId = parseInt(file.split('.')[0] ?? '0')
-      if (chainId === 0) { throw new Error('chainId === 0') }
+      if (chainId === 0) {
+        throw new Error('chainId === 0')
+      }
 
       const filePath = join(source, file)
       const content = await readFile(filePath, 'utf-8')

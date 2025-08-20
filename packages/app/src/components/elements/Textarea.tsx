@@ -15,7 +15,14 @@ const TextareaClassName = cn(`
 
 const Textarea = forwardRef<HTMLTextAreaElement, Props>(({ className, theme, ...props }, ref) => {
   const borderClassName = theme === 'warn' ? '!border-yellow-400' : theme === 'error' ? '!border-red-500' : ''
-  return <textarea data-disabled={props.disabled} ref={ref} {...props} className={cn(InputClassName, TextareaClassName, className, borderClassName)} />
+  return (
+    <textarea
+      data-disabled={props.disabled}
+      ref={ref}
+      {...props}
+      className={cn(InputClassName, TextareaClassName, className, borderClassName)}
+    />
+  )
 })
 
 Textarea.displayName = 'Textarea'

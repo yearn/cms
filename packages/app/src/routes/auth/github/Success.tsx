@@ -17,7 +17,5 @@ export default function Success() {
     window.location.href = '/'
   }, [])
 
-  return <div>
-    {error && <div>{error}</div>}
-  </div>
+  return <div>{error && <div>{error}</div>}</div>
 }

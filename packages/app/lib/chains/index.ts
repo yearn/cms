@@ -10,5 +10,5 @@ export const chains: Record<number, Chain> = {
   [fantom.id]: fantom,
   [base.id]: base,
   [arbitrum.id]: arbitrum,
-  [katana.id]: katana
+  [katana.id]: katana,
 }

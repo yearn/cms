@@ -2,28 +2,19 @@ import { useMutation } from '@tanstack/react-query'
 import { Suspense } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
 import { useParams } from 'react-router-dom'
-import { chains } from '../../lib/chains'
-import { StrategyMetadataSchema } from '../../schemas/StrategyMetadata'
-import type { VaultMetadata } from '../../schemas/VaultMetadata'
-import Button from '../components/elements/Button'
-import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
-import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/Skeleton'
-import { useStrategyMeta } from '../hooks/useStrategyMeta'
+import { type GlobalKey, getGlobal, getGlobalKeys } from '../../schemas/cms'
+import { useGlobalData } from '../hooks/useGlobalData'
+import Button from './elements/Button'
+import GithubSignIn, { useGithubUser } from './GithubSignIn'
+import MetaData, { MetaDataProvider, useMetaData } from './SchemaForm'
+import Skeleton from './Skeleton'
 
-function PullRequestButton() {
-  const { o: vault, isDirty, formState } = useMetaData()
-  const { rawJsonChainMap } = useStrategyMeta()
+function PullRequestButton({ globalKey }: { globalKey: GlobalKey }) {
+  const { isDirty, formState } = useMetaData()
 
   const createPullRequest = useMutation({
     mutationFn: async () => {
-      const original = rawJsonChainMap[vault.chainId]
-      const path = `packages/cdn/strategies/${vault.chainId}.json`
-
-      // Find and replace the specific vault
-      const updatedArray = original.map((vaultObj: VaultMetadata) =>
-        vaultObj.address.toLowerCase() === vault.address.toLowerCase() ? formState : vaultObj,
-      )
+      const path = `packages/cdn/globals/${globalKey}.json`
 
       const response = await fetch('/api/pr', {
         method: 'POST',
@@ -33,7 +24,7 @@ function PullRequestButton() {
         body: JSON.stringify({
           token: sessionStorage.getItem('github_token'),
           path,
-          contents: JSON.stringify(updatedArray, null, 2),
+          contents: JSON.stringify(formState, null, 2),
         }),
       })
 
@@ -71,47 +62,39 @@ function PullRequestButton() {
   )
 }
 
-function StrategyDetails() {
+function GlobalDetails({ globalKey }: { globalKey: GlobalKey }) {
   const { signedIn } = useGithubUser()
-  const { o: strategy } = useMetaData()
+  const globalConfig = getGlobal(globalKey)
+
   return (
     <div className="flex flex-col items-start justify-start gap-4 w-200">
+      {/* Standard header */}
       <div className="flex flex-col">
-        <h1 className="text-3xl font-bold truncate">{strategy.name || 'No name onchain'}</h1>
-        <div>
-          chain: {chains[strategy.chainId]?.name} ({strategy.chainId})
-        </div>
-        <div>address: {strategy.address}</div>
+        <h1 className="text-3xl font-bold truncate">{globalConfig.displayName}</h1>
+        {globalConfig.description && <div className="text-primary-400">{globalConfig.description}</div>}
       </div>
+
       <MetaData className="w-200" />
       <Suspense fallback={<Skeleton className="h-12 w-96 my-6 ml-auto" />}>
-        {signedIn && <PullRequestButton />}
+        {signedIn && <PullRequestButton globalKey={globalKey} />}
         {!signedIn && <GithubSignIn className="my-6 ml-auto" />}
       </Suspense>
     </div>
   )
 }
 
-function Provider({ children }: { children: React.ReactNode }) {
-  const { chainId, address } = useParams()
-  const { strategies } = useStrategyMeta()
-
-  const strategy = strategies.find(
-    (v) => v.chainId.toString() === chainId && v.address.toLowerCase() === address?.toLowerCase(),
-  )
-
-  if (!strategy) {
-    throw new Error('Stratgy not found')
-  }
+function Provider({ children, globalKey }: { children: React.ReactNode; globalKey: GlobalKey }) {
+  const globalConfig = getGlobal(globalKey)
+  const { data } = useGlobalData(globalKey)
 
   return (
-    <MetaDataProvider schema={StrategyMetadataSchema} o={strategy}>
+    <MetaDataProvider schema={globalConfig.schema} o={data}>
       {children}
     </MetaDataProvider>
   )
 }
 
-function StrategySkeleton() {
+function GlobalSkeleton() {
   return (
     <div className="w-200 flex flex-col items-start justify-start gap-6">
       <Skeleton className="w-full h-42" />
@@ -123,16 +106,24 @@ function StrategySkeleton() {
   )
 }
 
-function Strategy() {
+function Global() {
+  const { globalKey } = useParams()
+
+  if (!globalKey || !getGlobalKeys().includes(globalKey as any)) {
+    throw new Error(`Global ${globalKey} not found`)
+  }
+
+  const globalKeyTyped = globalKey as GlobalKey
+
   return (
     <div className="px-8 pt-5 pb-16">
-      <Suspense fallback={<StrategySkeleton />}>
-        <Provider>
-          <StrategyDetails />
+      <Suspense key={globalKeyTyped} fallback={<GlobalSkeleton />}>
+        <Provider globalKey={globalKeyTyped}>
+          <GlobalDetails globalKey={globalKeyTyped} />
         </Provider>
       </Suspense>
     </div>
   )
 }
 
-export default Strategy
+export default Global

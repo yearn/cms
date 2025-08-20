@@ -13,12 +13,8 @@ export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
 export function buttonClassName(props: ButtonProps) {
   const { className, theme, h } = props
   const busy = theme === 'busy'
-  const bg = 
-    theme === 'error' ? 'bg-red-500'
-    : h === 'secondary' ? 'bg-primary-800' : 'bg-secondary-500'
-  const text = 
-    theme === 'error' ? 'text-red-50'
-    : h === 'secondary' ? 'text-primary-300' : 'text-secondary-950'
+  const bg = theme === 'error' ? 'bg-red-500' : h === 'secondary' ? 'bg-primary-800' : 'bg-secondary-500'
+  const text = theme === 'error' ? 'text-red-50' : h === 'secondary' ? 'text-primary-300' : 'text-secondary-950'
   return cn(`
     relative h-8 px-8 py-5 flex items-center justify-center
     ${bg} text-2xl ${text} tracking-wide
@@ -49,9 +45,11 @@ export function buttonClassName(props: ButtonProps) {
 
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ className, theme, h, children, ...props }, ref) => {
   const busy = useMemo(() => theme === 'busy', [theme])
-  return <button data-theme={theme} data-h={h} ref={ref} {...props} className={buttonClassName({ className, theme, h })}>
-    {!busy && children}
-  </button>
+  return (
+    <button data-theme={theme} data-h={h} ref={ref} {...props} className={buttonClassName({ className, theme, h })}>
+      {!busy && children}
+    </button>
+  )
 })
 
 Button.displayName = 'Button'

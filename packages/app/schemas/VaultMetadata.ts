@@ -17,17 +17,15 @@ export const VaultMetadataSchema = z.object({
   isHighlighted: z.boolean(),
   isPool: z.boolean(),
   shouldUseV2APR: z.boolean(),
-  migration: z
-    .object({
-      available: z.boolean(),
-      target: AddressSchema.optional(),
-      contract: AddressSchema.optional(),
-    }),
-  stability: z
-    .object({
-      stability: z.enum(['Unknown', 'Correlated', 'Stable', 'Volatile', 'Unstable']),
-      stableBaseAsset: z.string().optional(),
-    }),
+  migration: z.object({
+    available: z.boolean(),
+    target: AddressSchema.optional(),
+    contract: AddressSchema.optional(),
+  }),
+  stability: z.object({
+    stability: z.enum(['Unknown', 'Correlated', 'Stable', 'Volatile', 'Unstable']),
+    stableBaseAsset: z.string().optional(),
+  }),
   category: z.string().optional(),
   displayName: z.string().optional(),
   displaySymbol: z.string().optional(),
@@ -35,18 +33,17 @@ export const VaultMetadataSchema = z.object({
   sourceURI: z.string().optional(),
   uiNotice: z.string().optional(),
   protocols: z.array(z.enum(['Curve', 'BeethovenX', 'Gamma', 'Balancer', 'Yearn'])),
-  inclusion: z
-    .object({
-      isSet: z.boolean(),
-      isYearn: z.boolean(),
-      isYearnJuiced: z.boolean(),
-      isGimme: z.boolean(),
-      isPoolTogether: z.boolean(),
-      isCove: z.boolean(),
-      isMorpho: z.boolean(),
-      isKatana: z.boolean(),
-      isPublicERC4626: z.boolean(),
-    })
+  inclusion: z.object({
+    isSet: z.boolean(),
+    isYearn: z.boolean(),
+    isYearnJuiced: z.boolean(),
+    isGimme: z.boolean(),
+    isPoolTogether: z.boolean(),
+    isCove: z.boolean(),
+    isMorpho: z.boolean(),
+    isKatana: z.boolean(),
+    isPublicERC4626: z.boolean(),
+  }),
 })
 
 export type VaultMetadata = z.infer<typeof VaultMetadataSchema>

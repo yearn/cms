@@ -12,13 +12,15 @@ export const useFinder = create<{
 export default function Finder({ className }: { className?: string }) {
   const { finderString, setFinderString } = useFinder()
 
-  return <div className={className}>
-    <Input 
-      type="text" 
-      placeholder="Search by name or address"
-      value={finderString}
-      onChange={(e) => setFinderString(e.target.value)}
-      className="w-full"
-    />
-  </div>
+  return (
+    <div className={className}>
+      <Input
+        type="text"
+        placeholder="Search by name or address"
+        value={finderString}
+        onChange={(e) => setFinderString(e.target.value)}
+        className="w-full"
+      />
+    </div>
+  )
 }

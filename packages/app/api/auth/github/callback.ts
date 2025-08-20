@@ -1,5 +1,5 @@
 export const config = {
-  runtime: 'edge'
+  runtime: 'edge',
 }
 
 interface GitHubTokenResponse {
@@ -11,8 +11,7 @@ interface GitHubTokenResponse {
 }
 
 export default async function (req: Request): Promise<Response> {
-  if (req.method !== 'GET')
-    return new Response('Method Not Allowed', { status: 405 })
+  if (req.method !== 'GET') return new Response('Method Not Allowed', { status: 405 })
 
   const url = new URL(req.url)
   const code = url.searchParams.get('code')
@@ -23,7 +22,7 @@ export default async function (req: Request): Promise<Response> {
   if (!process.env.VITE_GITHUB_CLIENT_ID || !process.env.GITHUB_CLIENT_SECRET) {
     return new Response(JSON.stringify({ error: 'Envars not set' }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     })
   }
 
@@ -31,7 +30,7 @@ export default async function (req: Request): Promise<Response> {
   if (error) {
     return new Response(JSON.stringify({ error }), {
       status: 400,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     })
   }
 
@@ -39,7 +38,7 @@ export default async function (req: Request): Promise<Response> {
   if (!code || !state) {
     return new Response(JSON.stringify({ error: 'Missing code or auth_challenge parameter' }), {
       status: 400,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     })
   }
 
@@ -48,22 +47,22 @@ export default async function (req: Request): Promise<Response> {
     const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
       method: 'POST',
       headers: {
-        'Accept': 'application/json',
+        Accept: 'application/json',
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: new URLSearchParams({
         client_id: process.env.VITE_GITHUB_CLIENT_ID,
         client_secret: process.env.GITHUB_CLIENT_SECRET,
         code: code,
-      })
+      }),
     })
 
-    const tokenData = await tokenResponse.json() as GitHubTokenResponse
+    const tokenData = (await tokenResponse.json()) as GitHubTokenResponse
 
     if (tokenData.error) {
       return new Response(JSON.stringify({ error: tokenData.error_description }), {
         status: 400,
-        headers: { 'Content-Type': 'application/json' }
+        headers: { 'Content-Type': 'application/json' },
       })
     }
 
@@ -71,12 +70,11 @@ export default async function (req: Request): Promise<Response> {
     redirect.searchParams.set('token', tokenData.access_token ?? '')
     redirect.searchParams.set('state', state)
     return Response.redirect(redirect.toString(), 302)
-
   } catch (error) {
     console.error(error)
     return new Response(JSON.stringify({ error: 'Failed to exchange code for token' }), {
       status: 500,
-      headers: { 'Content-Type': 'application/json' }
+      headers: { 'Content-Type': 'application/json' },
     })
   }
 }

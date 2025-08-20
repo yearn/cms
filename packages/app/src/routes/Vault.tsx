@@ -18,14 +18,12 @@ function PullRequestButton() {
     mutationFn: async () => {
       const original = rawJsonChainMap[vault.chainId]
       const path = `packages/cdn/vaults/${vault.chainId}.json`
-      
+
       // Find and replace the specific vault
-      const updatedArray = original.map((vaultObj: VaultMetadata) => 
-        vaultObj.address.toLowerCase() === vault.address.toLowerCase() 
-          ? formState 
-          : vaultObj
+      const updatedArray = original.map((vaultObj: VaultMetadata) =>
+        vaultObj.address.toLowerCase() === vault.address.toLowerCase() ? formState : vaultObj,
       )
-      
+
       const response = await fetch('/api/pr', {
         method: 'POST',
         headers: {
@@ -34,16 +32,16 @@ function PullRequestButton() {
         body: JSON.stringify({
           token: sessionStorage.getItem('github_token'),
           path,
-          contents: JSON.stringify(updatedArray, null, 2)
-        })
+          contents: JSON.stringify(updatedArray, null, 2),
+        }),
       })
-      
+
       const result = await response.json()
-      
+
       if (!result.success) {
         throw new Error(result.error || 'Failed to create pull request')
       }
-      
+
       return result
     },
     onSuccess: (data) => {
@@ -52,7 +50,7 @@ function PullRequestButton() {
     onError: (error) => {
       console.error('PR creation failed:', error)
       alert(`Failed to create pull request: ${error.message}`)
-    }
+    },
   })
 
   // Throw a promise to trigger Suspense when pending
@@ -61,9 +59,9 @@ function PullRequestButton() {
   }
 
   return (
-    <Button 
-      onClick={() => createPullRequest.mutate()} 
-      className="my-6 ml-auto flex items-center gap-4" 
+    <Button
+      onClick={() => createPullRequest.mutate()}
+      className="my-6 ml-auto flex items-center gap-4"
       disabled={!isDirty}
     >
       <PiGitPullRequest />
@@ -79,7 +77,9 @@ function VaultDetails() {
     <div className="flex flex-col items-start justify-start gap-4 w-200">
       <div className="flex flex-col">
         <h1 className="text-3xl font-bold truncate">{vault.name}</h1>
-        <div>chain: {chains[vault.chainId]?.name} ({vault.chainId})</div>
+        <div>
+          chain: {chains[vault.chainId]?.name} ({vault.chainId})
+        </div>
         <div>address: {vault.address}</div>
         <div>registry: {vault.registry}</div>
       </div>
@@ -96,26 +96,31 @@ function Provider({ children }: { children: React.ReactNode }) {
   const { chainId, address } = useParams()
   const { vaults } = useVaultsMeta()
 
-  const vault = vaults.find(v => 
-    v.chainId.toString() === chainId && 
-    v.address.toLowerCase() === address?.toLowerCase()
+  const vault = vaults.find(
+    (v) => v.chainId.toString() === chainId && v.address.toLowerCase() === address?.toLowerCase(),
   )
 
-  if (!vault) { throw new Error('Vault not found') }
+  if (!vault) {
+    throw new Error('Vault not found')
+  }
 
-  return <MetaDataProvider schema={VaultMetadataSchema} o={vault}>
-    {children}
-  </MetaDataProvider>
+  return (
+    <MetaDataProvider schema={VaultMetadataSchema} o={vault}>
+      {children}
+    </MetaDataProvider>
+  )
 }
 
 function VaultSkeleton() {
-  return <div className="w-200 flex flex-col items-start justify-start gap-6">
-    <Skeleton className="w-full h-42" />
-    <Skeleton className="w-full h-16" />
-    <Skeleton className="w-full h-10" />
-    <Skeleton className="w-full h-16" />
-    <Skeleton className="w-full h-16" />
-  </div>
+  return (
+    <div className="w-200 flex flex-col items-start justify-start gap-6">
+      <Skeleton className="w-full h-42" />
+      <Skeleton className="w-full h-16" />
+      <Skeleton className="w-full h-10" />
+      <Skeleton className="w-full h-16" />
+      <Skeleton className="w-full h-16" />
+    </div>
+  )
 }
 
 function Vault() {
@@ -130,4 +135,4 @@ function Vault() {
   )
 }
 
-export default Vault 
+export default Vault

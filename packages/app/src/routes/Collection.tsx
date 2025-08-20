@@ -3,26 +3,25 @@ import { Suspense } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
 import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
-import { StrategyMetadataSchema } from '../../schemas/StrategyMetadata'
-import type { VaultMetadata } from '../../schemas/VaultMetadata'
+import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
 import Button from '../components/elements/Button'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
 import Skeleton from '../components/Skeleton'
-import { useStrategyMeta } from '../hooks/useStrategyMeta'
+import { useCollectionData } from '../hooks/useCollectionData'
 
-function PullRequestButton() {
-  const { o: vault, isDirty, formState } = useMetaData()
-  const { rawJsonChainMap } = useStrategyMeta()
+function PullRequestButton({ collection }: { collection: CollectionKey }) {
+  const { o: item, isDirty, formState } = useMetaData()
+  const { rawJsonChainMap } = useCollectionData(collection)
 
   const createPullRequest = useMutation({
     mutationFn: async () => {
-      const original = rawJsonChainMap[vault.chainId]
-      const path = `packages/cdn/strategies/${vault.chainId}.json`
+      const original = rawJsonChainMap[item.chainId]
+      const path = `packages/cdn/${collection}/${item.chainId}.json`
 
-      // Find and replace the specific vault
-      const updatedArray = original.map((vaultObj: VaultMetadata) =>
-        vaultObj.address.toLowerCase() === vault.address.toLowerCase() ? formState : vaultObj,
+      // Find and replace the specific item
+      const updatedArray = original.map((itemObj: any) =>
+        itemObj.address.toLowerCase() === item.address.toLowerCase() ? formState : itemObj,
       )
 
       const response = await fetch('/api/pr', {
@@ -71,47 +70,54 @@ function PullRequestButton() {
   )
 }
 
-function StrategyDetails() {
+function CollectionDetails({ collection }: { collection: CollectionKey }) {
   const { signedIn } = useGithubUser()
-  const { o: strategy } = useMetaData()
+  const { o: item } = useMetaData()
+
   return (
     <div className="flex flex-col items-start justify-start gap-4 w-200">
+      {/* Standard header for all CMS types */}
       <div className="flex flex-col">
-        <h1 className="text-3xl font-bold truncate">{strategy.name || 'No name onchain'}</h1>
-        <div>
-          chain: {chains[strategy.chainId]?.name} ({strategy.chainId})
-        </div>
-        <div>address: {strategy.address}</div>
+        <h1 className="text-3xl font-bold truncate">{item.name}</h1>
+        {item.chainId && (
+          <div>
+            chain: {chains[item.chainId]?.name} ({item.chainId})
+          </div>
+        )}
+        {item.address && <div>address: {item.address}</div>}
+        {item.registry && <div>registry: {item.registry}</div>}
       </div>
+
       <MetaData className="w-200" />
       <Suspense fallback={<Skeleton className="h-12 w-96 my-6 ml-auto" />}>
-        {signedIn && <PullRequestButton />}
+        {signedIn && <PullRequestButton collection={collection} />}
         {!signedIn && <GithubSignIn className="my-6 ml-auto" />}
       </Suspense>
     </div>
   )
 }
 
-function Provider({ children }: { children: React.ReactNode }) {
+function Provider({ children, collection }: { children: React.ReactNode; collection: CollectionKey }) {
   const { chainId, address } = useParams()
-  const { strategies } = useStrategyMeta()
+  const collectionConfig = getCollection(collection)
+  const { data } = useCollectionData(collection)
 
-  const strategy = strategies.find(
-    (v) => v.chainId.toString() === chainId && v.address.toLowerCase() === address?.toLowerCase(),
+  const item = data.find(
+    (d: any) => d.chainId.toString() === chainId && d.address.toLowerCase() === address?.toLowerCase(),
   )
 
-  if (!strategy) {
-    throw new Error('Stratgy not found')
+  if (!item) {
+    throw new Error(`${collectionConfig.displayName.slice(0, -1)} not found`)
   }
 
   return (
-    <MetaDataProvider schema={StrategyMetadataSchema} o={strategy}>
+    <MetaDataProvider schema={collectionConfig.schema} o={item}>
       {children}
     </MetaDataProvider>
   )
 }
 
-function StrategySkeleton() {
+function CollectionSkeleton() {
   return (
     <div className="w-200 flex flex-col items-start justify-start gap-6">
       <Skeleton className="w-full h-42" />
@@ -123,16 +129,24 @@ function StrategySkeleton() {
   )
 }
 
-function Strategy() {
+function Collection() {
+  const { collection } = useParams()
+
+  if (!collection || !getCollectionKeys().includes(collection as any)) {
+    throw new Error(`Collection ${collection} not found`)
+  }
+
+  const collectionKey = collection as CollectionKey
+
   return (
     <div className="px-8 pt-5 pb-16">
-      <Suspense fallback={<StrategySkeleton />}>
-        <Provider>
-          <StrategyDetails />
+      <Suspense fallback={<CollectionSkeleton />}>
+        <Provider collection={collectionKey}>
+          <CollectionDetails collection={collectionKey} />
         </Provider>
       </Suspense>
     </div>
   )
 }
 
-export default Strategy
+export default Collection
