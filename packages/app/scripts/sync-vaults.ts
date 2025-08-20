@@ -94,37 +94,37 @@ async function saveVaults(chainId: number, vaults: VaultMetadata[]): Promise<voi
 // Based on complete registry analysis from ydaemon codebase
 const REGISTRY_HANDLERS = {
   // V2 Standard Registries (handleV02Vault) - Legacy
-  '0xe15461b18ee31b7379019dc523231c57d1cbc18c': { label: 'YEARN', handler: 'V02_STANDARD' }, // Ethereum V1
-  '0x3199437193625dccd6f9c9e98bdf93582200eb1f': { label: 'YEARN', handler: 'V02_STANDARD' }, // Arbitrum V2
-  '0x727fe1759430df13655ddb0731df210a8a1f8b54': { label: 'YEARN', handler: 'V02_STANDARD' }, // Fantom V2
-  '0x1ba4eb0f44ab82541e56669e18972b0d6037dfe0': { label: 'YEARN', handler: 'V02_STANDARD' }, // Optimism V2
+  '0xe15461b18ee31b7379019dc523231c57d1cbc18c': { label: 'YEARN', handler: 'V02_STANDARD', tag: '' }, // Ethereum V1
+  '0x3199437193625dccd6f9c9e98bdf93582200eb1f': { label: 'YEARN', handler: 'V02_STANDARD', tag: '' }, // Arbitrum V2
+  '0x727fe1759430df13655ddb0731df210a8a1f8b54': { label: 'YEARN', handler: 'V02_STANDARD', tag: '' }, // Fantom V2
+  '0x1ba4eb0f44ab82541e56669e18972b0d6037dfe0': { label: 'YEARN', handler: 'V02_STANDARD', tag: '' }, // Optimism V2
   
   // V2 Experimental Registry (handleV02ExperimentalVault)
-  '0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804': { label: 'YEARN', handler: 'V02_EXPERIMENTAL' }, // Ethereum V2 Experimental
+  '0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804': { label: 'YEARN', handler: 'V02_EXPERIMENTAL', tag: '' }, // Ethereum V2 Experimental
   
   // V3 Registries (handleV03Vault)
-  '0xaf1f5e1c19cb68b30aad73846effdf78a5863319': { label: 'YEARN', handler: 'V03' }, // Ethereum V3
-  '0x79286dd38c9017e5423073ba1d328373a35e4a6c': { label: 'YEARN', handler: 'V03' }, // Optimism V3
-  '0xf3885ede00171997bfadaa98e01e167b53a78ec5': { label: 'YEARN', handler: 'V03' }, // Base V3
+  '0xaf1f5e1c19cb68b30aad73846effdf78a5863319': { label: 'YEARN', handler: 'V03', tag: '' }, // Ethereum V3
+  '0x79286dd38c9017e5423073ba1d328373a35e4a6c': { label: 'YEARN', handler: 'V03', tag: '' }, // Optimism V3
+  '0xf3885ede00171997bfadaa98e01e167b53a78ec5': { label: 'YEARN', handler: 'V03', tag: '' }, // Base V3
   
   // V4 Registries (handleV04Vault)
-  '0xff31a1b020c868f6ea3f61eb953344920eeca3af': { label: 'YEARN', handler: 'V04' }, // Multi-chain V4
-  '0xa693365ff5f5e65a03616fe98098318ca80e6427': { label: 'YEARN', handler: 'V04' }, // Ethereum V4
-  '0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038': { label: 'YEARN', handler: 'V04' }, // Multi-chain V4
-  '0xff5e3a7c4cbfa9dd361385c24c3a0a4ee63ce500': { label: 'YEARN', handler: 'V04' }, // Polygon V4
+  '0xff31a1b020c868f6ea3f61eb953344920eeca3af': { label: 'YEARN', handler: 'V04', tag: '' }, // Multi-chain V4
+  '0xa693365ff5f5e65a03616fe98098318ca80e6427': { label: 'YEARN', handler: 'V04', tag: '' }, // Ethereum V4
+  '0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038': { label: 'YEARN', handler: 'V04', tag: '' }, // Multi-chain V4
+  '0xff5e3a7c4cbfa9dd361385c24c3a0a4ee63ce500': { label: 'YEARN', handler: 'V04', tag: '' }, // Polygon V4
   
   // V5 Registries (handleV05Vault)
-  '0xe9e8c89c8fc7e8b8f23425688eb68987231178e5': { label: 'JUICED', handler: 'V05' }, // Juiced V5
-  '0x444045c5c13c246e117ed36437303cac8e250ab0': { label: 'PUBLIC_ERC4626', handler: 'V05' }, // Public ERC4626 V5
-  '0x770d0d1fb036483ed4abb6d53c1c88fb277d812f': { label: 'PUBLIC_ERC4626', handler: 'V05' }, // Public ERC4626 V5 Stealth
+  '0xe9e8c89c8fc7e8b8f23425688eb68987231178e5': { label: 'JUICED', handler: 'V05', tag: '' }, // Juiced V5
+  '0x444045c5c13c246e117ed36437303cac8e250ab0': { label: 'PUBLIC_ERC4626', handler: 'V05', tag: 'STEALTH' }, // Public ERC4626 V5 STEALTH
+  '0x770d0d1fb036483ed4abb6d53c1c88fb277d812f': { label: 'PUBLIC_ERC4626', handler: 'V05', tag: 'STEALTH' }, // Public ERC4626 V5 STEALTH
   
   // V6 Registries (handleV06Vault_Gamma)
-  '0xd5967178702250d9f0eac34258ebba99b9a28ed0': { label: 'YEARN', handler: 'V06' }, // Polygon V6 Gamma
+  '0xd5967178702250d9f0eac34258ebba99b9a28ed0': { label: 'YEARN', handler: 'V06', tag: '' }, // Polygon V6 Gamma
   
   // Special Registries
-  '0xd499ccf3e93f4cfb335ac388e3c896d59cdde7c3': { label: 'POOL_TOGETHER', handler: 'V05' }, // Pool Together
-  '0x842b22eb2a1c1c54344eddbe6959f787c2d15844': { label: 'COVE', handler: 'V05' }, // Cove
-  '0x8020fb37b21e0ef1707ada7a914baf44f9045e52': { label: 'POOL_TOGETHER', handler: 'V05' } // Pool Together Arbitrum
+  '0xd499ccf3e93f4cfb335ac388e3c896d59cdde7c3': { label: 'POOL_TOGETHER', handler: 'V05', tag: '' }, // Pool Together
+  '0x842b22eb2a1c1c54344eddbe6959f787c2d15844': { label: 'COVE', handler: 'V05', tag: '' }, // Cove
+  '0x8020fb37b21e0ef1707ada7a914baf44f9045e52': { label: 'POOL_TOGETHER', handler: 'V05', tag: '' } // Pool Together Arbitrum
 } as const
 
 /**
@@ -246,6 +246,26 @@ function createVaultFromKong(kongVault: KongVault): VaultMetadata {
   // Auto-categorize the vault based on its name
   const category = categorizeVault(kongVault.name)
   
+  // Determine if vault should be hidden (following ydaemon logic)
+  let isHidden = false
+  
+  // Check if registry is tagged as STEALTH
+  if (registryData?.tag === 'STEALTH') {
+    isHidden = true
+  }
+  
+  // Additional ydaemon logic: hide public ERC4626 vaults that are not Yearn
+  if (isPublicERC4626 && !isYearn) {
+    isHidden = true
+  }
+  
+  // Migration defaults (following ydaemon logic)
+  // If no migration target is set, default to vault address with available=false
+  const migration = {
+    available: false,
+    target: kongVault.address.toLowerCase(), // Default to vault's own address
+  }
+  
   return VaultMetadataSchema.parse({
     chainId: kongVault.chainId,
     address: kongVault.address.toLowerCase(),
@@ -255,7 +275,7 @@ function createVaultFromKong(kongVault: KongVault): VaultMetadata {
     ydaemonKind: kind, 
     ydaemonEndorsed: false,
     isRetired: false,
-    isHidden: false,
+    isHidden: isHidden,
     isAggregator: false,
     isBoosted: false,
     isAutomated: type === "Automated Yearn Vault",
@@ -268,9 +288,7 @@ function createVaultFromKong(kongVault: KongVault): VaultMetadata {
     description: "",
     sourceURI: "",
     uiNotice: "",
-    migration: {
-      available: false,
-    },
+    migration: migration,
     stability: {
       stability: "Unknown",
     },
