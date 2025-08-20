@@ -19,7 +19,7 @@ bun dev
 
 ```
 
-#### Manual vault sync
+#### Manual vault and strategy sync
 ```bash
 
 act -j sync-vaults
@@ -32,8 +32,10 @@ or
 ```bash
 
 bun packages/app/scripts/sync-vaults.ts
-git add packages/app/cdn
-git commit -m 'Sync vaults'
+bun packages/app/scripts/sync-strategies.ts
+git add packages/app/cdn/vaults
+git add packages/app/cdn/strategies
+git commit -m 'Sync vaults and strategies'
 git push
 
 ```
