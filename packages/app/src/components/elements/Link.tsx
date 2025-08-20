@@ -10,14 +10,16 @@ active:text-primary-600 active:decoration-primary-600
 `
 
 type Props = AnchorHTMLAttributes<HTMLAnchorElement> & {
-  className?: string,
-  to: string,
+  className?: string
+  to: string
 }
 
 const Link = forwardRef<HTMLAnchorElement, Props>(({ className, children, ...props }, ref) => {
-  return <_Link {...props} ref={ref} className={cn(AnchorClassName, className)}>
-    {children}
-  </_Link>
+  return (
+    <_Link {...props} ref={ref} className={cn(AnchorClassName, className)}>
+      {children}
+    </_Link>
+  )
 })
 
 Link.displayName = 'Link'

@@ -15,12 +15,12 @@ export function useGithubUser() {
       if (!signedIn) return null
       const res = await fetch('https://api.github.com/user', {
         headers: {
-          Authorization: `Bearer ${token}`
-        }
+          Authorization: `Bearer ${token}`,
+        },
       })
       if (!res.ok) throw new Error('Failed to fetch user')
       return res.json()
-    }
+    },
   })
 
   return { signedIn, avatar: data?.avatar_url }
@@ -46,8 +46,20 @@ export default function GithubSignIn({ className }: { className?: string }) {
     }
   }
 
-  return <Button h={signedIn ? 'secondary' : 'primary'} onClick={onSignInWithGithub} className={cn('flex items-center gap-4', className)}>
-    {signedIn ? <Suspense fallback={<Skeleton className="w-6 h-6 rounded-full" />}><GithubAvatar /></Suspense> : <PiGithubLogoFill />}
-    <span>{signedIn ? 'Sign out' : 'Sign in'}</span>
-  </Button>
+  return (
+    <Button
+      h={signedIn ? 'secondary' : 'primary'}
+      onClick={onSignInWithGithub}
+      className={cn('flex items-center gap-4', className)}
+    >
+      {signedIn ? (
+        <Suspense fallback={<Skeleton className="w-6 h-6 rounded-full" />}>
+          <GithubAvatar />
+        </Suspense>
+      ) : (
+        <PiGithubLogoFill />
+      )}
+      <span>{signedIn ? 'Sign out' : 'Sign in'}</span>
+    </Button>
+  )
 }

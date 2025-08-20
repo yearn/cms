@@ -7,7 +7,7 @@ const loadState = () => {
     const stored = localStorage.getItem(STORAGE_KEY)
     if (stored) {
       const parsed = JSON.parse(stored)
-      return new Set(parsed.toggledChains as number[] || [])
+      return new Set((parsed.toggledChains as number[]) || [])
     }
   } catch {}
   return new Set([1])
@@ -26,10 +26,7 @@ export const useToggleChainStore = create<{
       } else if (on === undefined || on) {
         newToggledChains.add(chainId)
       }
-      localStorage.setItem(
-        STORAGE_KEY,
-        JSON.stringify({ toggledChains: [...newToggledChains] })
-      )
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ toggledChains: [...newToggledChains] }))
       return { toggledChains: newToggledChains }
     }),
 }))

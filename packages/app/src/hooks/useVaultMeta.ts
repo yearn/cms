@@ -8,8 +8,8 @@ export function useVaultsMeta() {
   const query = useSuspenseQuery({
     queryKey: ['vaults-meta'],
     queryFn: async () => {
-      const promises = Object.values(chains).map(chain => fetch(`${getCdnUrl()}vaults/${chain.id}.json`))
-      const jsonPromises = (await Promise.all(promises)).flatMap(result => result.json())
+      const promises = Object.values(chains).map((chain) => fetch(`${getCdnUrl()}vaults/${chain.id}.json`))
+      const jsonPromises = (await Promise.all(promises)).flatMap((result) => result.json())
       const jsons = await Promise.all(jsonPromises)
 
       const chainKeys = Object.keys(chains).map(Number)
@@ -21,11 +21,11 @@ export function useVaultsMeta() {
 
       return { flat: jsons.flat(), rawJsonChainMap }
     },
-    staleTime: 1000 * 60 * 5
+    staleTime: 1000 * 60 * 5,
   })
 
   const vaults = useMemo(() => {
-    return query.data.flat.map(d => VaultMetadataSchema.parse(d))
+    return query.data.flat.map((d) => VaultMetadataSchema.parse(d))
   }, [query.data.flat])
 
   const sortedVaults = useMemo(() => {
@@ -41,6 +41,6 @@ export function useVaultsMeta() {
   return {
     ...query,
     vaults: sortedVaults,
-    rawJsonChainMap: query.data.rawJsonChainMap
+    rawJsonChainMap: query.data.rawJsonChainMap,
   }
 }

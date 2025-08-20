@@ -38,12 +38,12 @@ type MetaDataProviderProps = {
 
 export function MetaDataProvider({ schema, o, children }: MetaDataProviderProps) {
   const [formState, setFormState] = useState(o)
-  
+
   const updateField = (path: string[], value: any) => {
-    setFormState(prev => {
+    setFormState((prev) => {
       const newState = { ...prev }
       let curr = newState
-      path.slice(0, -1).forEach(key => {
+      path.slice(0, -1).forEach((key) => {
         curr[key] = { ...curr[key] }
         curr = curr[key]
       })
@@ -59,14 +59,10 @@ export function MetaDataProvider({ schema, o, children }: MetaDataProviderProps)
     updateField,
     o,
     schema,
-    isDirty
+    isDirty,
   }
 
-  return (
-    <MetaDataContext.Provider value={value}>
-      {children}
-    </MetaDataContext.Provider>
-  )
+  return <MetaDataContext.Provider value={value}>{children}</MetaDataContext.Provider>
 }
 
 const renderField = (
@@ -74,7 +70,7 @@ const renderField = (
   schema: JSONSchema,
   value: any,
   update: (path: string[], value: any) => void,
-  path: string[] = []
+  path: string[] = [],
 ) => {
   const fieldPath = [...path, key]
   const commonProps = {
@@ -106,34 +102,32 @@ const renderField = (
       }
       return <Input type="text" {...commonProps} className="w-128" autoComplete="off" />
     case 'boolean':
-      return (
-        <Switch
-          checked={value || false}
-          onChange={(checked) => update(fieldPath, checked)}
-        />
-      )
+      return <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} />
     case 'object':
       return (
         <fieldset className="flex flex-col gap-3">
-          {Object.entries(schema.properties || {}).map(([k, v]) =>
+          {Object.entries(schema.properties || {}).map(([k, v]) => (
             <div key={k} className="flex items-center justify-between gap-6">
-              <label htmlFor={k} className="w-42 text-right text-sm">{k}</label>
+              <label htmlFor={k} className="w-42 text-right text-sm">
+                {k}
+              </label>
               {renderField(k, v, value?.[k], update, fieldPath)}
             </div>
-          )}
+          ))}
         </fieldset>
       )
     case 'array': {
       // Convert array items to tag format for react-tag-autocomplete
       const selected = (value || []).map((item: any) => ({
         value: String(item || ''),
-        label: String(item || '')
+        label: String(item || ''),
       }))
-      
-      const suggestions = schema.items?.enum?.map((item: string) => ({
-        value: item,
-        label: item
-      })) || []
+
+      const suggestions =
+        schema.items?.enum?.map((item: string) => ({
+          value: item,
+          label: item,
+        })) || []
 
       return (
         <div className="w-128">
@@ -141,7 +135,9 @@ const renderField = (
             selected={selected}
             suggestions={suggestions}
             onAdd={(tag) => {
-              if (value.includes(tag.label)) { return }
+              if (value.includes(tag.label)) {
+                return
+              }
               const newValue = [...(value || []), tag.label]
               update(fieldPath, newValue)
             }}
@@ -171,12 +167,14 @@ export default function MetaData({ className }: MetaDataProps) {
   const readonlyFields = ['chainId', 'address', 'name', 'registry']
   return (
     <form className={cn('flex flex-col gap-6', className)}>
-      {Object.entries(jsonSchema.properties || {}).filter(([key]) => !readonlyFields.includes(key)).map(([key, schema]) =>
-        <div key={key} className="py-3 flex items-center justify-between border-b border-primary-950">
-          <label htmlFor={key}>{key}</label>
-          {renderField(key, schema, formState[key], updateField)}
-        </div>
-      )}
+      {Object.entries(jsonSchema.properties || {})
+        .filter(([key]) => !readonlyFields.includes(key))
+        .map(([key, schema]) => (
+          <div key={key} className="py-3 flex items-center justify-between border-b border-primary-950">
+            <label htmlFor={key}>{key}</label>
+            {renderField(key, schema, formState[key], updateField)}
+          </div>
+        ))}
     </form>
   )
 }

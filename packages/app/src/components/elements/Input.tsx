@@ -38,7 +38,14 @@ type Props = InputHTMLAttributes<HTMLInputElement> & {
 
 const Input = forwardRef<HTMLInputElement, Props>(({ className, theme, ...props }, ref) => {
   const borderClassName = theme === 'warn' ? '!border-yellow-400' : theme === 'error' ? '!border-red-500' : ''
-  return <input data-disabled={props.disabled} ref={ref} {...props} className={cn(InputClassName, className, borderClassName)} />
+  return (
+    <input
+      data-disabled={props.disabled}
+      ref={ref}
+      {...props}
+      className={cn(InputClassName, className, borderClassName)}
+    />
+  )
 })
 
 Input.displayName = 'Input'

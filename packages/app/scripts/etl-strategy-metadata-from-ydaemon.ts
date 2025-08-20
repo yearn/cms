@@ -23,7 +23,7 @@ async function updateNames(strategies: StrategyMetadata[]) {
       })
       console.log(`update names, ${chainId}, ${i + batchSize}/${strategiesForChain.length} vaults processed`)
       for (let j = 0; j < batch.length; j++) {
-        if (batch[j] === undefined || names[j] === undefined || names[j]!.status !== 'success') { 
+        if (batch[j] === undefined || names[j] === undefined || names[j]!.status !== 'success') {
           console.log(chainId, i, j, 'batch[j] !== undefined', batch[j] !== undefined)
           console.log(chainId, i, j, 'names[j] !== undefined', names[j] !== undefined)
           continue
@@ -42,28 +42,32 @@ async function main() {
 
     for (const file of files.filter((file) => file.endsWith('.json'))) {
       const chainId = parseInt(file.split('.')[0] ?? '0')
-      if (chainId === 0) { throw new Error('chainId === 0') }
+      if (chainId === 0) {
+        throw new Error('chainId === 0')
+      }
 
       const filePath = join(source, file)
       const content = await readFile(filePath, 'utf-8')
       const records = JSON.parse(content).strategies
 
-      Object.values(records).reduce((acc: string[], strategy: any) => {
-        if (strategy.protocols) {
-          acc.push(...strategy.protocols)
-        }
-        return acc
-      }, []).forEach(protocol => protocols.add(protocol))
+      Object.values(records)
+        .reduce((acc: string[], strategy: any) => {
+          if (strategy.protocols) {
+            acc.push(...strategy.protocols)
+          }
+          return acc
+        }, [])
+        .forEach((protocol) => protocols.add(protocol))
 
       let strategies = Object.keys(records)
-        .map(address => ({ ...records[address] }))
-        .map(strategy => ({ chainId: strategy.chainID, ...strategy }))
-        .map(strategy => ({ ...strategy, protocols: strategy.protocols ?? [] }))
-        .map(strategy => StrategyMetadataSchema.parse(strategy))
+        .map((address) => ({ ...records[address] }))
+        .map((strategy) => ({ chainId: strategy.chainID, ...strategy }))
+        .map((strategy) => ({ ...strategy, protocols: strategy.protocols ?? [] }))
+        .map((strategy) => StrategyMetadataSchema.parse(strategy))
 
       // remove duplicates by address
-      strategies = strategies.filter((strategy, index, self) =>
-        index === self.findIndex((t) => t.address === strategy.address)
+      strategies = strategies.filter(
+        (strategy, index, self) => index === self.findIndex((t) => t.address === strategy.address),
       )
 
       await updateNames(strategies)
@@ -77,7 +81,6 @@ async function main() {
 
     // print protocols
     // console.log(Array.from(protocols).sort())
-
   } catch (error) {
     console.error('Error processing vault metadata:', error)
   }

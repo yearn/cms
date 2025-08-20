@@ -26,7 +26,7 @@ serve({
 
     return new Response('Not found', { status: 404 })
   },
-  port: 3001
+  port: 3001,
 })
 
 console.log('🚀 api up')
