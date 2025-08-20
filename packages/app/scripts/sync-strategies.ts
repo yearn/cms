@@ -88,6 +88,8 @@ function createStrategyFromKong(kongStrategy: KongStrategy): StrategyMetadata {
     chainId: kongStrategy.chainId,
     address: kongStrategy.address.toLowerCase(),
     name: kongStrategy.name,
+    displayName: "",
+    description: "",
     isRetired: false,
     protocols: []
   })
