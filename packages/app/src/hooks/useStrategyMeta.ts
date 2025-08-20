@@ -28,9 +28,19 @@ export function useStrategyMeta() {
     return query.data.flat.map(d => StrategyMetadataSchema.parse(d))
   }, [query.data.flat])
 
+  const sorted = useMemo(() => {
+    return strategies.sort((a, b) => {
+      if (a.chainId < b.chainId) return -1
+      if (a.chainId > b.chainId) return 1
+      if (a.name < b.name) return -1
+      if (a.name > b.name) return 1
+      return 0
+    })
+  }, [strategies])
+
   return {
     ...query,
-    strategies,
+    strategies: sorted,
     rawJsonChainMap: query.data.rawJsonChainMap
   }
 }

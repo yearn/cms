@@ -28,9 +28,19 @@ export function useVaultsMeta() {
     return query.data.flat.map(d => VaultMetadataSchema.parse(d))
   }, [query.data.flat])
 
+  const sortedVaults = useMemo(() => {
+    return vaults.sort((a, b) => {
+      if (a.chainId < b.chainId) return -1
+      if (a.chainId > b.chainId) return 1
+      if (a.name < b.name) return -1
+      if (a.name > b.name) return 1
+      return 0
+    })
+  }, [vaults])
+
   return {
     ...query,
-    vaults,
+    vaults: sortedVaults,
     rawJsonChainMap: query.data.rawJsonChainMap
   }
 }
