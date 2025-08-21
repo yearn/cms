@@ -4,9 +4,6 @@
     "address": "0x0017a89a230cb1304efcf7cab8855db29243474b",
     "name": "USDC syyCore",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -40,16 +37,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x00f30115b5e828ab387b8190f8532ea7ceaf3fdc",
     "name": "Aerodrome DOLA-USDC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -83,16 +79,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x03c5aff0cd5e40889d689fd9d9caff286b1bd7fb",
     "name": "Moonwell cbBTC Lender WETH Borrower",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -126,16 +121,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x0ace53f57a14acfd4d43c7d4c46be4b4a5347eff",
     "name": "LevMoonwell USDC",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -169,16 +163,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x0dcb575fd705f1352b0c0f8fa6a64a0561ce8c3c",
     "name": "ROOM USDC VAULT",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -212,16 +205,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x12e3187d6b7a0ba98a427ef9ef287bd9960764d1",
     "name": "Aerodrome DEUS-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -255,16 +247,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x13454b672213f53cb1d31ea0be033c58fe315392",
     "name": "Aerodrome MAI-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -298,16 +289,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x141719bd8a203839c291b6927d13b32710932b90",
     "name": "Aerodrome MOG-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -341,16 +331,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x1d7a8593c249ab84b2733d09a9e4a6b9e42140fe",
     "name": "yPT-LBTC (auto-rolling Pendle PT)",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
@@ -384,16 +373,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x1f1969209e18f24282ce6fae9c27f6e1fe5a1d1b",
     "name": "Aerodrome pHAM-pwBLT Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -427,16 +415,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x25f32ec89ce7732a4e9f8f3340a09259f823b7d3",
     "name": "cbBTC Horizon yVault",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -470,16 +457,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x26adf26c86bef23c4e1f66ddf2a62e6ecb98152e",
     "name": "ROOM VAULT V2",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -513,16 +499,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x30bca23b220deb343f62c83eda1465546ac9c7f7",
     "name": "Aerodrome AERO-USDC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -556,16 +541,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x31ce9ab5a358e5c802cc01080f29a65a14eb45b8",
     "name": "Aerodrome BMX-wBLT Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -599,16 +583,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x338dfa34f66b6922b9edec82da86519ce7938184",
     "name": "USDC-2 Base USDC Vault",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -642,16 +625,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x37a74970f80adaa8215598e95a17cbed2c39030d",
     "name": "Aerodrome SONNE-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -685,16 +667,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x37fdacd764aa64f4e453842d8056853e5550c09b",
     "name": "Aerodrome USDC-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -728,16 +709,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x391e5dc227cdcf3cca012e5278798121236b1861",
     "name": "Aerodrome WELL-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -771,16 +751,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x3d0c3b02eb2788c97cdb0a23e369a49278e4b497",
     "name": "Aerodrome MAI-USDC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -814,16 +793,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x3ed55314c0a4b1a1e3e6b4c9e0617d99c8b5fff8",
     "name": "Aerodrome wstETH-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -857,16 +835,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x3fa853290b0a21396f2e7bf0d4a372927d6eb5b4",
     "name": "cbBTC BaseInvaders",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -900,16 +877,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x41102db56d0531be4560ec2db295e28a3c6954c7",
     "name": "Aerodrome TAROT-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -943,16 +919,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x41489713d581ec717e1aa55b7729d24965cf96b5",
     "name": "Aerodrome USD+-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -986,16 +961,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x44da1202285ed9678dab99b55aadb2fa549fdfdc",
     "name": "LevMoonwell wstETH",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1029,16 +1003,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x4d3ceba4349adb06d2de8ebd2f9320a61303ad81",
     "name": "Aerodrome hyUSD-eUSD Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1072,16 +1045,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x4d73de04431050347d6d94f7fab5887ea6737a18",
     "name": "test USDC",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1115,16 +1087,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x4d81c7d534d703e0a0aecadf668c0e0253e1f1c3",
     "name": "WETH Horizon yVault",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1158,16 +1129,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x4dcc2ecaff01525fbcab3ed18823270f912a380a",
     "name": "Aerodrome MAI-DOLA Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1201,16 +1171,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x50fd1e6e0e2153c2b26ebbcd9bcded4639a1aae3",
     "name": "MUV002 - Flagship USDC",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1244,16 +1213,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x58dce038423a1e43f3429cb62425a1364cc3bb4c",
     "name": "Aerodrome WETH-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1287,16 +1255,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x5b508fe98ac33da9352fa539e2efa9f1dda26c51",
     "name": "Aerodrome eUSD-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1330,16 +1297,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x5b6c2b7ac69ad287c7c9eb85e725f3799695df09",
     "name": "Yield Chasing pfUSDC1",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1373,16 +1339,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x5b9b4f9b704faae29f600c04b12af92fb518604f",
     "name": "Aerodrome EXTRA-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1416,16 +1381,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x5c366341bb86bad85e78eba974e3f335c9488fa2",
     "name": "Aerodrome agEUR-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1459,16 +1423,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x61812b7226d8cd931be995177056c0e90a8554fa",
     "name": "Test USDC",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1502,16 +1465,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x630db4ae19219025df594c943b638b5acb5e9d18",
     "name": "WETH-1 yVault",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1545,16 +1507,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x68393a804c9fe4f1c7148d37796436e450ad98e8",
     "name": "Aerodrome AERO-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1588,16 +1549,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x68a0ba9ecad98bfd16d2457e2546226e8fb7c101",
     "name": "Aerodrome ION-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1631,16 +1591,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x69efa3cd7fc773fe227b9cc4f41132dcde020a29",
     "name": "Balancer GHO-USR yVault",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1674,16 +1633,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x6fb7cc0b6f0fcef9cf7c560beb68954efc142608",
     "name": "Aerodrome tBTC-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1717,16 +1675,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x7509d40ef0087611d2dfd76f0752d32783b8c2a2",
     "name": "ROOM USDC VAULT",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1760,16 +1717,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x7b8bf6d5557b7c1b5b0235b7cc2aca6345534cdd",
     "name": "Aerodrome WETH-USDC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1803,16 +1759,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x7bc2fdef0cf03d8488d7ab06c4a36b61725d06ec",
     "name": "USDS BaseInvaders",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -1846,16 +1801,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x7bc9e2d216b22611d9805c12e0c682391720752f",
     "name": "Morpho Seamless cbBTC Vault Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1889,16 +1843,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x7c0fa3905b38d44c0f29150fd61f182d1e097ec2",
     "name": "LevMoonwell WETH",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1932,16 +1885,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x7cbdf03ca2b633ca9fa613945ab4b19a46b3d671",
     "name": "Aerodrome UNIDX-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1975,16 +1927,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x7f678f3f661364dcad39cc2946c31388a43ce1f4",
     "name": "roomUSDC",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -2018,16 +1969,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x80ba48973490a94941eaec6be8dbcff6a5aa8892",
     "name": "Aerodrome AERO-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2061,16 +2011,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x82a9cc022bffba4358a4286381c0855a8e295605",
     "name": "Aerodrome bsdETH-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2104,16 +2053,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x8436027a799ac6c8b512e68b4d3852217c63647d",
     "name": "Moonwell WETH Lender cbBTC Borrower",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2147,16 +2095,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x84c9c1569aaa02b9a7fd0fa8021464b179e6ece6",
     "name": "Aerodrome DAI+-USD+ Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2190,16 +2137,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x854020fb245753c1e71dff9d1b14528518050afb",
     "name": "ROOM VAULT",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -2233,16 +2179,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x878b75772c0abf2d22a9d4a5ae062b1aadaaebb3",
     "name": "USDC Hotline",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -2276,16 +2221,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x8907b99db2393af47a48b4bb91abb509b52c5d8f",
     "name": "test dai",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -2319,16 +2263,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x8c589addbe1466a9b555eaa6ce8940ac1680c5f4",
     "name": "Aerodrome cbETH-WETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2362,16 +2305,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x8e462a2b3a8c2713b5e157f5f3a3cd503588e59a",
     "name": "USDS MkDedz",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -2405,16 +2347,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x8f22d62434d5e52af442f69f43eb27ba20768692",
     "name": "Aerodrome stERN-USD+ Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2448,16 +2389,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x945df73d55557ea23c0c35cd350d8de3b745287e",
     "name": "Moonwell USDC Lender cbBTC Borrower",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2491,16 +2431,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x953370e91b70897a0cecc97b58e99d7946c841de",
     "name": "Morpho Seamless USDC Vault Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2534,16 +2473,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x985cc9c306bfe075f7c67ec275fb0b80f0b21976",
     "name": "Morpho Moonwell Flagship EURC Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2577,16 +2515,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x987949d2dc1d2b70bc3284b556d3ecd2d7c060b7",
     "name": "Aerodrome LUSD-USDC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2620,16 +2557,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x989381f7efb45f97e46be9f390a69c5d94bf9e17",
     "name": "cbETH Horizon yVault",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2663,16 +2599,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0x99e860d5bbe61a12ca215aba714a2e886860dbc8",
     "name": "Aerodrome AERO-wstETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2706,16 +2641,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x9e13e1cfcd750657b81549f8f773d68f1625dcfb",
     "name": "Aerodrome eUSD-USDC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2749,16 +2683,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0x9eb7675377d1191bed352552267e5b5e592fcf53",
     "name": "Truemarket USDC yVault",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -2792,16 +2725,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xa3386f0a4034184ecb8a0d1e7e79b4f720634317",
     "name": "Aerodrome DOLA-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2835,16 +2767,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xa49dccd9425cc38d4111df2e665f2a33fe799c42",
     "name": "Aerodrome tBTC-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2878,16 +2809,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xa6cbdd6ae6596b5ee57f67df70cc7c801129464f",
     "name": "Aerodrome DAI-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2921,16 +2851,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xa72a60e6167e8fc5e523184911475c4b37b835e2",
     "name": "Morpho Seamless WETH Vault Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -2964,16 +2893,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xa7a8eb9f200ddd4137f71b92d3d44b403af20e44",
     "name": "USDC-1 Gimme",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3007,16 +2935,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xaccb6fa47e2da8f937f6e33bc25b68328b370d2e",
     "name": "Aerodrome stERN-ERN Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3050,16 +2977,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xb13cf163d916917d9cd6e836905ca5f12a1def4b",
     "name": "True Yield Dollar",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3093,16 +3019,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xb9acb02818bddd3ac178fa51a0587101e54748b0",
     "name": "Morpho Moonwell Frontier cbBTC Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3136,16 +3061,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xbb808a822dd7aed1635956b85ca5e55478cca957",
     "name": "LevMoonwell cbBTC",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3179,16 +3103,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xbcbe4815fa99971b4dd918adfb12599679ca4b0e",
     "name": "TEST ETH2",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3222,16 +3145,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xbdd79a7df622e9d9e19a7d92bc7ea212fa0d2f3e",
     "name": "Morpho Y-WETH Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3265,16 +3187,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xc31dfb6b3e053c4e06fa76853a6b3e367bc2233d",
     "name": "Test True Yield Dollar",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3308,16 +3229,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xc3bd0a2193c8f027b82dde3611d18589ef3f62a9",
     "name": "USDC Horizon yVault",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3351,16 +3271,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xcad1719469bc67341eec1a29a07684fe075596da",
     "name": "USDC MkDedz",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3394,16 +3313,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xd1468af648565f11393e4033cb0cd270b62495c9",
     "name": "USDC BaseInvaders",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3437,16 +3355,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xd5428b889621eee8060fc105aa0ab0fa2e344468",
     "name": "Morpho Moonwell Flagship USDC Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3480,16 +3397,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xd80c675366966ef42b175125bbf1acb1db4151ac",
     "name": "USDC-1 yVault",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3523,16 +3439,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xd89a4f020c8d256a2a4b0dc40b36ee0b27680776",
     "name": "Moonwell cbETH Lender WETH Borrower",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3566,16 +3481,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xdd120ded7c1c9e4978f92847bcb24847a9dbb071",
     "name": "LevMoonwell cbETH",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3609,16 +3523,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xde9de9dfb3cc912cccda145bd6cb8a145a66ea92",
     "name": "ROOM USDC",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3652,16 +3565,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xecfc1e5bda4d4191c9cab053ec704347db87be5d",
     "name": "Aerodrome WETH-DAI Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3695,16 +3607,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xef34b4dcb851385b8f3a8ff460c34adafd160802",
     "name": "Morpho Moonwell Flagship ETH Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3738,16 +3649,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xf115c134c23c7a05fbd489a8be3116ebf54b0d9f",
     "name": "Morpho Yearn Morpho Vault 1 Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3781,16 +3691,15 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xf4b57a2177e6695bc56fd16c042548baf4aa8f5a",
     "name": "Aerodrome sfrxETH-wstETH Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3824,16 +3733,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xf595152ceaf50fa854c4606a457d2388375d4fa0",
     "name": "USDC-1 Test LucasiaLLC",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3867,16 +3775,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xf8f36ab972f6fe3ae1f594595aee1284e270d034",
     "name": "Aerodrome wUSDR-USDbC Factory yVault",
     "registry": "0xf3885ede00171997bfadaa98e01e167b53a78ec5",
-    "ydaemonType": "Automated Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3910,16 +3817,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 8453,
     "address": "0xfdb431e661372fa1146efb70bf120ecded944a78",
     "name": "Moonwell USDC Lender WETH Borrower",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Single Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -3953,16 +3859,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Single Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xfeeefb32e88efef50aedd9630e07fa4f47ae886d",
     "name": "Yield Chasing pfUSDC-1",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -3996,16 +3901,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xff3035968a44df696297d710cb7c0d7f807bf641",
     "name": "MUV003 - Flagship EURC",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -4039,16 +3943,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 8453,
     "address": "0xffec1057a5dd33fc74f453b88a6c62cc3d9446be",
     "name": "USDC Supercharger",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -4082,6 +3985,8 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   }
 ]

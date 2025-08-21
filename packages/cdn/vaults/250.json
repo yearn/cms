@@ -4,9 +4,6 @@
     "address": "0x03b82e4070ca32ff63a03f2ecfc16c0165689a9d",
     "name": "Curve AVAX yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Legacy",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -40,16 +37,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Legacy"
   },
   {
     "chainId": 250,
     "address": "0x0446acab3e0242fcf33aa526f1c95a88068d5042",
     "name": "CRV yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
@@ -83,16 +79,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x0a0b23d9786963de69cb2447dc125c49929419d8",
     "name": "MIM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -127,16 +122,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x0dec85e74a92c52b7f708c4b10207d9560cefaf0",
     "name": "WFTM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -171,16 +165,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x0fbbf9848d969776a5eb842edafaf29ef4467698",
     "name": "BOO yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -214,16 +207,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x1482faf8b5a9c458c94e6a561ccf93ed7a9f552e",
     "name": "WFTM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -258,16 +250,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x148c05caf1bb09b5670f00d511718f733c54bc4c",
     "name": "USDT yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -302,16 +293,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x1b48641d8251c3e84ecbe3f2bd76b3701401906d",
     "name": "DOLA yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
@@ -346,16 +336,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x1e2fe8074a5ce1bb7394856b0c618e75d823b93b",
     "name": "fBEETS yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -389,16 +378,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x209667b173fe4e9559bda7818e53bd5f5e0f9acd",
     "name": "MIM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -433,16 +421,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x27cbf0fddb356a2d1ebdef604cfa90f8f300d34e",
     "name": "WFTM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -477,16 +464,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x2c850cced00ce2b14aa9d658b7cad5df659493db",
     "name": "YFI yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -520,16 +506,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x357ca46da26e1eefc195287ce9d838a6d5023ef3",
     "name": "FRAX yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
@@ -564,16 +549,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x3d8473724287eb1d903fe62688d3734de2b97ee8",
     "name": "Curve Geist yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -610,16 +594,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x3f0e90a85eab7f2c441379cfc9a080a4e864ae82",
     "name": "fBEETS yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -655,16 +638,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x637ec617c86d24e421328e6caea1d92114892439",
     "name": "DAI yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -699,16 +681,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x85611d071406a9e08ba49c073087e3eb57819839",
     "name": "WBTC yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -743,16 +724,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x8853a6232e3debe12098bf682898a92ec10c9921",
     "name": "WFTM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -787,16 +767,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x9e3922fcbb28f40026da2e58926f0f249d8a138d",
     "name": "USDC yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -831,16 +810,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0x9f87fc463327021b510f7e84a5683e1bdce02dcc",
     "name": "USDC yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -875,16 +853,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xa946c861de1dd6cb530a07687da99e989b929139",
     "name": "Curve USDT yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
@@ -921,16 +898,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xa97e7da01c7047d6a65f894c99be8c832227a8bc",
     "name": "Curve MIM Pool Vault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -967,16 +943,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xc3ca90f164d43e2053cca591ac6e63fcaad80782",
     "name": "WFTM yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Experimental Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1011,16 +986,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Experimental Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xcbcaf8cb8cbeafa927ecee0c5c56560f83e9b7d9",
     "name": "Curve Tricrypto Pool yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1056,16 +1030,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xce2fc0bdc18bd6a4d9a725791a3dee33f3a23bb7",
     "name": "WETH yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1100,16 +1073,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xd3c19eb022cac706c898d60d756bf1535d605e1d",
     "name": "SPELL yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
@@ -1143,16 +1115,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xd817a100ab8a29fe3dbd925c2eb489d67f758da9",
     "name": "WBTC yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1187,16 +1158,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xef0210eb96c7eb36af8ed1c20306462764935607",
     "name": "USDC yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1231,16 +1201,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xf137d22d7b23eeb1950b3e19d1f578c053ed9715",
     "name": "Curve Geist Pool yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1277,16 +1246,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   },
   {
     "chainId": 250,
     "address": "0xf2d323621785a066e64282d2b407eac79cc04966",
     "name": "LINK yVault",
     "registry": "0x727fe1759430df13655ddb0731de0d0fde929b04",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "None",
-    "ydaemonEndorsed": true,
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1320,6 +1288,8 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "None"
   }
 ]
