@@ -736,5 +736,284 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x70fffbacb53ef74903ac074aae769414a70970d1",
+    "name": "USDC Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xb48faf41d6d627a38df88f0f1bc452ea2e4fd3c4",
+    "name": "[Test] Tuyo USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xbd34db7ef42533a51eb0f53ed9d91d06880bcdf1",
+    "name": "SuperUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x25eb9938fd219a77bb37654527707786a04abaac",
+    "name": "YRizStrategyUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x953370e91b70897a0cecc97b58e99d7946c841de",
+    "name": "Morpho Seamless USDC Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x0de119f5790c4ecf6eed80aac7c25d2dcad10f0f",
+    "name": "EURC Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x1ba64974d7dfd6ab8ec4ded247ed104a2b04e6ec",
+    "name": "LevMoonwell cbETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x985cc9c306bfe075f7c67ec275fb0b80f0b21976",
+    "name": "Morpho Moonwell Flagship EURC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xb837e84369f5e08f8e72c92b350329ae2b868cbc",
+    "name": "yswstETH-lev-ajna",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x90097a6284cbac7677e3385b8adfb134a8acfc8f",
+    "name": "Aura KABUSOCHAN Staker Hero",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x639e31e7c4af5ba4cf5dfad438d082b2f58899e3",
+    "name": "LevAjna cbEth/Weth",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x7f68862632a1c27a16fe75cd4225628547da6450",
+    "name": "SuperUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x7bc9e2d216b22611d9805c12e0c682391720752f",
+    "name": "Morpho Seamless cbBTC Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x94ca885c5498d6e53b802e589aa340878cb60b3a",
+    "name": "SuperUSDCBaseVault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x3392f08d93de2e1675c2e0d19f3ed021746f742c",
+    "name": "USDCSuperVaultMoonwellFlagship",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xc5d4869e3c4d7848dc4ffd6536f6d5f80ba19b4c",
+    "name": "Morpho Moonwell Flagship USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xa72a60e6167e8fc5e523184911475c4b37b835e2",
+    "name": "Morpho Seamless WETH Vault Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x0b538db1bd28ecc978e863d89ace34a9f9101fc2",
+    "name": "SuperUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x369b2d0c701f791645ecf40f14d390f69a6023e3",
+    "name": "SuperUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x44da1202285ed9678dab99b55aadb2fa549fdfdc",
+    "name": "LevMoonwell wstETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x505d8d76f7c86163c019719eae6c524074433619",
+    "name": "CompoundV3 WETH Lender AERO Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xd8ba05abcbe0baf1ee748104da11fb8f717fd291",
+    "name": "USDCSuperVaultMoonwellFlagship",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x2a1dbbf67942724c4fb00d99d56919254c1aea98",
+    "name": "BTestKimStrategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xb65f1e6394aadc3dc1ad4b8e5cf79bbb566dc195",
+    "name": "LevMoonwellWETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x89e5e885ae0c3a104b61cad820721310279d23aa",
+    "name": "BALLOON_TEST_KIM",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xd95872cf52477dd9116dbd1c5a3d9d595d37024a",
+    "name": "Moonwell USDC Lender WETH Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xaa4725c386164ea9ad932bc306a1f87da7526aca",
+    "name": "SuperUSDCBaseVault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xfd059e58645bce3380677ae0b54d628a018e942b",
+    "name": "USDCSuperVaultMoonwellFlagship",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x5b0532e7170148f2bd0d255d1cd9dce02bb5ce4e",
+    "name": "YRizStrategyUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xeed00e00236cd7f36f2558d8b5fd05046449599d",
+    "name": "CompV3 WETH Lender AERO Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xe7e68c7e744c7f3f3903ccdead5cb711dc538413",
+    "name": "StrategyAerodromeFactory-vAMM-pHAM/pwBLT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

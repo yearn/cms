@@ -1576,5 +1576,221 @@
     "protocols": [
       "Beethoven-X"
     ]
+  },
+  {
+    "chainId": 250,
+    "address": "0xdf262b43bea0acd0dd5832cf2422e0c9b2c539dc",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x1922fde0c9f09cd1aeae20c6021a2c18a9cbd589",
+    "name": "StrategyTarotLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x754133e0f67cb51263d6d5f41f2df1a58a9d36b7",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x695a4a6e5888934828cb97a3a7adbfc71a70922d",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x36a1e9df5efdab9694de5bfe25a9acc23f66bcb7",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x5920892f23967728e16135c21ab8beec8c548927",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xfe07b76f96c8ade1d678c71f74dc2763da3fe913",
+    "name": "StrategyTarotLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xf39e31d1bc0d43a0eb755f758d01fd70becee471",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x1e0f7d116ffb998eec879b96698222d1ee8d87cb",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xecc1dff0c8450a5a16e56211c43182b95580f9cf",
+    "name": "ProviderOfYFIToSpiritJointOfYFIWOOFY",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xfb96225463d2a53dc1c8747ddb2e019bf4391897",
+    "name": "StrategyTarotLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xde39f0148496d42cd4e16563463fa5c6504caa00",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x0ed5c4effed69b39c86a8d806462d709fb96a9e4",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x9df9418837281fac4c4c1166f55d35f2799a9107",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xff8bb7261e4d51678cb403092ae219bbec52aa51",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x35b51a621d78609de7cf25bc4e0682c7dea38799",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x83a5af7540e919de74cf2d6d5f40e47f11d3e8d1",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x27a5ce447f4e581ae69061e90521da4b5b298818",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xa36c91e38bf24e9f2df358e47d4134a8894c6a4c",
+    "name": "Strategy0xDAOStakerBoo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xb87e74571b96a4aadd627678d5638d363109ffbf",
+    "name": "StrategyTarotLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x6eeb47bbcdf0059e5f1d6ee844ba793d5401bf18",
+    "name": "GenLevCompV3NoFlash",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xd025b85db175ef1b175af223bd37f330db277786",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0xb51a8a88a3ed9e5043e710bffc8ead680395566b",
+    "name": "ProviderOfWFTMToBooJointOfWFTMUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 250,
+    "address": "0x47c004db0dd0dce726827caaac71b660fff14fab",
+    "name": "StrategyTarotLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

@@ -515,5 +515,464 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x58e62addd3879aa40d64d278e4279243e6675245",
+    "name": "aUSDC (27jun2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x461ad11a76b302f13ada1296da0178722a50838e",
+    "name": "rETH LP (26 JUN 2025)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x846e7a8451f59b9ff587f40a9f183aedcd2aa4fd",
+    "name": "HedgerlyStrategy DAI-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xaefcac86e45deb5ea671d86e7e98e6968abf665a",
+    "name": "yPT-weETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x586fb80ddadfc01294751a7cd58625ccff4bdb2f",
+    "name": "Camelot ARB-ETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xce001bdbc8eee1e0a29b47d13029d9e64d12542d",
+    "name": "GLP LP (26 SEP 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x25843b795cac88730482fc947d097317fb5f4c0d",
+    "name": "HedgerlyStrategy DAI-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x85c4a935cc57cd96411e09c354cd43c03bacc04a",
+    "name": "YRizStrategyUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x720c7797c6d9ecc8d3ed882a4a23b5d2b06a2fe1",
+    "name": "PerpMarketMakingV1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xd427c2dae2e10e8b52c2bd54c47217121e8177a8",
+    "name": "Aura MOLANDAK Staker Hero",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x257b497249460ea8406f34940592d4a69b24e9d3",
+    "name": "ajna-yvCurve-USDM-USDC-1-USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x0a5e1394ba0c23d71167233a3b4b55cb8d214279",
+    "name": "GLP LP (26 SEP 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xb05ab608a67ab26daee9df49624ae767cf346076",
+    "name": "YRizStrategyWETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xabac5dea877b2557b9f5bbd4b962347fa8adb9da",
+    "name": "ezETH (27jun2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x2c28c7d3b482e9bceceff1a57f9ccea490e9daa1",
+    "name": "USDC Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x0d5e99a012415e22557f6df554e97159516e6d3c",
+    "name": "aUSDC LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x3004fa50d2ea9353820c5d344e7d8428b956feec",
+    "name": "HedgerlyStrategy DAI-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x0b6fe1296c077af6c5be2487d74a51ed9ccd3a0c",
+    "name": "HedgerlyStrategy DAI-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x2ef26b0e34ea0dba2068bc8df7c4c2a7a9620a80",
+    "name": "USDT Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x0475b2264dc4fb17d6f4294c1494b527059f85b3",
+    "name": "yPT-USDe",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x4da30274267dedc73a6a7eb233fba81691f34ef7",
+    "name": "Lido wstETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xbb87642e2359b9e9a3dab35e3c9620306cda6d00",
+    "name": "PerpMarketMakingV1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xb80a800fa0b5b5fb102063b2a8afd84a8b5bab2c",
+    "name": "YRizStrategyUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x2ae37f40235f3721dc78176ddbd100a12a8ce19c",
+    "name": "yearn-V3-Stargate-USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xdf14128edd7e9fa9c5fb7a77cdfbe1a369cf235d",
+    "name": "yPT-aUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x8e5850e7e9fc0bed03c31fe7a567cae5df3c5cb0",
+    "name": "YRizStrategyWETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xcb1a0a9c9cbbca82a395301267d525125cfba557",
+    "name": "Silo wstETH LP (26 DEC 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x9b10812ca07e59b109b6a815c6f2fb9072c7dcad",
+    "name": "yearn-V3-Stargate-USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xc50783461b48038fbf5449ce46562d19cb33fd3e",
+    "name": "PerpMarketMakingV1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xf387b6e2fe6da433c911fe64c487ad50a8762395",
+    "name": "YRizStrategyWETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x65073e8c0a9c26d4280a43a3ecd3cdedd36fdb89",
+    "name": "Lido wstETH LP (26 JUN 2025)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xf95b381292fe6088f7639dd5b13c8bb90fc154c2",
+    "name": "eETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x15943b95af6bbe222c49f7501f39f1d2da55ccdf",
+    "name": "Camelot GRAIL-ARB LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xa5944beaed63153c916bff9b407246b6c87ebf99",
+    "name": "YRizStrategyUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x368d79018e525db25dba517a0b5d3cc34c87cafa",
+    "name": "gDAI LP (26 SEP 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xdfaa4001308f5ec4d06920cd0d2c649c6f930e2c",
+    "name": "mPENDLE LP (26 SEP 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x505a6a195c94695054152f5ffeb79bcfddfca8e4",
+    "name": "rsETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x075472d809aa98a4686d6f04e2c2663802653f2a",
+    "name": "Stargate USDT LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x92f1e6d904f21c05074952bbad51d91fd9f8730f",
+    "name": "ezETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xa5aae5a1aca3e2235e1bd0c229baed5d7727cb47",
+    "name": "yPT-rsETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x2afbd11c6bd53f1abd0fad43e854dae2a044e500",
+    "name": "HedgerlyStrategy DAI-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x4b0ea5b94773332c49d59aa80aef62dfa69bfee4",
+    "name": "yPT-ezETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xb119e90beb09fcf9abc92c20a8d84fe8bdfcc6e3",
+    "name": "Kelp rsETH LP (25 APR 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x074943fefe3391d033a15557dfa1b6f246ce5fd0",
+    "name": "eETH LP (25 APR 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x8b5aa1688297bc2e4664a18df6ad22a70c4178b8",
+    "name": "Camelot PENDLE-ETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x02b84f1064a5db9a75518a2c8cfe5da9dbd373b9",
+    "name": "aUSDC (27jun2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x9ece499d9a9362462c471e734ade2820308ad8e6",
+    "name": "HedgerlyStrategy DAI-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x8a64111709ce75434b9156e3878cdd5b1fbc2d13",
+    "name": "Silo PT-eETH LP (25 APR 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xd131ab951f6fbdee17d8f1cb7bed5a376de52d62",
+    "name": "HedgerlyTokenizedStrategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xd531031ea54c7505a9ab2d095cd46e265da7513e",
+    "name": "Aura OOGABOOGA Staker Hero",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x1b9d41757f410bd60b853a0a52c1c323f5d5cd74",
+    "name": "yearn-V3-Stargate-USDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

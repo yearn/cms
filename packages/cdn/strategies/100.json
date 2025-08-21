@@ -52,5 +52,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 100,
+    "address": "0x94c5786393ab223e0fc111d7463405f165ce86e3",
+    "name": "ajna-yvEURe-1-EURe",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

@@ -15831,5 +15831,1076 @@
     "protocols": [
       "Curve Finance"
     ]
+  },
+  {
+    "chainId": 1,
+    "address": "0x70cc9700d5d9ac581bade4ef8d77d4b55f0c20fa",
+    "name": "ajna-reth-dai2",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x67c9b7e413366f1ad9cb77b6232b3e585794dabc",
+    "name": "Sky Savings Rate USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb6da41d4bdb484bdad0bfaa79bc8e182e5095f7e",
+    "name": "Morpho  Usual Boosted USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x04d9b67b5ff1480fc5fdc41ac6f37e7d1d332e06",
+    "name": "levajna reth/weth",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9cb8c5136ad079d3311f5b766d6fc370bf29e76b",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x23346b04a7f55b8760e5860aa5a77383d63491cd",
+    "name": "Staked yBOLD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd4b83dd11354820ed5e2760581db03953e823d75",
+    "name": "Sky Rewards USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb91302cb8a6b248a7ea89dc6c7dbf87e0ddddd58",
+    "name": "pufETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x93b88b35283e1dc30981567843f5ba88485c16cc",
+    "name": "Lido stETH LP (30 DEC 2027)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb974598227660befe79a23dfc473d859602254ac",
+    "name": "yvAjnaWeth-compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7c02407e4a23b8ac6c569b84da381218097917ec",
+    "name": "WBTC FraxLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xae8c82ade00f1cc22c5ce4fbe64b142fe4959258",
+    "name": "sfrxETH FraxLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6e4c8854db3f96f7ce13dc7d3dcba4f5dc5de72d",
+    "name": "yPT-eETH (auto-rolling Pendle PT)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x64dc55d76d1541e0853cbd7cf6586615e9e6f4c7",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6138973b2c34eb1178e8162bda8e12500975b52c",
+    "name": "Sturdy WBTC/swBTC silo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x82c24073a19f4c46ab2646323b322427eb98f616",
+    "name": "uniETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8041ba598f0e656ebe80c67289efb42c09e86ae3",
+    "name": "Aera Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6465267d2b15c08362109851688eb40dc2530090",
+    "name": "Sturdy ETH/eETH Pendle PT silo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3106291c9866bfc308843f90663e018a5266598c",
+    "name": "MEV Capital USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa89a7420b19679b5a124cd1499787a6122e800d7",
+    "name": "eETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6fdf47fb4198677d5b0843e52cf12b5464ce723e",
+    "name": "Curve WETH Lender crvUSD Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8783c4aaf81b9312adccccc09fa7b36b9d1f624f",
+    "name": "Silo Lender: USDC/PT-ezETH (26 Sep)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x829a7e2ab5c8791e02fc6f949cd897d79be3653e",
+    "name": "yPT-eETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7a0996373db16e21e66947180b85ea89dde64f4b",
+    "name": "sUSDC v2",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x564f7b5d8389f5c4c99e50fed5fc95070e697903",
+    "name": "Lido stETH LP (25 DEC 2025)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb0e979804e40b0ab790b864e89f8bc170b9c203b",
+    "name": "Aave V3 WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x046521791360d570a01e88d1801a037a36a53a80",
+    "name": "rsweth-yearn-vault-strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3bdf4b70e68a6d67db4b0b714b509a850ea99606",
+    "name": "August Digital USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf232c4b675c9e8541712b7ea32dcb4cfbb93ab80",
+    "name": "Silo Lender: USDC/weETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9ff7231d155fc44b4ef5dfb4e19d54c20076e6cd",
+    "name": "yPT-ezETH-Zircuit (auto-rolling Pendle PT)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x378ffd482c767f847d48818552f8438b17335c89",
+    "name": "crvUSD LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfe08fc631be2da2b47aa6adba275adab2197c0cd",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x87588d3fbcdff1bf84555f0a22056d94534a74a6",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb43f50b71e2b635e4778e32019609e7ad3b8e07c",
+    "name": "weeths-yearn-vault-strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xdab149804cfceb2b05ecccae3e798026793e0110",
+    "name": "ageth-yearn-vault-strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x480082616815f9cc82600d6e6d1c3e41f3cb6986",
+    "name": "StrategyYBSyPRISMA",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa0e760d0fd87d6f47916f619832e42132fba3416",
+    "name": "Re7 USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8be87743bfde3b8607dcb7bfc2728f41da2fc730",
+    "name": "Re7 USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8e77fd386125d25b0304094c0b8cbc52f6d07347",
+    "name": "Aave V3 USDS Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xaf7c6da3c98123b992a4bc784c903d65f075183e",
+    "name": "Shorewoods USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfd266a970f7a086c81c880fb4025c5dfe45468be",
+    "name": "levajna wsteth/weth",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x10b13ef16cf838d0a290b5eecba11599dda981d4",
+    "name": "yvAjnaWstethWeth-compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2e3daa02411dc9a2cdb7e3409eb2ff0f90154c9a",
+    "name": "Silo Lender: USDC/PT-eETH (26 Sep)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4718da79cf9eaecfd3f7319c74dc2ecfbcbb9f78",
+    "name": "UltraYield USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6593bb7272237f36444dee44df46ab3b0233a9a0",
+    "name": "USDC AeraVault Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6568921f9059b6b8a3902651783a7a0e74ca83ff",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa1762ee88da44cac5b6b515719ea93802d73d343",
+    "name": "EVK Vault eUSDC-2 Compounder yVault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc40dc53931cd184f782f3602d95c7e3609706004",
+    "name": "Sturdy pxETH Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x629656a04183affde9449158757d36a8a13cd168",
+    "name": "Curve WETH Lender crvUSD Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x333f4f2a8bc9edbdeb1f913b147bb47f76919956",
+    "name": "Silo Lender: USDC/PT-pufETH (26 Sep)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf96e4c5eee8095f918ed3312b3de3d68156798f8",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x591f583200d494c55f7f590201b727891cf0ac27",
+    "name": "Strudy GHO Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb8deb48bd0a2bac798f19ba8a7ee492384423fea",
+    "name": "aUSDT LP (26 SEP 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x03496626181e86a234ae034753c2b5944c36e756",
+    "name": "August Digital USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4bd05e6ff75b633f504f0fc501c1e257578c8a72",
+    "name": "USDT Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x73e34e074cf3a57d3a48c7edc3a205fece725cf9",
+    "name": "yPT-ezETH-Zircuit (auto-rolling Pendle PT)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x082a5743aadf3d0daf750eef24652b36a68b1e9c",
+    "name": "yvAjnaDAI-harvester",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6ffcd7f476db0c60dcf1256a0906892243c7a84c",
+    "name": "crvUSD/CRV Silo LP (ysCRV)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd6671d1d0a3fe3a052a7e06cdc35587cc46badf0",
+    "name": "Across DAI Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x81d40243c649f7d6092295f50f4b1d3a8e53da99",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x00c8a649c9837523ebb406ceb17a6378ab5c74cf",
+    "name": "USDC Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8af094f8f1ad6167a27717bba8b83abc0b06f86f",
+    "name": "AAVE FraxLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xae7d8db82480e6d8e3873ecbf22cf17b3d8a7308",
+    "name": "USDC-2 yVault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc2be0d0ad61ce051b5addcb105ff0d02c842e72c",
+    "name": "Sturdy USDC/curve USD0-USD0++ LP silo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x18f365ecce58fa865ec9fb027e9175125db93b91",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x094fa191db73b0f6dc2092b903d03b28384817e1",
+    "name": "Sturdy WBTC/swBTC silo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf990eb35ce9902f54610350ed36ac5ceda402948",
+    "name": "Sky Rewards DAI Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x0b7d884aaf53b3eb5a5ecb96651d956ccda10cec",
+    "name": "Sturdy ETH/weETH silo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcf1ef8d77e7d1f604a25ca4ec2c4ab925f555b1f",
+    "name": "UltraYield USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb2b42be64f78eeb94a625fbaf2ea18ec35aa4b22",
+    "name": "Lido stETH LP (26 DEC 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6d6092c129601e59938beaf695858e03850e51c0",
+    "name": "Silo Lender: USDC/ezETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf18245b7b7ba6c9c3bf29b070ebea893d8fc549d",
+    "name": "Morpho Gauntlet WBTC Core Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xddb8f495ab27457f91fa7aae4d986ecd78195495",
+    "name": "Shorewoods USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x38b5c981a5fb13dec5fc754dab4528cce0f0cc7a",
+    "name": "crvUSD/CRV Silo LP",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x433853acba7ec9ffecf7d9732ea94f0668518e8e",
+    "name": "Swell rswETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9784ded306e42c0b8130f668e9b7533faa72e65d",
+    "name": "Sturdy Sommelier Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xad72b187de94333222419a10495cde81d5de5351",
+    "name": "Shorewoods USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd2e4aec94a00ebcf621cc6c4bb2c96c14eb5573f",
+    "name": "CRV FraxLender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x10856c8c8e41b8888868789080c7bea6267a2b08",
+    "name": "Kelp rsETH LP (27 JUN 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1d0bcbf0f80cc47e7766d48d61c5fe7ad8a19640",
+    "name": "sDAI LP (26 SEP 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfe4e8b0fdd1ba3c8eef19e8b32a919b8b80e5200",
+    "name": "sfrxETH LP (26 DEC 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb646af5c5176eb8a3de8c65ba0fb827520644ca7",
+    "name": "Tokenized Tranmuter",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x644486f9f00232a56e864dd1f2a392ee93481637",
+    "name": "yPT-ezETH-Zircuit",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x28b2dc219c047b10f353caa2934ad8803e089a88",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe5323ca5b11eb8495c56473756de679e43168d57",
+    "name": "StrategyGearboxLenderGHO",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xad2d1c730a6c82cd1cc2847e3b0adb7893e850cd",
+    "name": "Sky Savings Rate DAI Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x29ee8c3fb7ea0b52261b18782f1a060c2e210afa",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6d197c7a600788bc2a996460e70b91995bf70ce2",
+    "name": "USDC/PT-sUSDE (26 Sep)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc6fe97da554366b47954890b5975938729675e2b",
+    "name": "USDC AeraVault Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc0559eb29bf5adec30f455230bd234d90551eb6f",
+    "name": "Coinflakes Btc Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf68a6b53d907b5abc0bfdeceb8343e91fec052ee",
+    "name": "eETH LP (26 DEC 2024)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6e053c62888f54ce39a9f405fa2743b0df2ca3f8",
+    "name": "August Digital USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd50af9206e6b27056bc80463f8ce7e064a60b0ce",
+    "name": "MEV Capital USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x552868611d2641144454140dded98e6160b3bfc9",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x120b128cf1a5117fe8e9e12b79b3437e7396bd14",
+    "name": "Wrapped YearnV3 Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6d66cb69ed9bafc9b4da30bb187b3a93d5ebe920",
+    "name": "ezeth-yearn-vault-strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4d32738401ad45aedcfa17207dba0a14136b1067",
+    "name": "yPT-eETH (auto-rolling Pendle PT)",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x836615208f500ef7fa24ee39a72588ad22ffe18f",
+    "name": "StrategyRouterV2-Curve-3EUR",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x199cffcc256d4195a81b10eb7695bf02d43e3b02",
+    "name": "StrategyRouterV2-Curve-mUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb2f45226d0b1ebe7ce3c7b0a53eb4a82e032060d",
+    "name": "StrategyRouterV2-Curve-Compound",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd5aadcd054a00eff71bcb922cddc70752fa2bc68",
+    "name": "StrategyRouterV3-USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xdd38062704b09b897fd8ad652ce8294985fb3d33",
+    "name": "StrategyRouterV2-Curve-CVX-ETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa7074434aa4419ed18f220152bcaa989b3b9d8c1",
+    "name": "StrategyRouterV2-Curve-StaFi-rETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7320541570ad6fec3ebc67685268948a50d4cb48",
+    "name": "StrategyRouterV2-Curve-GUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8b64692c42ac08a7275aff3e2cc59e7401c471d5",
+    "name": "StrategyRouterV3-WBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x85907b1af27fd04a5efabc0fb7162f8690a6b82f",
+    "name": "StrategyRouterV3-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe07d1e27d93eda41ab091fc91a2026df41763b56",
+    "name": "StrategyRouterV3-USDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe67d1705e37968d8b3671ffdd0b18ebaa41f7e11",
+    "name": "StrategyRouterV2-Curve-DUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x47128518d9cad921af60ed42568a69781d710cd5",
+    "name": "StrategyRouterV2-Curve-MIM",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x343a52634b2464a87146c44ed8005577937f885c",
+    "name": "StrategyRouterV2-Curve-LUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x901fe4d83c5475bf9bdbcf0dc2574d5db1ca9cda",
+    "name": "StrategyRouterV2-Curve-ankrETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa7496763f035e73ec6b56f4c86312cc1874a01e3",
+    "name": "StrategyRouterV3-DAI",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xaad21781fe48048264d89da52423097e4397ff36",
+    "name": "StrategyRouterV2-Curve-FRAX",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x85b360dee557135d8903225939699dd644d33cb8",
+    "name": "StrategyRouterV2-Curve-alUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x906a5fb545d177ba441a57b3a24eaeda555d29e3",
+    "name": "StrategyRouterV2-Curve-3Crypto",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbbca1111ec2204bd9c546b755f91979e32a15b2e",
+    "name": "V3 USDC-1 Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x059b1507b22267fc1cda8b6d2fbf2cab5d7a1ce5",
+    "name": "V3 yvUSDT-1 Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8532eeb2838275d6c16e5dab93591d37abd43c59",
+    "name": "StrategyCurveBoostedFactory-sdFXSlp-f",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6340a7844b6f04ab0f4348878547222f061e08da",
+    "name": "StrategyConvexFactory-sdFXSlp-f",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

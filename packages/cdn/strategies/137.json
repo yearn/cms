@@ -235,5 +235,257 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x03e6010193c595ec168756af700479d1aff76895",
+    "name": "yearn-V3-Gamma-USDC.e-DAI",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x751765db09bd2570b1004ac35a22369d63f3d599",
+    "name": "CompV3 WETH Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x3a58df70f9204bedcd6aee2b51582eb77fe30e02",
+    "name": "yearn-V3-Gamma-WBTC-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x91e646449a3105e9091e882c9a9a7a81950eebb8",
+    "name": "yearn-V3-Gamma-WMATIC-WETH-Wide",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x42908891cbc13301c910b4e71055431bf134aaa0",
+    "name": "yearn-V3-Gamma-WMATIC-USDC.e",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x64d34f3202b98a6cd9347c7c87e6883794cb89f3",
+    "name": "MarchMadness2024",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x3e78a7a578f3133a1a14a34aeb818828859e558a",
+    "name": "CCIP USDC V1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xd811a47cfd17355f47ac49be02c4744a926dd16b",
+    "name": "USDC Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x4987d1856f93dff29e08aa605a805faf43dc3103",
+    "name": "yvAjnaUSDC-compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xcc2dd835a3b6c1ef78f8aabbd4b40aeeddf48b98",
+    "name": "TEST_VAULT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x8df66d28914084f44c4046783810cbad662fa633",
+    "name": "yearn-V3-Gamma-WMATIC-MATICX",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x2d11a2e5cc964a378efe687336dcbf281e3a9bbf",
+    "name": "Balancer USDC-THX",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x54303f18161d9870b0fc66b88b0b129e8e5ff505",
+    "name": "yearn-V3-Gamma-USDC.e-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x50157418d96bf467180bbea1131274826327bfd9",
+    "name": "CompV3 WMATIC Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x9b10812ca07e59b109b6a815c6f2fb9072c7dcad",
+    "name": "StargateStakerUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xfe14d8d9ac1cb2758a0732a637361f1732d2dd9e",
+    "name": "Aura PORIGON Staker Hero",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x839ffa8715283047aeff6b55978986a7f1d814ae",
+    "name": "Balancer WMATIC-stMATIC Gyro",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x5c8ec48859c9d102a1d02df3ef25c8e8866a533a",
+    "name": "AaveV3 WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xa9c3b8f7ab9cc105ac4d27c1bf821ec0c6a9e954",
+    "name": "yearn-V3-Gamma-WBTC-USDC.e",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xe30461f1270ba52d45df1e773aefe594c7e430dc",
+    "name": "USDT Fluid Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x32adfc6170344f848a8c0efe68dad93e5b6964aa",
+    "name": "yearn-V3-Gamma-USDC.e-WETH-Wide",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x8fab401bb0f57216edf8e164c35c73fc0e6c6f98",
+    "name": "Balancer WMATIC-SPHERE",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xa823ef7df6392800569946c6c1dec0e34356ef18",
+    "name": "yearn-V3-Gamma-USDC.e-USDT",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xdebc308d16c7d9060c615c3a0bda1aff5f541248",
+    "name": "USDCCCIPBridgerV1Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x0f1c2f70d1f3cf6bbf0c2e0e3125c333a74f514b",
+    "name": "Balancer WMATIC-MaticX",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x8a127ff29077626f3e163313ae6e994d9835b9a4",
+    "name": "CCIP USDC Bridger",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0xb64ce1c06af365424060e2720df46997a4fd3a0a",
+    "name": "yearn-V3-Gamma-WMATIC-WETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 137,
+    "address": "0x0e5a5cf5690796e43d2bddb07225823613437432",
+    "name": "yearn v3 stMATIC accumulator",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

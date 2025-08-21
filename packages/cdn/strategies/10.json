@@ -1569,5 +1569,140 @@
     "protocols": [
       "Yearn"
     ]
+  },
+  {
+    "chainId": 10,
+    "address": "0xb400cfe975bec177109f257b5134ab7a1d85b9d4",
+    "name": "V3 Aave Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x2045570e37e4324a3c2604a5547876e32abf7952",
+    "name": "V3 Aave V3 Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xa9eae9b4c00180e3dcc8f4ecfdb2898e509717ef",
+    "name": "V3 Aave Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x7ef85be2ec0899260b9f60a98c54cbd60e0023bd",
+    "name": "V3 Aave Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x2e98053f4a1b2595bfaa4d0ad0a450f8deb8bbcc",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xbfe685ea3ce17b7fb0432300dc4d3c1aeaa79af1",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x69aa82cb8906906f8ac06a8b83a798e7043a6501",
+    "name": "StrategyGenLevAaveV3-Optimism",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xdf43263dfec19117f2fe79d1d9842a10c7495ccd",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xfb92dbb370b3a7fcb5b5ede3465e9e62999bb7e0",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xe33519c4689d2fa4f8c8e048165eb2ecc86b94b3",
+    "name": "Strategy<ProtocolName><TokenType>",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xd1c8dc4e30194e3a9dc65c65a150eaf5ab037008",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x4286a40eb3092b0149ec729dc32ad01942e13c63",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x341b18f004a61f63553b55a97a298bdf3d4912b2",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0x6437723dd8fc571fa64eb0fc2d7bcc178863b86c",
+    "name": "StrategyLenderYieldOptimiser",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 10,
+    "address": "0xe1851c0fce10c2939ab57023cae030a5c79cafc0",
+    "name": "Strategy<ProtocolName><TokenType>",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
