@@ -4,9 +4,6 @@
     "address": "0x39b68451f05aaa020611cf887a7338f0991ffd60",
     "name": "AJNA EURe yVault",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -40,16 +37,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 100,
     "address": "0x5012c6bf79b3047ecfff2f212dffda4d2128188f",
     "name": "EURe yVault",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -83,16 +79,15 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   },
   {
     "chainId": 100,
     "address": "0xa21cc1a4a239708690134baed3a1b93cad55f625",
     "name": "Curve EURe yVault",
     "registry": "0x444045c5c13c246e117ed36437303cac8e250ab0",
-    "ydaemonType": "Yearn Vault",
-    "ydaemonKind": "Multi Strategy",
-    "ydaemonEndorsed": false,
     "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
@@ -126,6 +121,8 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": true
-    }
+    },
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy"
   }
 ]
