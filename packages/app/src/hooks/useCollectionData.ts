@@ -4,11 +4,13 @@ import { getCdnUrl } from '../../lib/cdn'
 import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection } from '../../schemas/cms'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
+import type { TokenMetadata } from '../../schemas/TokenMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
 
 type CollectionDataMap = {
   vaults: VaultMetadata[]
   strategies: StrategyMetadata[]
+  tokens: TokenMetadata[]
 }
 
 export function useCollectionData<K extends CollectionKey>(
