@@ -62,7 +62,7 @@ const listItemTemplates = {
 function List({ collection }: { collection: CollectionKey }) {
   const { finderString } = useFinder()
   const { toggledChains } = useToggleChainStore()
-  const { data } = useCollectionData(collection)
+  const { data } = useCollectionData<typeof collection>(collection)
   const collectionConfig = getCollection(collection)
 
   const filter = useMemo(() => {
