@@ -1,4 +1,5 @@
 import { StrategyMetadataSchema } from './StrategyMetadata'
+import { TokenMetadataSchema } from './TokenMetadata'
 import { VaultMetadataSchema } from './VaultMetadata'
 import { YearnFiSchema } from './YearnFi'
 
@@ -16,6 +17,13 @@ export const collections = {
     icon: 'strategy',
     searchFields: ['name', 'address'] as const,
     listItemTemplate: 'strategy' as const,
+  },
+  tokens: {
+    schema: TokenMetadataSchema,
+    displayName: 'Tokens',
+    icon: 'token',
+    searchFields: ['name', 'address'] as const,
+    listItemTemplate: 'token' as const,
   },
 } as const
 
