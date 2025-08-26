@@ -16902,5 +16902,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4f0ef6360df7014990f6fe0a06f34c47785c4505",
+    "name": "StrategyCurveBoostedFactory-JUSD USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf4ca179710c19b4d0508278ea31bd99d3ad78bc9",
+    "name": "StrategyConvexFactory-JUSD USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
