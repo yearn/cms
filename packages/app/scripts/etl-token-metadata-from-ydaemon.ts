@@ -6,35 +6,34 @@
  * Uses TokenMetadata schema for validation and type safety.
  ************************************************************************************************/
 
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readdir, readFile, writeFile } from 'node:fs/promises'
 import { join } from 'node:path'
 import { z } from 'zod'
 import { AddressSchema } from '../schemas'
 import { type TokenMetadata, TokenMetadataSchema } from '../schemas/TokenMetadata'
 
 const YDaemonTokenMetadataSchema = z.object({
+  chainID: z.number().optional(),
   address: AddressSchema,
   name: z.string(),
   symbol: z.string(),
   decimals: z.number().int().min(0).max(255),
-  isVault: z.boolean().optional(),
-  display_name: z.string().optional(),
-  display_symbol: z.string().optional(),
+  displayName: z.string().optional(),
+  displaySymbol: z.string().optional(),
   description: z.string().optional(),
-  category: z.string().optional(),
-  underlyingTokens: z.array(AddressSchema).optional(),
+  category: z.string().optional()
 })
 
 type YDaemonTokenMetadata = z.infer<typeof YDaemonTokenMetadataSchema>
 
 function transformYdaemonToYcms(yd: YDaemonTokenMetadata, chainId: number): TokenMetadata {
   return TokenMetadataSchema.parse({
-    address: yd.address,
     chainId: chainId,
+    address: yd.address,
     name: yd.name,
     symbol: yd.symbol,
-    displayName: yd.display_name,
-    displaySymbol: yd.display_symbol,
+    displayName: yd.displayName,
+    displaySymbol: yd.displaySymbol,
     description: yd.description,
     category: yd.category,
     decimals: yd.decimals,
@@ -42,17 +41,28 @@ function transformYdaemonToYcms(yd: YDaemonTokenMetadata, chainId: number): Toke
 }
 
 async function fetchYDaemonTokens(): Promise<Record<string, Record<string, YDaemonTokenMetadata>>> {
-  console.log('🔄 Fetching token metadata from ydaemon...')
+  console.log('🔄 Reading token metadata from ydaemon files...')
 
-  const response = await fetch('https://ydaemon.yearn.fi/tokens/all')
-  if (!response.ok) {
-    throw new Error(`Failed to fetch ydaemon tokens: ${response.status} ${response.statusText}`)
+  const source = join(__dirname, '../../../../ydaemon/data/meta/tokens')
+  const files = await readdir(source)
+  const result: Record<string, Record<string, YDaemonTokenMetadata>> = {}
+
+  for (const file of files.filter((file) => file.endsWith('.json'))) {
+    const chainId = file.split('.')[0]
+    if (!chainId) {
+      throw new Error('Invalid file name: no chainId found')
+    }
+
+    const filePath = join(source, file)
+    const content = await readFile(filePath, 'utf-8')
+    const data = JSON.parse(content)
+    
+    // Extract tokens from the nested structure
+    result[chainId] = data.tokens || {}
   }
 
-  const data = await response.json()
-  console.log('✅ Successfully fetched token metadata from ydaemon')
-
-  return data
+  console.log('✅ Successfully read token metadata from ydaemon files')
+  return result
 }
 
 async function main() {
