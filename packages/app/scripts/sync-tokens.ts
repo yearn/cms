@@ -63,8 +63,7 @@ async function categorizeTokens(tokens: KongToken[], chainId: number): Promise<T
   const url = process.env[`RPC_${chainId}`]
   console.log(url)
   if (!url) {
-    console.log(`⚠️  No RPC URL found for chain ${chainId}, using basic categorization`)
-    return tokens.map((token) => createBasicTokenFromKong(token))
+    throw Error(`⚠️  No RPC URL, envar not set "RPC_${chainId}"`)
   }
 
   const rpc = createPublicClient({ chain, transport: http(url) })
