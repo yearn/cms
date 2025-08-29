@@ -59,9 +59,8 @@ async function categorizeTokens(tokens: KongToken[], chainId: number): Promise<T
     console.log(`⚠️  Chain ${chainId} not supported, using basic categorization`)
     return tokens.map((token) => createBasicTokenFromKong(token))
   }
-  console.log(chainId)
+
   const url = process.env[`RPC_${chainId}`]
-  console.log(url)
   if (!url) {
     throw Error(`⚠️  No RPC URL, envar not set "RPC_${chainId}"`)
   }
@@ -74,9 +73,6 @@ async function categorizeTokens(tokens: KongToken[], chainId: number): Promise<T
 
   for (let i = 0; i < tokens.length; i += batchSize) {
     const batch = tokens.slice(i, i + batchSize)
-    console.log(
-      `🔄 Categorizing tokens ${i + 1}-${Math.min(i + batchSize, tokens.length)} of ${tokens.length} for chain ${chainId}`,
-    )
 
     // Get Curve registry address for this chain
     const curveRegistryAddress = CURVE_REGISTRY_ADDRESSES[chainId]
@@ -110,10 +106,8 @@ async function categorizeTokens(tokens: KongToken[], chainId: number): Promise<T
 
       return tokenCalls
     })
-    console.log(calls.slice(0, 20))
     try {
       const results = await rpc.multicall({ contracts: calls })
-      console.log(results.slice(0, 20))
       // Calculate calls per token (2 for Yearn checks, +1 if Curve registry available)
       const callsPerToken = curveRegistryAddress ? 3 : 2
 
@@ -158,8 +152,7 @@ async function categorizeTokens(tokens: KongToken[], chainId: number): Promise<T
 
         categorizedTokens.push(categorizedToken)
       }
-    } catch (error) {
-      console.error(`❌ Error categorizing batch for chain ${chainId}:`, error)
+    } catch {
       // Fallback to basic tokens without categorization
       batch.forEach((token) => {
         categorizedTokens.push(createBasicTokenFromKong(token))
@@ -207,7 +200,6 @@ async function fetchTokensFromKong(): Promise<KongToken[]> {
     throw new Error('Invalid Kong response structure')
   }
 
-  console.log(`✅ Fetched ${result.data.tokens.length} tokens from Kong API`)
   return result.data.tokens
 }
 
@@ -219,14 +211,12 @@ async function loadExistingTokens(chainId: number): Promise<TokenMetadata[]> {
     const exists = await file.exists()
 
     if (!exists) {
-      console.log(`📝 No existing token file for chain ${chainId}, creating empty array`)
       return []
     }
 
     const content = await file.text()
     return JSON.parse(content) as TokenMetadata[]
-  } catch (error) {
-    console.error(`❌ Error loading existing tokens for chain ${chainId}:`, error)
+  } catch {
     return []
   }
 }
@@ -236,7 +226,6 @@ async function saveTokens(chainId: number, tokens: TokenMetadata[]): Promise<voi
   const content = JSON.stringify(tokens, null, 2) + '\n'
 
   await Bun.write(filePath, content)
-  console.log(`💾 Saved ${tokens.length} tokens to ${filePath}`)
 }
 
 async function updateTokensForChain(chainId: number, kongTokens: KongToken[]): Promise<number> {
@@ -250,11 +239,8 @@ async function updateTokensForChain(chainId: number, kongTokens: KongToken[]): P
   const newTokens = chainTokens.filter((token) => !existingAddresses.has(token.address.toLowerCase()))
 
   if (newTokens.length === 0) {
-    console.log(`✅ No new tokens found for chain ${chainId}`)
     return 0
   }
-
-  console.log(`🔍 Found ${newTokens.length} new tokens for chain ${chainId}`)
 
   // Categorize new tokens with contract calls
   const categorizedTokens = await categorizeTokens(newTokens, chainId)
@@ -271,21 +257,11 @@ async function main(): Promise<void> {
   try {
     const kongTokens = await fetchTokensFromKong()
 
-    let totalNewTokens = 0
-
     // Process each supported chain
     for (const chainId of SUPPORTED_CHAIN_IDS) {
-      const newTokensCount = await updateTokensForChain(chainId, kongTokens)
-      totalNewTokens += newTokensCount
+      await updateTokensForChain(chainId, kongTokens)
     }
-
-    console.log(`\n🎉 Sync complete! Added ${totalNewTokens} new tokens across all chains.`)
-
-    if (totalNewTokens === 0) {
-      console.log('✅ All token data is up to date.')
-    }
-  } catch (error) {
-    console.error('❌ Error syncing tokens:', error)
+  } catch {
     process.exit(1)
   }
 }
