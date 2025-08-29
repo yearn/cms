@@ -33,9 +33,11 @@ or
 
 bun packages/app/scripts/sync-vaults.ts
 bun packages/app/scripts/sync-strategies.ts
+bun packages/app/scripts/sync-tokens.ts
 git add packages/app/cdn/vaults
 git add packages/app/cdn/strategies
-git commit -m 'Sync vaults and strategies'
+git add packages/app/cdn/tokens
+git commit -m 'Sync vaults strategies and tokens'
 git push
 
 ```
