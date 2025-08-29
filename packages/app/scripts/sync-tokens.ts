@@ -178,8 +178,7 @@ function createBasicTokenFromKong(kongToken: KongToken): TokenMetadata {
 }
 
 async function fetchTokensFromKong(): Promise<KongToken[]> {
-  console.log('🔄 Fetching tokens from Kong API...')
-
+  console.log('Fetching tokens from Kong API...')
   const response = await fetch(KONG_ENDPOINT, {
     method: 'POST',
     headers: {
@@ -257,11 +256,21 @@ async function main(): Promise<void> {
   try {
     const kongTokens = await fetchTokensFromKong()
 
+    let totalNewTokens = 0
+
     // Process each supported chain
     for (const chainId of SUPPORTED_CHAIN_IDS) {
-      await updateTokensForChain(chainId, kongTokens)
+      const newTokensCount = await updateTokensForChain(chainId, kongTokens)
+      totalNewTokens += newTokensCount
     }
-  } catch {
+
+    console.log(`\n🎉 Sync complete! Added ${totalNewTokens} new tokens across all chains.`)
+
+    if (totalNewTokens === 0) {
+      console.log('✅ All token data is up to date.')
+    }
+  } catch (error) {
+    console.error('❌ Error syncing tokens:', error)
     process.exit(1)
   }
 }
