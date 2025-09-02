@@ -1,8 +1,8 @@
-import { useState, useEffect } from 'react'
-import { PiSun, PiMoon, PiDesktop } from 'react-icons/pi'
+import { useEffect, useState } from 'react'
+import { PiDesktop, PiMoon, PiSun } from 'react-icons/pi'
+import { useMounted } from '../hooks/useMounted'
 import Button from './elements/Button'
 import FlyInFromBottom from './motion/FlyInFromBottom'
-import { useMounted } from '../hooks/useMounted'
 
 type Theme = 'light' | 'dark' | 'system'
 
@@ -18,10 +18,10 @@ export default function ThemeToggle() {
 
   useEffect(() => {
     const root = document.documentElement
-    
+
     // Remove all theme classes
     root.classList.remove('light', 'dark')
-    
+
     // Apply the appropriate class
     if (theme === 'light') {
       root.classList.add('light')
@@ -29,13 +29,13 @@ export default function ThemeToggle() {
       root.classList.add('dark')
     }
     // If theme is 'system', no class is added (uses media query)
-    
+
     // Save to localStorage
     localStorage.setItem('theme', theme)
   }, [theme])
 
   const cycleTheme = () => {
-    setTheme(current => {
+    setTheme((current) => {
       if (current === 'light') return 'dark'
       if (current === 'dark') return 'system'
       return 'light'
@@ -49,11 +49,7 @@ export default function ThemeToggle() {
   }
 
   return (
-    <Button
-      onClick={cycleTheme}
-      className="p-5"
-      aria-label={`Current theme: ${theme}. Click to change.`}
-    >
+    <Button onClick={cycleTheme} className="p-5" aria-label={`Current theme: ${theme}. Click to change.`}>
       <FlyInFromBottom _key={theme} parentMounted={mounted}>
         {getIcon()}
       </FlyInFromBottom>

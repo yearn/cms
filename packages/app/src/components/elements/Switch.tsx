@@ -28,7 +28,7 @@ const Switch = ({
         'dark:bg-secondary-700 dark:data-[state=checked]:bg-primary-600',
         'outline-none ring-2 ring-transparent focus-visible:ring-primary-400',
         'disabled:opacity-50 disabled:cursor-not-allowed',
-        disabled && 'opacity-50 cursor-not-allowed'
+        disabled && 'opacity-50 cursor-not-allowed',
       )}
       checked={checked}
       onCheckedChange={onChange}
@@ -39,7 +39,7 @@ const Switch = ({
           'block h-5 w-5 rounded-full bg-white shadow-lg',
           'transition-transform duration-200',
           'translate-x-1 data-[state=checked]:translate-x-6',
-          'dark:bg-secondary-100'
+          'dark:bg-secondary-100',
         )}
       />
     </_Switch.Root>
