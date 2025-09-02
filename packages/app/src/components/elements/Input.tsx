@@ -2,30 +2,23 @@ import { forwardRef, type InputHTMLAttributes } from 'react'
 import { cn } from '../../../lib/cn'
 
 export const InputClassName = cn(`
-relative px-6 py-3 
+relative px-4 py-3 
 font-mono text-lg
 
-text-primary-400 bg-primary-950 border border-primary-600
-placeholder:text-primary-500/60
+text-content-primary bg-surface-elevated border border-surface-border
+placeholder:text-secondary-500/60
 
-hover:text-primary-600 hover:bg-black hover:border-primary-600
-hover:placeholder:text-primary-800
+hover:bg-surface-overlay hover:border-interactive-primary-border
 
-hover:has-[:focus]:border-primary-500
-has-[:focus]:text-secondary-300 
-has-[:focus]:border-primary-500 
-has-[:focus]:bg-black
-has-[:focus]:placeholder:text-primary-800
+focus:text-content-primary
+focus:border-interactive-primary-border 
+focus:bg-surface-overlay
+focus:placeholder:text-secondary-600
 
-focus:text-secondary-300 
-focus:border-primary-500 
-focus:bg-black
-focus:placeholder:text-primary-800
-
-data-[disabled=true]:border-primary-600/40
-data-[disabled=true]:text-primary-900 
-data-[disabled=true]:bg-black/40
-data-[disabled=true]:placeholder:text-primary-500/240
+data-[disabled=true]:border-surface-border/40
+data-[disabled=true]:text-secondary-400 
+data-[disabled=true]:bg-surface-base/40
+data-[disabled=true]:placeholder:text-secondary-500/40
 
 truncate
 outline-none focus:ring-0 focus:outline-none

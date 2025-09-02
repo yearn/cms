@@ -54,9 +54,9 @@ export default function Eg() {
       <div className="flex items-center gap-6">
         <div>{'<Button>'}</div>
         <Button>Primary</Button>
-        <Button h="secondary">Secondary</Button>
+        <Button variant="secondary">Secondary</Button>
         <Button disabled>Disabled</Button>
-        <Button theme="error">Error</Button>
+        <Button variant="error">Error</Button>
       </div>
 
       <div className="flex items-center gap-6 w-200">

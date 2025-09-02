@@ -21,7 +21,7 @@ const YDaemonTokenMetadataSchema = z.object({
   displayName: z.string().optional(),
   displaySymbol: z.string().optional(),
   description: z.string().optional(),
-  category: z.string().optional()
+  category: z.string().optional(),
 })
 
 type YDaemonTokenMetadata = z.infer<typeof YDaemonTokenMetadataSchema>
@@ -56,7 +56,7 @@ async function fetchYDaemonTokens(): Promise<Record<string, Record<string, YDaem
     const filePath = join(source, file)
     const content = await readFile(filePath, 'utf-8')
     const data = JSON.parse(content)
-    
+
     // Extract tokens from the nested structure
     result[chainId] = data.tokens || {}
   }

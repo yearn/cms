@@ -48,7 +48,7 @@ export default function GithubSignIn({ className }: { className?: string }) {
 
   return (
     <Button
-      h={signedIn ? 'secondary' : 'primary'}
+      variant={signedIn ? 'secondary' : 'primary'}
       onClick={onSignInWithGithub}
       className={cn('flex items-center gap-4', className)}
     >
