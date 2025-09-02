@@ -14,7 +14,7 @@ export default function Header() {
     label: getCollection(key).displayName,
   }))
 
-  // Create globals options  
+  // Create globals options
   const globalOptions: SelectOption<string>[] = [{ value: 'globals/yearnFi', label: 'YearnFi' }]
 
   // Combine all options
@@ -41,7 +41,8 @@ export default function Header() {
           }}
           renderTrigger={({ value, options }) => {
             // Don't allow clearing selection, always show current selection
-            const currentOption = options.find(opt => opt.value === value) || options.find(opt => opt.value === 'vaults')
+            const currentOption =
+              options.find((opt) => opt.value === value) || options.find((opt) => opt.value === 'vaults')
             return (
               <div className="relative h-8 px-8 py-5 flex items-center gap-2 bg-interactive-secondary text-interactive-secondary-text text-2xl rounded-primary cursor-pointer border border-interactive-secondary-border group-hover:bg-interactive-secondary-hover active:bg-interactive-secondary-active">
                 <span className="flex-1 flex items-center gap-2">

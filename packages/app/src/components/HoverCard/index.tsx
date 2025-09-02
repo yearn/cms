@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
 import { useCallback } from 'react'
-import { cn } from '../../lib/cn'
+import { cn } from '../../../lib/cn'
 import Card from '../elements/Card'
 import { useHoverCard } from './useHoverCard'
 

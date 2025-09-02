@@ -2,25 +2,24 @@ import { useCallback, useMemo } from 'react'
 import { create } from 'zustand'
 
 type HoverCardStore = {
-  openCards: {
+  isOpen: {
     [key: string]: boolean
   }
-  openHoverCard: (cardId: string) => void
-  closeHoverCard: (cardId: string) => void
+  openHoverCard: (hoverCardId: string) => void
+  closeHoverCard: (hoverCardId: string) => void
 }
 
 const useHoverCardStore = create<HoverCardStore>((set) => ({
-  openCards: {},
-  openHoverCard: (cardId: string) => set((state) => ({ openCards: { ...state.openCards, [cardId]: true } })),
-  closeHoverCard: (cardId: string) => set((state) => ({ openCards: { ...state.openCards, [cardId]: false } })),
+  isOpen: {},
+  openHoverCard: (hoverCardId: string) => set((state) => ({ isOpen: { ...state.isOpen, [hoverCardId]: true } })),
+  closeHoverCard: (hoverCardId: string) => set((state) => ({ isOpen: { ...state.isOpen, [hoverCardId]: false } })),
 }))
 
-export function useHoverCard(cardId: string) {
+export function useHoverCard(hoverCardId: string) {
   const store = useHoverCardStore()
-  const isOpen = useMemo(() => store.openCards[cardId] === true, [store.openCards, cardId])
-
-  const openHoverCard = useCallback(() => store.openHoverCard(cardId), [store, cardId])
-  const closeHoverCard = useCallback(() => store.closeHoverCard(cardId), [store, cardId])
+  const isOpen = useMemo(() => store.isOpen[hoverCardId] === true, [store.isOpen, hoverCardId])
+  const openHoverCard = useCallback(() => store.openHoverCard(hoverCardId), [store, hoverCardId])
+  const closeHoverCard = useCallback(() => store.closeHoverCard(hoverCardId), [store, hoverCardId])
 
   return {
     isOpen,

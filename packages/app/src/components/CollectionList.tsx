@@ -7,11 +7,11 @@ import type { TokenMetadata } from '../../schemas/TokenMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
 import { useCollectionData } from '../hooks/useCollectionData'
 import BackItUp from './BackItUp'
+import ChainSelect from './ChainSelect'
+import { useChainSelect } from './ChainSelect/useChainSelect'
 import Link from './elements/Link'
 import Finder, { useFinder } from './Finder'
 import Skeleton from './Skeleton'
-import ToggleChains from './ToggleChains'
-import { useToggleChainStore } from './ToggleChains/useToggleStore'
 import TokenIcon from './TokenIcon'
 
 const INFINTE_SCROLL_FRAME_SIZE = 20
@@ -61,18 +61,18 @@ const listItemTemplates = {
 
 function List({ collection }: { collection: CollectionKey }) {
   const { finderString } = useFinder()
-  const { toggledChains } = useToggleChainStore()
+  const { selectedChains } = useChainSelect()
   const { data } = useCollectionData<typeof collection>(collection)
   const collectionConfig = getCollection(collection)
 
   const filter = useMemo(() => {
     return data.filter(
       (item: any) =>
-        toggledChains.has(item.chainId) &&
+        selectedChains.has(item.chainId) &&
         (item.name?.toLowerCase().includes(finderString.toLowerCase()) ||
           item.address.toLowerCase().includes(finderString.toLowerCase())),
     )
-  }, [data, finderString, toggledChains])
+  }, [data, finderString, selectedChains])
 
   const [items, setItems] = useState(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE))
   useEffect(() => setItems(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE)), [filter])
@@ -126,8 +126,8 @@ function CollectionList() {
   return (
     <div className="px-8 pt-5 pb-16 flex flex-col">
       <div className="mt-6 mb-12 flex flex-col gap-8 w-fit">
+        <ChainSelect />
         <Finder className="w-full" />
-        <ToggleChains />
       </div>
       <Suspense key={collectionKey} fallback={<CollectionSkeleton />}>
         <List collection={collectionKey} />

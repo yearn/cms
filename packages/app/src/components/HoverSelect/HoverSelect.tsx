@@ -68,7 +68,7 @@ export function HoverSelect<T = string>({
 }: HoverSelectProps<T>) {
   const { value, setValue, multiValues, toggleMultiValue, clearMultiValues, selectAllMultiValues, isSelected } =
     useHoverSelect<T | undefined>(selectId, { defaultValue, defaultValues, multiple })
-  
+
   const { closeHoverCard } = useHoverCard(`hover-select-${selectId}`)
 
   const handleSelect = useCallback(

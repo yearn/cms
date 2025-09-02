@@ -1,8 +1,8 @@
+import ChainSelect from '../components/ChainSelect'
 import Button from '../components/elements/Button'
 import Input from '../components/elements/Input'
 import Switch from '../components/elements/Switch'
 import Skeleton from '../components/Skeleton'
-import ToggleChains from '../components/ToggleChains'
 
 export default function Eg() {
   return (
@@ -72,8 +72,8 @@ export default function Eg() {
       </div>
 
       <div className="flex items-center gap-3">
-        <div>{'<ToggleChains>'}</div>
-        <ToggleChains />
+        <div>{'<ChainSelect>'}</div>
+        <ChainSelect />
       </div>
     </div>
   )
