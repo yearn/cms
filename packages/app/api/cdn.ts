@@ -1,8 +1,5 @@
 export const config = { runtime: 'edge' }
 
-const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
-const REPO_NAME = process.env.REPO_NAME || 'cms'
-
 function getPath(url: URL) {
   const schema = url.searchParams.get('schema')
   const file = url.searchParams.get('file')
@@ -52,19 +49,26 @@ export default async function (req: Request): Promise<Response> {
       return new Response('invalid path', { status: 400 })
     }
 
-    const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
-    const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`
-    const upstreamRes = await fetch(upstream)
+    // Read directly from the filesystem
+    const fs = await import('node:fs/promises')
+    const { join } = await import('node:path')
+    
+    try {
+      const filePath = join(process.cwd(), '../../cdn', path)
+      const content = await fs.readFile(filePath, 'utf-8')
+      
+      const headers = new Headers()
+      headers.set('content-type', 'application/json')
+      headers.set('cache-control', `public, max-age=60, s-maxage=300, stale-while-revalidate=600`)
+      headers.set('access-control-allow-origin', '*')
 
-    if (!upstreamRes.ok || !upstreamRes.body)
-      return new Response(`upstream ${upstreamRes.status}`, { status: upstreamRes.status })
-
-    const headers = new Headers()
-    headers.set('content-type', upstreamRes.headers.get('content-type') || 'application/octet-stream')
-    headers.set('cache-control', `public, max-age=60, s-maxage=300, stale-while-revalidate=600`)
-    headers.set('access-control-allow-origin', '*')
-
-    return new Response(upstreamRes.body, { status: 200, headers })
+      return new Response(content, { status: 200, headers })
+    } catch (error: any) {
+      if (error.code === 'ENOENT') {
+        return new Response('not found', { status: 404 })
+      }
+      throw error
+    }
   } catch (e: any) {
     return new Response(e?.message || 'error', { status: 500 })
   }
