@@ -19,7 +19,7 @@ export default function Finder({ className }: { className?: string }) {
         placeholder="Search by name or address"
         value={finderString}
         onChange={(e) => setFinderString(e.target.value)}
-        className="w-full"
+        className="h-10 w-full"
       />
     </div>
   )

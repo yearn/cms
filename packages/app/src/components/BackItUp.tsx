@@ -18,7 +18,7 @@ export default function BackItUp() {
 
   return (
     <Button
-      h="secondary"
+      variant="secondary"
       data-show={show}
       onClick={() => mainScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })}
       className={cn(`

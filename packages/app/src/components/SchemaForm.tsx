@@ -88,7 +88,7 @@ const renderField = (
     case 'string':
       if (schema.enum) {
         return (
-          <select {...commonProps} className="w-128 h-12 text-primary-600">
+          <select {...commonProps} className="w-128 h-12 text-secondary-600">
             {schema.enum.map((e: string) => (
               <option key={e} value={e}>
                 {e}
@@ -170,7 +170,7 @@ export default function MetaData({ className }: MetaDataProps) {
       {Object.entries(jsonSchema.properties || {})
         .filter(([key]) => !readonlyFields.includes(key))
         .map(([key, schema]) => (
-          <div key={key} className="py-3 flex items-center justify-between border-b border-primary-950">
+          <div key={key} className="py-6 flex items-center justify-between border-b border-[var(--card-border)]">
             <label htmlFor={key}>{key}</label>
             {renderField(key, schema, formState[key], updateField)}
           </div>
