@@ -891,12 +891,14 @@
     "address": "0x252b965400862d94bda35fecf7ee0f204a53cc36",
     "name": "Yearn USND",
     "registry": "0x770d0d1fb036483ed4abb6d53c1c88fb277d812f",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -905,7 +907,7 @@
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Stable"
     },
     "category": "",
     "displayName": "",
@@ -916,17 +918,15 @@
     "protocols": [],
     "inclusion": {
       "isSet": true,
-      "isYearn": false,
+      "isYearn": true,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
       "isKatana": false,
-      "isPublicERC4626": true
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+      "isPublicERC4626": false
+    }
   },
   {
     "chainId": 42161,
