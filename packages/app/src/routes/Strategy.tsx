@@ -5,10 +5,10 @@ import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { StrategyMetadataSchema } from '../../schemas/StrategyMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
-import Button from '../components/elements/Button'
+import Button from '../components/eg/elements/Button'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/Skeleton'
+import Skeleton from '../components/eg/Skeleton'
 import { useStrategyMeta } from '../hooks/useStrategyMeta'
 
 function PullRequestButton() {

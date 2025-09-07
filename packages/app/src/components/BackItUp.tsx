@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { PiArrowUp } from 'react-icons/pi'
 import { cn } from '../../lib/cn'
 import { useMainScroll } from '../hooks/useMainScroll'
-import Button from './elements/Button'
+import Button from './eg/elements/Button'
 
 export default function BackItUp() {
   const { mainScrollRef } = useMainScroll()

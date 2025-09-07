@@ -4,10 +4,10 @@ import { PiGitPullRequest } from 'react-icons/pi'
 import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
-import Button from '../components/elements/Button'
+import Button from '../components/eg/elements/Button'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/Skeleton'
+import Skeleton from '../components/eg/Skeleton'
 import { useCollectionData } from '../hooks/useCollectionData'
 
 function PullRequestButton({ collection }: { collection: CollectionKey }) {
@@ -77,7 +77,7 @@ function CollectionDetails({ collection }: { collection: CollectionKey }) {
   return (
     <div className="flex flex-col items-start justify-start gap-4 w-200">
       {/* Standard header for all CMS types */}
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-3">
         <h1 className="text-3xl font-bold truncate">{item.name}</h1>
         {item.chainId && (
           <div>

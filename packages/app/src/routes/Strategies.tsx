@@ -3,11 +3,10 @@ import InfiniteScroll from 'react-infinite-scroll-component'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
 import BackItUp from '../components/BackItUp'
 import Link from '../components/elements/Link'
-import Finder, { useFinder } from '../components/Finder'
-import Skeleton from '../components/Skeleton'
-import ToggleChains from '../components/ToggleChains'
-import { useToggleChainStore } from '../components/ToggleChains/useToggleStore'
-import TokenIcon from '../components/TokenIcon'
+import { useFinder } from '../components/Finder'
+import Skeleton from '../components/eg/Skeleton'
+import { useToggleChainStore } from '../hooks/useToggleChainStore'
+import TokenIcon from '../components/eg/TokenIcon'
 import { useStrategyMeta } from '../hooks/useStrategyMeta'
 
 const INFINTE_SCROLL_FRAME_SIZE = 20
@@ -81,10 +80,6 @@ function StrategiesSkeleton() {
 function Strategies() {
   return (
     <div className="px-8 pt-5 pb-16 flex flex-col">
-      <div className="mt-6 mb-12 flex flex-col gap-8 w-fit">
-        <Finder className="w-full" />
-        <ToggleChains />
-      </div>
       <Suspense fallback={<StrategiesSkeleton />}>
         <List />
       </Suspense>
