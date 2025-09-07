@@ -49,7 +49,7 @@ const ListItem = forwardRef<HTMLDivElement, ListItemProps>(
         {children}
       </div>
     )
-  }
+  },
 )
 
 ListItem.displayName = 'ListItem'

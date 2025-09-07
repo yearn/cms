@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { PiDesktop, PiMoon, PiSun } from 'react-icons/pi'
-import { useMounted } from './hooks/useMounted'
 import Button from './elements/Button'
+import { useMounted } from './hooks/useMounted'
 import FlyInFromBottom from './motion/FlyInFromBottom'
 
 type Theme = 'light' | 'dark' | 'system'

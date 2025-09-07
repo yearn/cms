@@ -5,9 +5,9 @@ import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
 import Button from '../components/eg/elements/Button'
+import Skeleton from '../components/eg/Skeleton'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/eg/Skeleton'
 import { useCollectionData } from '../hooks/useCollectionData'
 
 function PullRequestButton({ collection }: { collection: CollectionKey }) {

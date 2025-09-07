@@ -5,9 +5,9 @@ import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { type VaultMetadata, VaultMetadataSchema } from '../../schemas/VaultMetadata'
 import Button from '../components/eg/elements/Button'
+import Skeleton from '../components/eg/Skeleton'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/eg/Skeleton'
 import { useVaultsMeta } from '../hooks/useVaultMeta'
 
 function PullRequestButton() {

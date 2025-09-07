@@ -5,9 +5,9 @@ import { useParams } from 'react-router-dom'
 import { type GlobalKey, getGlobal, getGlobalKeys } from '../../schemas/cms'
 import { useGlobalData } from '../hooks/useGlobalData'
 import Button from './eg/elements/Button'
+import Skeleton from './eg/Skeleton'
 import GithubSignIn, { useGithubUser } from './GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from './SchemaForm'
-import Skeleton from './eg/Skeleton'
 
 function PullRequestButton({ globalKey }: { globalKey: GlobalKey }) {
   const { isDirty, formState } = useMetaData()

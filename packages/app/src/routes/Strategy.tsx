@@ -6,9 +6,9 @@ import { chains } from '../../lib/chains'
 import { StrategyMetadataSchema } from '../../schemas/StrategyMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
 import Button from '../components/eg/elements/Button'
+import Skeleton from '../components/eg/Skeleton'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/eg/Skeleton'
 import { useStrategyMeta } from '../hooks/useStrategyMeta'
 
 function PullRequestButton() {

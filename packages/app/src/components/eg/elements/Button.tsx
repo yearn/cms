@@ -64,12 +64,7 @@ function buttonClassName(props: ButtonProps) {
 const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = 'secondary', children, ...props }, ref) => {
     return (
-      <button
-        data-variant={variant}
-        ref={ref}
-        {...props}
-        className={buttonClassName({ className, variant })}
-      >
+      <button data-variant={variant} ref={ref} {...props} className={buttonClassName({ className, variant })}>
         {children}
       </button>
     )

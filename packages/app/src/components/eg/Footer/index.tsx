@@ -1,4 +1,4 @@
-import { type HTMLAttributes, forwardRef } from 'react'
+import { forwardRef, type HTMLAttributes } from 'react'
 import { cn } from '../cn'
 
 export type FooterProps = HTMLAttributes<HTMLElement> & {
@@ -16,19 +16,13 @@ function footerClassName(props: FooterProps) {
   `)
 }
 
-const Footer = forwardRef<HTMLElement, FooterProps>(
-  ({ className, children, ...props }, ref) => {
-    return (
-      <footer
-        ref={ref}
-        className={footerClassName({ className })}
-        {...props}
-      >
-        {children}
-      </footer>
-    )
-  }
-)
+const Footer = forwardRef<HTMLElement, FooterProps>(({ className, children, ...props }, ref) => {
+  return (
+    <footer ref={ref} className={footerClassName({ className })} {...props}>
+      {children}
+    </footer>
+  )
+})
 
 Footer.displayName = 'Footer'
 

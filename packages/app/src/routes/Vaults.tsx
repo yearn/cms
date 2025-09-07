@@ -2,11 +2,11 @@ import { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
 import BackItUp from '../components/BackItUp'
+import Skeleton from '../components/eg/Skeleton'
+import TokenIcon from '../components/eg/TokenIcon'
 import Link from '../components/elements/Link'
 import { useFinder } from '../components/Finder'
-import Skeleton from '../components/eg/Skeleton'
 import { useToggleChainStore } from '../hooks/useToggleChainStore'
-import TokenIcon from '../components/eg/TokenIcon'
 import { useVaultsMeta } from '../hooks/useVaultMeta'
 
 const INFINTE_SCROLL_FRAME_SIZE = 20
