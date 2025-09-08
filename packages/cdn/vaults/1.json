@@ -22638,6 +22638,8 @@
     "address": "0xbf319ddc2edc1eb6fdf9910e39b37be221c8805f",
     "name": "crvUSD-2 yVault",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -22652,9 +22654,9 @@
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Stable"
     },
-    "category": "Curve",
+    "category": "Stablecoin",
     "displayName": "crvUSD-2",
     "displaySymbol": "",
     "description": "Multi strategy crvUSD vault. <br/><br/>Vaults labeled with the category of -2 will use strategies deploying into less proven but potentially higher yielding protocols than the standard vaults. These strategies may have a higher likelyhood of becoming temporarily illiquid or even producing losses, but are expected to earn more yield than others.",
@@ -22671,9 +22673,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
