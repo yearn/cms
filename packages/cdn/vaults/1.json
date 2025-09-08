@@ -5852,12 +5852,14 @@
     "address": "0x3408324dbb537886cadc180f6ffcf674ee215f67",
     "name": "\"renBTC yVault\"",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
+    "type": "Experimental Yearn Vault",
+    "kind": "Legacy",
     "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -5886,9 +5888,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Experimental Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
