@@ -16177,6 +16177,8 @@
     "address": "0x89e93172aef8261db8437b90c3dcb61545a05317",
     "name": "Savings USDaf",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -16196,7 +16198,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "sUSDaf is Yearn's USDaf tokenized Stability pool product built for Asymmetry's USDaf. It is designed to tokenize the benefits of a USDaf-in-Stability-Pool position in a simple, user-friendly way, auto-compounding and auto-harvesting so you get the best yield on your USDaf in one click.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [],
@@ -16210,9 +16212,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
