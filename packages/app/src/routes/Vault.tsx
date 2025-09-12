@@ -4,10 +4,10 @@ import { PiGitPullRequest } from 'react-icons/pi'
 import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { type VaultMetadata, VaultMetadataSchema } from '../../schemas/VaultMetadata'
-import Button from '../components/elements/Button'
+import Button from '../components/eg/elements/Button'
+import Skeleton from '../components/eg/Skeleton'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
-import Skeleton from '../components/Skeleton'
 import { useVaultsMeta } from '../hooks/useVaultMeta'
 
 function PullRequestButton() {
@@ -75,7 +75,7 @@ function VaultDetails() {
   const { o: vault } = useMetaData()
   return (
     <div className="flex flex-col items-start justify-start gap-4 w-200">
-      <div className="flex flex-col">
+      <div className="flex flex-col gap-8">
         <h1 className="text-3xl font-bold truncate">{vault.name}</h1>
         <div>
           chain: {chains[vault.chainId]?.name} ({vault.chainId})
