@@ -13730,7 +13730,9 @@
     "address": "0x75f35498e0d053d0dbd2472bc06e7cba1f0c7d3a",
     "name": "Morpho Y-DAI Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "isRetired": false,
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -13763,9 +13765,7 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 1,
