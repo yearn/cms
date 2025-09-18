@@ -1720,7 +1720,9 @@
     "address": "0x11aae8bee9b1da827c641540d20e4e664677e06f",
     "name": "yPRISMA-1 yVault",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
-    "isRetired": false,
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -1753,9 +1755,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
