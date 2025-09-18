@@ -1,8 +1,8 @@
-import Button from '../components/elements/Button'
-import Input from '../components/elements/Input'
-import Switch from '../components/elements/Switch'
-import Skeleton from '../components/Skeleton'
-import ToggleChains from '../components/ToggleChains'
+import { ChainSelect } from '../components/eg/ChainSelect'
+import Button from '../components/eg/elements/Button'
+import Input from '../components/eg/elements/Input'
+import Switch from '../components/eg/elements/Switch'
+import Skeleton from '../components/eg/Skeleton'
 
 export default function Eg() {
   return (
@@ -42,6 +42,11 @@ export default function Eg() {
       </div>
 
       <div className="flex items-center gap-3">
+        <div>{'<ChainSelect>'}</div>
+        <ChainSelect />
+      </div>
+
+      <div className="flex items-center gap-3">
         <div>{'<Input>'}</div>
         <div className="grid grid-cols-2 gap-6">
           <Input placeholder="Default" />
@@ -53,10 +58,10 @@ export default function Eg() {
 
       <div className="flex items-center gap-6">
         <div>{'<Button>'}</div>
-        <Button>Primary</Button>
-        <Button h="secondary">Secondary</Button>
+        <Button variant="primary">Primary</Button>
+        <Button variant="secondary">Secondary</Button>
         <Button disabled>Disabled</Button>
-        <Button theme="error">Error</Button>
+        <Button variant="error">Error</Button>
       </div>
 
       <div className="flex items-center gap-6 w-200">
@@ -69,11 +74,6 @@ export default function Eg() {
       <div className="flex items-center gap-3">
         <div>{'<Switch>'}</div>
         <Switch />
-      </div>
-
-      <div className="flex items-center gap-3">
-        <div>{'<ToggleChains>'}</div>
-        <ToggleChains />
       </div>
     </div>
   )

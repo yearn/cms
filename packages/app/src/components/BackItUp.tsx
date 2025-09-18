@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { PiArrowUp } from 'react-icons/pi'
 import { cn } from '../../lib/cn'
 import { useMainScroll } from '../hooks/useMainScroll'
-import Button from './elements/Button'
+import Button from './eg/elements/Button'
 
 export default function BackItUp() {
   const { mainScrollRef } = useMainScroll()
@@ -18,7 +18,7 @@ export default function BackItUp() {
 
   return (
     <Button
-      h="secondary"
+      variant="secondary"
       data-show={show}
       onClick={() => mainScrollRef.current?.scrollTo({ top: 0, behavior: 'smooth' })}
       className={cn(`
