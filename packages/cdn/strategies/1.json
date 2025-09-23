@@ -16920,5 +16920,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x09ace8b2f2fe2189a5b37046bbafa29dce31c920",
+    "name": "Curve Boosted crvUSD-sreUSD Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf02b8c7ff1accd022cd78444dd9f56330cb699b9",
+    "name": "Bankr USDC Vault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

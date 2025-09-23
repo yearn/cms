@@ -31205,5 +31205,91 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 1,
+    "address": "0x09ace8b2f2fe2189a5b37046bbafa29dce31c920",
+    "name": "Curve Boosted crvUSD-sreUSD Lender",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x09ace8b2f2fe2189a5b37046bbafa29dce31c920"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Curve",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0xf02b8c7ff1accd022cd78444dd9f56330cb699b9",
+    "name": "Bankr USDC Vault",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xf02b8c7ff1accd022cd78444dd9f56330cb699b9"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]

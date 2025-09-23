@@ -108,5 +108,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xd3dce716f3ef535c5ff8d041c1a41c3bd89b97ae",
+    "chainId": 146,
+    "name": "Sonic USD",
+    "symbol": "scUSD",
+    "displayName": "Sonic USD",
+    "displaySymbol": "scUSD",
+    "description": "",
+    "category": "",
+    "decimals": 6
   }
 ]
