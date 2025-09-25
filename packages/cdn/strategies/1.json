@@ -16938,5 +16938,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x41d8b819d9d4ce076ffb2ee5c0ab84986c02509e",
+    "name": "StrategyConvexFactory-DOLAwstUSR",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc69aa6cd632a88424ceaf3688f295b856eb82287",
+    "name": "StrategyCurveBoostedFactory-DOLAwstUSR",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

@@ -32646,5 +32646,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x64273624eb57c5ca961d366cbf3968e760bf0452",
+    "chainId": 1,
+    "name": "DOLA/wstUSR",
+    "symbol": "DOLAwstUSR",
+    "displayName": "DOLA/wstUSR",
+    "displaySymbol": "DOLAwstUSR",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
