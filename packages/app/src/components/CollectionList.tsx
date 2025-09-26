@@ -1,18 +1,17 @@
 import { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
 import type { TokenMetadata } from '../../schemas/TokenMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
 import { useCollectionData } from '../hooks/useCollectionData'
+import { useToggleChainStore } from '../hooks/useToggleChainStore'
 import BackItUp from './BackItUp'
-import Link from './elements/Link'
-import Finder, { useFinder } from './Finder'
-import Skeleton from './Skeleton'
-import ToggleChains from './ToggleChains'
-import { useToggleChainStore } from './ToggleChains/useToggleStore'
-import TokenIcon from './TokenIcon'
+import ListItem from './eg/elements/ListItem'
+import Skeleton from './eg/Skeleton'
+import TokenIcon from './eg/TokenIcon'
+import { useFinder } from './Finder'
 
 const INFINTE_SCROLL_FRAME_SIZE = 20
 
@@ -22,39 +21,51 @@ const listItemTemplates = {
     <Link
       key={`${item.chainId}-${item.address}`}
       to={`/vaults/${item.chainId}/${item.address}`}
-      className="flex items-center gap-6 text-lg"
+      className="block w-full"
     >
-      <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
-      <div>
-        {item.address.slice(0, 6)}..{item.address.slice(-6)}
-      </div>
-      <div>{item.name}</div>
+      <ListItem variant="lg" className="gap-6">
+        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
+        <div className="flex flex-col gap-1">
+          <div className="font-mono text-sm opacity-70">
+            {item.address.slice(0, 6)}..{item.address.slice(-6)}
+          </div>
+          <div className="font-medium">{item.name}</div>
+        </div>
+      </ListItem>
     </Link>
   ),
   strategy: (item: StrategyMetadata) => (
     <Link
       key={`${item.chainId}-${item.address}`}
       to={`/strategies/${item.chainId}/${item.address}`}
-      className="flex items-center gap-6 text-lg"
+      className="block w-full"
     >
-      <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
-      <div>
-        {item.address.slice(0, 6)}..{item.address.slice(-6)}
-      </div>
-      <div>{item.name || 'No name onchain'}</div>
+      <ListItem variant="lg" className="gap-6">
+        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
+        <div className="flex flex-col gap-1">
+          <div className="font-mono text-sm opacity-70">
+            {item.address.slice(0, 6)}..{item.address.slice(-6)}
+          </div>
+          <div className="font-medium">{item.name || 'No name onchain'}</div>
+        </div>
+      </ListItem>
     </Link>
   ),
   token: (item: TokenMetadata) => (
     <Link
       key={`${item.chainId}-${item.address}`}
       to={`/tokens/${item.chainId}/${item.address}`}
-      className="flex items-center gap-6 text-lg"
+      className="block w-full"
     >
-      <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
-      <div>
-        {item.address.slice(0, 6)}..{item.address.slice(-6)}
-      </div>
-      <div>{item.name || 'No name onchain'}</div>
+      <ListItem variant="lg" className="gap-6">
+        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
+        <div className="flex flex-col gap-1">
+          <div className="font-mono text-sm opacity-70">
+            {item.address.slice(0, 6)}..{item.address.slice(-6)}
+          </div>
+          <div className="font-medium">{item.name || 'No name onchain'}</div>
+        </div>
+      </ListItem>
     </Link>
   ),
 } as const
@@ -102,16 +113,15 @@ function List({ collection }: { collection: CollectionKey }) {
 
 function CollectionSkeleton() {
   return (
-    <div className="w-200 flex flex-col items-start justify-start gap-6">
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
-      <Skeleton className="w-full h-10" />
+    <div className="flex flex-col items-start justify-start gap-6">
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
+      <Skeleton className="w-full h-20" />
     </div>
   )
 }
@@ -125,10 +135,6 @@ function CollectionList() {
   const collectionKey = collection as CollectionKey
   return (
     <div className="px-8 pt-5 pb-16 flex flex-col">
-      <div className="mt-6 mb-12 flex flex-col gap-8 w-fit">
-        <Finder className="w-full" />
-        <ToggleChains />
-      </div>
       <Suspense key={collectionKey} fallback={<CollectionSkeleton />}>
         <List collection={collectionKey} />
       </Suspense>

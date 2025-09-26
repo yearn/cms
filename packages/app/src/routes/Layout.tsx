@@ -11,7 +11,9 @@ export default function Layout() {
       <main className="relative w-full min-h-screen overflow-x-hidden">
         <div id="main-scroll" ref={mainScrollRef} className="fixed inset-0 min-h-screen flex flex-col overflow-y-auto">
           <Header />
-          <Outlet />
+          <div className="px-1 py-6">
+            <Outlet />
+          </div>
           <Footer />
         </div>
       </main>

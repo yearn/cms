@@ -2,8 +2,8 @@ import { useSuspenseQuery } from '@tanstack/react-query'
 import { Suspense } from 'react'
 import { PiGithubLogoFill } from 'react-icons/pi'
 import { cn } from '../../lib/cn'
-import Button from './elements/Button'
-import Skeleton from './Skeleton'
+import Button from './eg/elements/Button'
+import Skeleton from './eg/Skeleton'
 
 export function useGithubUser() {
   const token = sessionStorage.getItem('github_token')
@@ -48,7 +48,7 @@ export default function GithubSignIn({ className }: { className?: string }) {
 
   return (
     <Button
-      h={signedIn ? 'secondary' : 'primary'}
+      variant={signedIn ? 'secondary' : 'primary'}
       onClick={onSignInWithGithub}
       className={cn('flex items-center gap-4', className)}
     >

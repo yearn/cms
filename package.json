@@ -3,6 +3,9 @@
   "private": true,
   "scripts": {
     "dev": "(cd packages/app && bun dev)",
+    "lint": "biome check packages/",
+    "lint:fix": "biome check --write packages/",
+    "format": "biome format --write packages/",
     "clean": "bash clean.sh"
   },
   "workspaces": [

@@ -3,10 +3,11 @@ import type { ReactNode } from 'react'
 import { createContext, useContext, useState } from 'react'
 import z from 'zod'
 import { cn } from '../../lib/cn'
-import Input from './elements/Input'
-import Switch from './elements/Switch'
+import Input from './eg/elements/Input'
+import Switch from './eg/elements/Switch'
+import Textarea from './eg/elements/Textarea'
+import { HoverSelect } from './eg/HoverSelect'
 import Tags from './elements/Tags'
-import Textarea from './elements/Textarea'
 
 const TEXTAREA_FIELDS = ['description', 'uiNotice']
 
@@ -87,14 +88,19 @@ const renderField = (
       return <Input type="number" {...commonProps} />
     case 'string':
       if (schema.enum) {
+        const options = schema.enum.map((e: string) => ({
+          value: e,
+          label: e,
+        }))
         return (
-          <select {...commonProps} className="w-128 h-12 text-primary-600">
-            {schema.enum.map((e: string) => (
-              <option key={e} value={e}>
-                {e}
-              </option>
-            ))}
-          </select>
+          <HoverSelect
+            selectId={`${key}-select`}
+            options={options}
+            defaultValue={value}
+            onChange={(val) => update(fieldPath, val)}
+            triggerClassName="w-96"
+            placeholder="Select an option..."
+          />
         )
       }
       if (TEXTAREA_FIELDS.includes(key)) {
@@ -105,7 +111,7 @@ const renderField = (
       return <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} />
     case 'object':
       return (
-        <fieldset className="flex flex-col gap-3">
+        <fieldset className="flex flex-col gap-8">
           {Object.entries(schema.properties || {}).map(([k, v]) => (
             <div key={k} className="flex items-center justify-between gap-6">
               <label htmlFor={k} className="w-42 text-right text-sm">
@@ -166,11 +172,11 @@ export default function MetaData({ className }: MetaDataProps) {
   const jsonSchema = z.toJSONSchema(schema)
   const readonlyFields = ['chainId', 'address', 'name', 'registry']
   return (
-    <form className={cn('flex flex-col gap-6', className)}>
+    <form className={cn('flex flex-col gap-3', className)}>
       {Object.entries(jsonSchema.properties || {})
         .filter(([key]) => !readonlyFields.includes(key))
         .map(([key, schema]) => (
-          <div key={key} className="py-3 flex items-center justify-between border-b border-primary-950">
+          <div key={key} className="py-3 flex items-center justify-between">
             <label htmlFor={key}>{key}</label>
             {renderField(key, schema, formState[key], updateField)}
           </div>

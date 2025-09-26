@@ -1,7 +1,7 @@
 import type { ReactTagsProps } from 'react-tag-autocomplete'
 import { ReactTags } from 'react-tag-autocomplete'
 import { cn } from '../../../lib/cn'
-import { InputClassName } from './Input'
+import { InputClassName } from '../eg/elements/Input'
 
 type Props = Omit<ReactTagsProps, 'labelText' | 'classNames'>
 
