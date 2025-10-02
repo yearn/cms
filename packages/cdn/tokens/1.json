@@ -32657,5 +32657,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xf292eb6c5dcb693eaaf392d0562a01c3710e5978",
+    "chainId": 1,
+    "name": "sfrxUSD/frxUSD",
+    "symbol": "sfrxUSD2",
+    "displayName": "sfrxUSD/frxUSD",
+    "displaySymbol": "sfrxUSD2",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
