@@ -21874,7 +21874,9 @@
     "address": "0xba61baa1d96c2f4e25205b331306507bcaea4677",
     "name": "LP Yearn PRISMA Vault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -21907,9 +21909,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
