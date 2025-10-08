@@ -30569,7 +30569,9 @@
     "address": "0xffa0f0616229ee2ac08fa4c358d23b18d980134b",
     "name": "Curve PRISMA-ETH Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -30602,9 +30604,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
