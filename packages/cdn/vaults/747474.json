@@ -767,7 +767,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -794,7 +794,7 @@
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
-      "isKatana": false,
+      "isKatana": true,
       "isPublicERC4626": false
     }
   }
