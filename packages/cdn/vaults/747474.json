@@ -88,6 +88,8 @@
     "address": "0x37a79bfb9f645f8ed0a9ead9c722710d8f47c431",
     "name": "Morpho Yearn OG vbETH Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -102,12 +104,12 @@
       "contract": "0x0000000000000000000000000000000000000000"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Volatile"
     },
     "category": "auto",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "Supplies WETH to the Yearn-managed Meta Morpho vault on Katana, earning the underlying yield and auto-compounding all reward tokens except KAT, which can be claimed at https://app.merkl.xyz/users/.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [],
@@ -118,12 +120,10 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": false,
+      "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 747474,
