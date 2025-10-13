@@ -1332,6 +1332,8 @@
     "address": "0x0e297de4005883c757c9f09fdf7cf1363c20e626",
     "name": "Morpho Yearn OG USDC Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -1351,7 +1353,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "Supplies USDC to the Meta Morpho vault managed by Yearn on Katana, earning the underlying yield and auto-compounding all reward tokens.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [],
@@ -1362,12 +1364,10 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": false,
+      "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 1,
