@@ -111,7 +111,7 @@
     "displaySymbol": "",
     "description": "Supplies WETH to the Yearn-managed Meta Morpho vault on Katana, earning the underlying yield and auto-compounding all reward tokens except KAT, which can be claimed at https://app.merkl.xyz/users/.",
     "sourceURI": "",
-    "uiNotice": "",
+    "uiNotice": "THIS IS A TEST",
     "protocols": [],
     "inclusion": {
       "isSet": true,
