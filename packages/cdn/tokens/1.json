@@ -32668,5 +32668,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x2191df768ad71140f9f3e96c1e4407a4aa31d082",
+    "chainId": 1,
+    "name": "Convergence CVX",
+    "symbol": "cvgCVX",
+    "displayName": "Convergence CVX",
+    "displaySymbol": "cvgCVX",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
