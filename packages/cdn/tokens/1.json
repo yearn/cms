@@ -32679,5 +32679,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x888239ffa9a0613f9142c808aa9f7d1948a14f75",
+    "chainId": 1,
+    "name": "Morpho OEV-boosted USDC Compounder",
+    "symbol": "ysUSDC",
+    "displayName": "Morpho OEV-boosted USDC Compounder",
+    "displaySymbol": "ysUSDC",
+    "description": "",
+    "category": "yVault",
+    "decimals": 6
   }
 ]
