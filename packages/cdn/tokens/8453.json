@@ -1626,5 +1626,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x3595ca37596d5895b70efab592ac315d5b9809b2",
+    "chainId": 8453,
+    "name": "Azos Stablecoin",
+    "symbol": "AZUSD",
+    "displayName": "Azos Stablecoin",
+    "displaySymbol": "AZUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

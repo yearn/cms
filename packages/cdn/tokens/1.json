@@ -32690,5 +32690,16 @@
     "description": "",
     "category": "yVault",
     "decimals": 6
+  },
+  {
+    "address": "0x13e12bb0e6a2f1a3d6901a59a9d585e89a6243e1",
+    "chainId": 1,
+    "name": "crvUSD/frxUSD",
+    "symbol": "crvfrxUSD",
+    "displayName": "crvUSD/frxUSD",
+    "displaySymbol": "crvfrxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
