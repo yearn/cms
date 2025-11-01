@@ -26733,12 +26733,14 @@
     "address": "0xe24ba27551abe96ca401d39761ca2319ea14e3cb",
     "name": "Yearn-Ajna DAI Vault",
     "registry": "0xe9e8c89c8fc7e8b8f23425688eb68987231178e5",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -26766,9 +26768,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
