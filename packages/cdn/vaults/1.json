@@ -1550,12 +1550,14 @@
     "address": "0x1017c97c03d6738c358576735de76028f2395625",
     "name": "USDS-1 yVault Liquid Locker Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -1583,9 +1585,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
