@@ -783,12 +783,14 @@
     "address": "0x082a5743aadf3d0daf750eef24652b36a68b1e9c",
     "name": "yvAjnaDAI-harvester",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -816,9 +818,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
