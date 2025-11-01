@@ -16992,5 +16992,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa75810e55445562d9efa13a4235d262113b84b80",
+    "name": "StrategyCurveBoostedFactory-Fraxelixir",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfe294c437856ecb9255ebbd5d951d827f4043595",
+    "name": "StrategyConvexFactory-Fraxelixir",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
