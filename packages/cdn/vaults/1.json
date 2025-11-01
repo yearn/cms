@@ -9621,12 +9621,14 @@
     "address": "0x560c0f86124472d6a649ac347a7c3415c34f2929",
     "name": "DAI-2 yVault Liquid Locker Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -9654,9 +9656,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
