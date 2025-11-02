@@ -17010,5 +17010,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x52581fd69870bc82bf6713336f97ad6ec5bef54b",
+    "name": "StrategyConvexFactory-msUSDfxUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xdae59b1ef588aaeb4792be60ad0667e5d73a1a6b",
+    "name": "StrategyCurveBoostedFactory-msUSDfxUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

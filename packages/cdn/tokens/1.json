@@ -32712,5 +32712,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x138bb0f3208bd729a561f3786ddb97bbc69e6628",
+    "chainId": 1,
+    "name": "msUSD/fxUSD",
+    "symbol": "msUSDfxUSD",
+    "displayName": "msUSD/fxUSD",
+    "displaySymbol": "msUSDfxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
