@@ -2876,7 +2876,9 @@
     "address": "0x1bb04fcbc210baa384531079ed7f59d9149309ba",
     "name": "Balancer USDC-DAI-USDT Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -2912,9 +2914,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
