@@ -16048,7 +16048,9 @@
     "address": "0x883a777f2594004419fc08b388d7d3bdc1c0d6c1",
     "name": "Balancer bb-a-USD Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -16084,9 +16086,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
