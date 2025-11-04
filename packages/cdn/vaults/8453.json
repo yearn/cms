@@ -3616,8 +3616,10 @@
     "address": "0xef34b4dcb851385b8f3a8ff460c34adafd160802",
     "name": "Morpho Moonwell Flagship ETH Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -3649,9 +3651,7 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 8453,
