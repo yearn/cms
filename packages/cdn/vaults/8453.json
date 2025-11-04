@@ -3028,8 +3028,10 @@
     "address": "0xb9acb02818bddd3ac178fa51a0587101e54748b0",
     "name": "Morpho Moonwell Frontier cbBTC Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -3061,9 +3063,7 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 8453,
