@@ -3364,8 +3364,10 @@
     "address": "0xd5428b889621eee8060fc105aa0ab0fa2e344468",
     "name": "Morpho Moonwell Flagship USDC Compounder",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -3397,9 +3399,7 @@
       "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 8453,
