@@ -3448,8 +3448,10 @@
     "address": "0xd89a4f020c8d256a2a4b0dc40b36ee0b27680776",
     "name": "Moonwell cbETH Lender WETH Borrower",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -3481,9 +3483,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 8453,
