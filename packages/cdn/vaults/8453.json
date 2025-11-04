@@ -1852,8 +1852,10 @@
     "address": "0x7c0fa3905b38d44c0f29150fd61f182d1e097ec2",
     "name": "LevMoonwell WETH",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -1885,9 +1887,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Single Strategy"
+    }
   },
   {
     "chainId": 8453,
