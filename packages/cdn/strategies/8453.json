@@ -1015,5 +1015,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xd63f18aa7beb87799fd1b368aead90a6a1c86f6c",
+    "name": "Bankr USDC Vault",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

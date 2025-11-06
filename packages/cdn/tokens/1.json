@@ -32723,5 +32723,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x434558cb1ebe9950e8a66f1ef8a15a473dce7d8c",
+    "chainId": 1,
+    "name": "Wrapped WisdomTree Government Money Market Digital Fund",
+    "symbol": "wWTGXX",
+    "displayName": "Wrapped WisdomTree Government Money Market Digital Fund",
+    "displaySymbol": "wWTGXX",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
