@@ -1637,5 +1637,49 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xe095b8127823708dc07e739ef4149050acc836e7",
+    "chainId": 8453,
+    "name": "A.T.M.",
+    "symbol": "ATM",
+    "displayName": "A.T.M.",
+    "displaySymbol": "ATM",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x696f9436b67233384889472cd7cd58a6fb5df4f1",
+    "chainId": 8453,
+    "name": "Avantis",
+    "symbol": "AVNT",
+    "displayName": "Avantis",
+    "displaySymbol": "AVNT",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x3b313f5615bbd6b200c71f84ec2f677b94df8674",
+    "chainId": 8453,
+    "name": "Gloria by Virtuals",
+    "symbol": "GLORIA",
+    "displayName": "Gloria by Virtuals",
+    "displaySymbol": "GLORIA",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x98d0baa52b2d063e780de12f615f963fe8537553",
+    "chainId": 8453,
+    "name": "KAITO",
+    "symbol": "KAITO",
+    "displayName": "KAITO",
+    "displaySymbol": "KAITO",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
