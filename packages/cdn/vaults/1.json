@@ -8594,7 +8594,9 @@
     "address": "0x4cb5483d87028518c5f35a49c151612a062bfcd0",
     "name": "Balancer GHO-bb-a-USD Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -8630,9 +8632,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
