@@ -436,7 +436,9 @@
     "address": "0x04aebe2e4301cdf5e9c57b01ebdfe4ac4b48dd13",
     "name": "mkUSD yVault-A",
     "registry": "0xe9e8c89c8fc7e8b8f23425688eb68987231178e5",
-    "isRetired": false,
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -462,16 +464,14 @@
     "inclusion": {
       "isSet": true,
       "isYearn": true,
-      "isYearnJuiced": true,
+      "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
