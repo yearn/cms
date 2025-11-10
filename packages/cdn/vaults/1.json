@@ -9062,12 +9062,14 @@
     "address": "0x503e0bab6acdae73ea7fb7cf6ae5792014dbe935",
     "name": "Yearn-Ajna WETH Vault",
     "registry": "0xe9e8c89c8fc7e8b8f23425688eb68987231178e5",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -9095,9 +9097,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Multi Strategy"
+    }
   },
   {
     "chainId": 1,
