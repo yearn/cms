@@ -32745,5 +32745,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x06cf5f9b93e9fcfdb33d6b3791eb152567cd8d36",
+    "chainId": 1,
+    "name": "USPD/USDC",
+    "symbol": "USPDUSDC",
+    "displayName": "USPD/USDC",
+    "displaySymbol": "USPDUSDC",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
