@@ -10005,8 +10005,10 @@
     "address": "0x58900d761ae3765b75ddfc235c1536b527f25d8f",
     "name": "Curve yETH Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
-    "isHidden": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": true,
@@ -10041,9 +10043,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
