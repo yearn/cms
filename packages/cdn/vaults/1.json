@@ -9879,6 +9879,8 @@
     "address": "0x57a2c7925baa1894a939f9f6721ea33f2ecfd0e2",
     "name": "Curve DOLA-USR Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
@@ -9896,9 +9898,9 @@
       "stability": "Unknown"
     },
     "category": "Curve",
-    "displayName": "Curve DOLA-USR Factory",
-    "displaySymbol": "yvCurve-DOLA-USR-f",
-    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains DOLA and Resolv's USR.",
+    "displayName": "Curve DOLA-wstUSR Factory",
+    "displaySymbol": "yvCurve-DOLA-wstUSR-f",
+    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains DOLA and Resolv's Wrapped Staked USR (wstUSR).",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [],
@@ -9912,9 +9914,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
