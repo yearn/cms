@@ -31604,7 +31604,7 @@
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
-    "isAutomated": false,
+    "isAutomated": true,
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
@@ -31616,9 +31616,9 @@
       "stability": "Unknown"
     },
     "category": "Curve",
-    "displayName": "",
-    "displaySymbol": "",
-    "description": "",
+    "displayName": "Curve USPD-USDC Factory",
+    "displaySymbol": "yvCurve-USPD-USDC-f",
+    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains USDC and USPD.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
