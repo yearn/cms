@@ -32756,5 +32756,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xda5e1988097297dcdc1f90d4dfe7909e847cbef6",
+    "chainId": 1,
+    "name": "World Liberty Financial",
+    "symbol": "WLFI",
+    "displayName": "World Liberty Financial",
+    "displaySymbol": "WLFI",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
