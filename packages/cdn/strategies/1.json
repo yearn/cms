@@ -17064,5 +17064,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe29de4ec1e8e93a3faa9e074730ec54181f743af",
+    "name": "StrategyCurveBoostedFactory-ZCHF/CRVUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x0e1d1c2e0f7da6abbc8a430fcece9c1d0c0ba86a",
+    "name": "StrategyConvexFactory-ZCHF/CRVUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

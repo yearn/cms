@@ -32767,5 +32767,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x027b40f5917fcd0eac57d7015e120096a5f92ca9",
+    "chainId": 1,
+    "name": "ZCHF/CRVUSD",
+    "symbol": "ZCHF/CRVUSD",
+    "displayName": "ZCHF/CRVUSD",
+    "displaySymbol": "ZCHF/CRVUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
