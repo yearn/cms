@@ -32778,5 +32778,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x22222222aea0076fca927a3f44dc0b4fdf9479d6",
+    "chainId": 1,
+    "name": "Yearn YB Token",
+    "symbol": "yYB",
+    "displayName": "Yearn YB Token",
+    "displaySymbol": "yYB",
+    "description": "",
+    "category": "yVault",
+    "decimals": 18
   }
 ]
