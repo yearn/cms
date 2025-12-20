@@ -32789,5 +32789,27 @@
     "description": "",
     "category": "yVault",
     "decimals": 18
+  },
+  {
+    "address": "0xe7c3d8c9a439fede00d2600032d5db0be71c3c29",
+    "chainId": 1,
+    "name": "JPY Coin",
+    "symbol": "JPYC",
+    "displayName": "JPY Coin",
+    "displaySymbol": "JPYC",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x98b540fa89690969d111d045afca575c91519b1a",
+    "chainId": 1,
+    "name": "sdYB/YB",
+    "symbol": "sdYBYB-LP",
+    "displayName": "sdYB/YB",
+    "displaySymbol": "sdYBYB-LP",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
