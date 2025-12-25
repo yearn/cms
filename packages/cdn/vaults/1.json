@@ -31733,7 +31733,7 @@
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
-    "isAutomated": false,
+    "isAutomated": true,
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
@@ -31747,7 +31747,7 @@
     "category": "Curve",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains YB and Yearn's veYB liquid locker yYB. For more details about yYB, check out Yearn's docs.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
