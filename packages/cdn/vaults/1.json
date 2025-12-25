@@ -31702,8 +31702,8 @@
       "stability": "Unknown"
     },
     "category": "Curve",
-    "displayName": "",
-    "displaySymbol": "",
+    "displayName": "Curve sdYB Factory yVault",
+    "displaySymbol": "yvCurve-sdYB-f",
     "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains YB and StakeDAO's veYB liquid locker sdYB.",
     "sourceURI": "",
     "uiNotice": "",
