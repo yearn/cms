@@ -32811,5 +32811,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x5ee9606e5611fd6ce14bd2bc12db70bd53dc9daa",
+    "chainId": 1,
+    "name": "YB/yYB",
+    "symbol": "yYB-LP",
+    "displayName": "YB/yYB",
+    "displaySymbol": "yYB-LP",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
