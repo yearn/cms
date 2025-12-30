@@ -2000,5 +2000,27 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x532f27101965dd16442e59d40670faf5ebb142e4",
+    "chainId": 8453,
+    "name": "Brett",
+    "symbol": "BRETT",
+    "displayName": "Brett",
+    "displaySymbol": "BRETT",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xac1bd2486aaf3b5c0fc3fd868558b082a531b2b4",
+    "chainId": 8453,
+    "name": "Toshi",
+    "symbol": "TOSHI",
+    "displayName": "Toshi",
+    "displaySymbol": "TOSHI",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
