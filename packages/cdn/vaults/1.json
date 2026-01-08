@@ -4078,12 +4078,14 @@
     "address": "0x27b5739e22ad9033bcbf192059122d163b60349d",
     "name": "yCRV yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
+    "type": "Yearn Vault",
+    "kind": "Legacy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
@@ -4114,9 +4116,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
