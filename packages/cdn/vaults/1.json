@@ -31764,5 +31764,48 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 1,
+    "address": "0x1f6f16945e395593d8050d6cc33e4328a515b648",
+    "name": "yYB yVault",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x1f6f16945e395593d8050d6cc33e4328a515b648"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]
