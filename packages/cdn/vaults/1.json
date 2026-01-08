@@ -31777,7 +31777,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -31790,7 +31790,7 @@
     "category": "",
     "displayName": "",
     "displaySymbol": "",
-    "description": "Deposit your yYB (Yearn's Yield Basis liquid locker token) and start earning the maximum APY immediately. The vault will handle staking, claiming and swapping weekly rewards, and reinvesting your yYB for you. For more details about yYB, check out Yearn's [docs](https://docs.yearn.fi/getting-started/products/ylockers/yyb/overview).",
+    "description": "Deposit your yYB (Yearn's Yield Basis liquid locker token) and start earning the maximum APY immediately. The vault will handle staking, claiming and swapping weekly rewards, and reinvesting your yYB for you. For more details about yYB, check out Yearn's [docs](https://docs.yearn.fi/getting-started/products/ylockers/yyb/overview) or our yYB [app](https://yyb.yearn.fi/).",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
