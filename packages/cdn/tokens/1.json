@@ -32822,5 +32822,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xbf5047039f2980c21eb5692c790bad8a9533b900",
+    "chainId": 1,
+    "name": "pmUSD/frxUSD",
+    "symbol": "pmfrxUSD",
+    "displayName": "pmUSD/frxUSD",
+    "displaySymbol": "pmfrxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
