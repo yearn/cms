@@ -32833,5 +32833,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xd25f2cc6819fbd34641712122397efbaf9b6a6e2",
+    "chainId": 1,
+    "name": "ebUSD/USDC Pool",
+    "symbol": "ebUSDUSDC",
+    "displayName": "ebUSD/USDC Pool",
+    "displaySymbol": "ebUSDUSDC",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
