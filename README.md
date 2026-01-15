@@ -2,6 +2,10 @@
 
 [![Install biome extension in your IDE for lint support](https://img.shields.io/badge/Install-Biome%20Extension-blue?style=for-the-badge&logo=visualstudiocode)](https://marketplace.visualstudio.com/items?itemname=biomejs.biome)
 
+## docs
+
+- [How to manage CMS metadata schemas](docs/how-to-manage-cms-metadata-schemas.md)
+
 ## lfg
 
 ```bash
