@@ -23330,8 +23330,10 @@
     "address": "0xc52d44aba4b7739173821aff175aeb53367e629e",
     "name": "Curve ZUSD-FRAXBP Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
-    "isHidden": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": true,
@@ -23363,9 +23365,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
