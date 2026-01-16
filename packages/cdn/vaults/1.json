@@ -13434,8 +13434,10 @@
     "address": "0x72fdf7e33893cc1649efe5821414e4c9b7c47d40",
     "name": "Curve USD3-sDAI Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
-    "isHidden": false,
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": true,
@@ -13467,9 +13469,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Automated Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 1,
