@@ -2082,7 +2082,7 @@
     "address": "0xf54a15f6da443041bb075959ea66ee47655ddfca",
     "name": "Yearn-Ajna USDC Vault ",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
