@@ -7835,7 +7835,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -10720,8 +10720,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -13181,8 +13181,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -13268,7 +13268,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -16918,7 +16918,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -20647,7 +20647,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -24121,8 +24121,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -26828,7 +26828,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
