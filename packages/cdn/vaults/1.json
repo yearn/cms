@@ -14598,8 +14598,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x3b27f92c0e212c671ea351827edf93db27cc0c65",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0x310B7Ea7475A0B449Cfd73bE81522F1B88eFAFaa",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -20434,7 +20434,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x3b27f92c0e212c671ea351827edf93db27cc0c65",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
