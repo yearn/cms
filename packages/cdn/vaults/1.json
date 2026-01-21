@@ -785,7 +785,7 @@
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -1290,7 +1290,7 @@
     "address": "0x0daa35a1735152edb928239c1712883dd8eb976f",
     "name": "Yearn LQTY",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -1561,9 +1561,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0x1017c97c03d6738c358576735de76028f2395625",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0x182863131F9a4630fF9E27830d945B1413e347E8",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Unknown"
@@ -2584,8 +2584,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0x028eC7330ff87667b6dfb0D94b954c820195336c",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -3275,7 +3275,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -3532,8 +3532,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -3609,7 +3609,7 @@
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -3618,9 +3618,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0x22028e652a2e937c876f2577f8e78f692d6daa93",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Unknown"
@@ -6150,7 +6150,7 @@
     "address": "0x378cb52b00f9d0921cb46dfc099cff73b42419dc",
     "name": "LUSD yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -6543,9 +6543,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0x3b27f92c0e212c671ea351827edf93db27cc0c65",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0x310B7Ea7475A0B449Cfd73bE81522F1B88eFAFaa",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -7058,7 +7058,7 @@
     "address": "0x3f540647b08e3e9bcd297e065e42e6cdaf37eba0",
     "name": "Silo-LRT WETH yVault",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -7835,7 +7835,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -8810,7 +8810,7 @@
     "address": "0x4dd0fe8549641a04d7ab4f37dbb541ae7dbb2838",
     "name": "Silo-LRT USDC yVault",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -9200,7 +9200,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -9623,7 +9623,7 @@
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -10720,8 +10720,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -11194,7 +11194,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -11788,7 +11788,7 @@
     "address": "0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2",
     "name": "LINK yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -12567,7 +12567,7 @@
     "address": "0x6d765cbe5bc922694afe112c140b8878b9fb0390",
     "name": "SUSHI yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -13181,8 +13181,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -13268,7 +13268,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -14598,8 +14598,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0x3b27f92c0e212c671ea351827edf93db27cc0c65",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0x310B7Ea7475A0B449Cfd73bE81522F1B88eFAFaa",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -15880,7 +15880,7 @@
     "address": "0x873fb544277fd7b977b196a826459a69e27ea4ea",
     "name": "RAI yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -16918,7 +16918,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -18061,7 +18061,7 @@
     "address": "0x990200daca8c96f1b1d10af074d4054cd8916028",
     "name": "Curve rUSDY-USDC yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -18668,9 +18668,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -18711,7 +18711,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -18754,9 +18754,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -18797,7 +18797,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -19015,9 +19015,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xa696a63cc78dffa1a63e9e50587c197387ff6c7e",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0x751F0cC6115410A3eE9eC92d08f46Ff6Da98b708",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -19399,9 +19399,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xa89e83e39c8a1cb173d7a0c0201cd3956b57db6d",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0xAc37729B76db6438CE62042AE1270ee574CA7571",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Unknown"
@@ -19575,8 +19575,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -19920,7 +19920,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -20434,7 +20434,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x3b27f92c0e212c671ea351827edf93db27cc0c65",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -20647,7 +20647,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -20860,9 +20860,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xb35b02e3353be80a5648f5299b0336579bcf64a0",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0xc56413869c6CDf96496f2b1eF801fEDBdFA7dDB0",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Unknown"
@@ -21663,7 +21663,7 @@
     "address": "0xb974598227660befe79a23dfc473d859602254ac",
     "name": "yvAjnaWeth-compounder",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -21714,7 +21714,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -22776,7 +22776,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -23458,7 +23458,7 @@
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -24121,8 +24121,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0xBe53A109B494E5c9f97b9Cd39Fe969BE68BF6204",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -25871,7 +25871,7 @@
     "address": "0xd9788f3931ede4d5018184e198699dc6d66c1915",
     "name": "AAVE yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -25964,9 +25964,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0x028eC7330ff87667b6dfb0D94b954c820195336c",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -26439,7 +26439,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -26828,7 +26828,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa354f35829ae975e850e23e9615b11da1b3dc4de",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -28195,7 +28195,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -28818,7 +28818,7 @@
     "address": "0xf29ae508698bdef169b89834f76704c3b205aedf",
     "name": "SNX yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -29774,9 +29774,9 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": false,
-      "target": "0xf9a7084ec30238495b3f5c51f05ba7cd1c358dcf",
-      "contract": "0x0000000000000000000000000000000000000000"
+      "available": true,
+      "target": "0xBF319dDC2Edc1Eb6FDf9910E39b37Be221C8805F",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Unknown"
@@ -30063,7 +30063,7 @@
     "address": "0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42",
     "name": "UNI yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -30273,7 +30273,7 @@
     "address": "0xfd0877d9095789caf24c98f7cce092fa8e120775",
     "name": "TUSD yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -30535,7 +30535,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa258c4606ca8206d8aa700ce2143d7db854d168c",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -31342,7 +31342,7 @@
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
