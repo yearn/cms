@@ -6850,7 +6850,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xe537b5cc158eb71037d4125bdd7538421981e6aa",
       "contract": "0xc306a5ef4b990a7f2b3bc2680e022e6a84d75fc1"
     },
