@@ -2584,8 +2584,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0x028eC7330ff87667b6dfb0D94b954c820195336c",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -3275,7 +3275,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -11194,7 +11194,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -21714,7 +21714,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -22776,7 +22776,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -26439,7 +26439,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xda816459f1ab5631232fe5e97a05bbbb94970c95",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
