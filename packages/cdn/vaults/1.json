@@ -1383,7 +1383,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xb5de7250128775a317b3f775a7afcec73571b732",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -1429,8 +1429,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa696a63cc78dffa1a63e9e50587c197387ff6c7e",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0x751F0cC6115410A3eE9eC92d08f46Ff6Da98b708",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -1813,7 +1813,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x774b4cbc2703ce83fb3b828b7c782d1cd983b04a",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -2714,8 +2714,8 @@
     "shouldUseV2APR": false,
     "migration": {
       "available": true,
-      "target": "0xa696a63cc78dffa1a63e9e50587c197387ff6c7e",
-      "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
+      "target": "0x751F0cC6115410A3eE9eC92d08f46Ff6Da98b708",
+      "contract": "0x1112dbCF805682e828606f74AB717abf4b4FD8DE"
     },
     "stability": {
       "stability": "Stable",
@@ -3916,7 +3916,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xd6a4180c819324a9e432ca07c689ecbf00088cd6",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -4132,7 +4132,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa8e0c42f45c877e611c76f2d4bf57476f2014381",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -5254,7 +5254,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -7193,7 +7193,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -7920,7 +7920,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x873fb544277fd7b977b196a826459a69e27ea4ea",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -8130,7 +8130,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x72faea467bd88db6720a861e56a3a72b4aa579df",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -8260,7 +8260,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x6d765cbe5bc922694afe112c140b8878b9fb0390",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -8558,7 +8558,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x0d4ea8536f9a13e4fba16042a46c30f092b06aa5",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -9243,7 +9243,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x5359680a80c1fb2175cd33eff32f762e43cd8c41",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -10104,7 +10104,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xbe4afe6737ccf34ca21cdef461e5c7547adc8c77",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -10191,7 +10191,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x5b2384d566d2e4a0b29b8eccb642c63199cd393c",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -10236,7 +10236,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x82c83dda32db09f63f9a59a129278f3fdc3eee67",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -11149,7 +11149,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x2e2b268cbc86917d2809ce2715a19e58a210fcee",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -11884,7 +11884,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xd347e7a3ddf5ce4c42e19a4f30eeaa761795c72b",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -12141,7 +12141,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x6f0ace0f94f4b9890dfa99a4175b3ef0288c16b3",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -12705,7 +12705,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x2a82dcdcbfb88e92021b8bcc3da22703a2e4459c",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -13527,7 +13527,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xf29ae508698bdef169b89834f76704c3b205aedf",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -13697,7 +13697,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xd9788f3931ede4d5018184e198699dc6d66c1915",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -17894,7 +17894,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xb5de7250128775a317b3f775a7afcec73571b732",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -19706,7 +19706,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x378cb52b00f9d0921cb46dfc099cff73b42419dc",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -19836,7 +19836,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xd9788f3931ede4d5018184e198699dc6d66c1915",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -20816,7 +20816,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x6d765cbe5bc922694afe112c140b8878b9fb0390",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -22093,7 +22093,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xca31dcb9d30e70bf709b41e3935c3f7cdbc6d255",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -22263,7 +22263,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x4a3fe75762017db0ed73a71c9a06db7768db5e66",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -24801,7 +24801,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xd9788f3931ede4d5018184e198699dc6d66c1915",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -24885,7 +24885,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x6d765cbe5bc922694afe112c140b8878b9fb0390",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -25098,7 +25098,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xe5f625e8f4d2a038ae9583da254945285e5a77a4",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -27284,7 +27284,7 @@
     "address": "0xe537b5cc158eb71037d4125bdd7538421981e6aa",
     "name": "Curve 3Crypto Pool yVault",
     "registry": "0x50c1a2ea0a861a967d9d0ffe2ae4012c2e053804",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
@@ -27379,7 +27379,7 @@
     "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x9f8b5c0fc18b79ddfc05b21c43da7e324cf3b8eb",
       "contract": "0x9327e2fdc57c7d70782f29ab46f6385afaf4503c"
     },
@@ -28574,7 +28574,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xa696a63cc78dffa1a63e9e50587c197387ff6c7e",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -29688,7 +29688,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0x671a912c10bba0cfa74cfc2d6fba9ba1ed9530b2",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
@@ -30409,7 +30409,7 @@
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
-      "available": true,
+      "available": false,
       "target": "0xfbeb78a723b8087fd2ea7ef1afec93d35e8bed42",
       "contract": "0x1824df8d751704fa10fa371d62a37f9b8772ab90"
     },
