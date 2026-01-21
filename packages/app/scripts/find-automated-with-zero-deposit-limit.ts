@@ -57,25 +57,6 @@ async function loadVaults(chainId: number): Promise<{ filePath: string; vaults: 
   return { filePath, vaults: JSON.parse(content) as VaultMetadata[] }
 }
 
-async function mapLimit<T, R>(
-  items: T[],
-  limit: number,
-  fn: (item: T, index: number) => Promise<R>
-): Promise<R[]> {
-  const results: R[] = new Array(items.length)
-  let nextIndex = 0
-
-  async function worker() {
-    while (nextIndex < items.length) {
-      const current = nextIndex++
-      results[current] = await fn(items[current], current)
-    }
-  }
-
-  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, () => worker()))
-  return results
-}
-
 async function main() {
   const output: Output = {
     generatedAt: new Date().toISOString(),
@@ -103,36 +84,51 @@ async function main() {
       transport: http(getRpcUrl(chainId)),
     })
 
-    await mapLimit(automated, concurrency, async (address) => {
-      try {
-        const limit = await client.readContract({
-          address: address as `0x${string}`,
-          abi: depositLimitAbi,
-          functionName: 'depositLimit',
+    for (let i = 0; i < automated.length; i += concurrency) {
+      const batch = automated.slice(i, i + concurrency)
+      await Promise.all(
+        batch.map(async (address) => {
+          try {
+            const limit = await client.readContract({
+              address: address as `0x${string}`,
+              abi: depositLimitAbi,
+              functionName: 'depositLimit',
+            })
+            if (limit === 0n) {
+              zeroDepositLimit.push(address)
+            }
+          } catch (error) {
+            errors.push({
+              address,
+              error: error instanceof Error ? error.message : String(error),
+            })
+          }
         })
-        if (limit === 0n) {
-          zeroDepositLimit.push(address)
-        }
-      } catch (error) {
-        errors.push({
-          address,
-          error: error instanceof Error ? error.message : String(error),
-        })
-      }
-    })
+      )
+    }
 
     if (shouldRetire && zeroDepositLimit.length > 0) {
       const zeroSet = new Set(zeroDepositLimit.map((addr) => addr.toLowerCase()))
       let changed = false
+      let migrationDisabled = 0
       for (const vault of vaults) {
-        if (!zeroSet.has(vault.address.toLowerCase())) continue
-        if (vault.isRetired) continue
-        vault.isRetired = true
-        changed = true
+        const addressLower = vault.address.toLowerCase()
+        if (zeroSet.has(addressLower) && !vault.isRetired) {
+          vault.isRetired = true
+          changed = true
+        }
+        const migrationTarget = vault.migration?.target?.toLowerCase()
+        if (migrationTarget && zeroSet.has(migrationTarget) && vault.migration.available) {
+          vault.migration.available = false
+          migrationDisabled += 1
+          changed = true
+        }
       }
       if (changed) {
         await Bun.write(filePath, JSON.stringify(vaults, null, 2) + '\n')
-        console.log(`Updated ${filePath} (retired ${zeroDepositLimit.length})`)
+        const migrationNote =
+          migrationDisabled > 0 ? `, disabled ${migrationDisabled} migrations` : ''
+        console.log(`Updated ${filePath} (retired ${zeroDepositLimit.length}${migrationNote})`)
       }
     }
 
