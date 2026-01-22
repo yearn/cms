@@ -32844,5 +32844,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x696d02db93291651ed510704c9b286841d506987",
+    "chainId": 1,
+    "name": "USD yVault",
+    "symbol": "yvUSD",
+    "displayName": "USD yVault",
+    "displaySymbol": "yvUSD",
+    "description": "",
+    "category": "yVault",
+    "decimals": 6
   }
 ]
