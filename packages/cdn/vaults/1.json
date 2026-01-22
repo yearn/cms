@@ -31257,7 +31257,7 @@
     "type": "Yearn Vault",
     "kind": "Single Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
