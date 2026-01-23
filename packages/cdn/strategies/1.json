@@ -17154,5 +17154,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x60bf1652dde7276209c337db0fe58cafe5bc1cd9",
+    "name": "StrategyCurveBoostedFactory-frxUSDOUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4ffba4392ae2a08650605dfd188a4ec9bd735dcd",
+    "name": "StrategyConvexFactory-frxUSDOUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

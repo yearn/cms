@@ -32855,5 +32855,16 @@
     "description": "",
     "category": "yVault",
     "decimals": 6
+  },
+  {
+    "address": "0x68d03ed49800e92d7aa8ab171424007e55fd1f49",
+    "chainId": 1,
+    "name": "frxUSD/OUSD",
+    "symbol": "frxUSDOUSD",
+    "displayName": "frxUSD/OUSD",
+    "displaySymbol": "frxUSDOUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
