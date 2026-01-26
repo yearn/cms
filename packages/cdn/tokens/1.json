@@ -32866,5 +32866,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x95753095f15870acc0cb0ed224478ea61aeb0b8e",
+    "chainId": 1,
+    "name": "OETH/ARM-WETH-stETH",
+    "symbol": "OETHAstETH",
+    "displayName": "OETH/ARM-WETH-stETH",
+    "displaySymbol": "OETHAstETH",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

@@ -31936,5 +31936,48 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 1,
+    "address": "0x5ffd0c196838aa5e700657c1f6fd8a87f5d80ed2",
+    "name": "Curve OETHAstETH Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "type": "Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x5ffd0c196838aa5e700657c1f6fd8a87f5d80ed2"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Curve",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]

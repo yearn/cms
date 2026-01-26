@@ -17172,5 +17172,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x152a66791880d700f0c989cd7e54ed888fcddcef",
+    "name": "StrategyCurveBoostedFactory-OETHAstETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x57c4e93305bea0af266acb445161b123dfc8ee8c",
+    "name": "StrategyConvexFactory-OETHAstETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
