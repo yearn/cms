@@ -15,7 +15,7 @@ export const VaultMetadataSchema = z.object({
   isAutomated: z.boolean(),
   isHighlighted: z.boolean(),
   isPool: z.boolean(),
-  isStakingDisabled: z.boolean(),
+  shouldDisableStaking: z.boolean(),
   shouldUseV2APR: z.boolean(),
   migration: z.object({
     available: z.boolean(),
