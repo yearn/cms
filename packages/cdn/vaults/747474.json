@@ -763,11 +763,11 @@
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
     "isRetired": false,
-    "isHidden": false,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": true,
+    "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
