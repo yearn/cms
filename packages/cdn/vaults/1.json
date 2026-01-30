@@ -2415,6 +2415,7 @@
     "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": true,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x182863131f9a4630ff9e27830d945b1413e347e8",
@@ -8819,6 +8820,7 @@
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x4dd0fe8549641a04d7ab4f37dbb541ae7dbb2838",
@@ -9073,6 +9075,7 @@
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x503e0bab6acdae73ea7fb7cf6ae5792014dbe935",
@@ -10016,6 +10019,7 @@
     "isHighlighted": false,
     "isPool": true,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x58900d761ae3765b75ddfc235c1536b527f25d8f",
@@ -12185,6 +12189,7 @@
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x6a5694c1b37ffa30690b6b60d8cf89c937d408ad",
@@ -12660,6 +12665,7 @@
     "isHighlighted": false,
     "isPool": true,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x6e9455d109202b426169f0d8f01a3332dae160f3",
@@ -14169,6 +14175,7 @@
     "isHighlighted": false,
     "isPool": true,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x790a60024bc3aea28385b60480f15a0771f26d09",
@@ -17216,6 +17223,7 @@
     "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x92545bce636e6ee91d88d2d017182cd0bd2fc22e",
@@ -17426,6 +17434,7 @@
     "isHighlighted": false,
     "isPool": true,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0x93cf0b02d0a2b61551d107378aff60ceae40c342",
@@ -19963,6 +19972,7 @@
     "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0xac37729b76db6438ce62042ae1270ee574ca7571",
@@ -21885,6 +21895,7 @@
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0xba61baa1d96c2f4e25205b331306507bcaea4677",
@@ -29478,6 +29489,7 @@
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0xf70b3f1ea3bfc659ffb8b27e84fae7ef38b5bd3b",
@@ -30201,6 +30213,7 @@
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
+    "shouldDisableStaking": true,
     "migration": {
       "available": false,
       "target": "0xfca9ab2996e7b010516adcc575eb63de4f4fa47a",
