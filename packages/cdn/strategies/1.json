@@ -17559,5 +17559,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xea1f78458cd7fb4225cd239506efad4237b12dab",
+    "name": "Arbitrum PT sUSDai Feb 18 Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
