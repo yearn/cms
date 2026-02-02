@@ -12650,7 +12650,7 @@
   {
     "chainId": 1,
     "address": "0x6e9455d109202b426169f0d8f01a3332dae160f3",
-    "name": "LP Yearn CRV Vault v2",
+    "name": "yCRV Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
     "isRetired": false,
     "isHidden": false,
