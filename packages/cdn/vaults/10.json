@@ -1432,8 +1432,10 @@
     "address": "0x5e70e0ede43373bd9cf4bc85199d424acf0241ef",
     "name": "Curve sUSD Pool yVault",
     "registry": "0x79286dd38c9017e5423073bac11f53357fc5c128",
-    "isRetired": false,
-    "isHidden": false,
+    "type": "Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": true,
+    "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
@@ -1465,9 +1467,7 @@
       "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
-    },
-    "type": "Yearn Vault",
-    "kind": "Legacy"
+    }
   },
   {
     "chainId": 10,
