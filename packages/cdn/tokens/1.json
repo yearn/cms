@@ -32877,5 +32877,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xb5571e76693ba60110b5811dd650ffefce1c955f",
+    "chainId": 1,
+    "name": "MUSD/USDC/USDT",
+    "symbol": "MUSD/2pool",
+    "displayName": "MUSD/USDC/USDT",
+    "displaySymbol": "MUSD/2pool",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
