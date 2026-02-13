@@ -17595,5 +17595,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1983923e5a3591afe036d38a8c8011e66cd76e9e",
+    "name": "Arbitrum Yearn Degen Morpho Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
