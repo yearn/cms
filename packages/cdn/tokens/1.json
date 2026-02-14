@@ -32888,5 +32888,27 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xf75f2b5fc5f375e1ad3130dd0eec7219fe821204",
+    "chainId": 1,
+    "name": "ynRWAx/OUSD",
+    "symbol": "RWA/OUSD",
+    "displayName": "ynRWAx/OUSD",
+    "displaySymbol": "RWA/OUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xffd3b4d343a8964a5c3c1caac20f319c41a97bff",
+    "chainId": 1,
+    "name": "ynRWAx/ynUSDx",
+    "symbol": "yn-RWA/USD",
+    "displayName": "ynRWAx/ynUSDx",
+    "displaySymbol": "yn-RWA/USD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

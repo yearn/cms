@@ -17604,5 +17604,41 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfb5beb6094bc8e4f4764ee78dd56d863df343dfb",
+    "name": "StrategyConvexFactory-yn-RWA/USD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4d43e518cf386567848cd3351b2f61e3a777d915",
+    "name": "StrategyCurveBoostedFactory-yn-RWA/USD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x185c5311659c8387c6d2452a4ab7f47db15756fe",
+    "name": "StrategyConvexFactory-RWA/OUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xeda1ce40443d74701a62b5001a5620a3c3b72309",
+    "name": "StrategyCurveBoostedFactory-RWA/OUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
