@@ -24296,7 +24296,7 @@
     "address": "0xcc6a16be713f6a714f68b0e1f4914fd3db15fbef",
     "name": "Katana Pre-Deposit WETH",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
-    "isRetired": true,
+    "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
