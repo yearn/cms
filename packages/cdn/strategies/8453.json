@@ -1024,5 +1024,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x3ea7cc6c0e5449d3252114ed7800bad461b79eb1",
+    "name": "Chimi Strategy WETH HarvestAutopilot",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
