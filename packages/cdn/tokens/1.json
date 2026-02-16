@@ -32910,5 +32910,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xb1c2db5d6ca03fce73dbd304d320bf76c55ae1b1",
+    "chainId": 1,
+    "name": "Tangent USD",
+    "symbol": "USG",
+    "displayName": "Tangent USD",
+    "displaySymbol": "USG",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

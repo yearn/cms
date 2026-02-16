@@ -974,5 +974,77 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x62cce59c2b9a7d3c08f768f8b99aad5a7b54c795",
+    "name": "USND wstETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xe85d07b2b6fdd3979f802cb161b078212a6ee125",
+    "name": "USND rETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x62b70a5ef0c2ceea4a2a85681fd0a9dc398f4439",
+    "name": "USND ARB Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x46fb8b6431e21959e0975c9f7230be31baff3ac7",
+    "name": "USND WETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xd932487eda5d8cb911ae2489e0778bdafa9d9a08",
+    "name": "USND WETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0xfc14b7a68b0020b64d781d4a2e27409245adc764",
+    "name": "USND rETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x6b74b94359e1bf07c6e41292bfd722b3f8f637c7",
+    "name": "USND wstETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 42161,
+    "address": "0x3c92f5e821e65312cf40a32a50247c4363a919da",
+    "name": "USND tBTC Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
