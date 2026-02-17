@@ -17658,5 +17658,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbcc6180cc066f17b100a7302625e6845436d3c2c",
+    "name": "yLiquid WETHPosition Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
