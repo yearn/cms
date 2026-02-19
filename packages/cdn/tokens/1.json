@@ -32921,5 +32921,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xefa939f4932cff8a92fd6a7c5fe52cd2ad77f3ec",
+    "chainId": 1,
+    "name": "OUSD/crvUSD",
+    "symbol": "OUSDcrvUSD",
+    "displayName": "OUSD/crvUSD",
+    "displaySymbol": "OUSDcrvUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
