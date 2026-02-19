@@ -1033,5 +1033,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xebc5acbb9b613d831b7504d77a4b0d4ddfede743",
+    "name": "Chimi Strategy WETH MV2 ClearstarReactor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
