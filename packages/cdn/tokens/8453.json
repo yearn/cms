@@ -2022,5 +2022,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x0c6de2baebed16248b794d582cc694c97cfd8a92",
+    "chainId": 8453,
+    "name": "Vaultedge Debt Token",
+    "symbol": "USDVE",
+    "displayName": "Vaultedge Debt Token",
+    "displaySymbol": "USDVE",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
