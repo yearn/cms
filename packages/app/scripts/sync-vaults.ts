@@ -321,6 +321,55 @@ function categorizeVault(name: string): string {
 }
 
 function createVaultFromKong(kongVault: KongVault): VaultMetadata {
+  const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000'
+
+  if (!kongVault.registry) {
+    const category = categorizeVault(kongVault.name)
+    const migration = {
+      available: false,
+      target: kongVault.address.toLowerCase(),
+    }
+
+    return VaultMetadataSchema.parse({
+      chainId: kongVault.chainId,
+      address: kongVault.address.toLowerCase(),
+      name: kongVault.name,
+      registry: ZERO_ADDRESS,
+      type: 'None',
+      kind: 'None',
+      isRetired: false,
+      isHidden: true,
+      isAggregator: false,
+      isBoosted: false,
+      isAutomated: false,
+      isHighlighted: false,
+      isPool: false,
+      shouldUseV2APR: false,
+      category: category,
+      displayName: '',
+      displaySymbol: '',
+      description: '',
+      sourceURI: '',
+      uiNotice: '',
+      migration: migration,
+      stability: {
+        stability: 'Unknown',
+      },
+      protocols: [],
+      inclusion: {
+        isSet: false,
+        isYearn: false,
+        isYearnJuiced: false,
+        isGimme: false,
+        isPoolTogether: false,
+        isCove: false,
+        isMorpho: false,
+        isKatana: false,
+        isPublicERC4626: false,
+      },
+    })
+  }
+
   const { type, kind } = determineVaultType(kongVault.registry, kongVault.vaultType)
   const registryData = REGISTRY_HANDLERS[kongVault.registry.toLowerCase() as keyof typeof REGISTRY_HANDLERS]
 
