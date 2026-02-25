@@ -17685,5 +17685,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd8c69a9c9077650b1c76ffd974b1653ccc165ce9",
+    "name": "LockStake SKY-SKY",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
