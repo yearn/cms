@@ -17712,5 +17712,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2d44b4ee67462ab53e361593e908da1eee354ff6",
+    "name": "StrategyConvexFactory-tBTC/cbBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5c619bc8b6eb41860cd3068db485e79ab7e6b2a",
+    "name": "StrategyCurveBoostedFactory-tBTC/cbBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

@@ -32943,5 +32943,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xae6ee608b297305abf3eb609b81febbb8f6a0bb3",
+    "chainId": 1,
+    "name": "tBTC/cbBTC",
+    "symbol": "tBTC/cbBTC",
+    "displayName": "tBTC/cbBTC",
+    "displaySymbol": "tBTC/cbBTC",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
