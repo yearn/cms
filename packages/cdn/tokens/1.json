@@ -32932,5 +32932,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xc50e191f703fb3160fc15d8b168a8c740fec3666",
+    "chainId": 1,
+    "name": "cvgCVX/CVX1",
+    "symbol": "cvgCVXCVX1",
+    "displayName": "cvgCVX/CVX1",
+    "displaySymbol": "cvgCVXCVX1",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
