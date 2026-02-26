@@ -1051,5 +1051,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x9dd822f3077cd2f0cd8a00bcc7295777a7712fc5",
+    "name": "Chimi Strategy USDC AvantisSeniorV2-1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x154d9cc90af1d6f53712a01975d29644f8422a9c",
+    "name": "Chimi Strategy WETH yoETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
