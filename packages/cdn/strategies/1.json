@@ -17730,5 +17730,95 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x024e6412903977ec11ad910e6148435a532f89c1",
+    "name": "USDaf tBTC Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcc5559a5d13d99b468b9c0e058e1327cf9014855",
+    "name": "USDaf sUSDS Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3589b93cadb464b6e1974cc9fc0c9be698ee49a5",
+    "name": "Liquity V2 wstETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1302f89b45781f0d333abc55262b668b44be8fa8",
+    "name": "USDaf sfrxUSD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1fb3f503d51480c25c1f2d64b6f4018d4c2805f7",
+    "name": "USDaf WBTC18 Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xaaafea48472f77563961cdb53291dedfb46f9040",
+    "name": "Locked yvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x99e1160e89c6c7fa4951531358d48728e7a29206",
+    "name": "USDaf scrvUSD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5e7d3f76a03006540f17668a0267c668ffb5b75",
+    "name": "Liquity V2 WETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb4ca3c9831b9f87b69f6c41d9619f09accb43428",
+    "name": "USDaf ysyBOLD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6ed566b76838a08d04cbd6323231b08a2ec69005",
+    "name": "Liquity V2 rETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
