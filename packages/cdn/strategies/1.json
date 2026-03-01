@@ -17820,5 +17820,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa62158fae053009abd436d17a4d10613441d4132",
+    "name": "StrategyCurveBoostedFactory-OGNETHUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa6f8b33e46147d8052a3ec9efefa45987ff5230e",
+    "name": "StrategyConvexFactory-OGNETHUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

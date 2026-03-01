@@ -32954,5 +32954,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xb8ac7ce449ed72ff61de8043d67b507f9f523fa2",
+    "chainId": 1,
+    "name": "TriOGN",
+    "symbol": "OGNETHUSD",
+    "displayName": "TriOGN",
+    "displaySymbol": "OGNETHUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
