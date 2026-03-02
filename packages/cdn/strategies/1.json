@@ -17865,5 +17865,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x78ae4b8e034ba8a3dc0260cf3d448f0b6aa4b80d",
+    "name": "lBTC/WBTC Aave Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
