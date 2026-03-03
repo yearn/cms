@@ -17874,5 +17874,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7130570bcefcedbe9d15b5b11a33006156460f8f",
+    "name": "USDC To SKY USDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe5ebb5ca8680e2ade07622ccb11e61e6f9e66e83",
+    "name": "Yearn ETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
