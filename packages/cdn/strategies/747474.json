@@ -196,5 +196,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0x0432337365d89c0d73f1d0cb263791f8f1b98d43",
+    "name": "Morpho vbWBTC/yvUSDC Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0x2f0b01d1f36fb2c72f7deb441a2a262e655d6888",
+    "name": "Morpho vbWETH/yvUSDC Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0x3384246d42cac0b8dd9bbdbe902a06d0814244f7",
+    "name": "Morpho vbWBTC/yvUSDT Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
