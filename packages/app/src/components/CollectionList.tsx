@@ -9,9 +9,11 @@ import { useCollectionData } from '../hooks/useCollectionData'
 import { useToggleChainStore } from '../hooks/useToggleChainStore'
 import BackItUp from './BackItUp'
 import ListItem from './eg/elements/ListItem'
+import { useHoverSelect } from './eg/HoverSelect/useHoverSelect'
 import Skeleton from './eg/Skeleton'
 import TokenIcon from './eg/TokenIcon'
 import { useFinder } from './Finder'
+import VaultBooleanFilters from './VaultBooleanFilters'
 
 const INFINTE_SCROLL_FRAME_SIZE = 20
 
@@ -75,15 +77,19 @@ function List({ collection }: { collection: CollectionKey }) {
   const { toggledChains } = useToggleChainStore()
   const { data } = useCollectionData<typeof collection>(collection)
   const collectionConfig = getCollection(collection)
+  const { multiValues: activeBooleanFilters } = useHoverSelect<string>(`collection-filters-${collection}`, {
+    multiple: true,
+  })
 
   const filter = useMemo(() => {
     return data.filter(
       (item: any) =>
         toggledChains.has(item.chainId) &&
+        Array.from(activeBooleanFilters).every((field) => item[field] === true) &&
         (item.name?.toLowerCase().includes(finderString.toLowerCase()) ||
           item.address.toLowerCase().includes(finderString.toLowerCase())),
     )
-  }, [data, finderString, toggledChains])
+  }, [activeBooleanFilters, data, finderString, toggledChains])
 
   const [items, setItems] = useState(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE))
   useEffect(() => setItems(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE)), [filter])
@@ -98,16 +104,19 @@ function List({ collection }: { collection: CollectionKey }) {
   const template = listItemTemplates[collectionConfig.listItemTemplate]
 
   return (
-    <InfiniteScroll
-      scrollableTarget="main-scroll"
-      dataLength={items.length}
-      next={fetchFrame}
-      hasMore={hasMoreFrames}
-      loader={null}
-      className="flex flex-col items-start justify-start gap-6"
-    >
-      {items.map((item: any) => template(item))}
-    </InfiniteScroll>
+    <>
+      {collection === 'vaults' && <VaultBooleanFilters />}
+      <InfiniteScroll
+        scrollableTarget="main-scroll"
+        dataLength={items.length}
+        next={fetchFrame}
+        hasMore={hasMoreFrames}
+        loader={null}
+        className="flex flex-col items-start justify-start gap-6"
+      >
+        {items.map((item: any) => template(item))}
+      </InfiniteScroll>
+    </>
   )
 }
 

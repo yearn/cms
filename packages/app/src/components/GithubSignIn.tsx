@@ -1,6 +1,7 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { Suspense } from 'react'
 import { PiGithubLogoFill } from 'react-icons/pi'
+import { useLocation } from 'react-router-dom'
 import { cn } from '../../lib/cn'
 import Button from './eg/elements/Button'
 import Skeleton from './eg/Skeleton'
@@ -33,12 +34,14 @@ function GithubAvatar() {
 }
 
 export default function GithubSignIn({ className }: { className?: string }) {
+  const location = useLocation()
   const { signedIn } = useGithubUser()
 
   const onSignInWithGithub = () => {
     if (!signedIn) {
       const auth_challenge = crypto.randomUUID()
       sessionStorage.setItem('auth_challenge', auth_challenge)
+      sessionStorage.setItem('post_auth_redirect', `${location.pathname}${location.search}${location.hash}`)
       window.location.href = `https://github.com/login/oauth/authorize?client_id=${import.meta.env.VITE_GITHUB_CLIENT_ID}&state=${auth_challenge}&scope=public_repo`
     } else {
       sessionStorage.removeItem('github_token')

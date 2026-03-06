@@ -3,23 +3,63 @@ export const config = { runtime: 'edge' }
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
 
-interface CreatePRRequest {
-  token: string
+type FileChange = {
   path: string
   contents: string
+}
+
+type CreatePRRequest = {
+  token: string
+  path?: string
+  contents?: string
+  changes?: FileChange[]
+  title?: string
+  body?: string
+}
+
+function getNormalizedChanges(body: CreatePRRequest) {
+  if (body.changes && body.changes.length > 0) {
+    return body.changes
+  }
+
+  if (body.path && body.contents) {
+    return [{ path: body.path, contents: body.contents }]
+  }
+
+  return []
+}
+
+async function fetchGitHubJson<T>(url: string, token: string, init?: RequestInit): Promise<T> {
+  const response = await fetch(url, {
+    ...init,
+    headers: {
+      Authorization: `Bearer ${token}`,
+      Accept: 'application/vnd.github.v3+json',
+      'Content-Type': 'application/json',
+      ...init?.headers,
+    },
+  })
+
+  if (!response.ok) {
+    const details = await response.text()
+    throw new Error(`GitHub request failed (${response.status}) for ${url}: ${details}`)
+  }
+
+  return (await response.json()) as T
 }
 
 export default async function (req: Request): Promise<Response> {
   if (req.method !== 'POST') return new Response('Method Not Allowed', { status: 405 })
 
   try {
-    const body: CreatePRRequest = (await req.json()) as CreatePRRequest
-    const { token, path, contents } = body
+    const body = (await req.json()) as CreatePRRequest
+    const { token, title, body: pullRequestBody } = body
+    const changes = getNormalizedChanges(body)
 
-    if (!token || !path || !contents) {
+    if (!token || changes.length === 0 || changes.some((change) => !change.path || !change.contents)) {
       return new Response(
         JSON.stringify({
-          error: 'Missing required parameters: token, path, contents',
+          error: 'Missing required parameters: token and either changes[] or path + contents',
         }),
         {
           status: 400,
@@ -28,224 +68,115 @@ export default async function (req: Request): Promise<Response> {
       )
     }
 
-    // Get current user info
-    const userResponse = await fetch('https://api.github.com/user', {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-      },
-    })
-
-    if (!userResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Invalid GitHub token' }), {
-        status: 401,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const user = (await userResponse.json()) as { login: string }
+    const user = await fetchGitHubJson<{ login: string }>('https://api.github.com/user', token)
     const username = user.login
 
-    // Get repository info (assuming this is the current repo)
-    const repoResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-      },
-    })
-
-    if (!repoResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to access repository' }), {
-        status: 403,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const repo = (await repoResponse.json()) as { default_branch: string }
+    const repo = await fetchGitHubJson<{ default_branch: string }>(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`,
+      token,
+    )
     const defaultBranch = repo.default_branch
 
-    // Get the latest commit SHA from default branch
-    const refResponse = await fetch(
+    const refData = await fetchGitHubJson<{ object: { sha: string } }>(
       `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/ref/heads/${defaultBranch}`,
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: 'application/vnd.github.v3+json',
-        },
-      },
+      token,
     )
+    const baseCommitSha = refData.object.sha
 
-    if (!refResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to get default branch' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const refData = (await refResponse.json()) as { object: { sha: string } }
-    const baseSha = refData.object.sha
+    const commitData = await fetchGitHubJson<{ tree: { sha: string } }>(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/commits/${baseCommitSha}`,
+      token,
+    )
+    const baseTreeSha = commitData.tree.sha
 
     const branchName = `${username}-${Date.now()}`
-    console.log('branchName', branchName)
 
-    // Create new branch
-    const createBranchResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs`, {
+    await fetchGitHubJson(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs`, token, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-      },
       body: JSON.stringify({
         ref: `refs/heads/${branchName}`,
-        sha: baseSha,
+        sha: baseCommitSha,
       }),
     })
 
-    if (!createBranchResponse.ok) {
-      const errorText = await createBranchResponse.text()
-      console.error('Failed to create branch', createBranchResponse.status, createBranchResponse.statusText, errorText)
-      return new Response(
-        JSON.stringify({
-          error: 'Failed to create branch',
-          status: createBranchResponse.status,
-          details: errorText,
-        }),
-        {
-          status: 500,
-          headers: { 'Content-Type': 'application/json' },
-        },
-      )
-    }
-
-    // Create blob with new content
-    const blobResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/blobs`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        content: contents,
-        encoding: 'utf-8',
-      }),
-    })
-
-    if (!blobResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to create blob' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const blobData = (await blobResponse.json()) as { sha: string }
-
-    // Create tree with the new file
-    const treeResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/trees`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        base_tree: baseSha,
-        tree: [
+    const treeEntries = await Promise.all(
+      changes.map(async (change) => {
+        const blob = await fetchGitHubJson<{ sha: string }>(
+          `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/blobs`,
+          token,
           {
-            path: path,
-            mode: '100644',
-            type: 'blob',
-            sha: blobData.sha,
+            method: 'POST',
+            body: JSON.stringify({
+              content: change.contents,
+              encoding: 'utf-8',
+            }),
           },
-        ],
+        )
+
+        return {
+          path: change.path,
+          mode: '100644',
+          type: 'blob',
+          sha: blob.sha,
+        }
       }),
-    })
+    )
 
-    if (!treeResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to create tree' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const treeData = (await treeResponse.json()) as { sha: string }
-
-    // Create commit
-    const commitResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/commits`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        message: `Update data in ${path}`,
-        tree: treeData.sha,
-        parents: [baseSha],
-      }),
-    })
-
-    if (!commitResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to create commit' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const commitData = (await commitResponse.json()) as { sha: string }
-
-    // Update branch to point to new commit
-    const updateBranchResponse = await fetch(
-      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs/heads/${branchName}`,
+    const tree = await fetchGitHubJson<{ sha: string }>(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/trees`,
+      token,
       {
-        method: 'PATCH',
-        headers: {
-          Authorization: `Bearer ${token}`,
-          Accept: 'application/vnd.github.v3+json',
-          'Content-Type': 'application/json',
-        },
+        method: 'POST',
         body: JSON.stringify({
-          sha: commitData.sha,
+          base_tree: baseTreeSha,
+          tree: treeEntries,
         }),
       },
     )
 
-    if (!updateBranchResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to update branch' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    // Create pull request
-    const prResponse = await fetch(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls`, {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: 'application/vnd.github.v3+json',
-        'Content-Type': 'application/json',
+    const createdCommit = await fetchGitHubJson<{ sha: string }>(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/commits`,
+      token,
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          message: title || `Update CMS metadata (${changes.length} file${changes.length === 1 ? '' : 's'})`,
+          tree: tree.sha,
+          parents: [baseCommitSha],
+        }),
       },
-      body: JSON.stringify({
-        title: `Update data in ${path}`,
-        body: `This PR updates data in ${path}.\n\nUpdated by: ${username}`,
-        head: branchName,
-        base: defaultBranch,
-      }),
-    })
+    )
 
-    if (!prResponse.ok) {
-      return new Response(JSON.stringify({ error: 'Failed to create pull request' }), {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
+    await fetchGitHubJson(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs/heads/${branchName}`,
+      token,
+      {
+        method: 'PATCH',
+        body: JSON.stringify({
+          sha: createdCommit.sha,
+        }),
+      },
+    )
 
-    const prData = (await prResponse.json()) as { html_url: string }
+    const pullRequest = await fetchGitHubJson<{ html_url: string }>(
+      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls`,
+      token,
+      {
+        method: 'POST',
+        body: JSON.stringify({
+          title: title || `Update CMS metadata (${changes.length} file${changes.length === 1 ? '' : 's'})`,
+          body:
+            pullRequestBody ||
+            `This PR updates ${changes.length} file${changes.length === 1 ? '' : 's'} in the CMS.\n\nUpdated by: ${username}`,
+          head: branchName,
+          base: defaultBranch,
+        }),
+      },
+    )
 
     return new Response(
       JSON.stringify({
-        pullRequestUrl: prData.html_url,
+        pullRequestUrl: pullRequest.html_url,
         success: true,
       }),
       {

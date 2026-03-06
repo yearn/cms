@@ -9,6 +9,7 @@ import ThemeToggle from './eg/ThemeToggle'
 import { Yearn } from './eg/Yearn'
 import Finder from './Finder'
 import GithubSignIn from './GithubSignIn'
+import HeaderDraftCart from './HeaderDraftCart'
 
 export default function Header() {
   const navigate = useNavigate()
@@ -77,7 +78,7 @@ export default function Header() {
         {shouldShowChainSelect && <ChainSelect />}
 
         {shouldShowFinder && (
-          <div className="flex-1">
+          <div className="flex-1 relative">
             <Finder />
           </div>
         )}
@@ -85,6 +86,7 @@ export default function Header() {
 
       <div className="flex items-center gap-4">
         <ThemeToggle />
+        <HeaderDraftCart />
         <GithubSignIn />
       </div>
     </header>

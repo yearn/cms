@@ -1,11 +1,10 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { useMemo } from 'react'
-import { getCdnUrl } from '../../lib/cdn'
-import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection } from '../../schemas/cms'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
 import type { TokenMetadata } from '../../schemas/TokenMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
+import { fetchCollectionData } from '../lib/collectionData'
 
 type CollectionDataMap = {
   vaults: VaultMetadata[]
@@ -25,20 +24,7 @@ export function useCollectionData<K extends CollectionKey>(
 
   const query = useSuspenseQuery({
     queryKey: [`${collectionKey}-meta`],
-    queryFn: async () => {
-      const promises = Object.values(chains).map((chain) => fetch(`${getCdnUrl()}${collectionKey}/${chain.id}.json`))
-      const jsonPromises = (await Promise.all(promises)).flatMap((result) => result.json())
-      const jsons = await Promise.all(jsonPromises)
-
-      const chainKeys = Object.keys(chains).map(Number)
-      const rawJsonChainMap: Record<string, any> = {}
-      jsons.forEach((json, index) => {
-        const chainId = chains[chainKeys[index]].id
-        rawJsonChainMap[chainId] = json
-      })
-
-      return { flat: jsons.flat(), rawJsonChainMap }
-    },
+    queryFn: () => fetchCollectionData(collectionKey),
     staleTime: 1000 * 60 * 5,
   })
 

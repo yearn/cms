@@ -1,6 +1,5 @@
-import { useMutation } from '@tanstack/react-query'
 import { Suspense } from 'react'
-import { PiGitPullRequest } from 'react-icons/pi'
+import { PiGitPullRequest, PiTrash } from 'react-icons/pi'
 import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
@@ -9,64 +8,50 @@ import Skeleton from '../components/eg/Skeleton'
 import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
 import { useCollectionData } from '../hooks/useCollectionData'
+import {
+  type DraftableCollection,
+  getDraftCartItemId,
+  getDraftCartPath,
+  useDraftCartStore,
+} from '../hooks/useDraftCartStore'
 
-function PullRequestButton({ collection }: { collection: CollectionKey }) {
+function DraftActions({ collection }: { collection: CollectionKey }) {
   const { o: item, isDirty, formState } = useMetaData()
-  const { rawJsonChainMap } = useCollectionData(collection)
-
-  const createPullRequest = useMutation({
-    mutationFn: async () => {
-      const original = rawJsonChainMap[item.chainId]
-      const path = `packages/cdn/${collection}/${item.chainId}.json`
-
-      // Find and replace the specific item
-      const updatedArray = original.map((itemObj: any) =>
-        itemObj.address.toLowerCase() === item.address.toLowerCase() ? formState : itemObj,
-      )
-
-      const response = await fetch('/api/pr', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          token: sessionStorage.getItem('github_token'),
-          path,
-          contents: JSON.stringify(updatedArray, null, 2),
-        }),
-      })
-
-      const result = await response.json()
-
-      if (!result.success) {
-        throw new Error(result.error || 'Failed to create pull request')
-      }
-
-      return result
-    },
-    onSuccess: (data) => {
-      window.open(data.pullRequestUrl, '_blank')
-    },
-    onError: (error) => {
-      console.error('PR creation failed:', error)
-      alert(`Failed to create pull request: ${error.message}`)
-    },
-  })
-
-  // Throw a promise to trigger Suspense when pending
-  if (createPullRequest.isPending) {
-    throw new Promise(() => {}) // This will never resolve, keeping Suspense active
-  }
+  const upsertItem = useDraftCartStore((state) => state.upsertItem)
+  const removeItem = useDraftCartStore((state) => state.removeItem)
+  const collectionDraft = collection as DraftableCollection
+  const draftId = getDraftCartItemId(collectionDraft, item.chainId, item.address)
+  const existingDraft = useDraftCartStore((state) => state.items[draftId])
 
   return (
-    <Button
-      onClick={() => createPullRequest.mutate()}
-      className="my-6 ml-auto flex items-center gap-4"
-      disabled={!isDirty}
-    >
-      <PiGitPullRequest />
-      <div>Create pull request</div>
-    </Button>
+    <div className="my-6 ml-auto flex items-center gap-4">
+      {existingDraft && (
+        <Button variant="secondary" className="flex items-center gap-3" onClick={() => removeItem(draftId)}>
+          <PiTrash />
+          <span>Remove from draft</span>
+        </Button>
+      )}
+
+      <Button
+        variant="primary"
+        className="flex items-center gap-3"
+        onClick={() =>
+          upsertItem({
+            id: draftId,
+            collection: collectionDraft,
+            chainId: item.chainId,
+            address: item.address,
+            name: item.name || 'No name onchain',
+            path: getDraftCartPath(collectionDraft, item.chainId),
+            item: formState,
+          })
+        }
+        disabled={!isDirty}
+      >
+        <PiGitPullRequest />
+        <span>{existingDraft ? 'Update draft' : 'Add to draft'}</span>
+      </Button>
+    </div>
   )
 }
 
@@ -88,9 +73,9 @@ function CollectionDetails({ collection }: { collection: CollectionKey }) {
         {item.registry && <div>registry: {item.registry}</div>}
       </div>
 
-      <MetaData className="w-200" />
+      <MetaData className="w-200" readOnly={!signedIn} />
       <Suspense fallback={<Skeleton className="h-12 w-96 my-6 ml-auto" />}>
-        {signedIn && <PullRequestButton collection={collection} />}
+        {signedIn && <DraftActions collection={collection} />}
         {!signedIn && <GithubSignIn className="my-6 ml-auto" />}
       </Suspense>
     </div>
@@ -101,6 +86,8 @@ function Provider({ children, collection }: { children: React.ReactNode; collect
   const { chainId, address } = useParams()
   const collectionConfig = getCollection(collection)
   const { data } = useCollectionData(collection)
+  const draftId = getDraftCartItemId(collection as DraftableCollection, Number(chainId), address ?? '')
+  const draftItem = useDraftCartStore((state) => state.items[draftId])
 
   const item = data.find(
     (d: any) => d.chainId.toString() === chainId && d.address.toLowerCase() === address?.toLowerCase(),
@@ -111,7 +98,7 @@ function Provider({ children, collection }: { children: React.ReactNode; collect
   }
 
   return (
-    <MetaDataProvider schema={collectionConfig.schema} o={item}>
+    <MetaDataProvider schema={collectionConfig.schema} o={item} initialState={draftItem?.item}>
       {children}
     </MetaDataProvider>
   )

@@ -9,6 +9,17 @@ export const collections = {
     displayName: 'Vaults',
     icon: 'vault',
     searchFields: ['name', 'address'] as const,
+    filterableBooleanFields: [
+      'isRetired',
+      'isHidden',
+      'isAggregator',
+      'isBoosted',
+      'isAutomated',
+      'isHighlighted',
+      'isPool',
+      'shouldDisableStaking',
+      'shouldUseV2APR',
+    ] as const,
     listItemTemplate: 'vault' as const,
   },
   strategies: {
@@ -16,6 +27,7 @@ export const collections = {
     displayName: 'Strategies',
     icon: 'strategy',
     searchFields: ['name', 'address'] as const,
+    filterableBooleanFields: [] as const,
     listItemTemplate: 'strategy' as const,
   },
   tokens: {
@@ -23,6 +35,7 @@ export const collections = {
     displayName: 'Tokens',
     icon: 'token',
     searchFields: ['name', 'address'] as const,
+    filterableBooleanFields: [] as const,
     listItemTemplate: 'token' as const,
   },
 } as const
