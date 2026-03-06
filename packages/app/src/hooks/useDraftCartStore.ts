@@ -4,6 +4,80 @@ import type { CollectionKey } from '../../schemas/cms'
 
 export type DraftableCollection = Extract<CollectionKey, 'vaults' | 'strategies' | 'tokens'>
 
+type DraftValue = Record<string, unknown> | unknown[] | string | number | boolean | null | undefined
+
+function isPlainObject(value: unknown): value is Record<string, unknown> {
+  return typeof value === 'object' && value !== null && !Array.isArray(value)
+}
+
+function areDraftValuesEqual(left: unknown, right: unknown): boolean {
+  if (Object.is(left, right)) {
+    return true
+  }
+
+  if (Array.isArray(left) && Array.isArray(right)) {
+    return (
+      left.length === right.length &&
+      left.every((item, index) => {
+        return areDraftValuesEqual(item, right[index])
+      })
+    )
+  }
+
+  if (isPlainObject(left) && isPlainObject(right)) {
+    const keys = new Set([...Object.keys(left), ...Object.keys(right)])
+    return Array.from(keys).every((key) => areDraftValuesEqual(left[key], right[key]))
+  }
+
+  return false
+}
+
+export function buildDraftPatch(base: unknown, draft: unknown): DraftValue {
+  if (areDraftValuesEqual(base, draft)) {
+    return undefined
+  }
+
+  if (!isPlainObject(base) || !isPlainObject(draft)) {
+    return draft as DraftValue
+  }
+
+  const patch: Record<string, unknown> = {}
+  const keys = new Set([...Object.keys(base), ...Object.keys(draft)])
+
+  for (const key of keys) {
+    const nestedPatch = buildDraftPatch(base[key], draft[key])
+    if (nestedPatch !== undefined) {
+      patch[key] = nestedPatch
+    }
+  }
+
+  return Object.keys(patch).length > 0 ? patch : undefined
+}
+
+export function applyDraftPatch(source: unknown, patch: DraftValue): DraftValue {
+  if (patch === undefined) {
+    return source as DraftValue
+  }
+
+  if (!isPlainObject(patch)) {
+    return patch
+  }
+
+  const sourceObject = isPlainObject(source) ? source : {}
+  const merged: Record<string, unknown> = { ...sourceObject }
+
+  for (const [key, patchValue] of Object.entries(patch)) {
+    if (patchValue === undefined) {
+      delete merged[key]
+      continue
+    }
+
+    merged[key] = applyDraftPatch(sourceObject[key], patchValue as DraftValue)
+  }
+
+  return merged
+}
+
 export type DraftCartItem = {
   id: string
   collection: DraftableCollection
@@ -12,6 +86,7 @@ export type DraftCartItem = {
   name: string
   path: string
   item: Record<string, unknown>
+  patch: DraftValue
 }
 
 type DraftCartStore = {
