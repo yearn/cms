@@ -4,7 +4,7 @@ import { type CollectionKey, getCollection } from '../../schemas/cms'
 import { fetchCollectionData } from '../lib/collectionData'
 import { useToggleChainStore } from './useToggleChainStore'
 
-type SearchResult = {
+export type SearchResult = {
   id: string
   collection: CollectionKey
   chainId: number
@@ -22,7 +22,7 @@ const searchCollections: Array<{ key: CollectionKey; typeLabel: SearchResult['ty
   { key: 'tokens', typeLabel: 'Token' },
 ]
 
-function getSearchRank(query: string, name: string, address: string) {
+function getSearchRank(query: string, name: string, address: string): number {
   const normalizedName = name.toLowerCase()
   const normalizedAddress = address.toLowerCase()
 
@@ -34,29 +34,52 @@ function getSearchRank(query: string, name: string, address: string) {
   return Number.POSITIVE_INFINITY
 }
 
+function useSearchCollectionQuery(collectionKey: CollectionKey, enabled: boolean) {
+  return useQuery({
+    queryKey: [`${collectionKey}-meta`],
+    queryFn: () => fetchCollectionData(collectionKey),
+    staleTime: 1000 * 60 * 5,
+    enabled,
+  })
+}
+
+function buildSearchResultsForCollection(
+  collectionKey: CollectionKey,
+  typeLabel: SearchResult['typeLabel'],
+  rawItems: unknown[],
+  normalizedQuery: string,
+  toggledChains: Set<number>,
+): SearchResult[] {
+  return rawItems
+    .map((raw) => getCollection(collectionKey).schema.parse(raw) as { chainId: number; address: string; name: string })
+    .filter((item) => toggledChains.has(item.chainId))
+    .map((item) => {
+      const name = item.name || 'No name onchain'
+      const rank = getSearchRank(normalizedQuery, name, item.address)
+
+      return {
+        id: `${collectionKey}:${item.chainId}:${item.address.toLowerCase()}`,
+        collection: collectionKey,
+        chainId: item.chainId,
+        address: item.address,
+        name,
+        path: `/${collectionKey}/${item.chainId}/${item.address}`,
+        typeLabel,
+        rank,
+      } satisfies SearchResult
+    })
+    .filter((item) => Number.isFinite(item.rank))
+}
+
 export function useAssetSearchResults(query: string, enabled: boolean) {
   const { toggledChains } = useToggleChainStore()
   const normalizedQuery = query.trim().toLowerCase()
   const searchEnabled = enabled && normalizedQuery.length > 0
-  const vaultsQuery = useQuery({
-    queryKey: ['vaults-meta'],
-    queryFn: () => fetchCollectionData('vaults'),
-    staleTime: 1000 * 60 * 5,
-    enabled: searchEnabled,
-  })
-  const strategiesQuery = useQuery({
-    queryKey: ['strategies-meta'],
-    queryFn: () => fetchCollectionData('strategies'),
-    staleTime: 1000 * 60 * 5,
-    enabled: searchEnabled,
-  })
-  const tokensQuery = useQuery({
-    queryKey: ['tokens-meta'],
-    queryFn: () => fetchCollectionData('tokens'),
-    staleTime: 1000 * 60 * 5,
-    enabled: searchEnabled,
-  })
-  const queries = [vaultsQuery, strategiesQuery, tokensQuery]
+  const queryStates = {
+    vaults: useSearchCollectionQuery('vaults', searchEnabled),
+    strategies: useSearchCollectionQuery('strategies', searchEnabled),
+    tokens: useSearchCollectionQuery('tokens', searchEnabled),
+  }
 
   const results = useMemo(() => {
     if (!searchEnabled) {
@@ -64,30 +87,13 @@ export function useAssetSearchResults(query: string, enabled: boolean) {
     }
 
     return searchCollections
-      .flatMap(({ key, typeLabel }, index) => {
-        const queryData = queries[index]?.data
-        if (!queryData) {
+      .flatMap(({ key, typeLabel }) => {
+        const queryData = queryStates[key].data
+        if (!queryData?.flat) {
           return []
         }
 
-        return queryData.flat
-          .map((raw) => getCollection(key).schema.parse(raw) as { chainId: number; address: string; name: string })
-          .filter((item) => toggledChains.has(item.chainId))
-          .map((item) => {
-            const name = item.name || 'No name onchain'
-            const rank = getSearchRank(normalizedQuery, name, item.address)
-            return {
-              id: `${key}:${item.chainId}:${item.address.toLowerCase()}`,
-              collection: key,
-              chainId: item.chainId,
-              address: item.address,
-              name,
-              path: `/${key}/${item.chainId}/${item.address}`,
-              typeLabel,
-              rank,
-            } satisfies SearchResult
-          })
-          .filter((item) => Number.isFinite(item.rank))
+        return buildSearchResultsForCollection(key, typeLabel, queryData.flat, normalizedQuery, toggledChains)
       })
       .sort((a, b) => {
         if (a.rank !== b.rank) return a.rank - b.rank
@@ -95,11 +101,13 @@ export function useAssetSearchResults(query: string, enabled: boolean) {
         return a.name.localeCompare(b.name)
       })
       .slice(0, SEARCH_LIMIT)
-  }, [normalizedQuery, queries, searchEnabled, toggledChains])
+  }, [normalizedQuery, queryStates, searchEnabled, toggledChains])
+
+  const queryValues = Object.values(queryStates)
 
   return {
     results,
-    isLoading: searchEnabled && queries.some((queryState) => queryState.isLoading),
-    isFetching: searchEnabled && queries.some((queryState) => queryState.isFetching),
+    isLoading: searchEnabled && queryValues.some((queryState) => queryState.isLoading),
+    isFetching: searchEnabled && queryValues.some((queryState) => queryState.isFetching),
   }
 }

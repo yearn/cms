@@ -12,65 +12,105 @@ const collectionLabels = {
   tokens: 'Token',
 } as const
 
-function buildPullRequestBody(items: DraftCartItem[]) {
-  const groupedLines = items
+type PullRequestChange = {
+  path: string
+  contents: string
+}
+
+type CollectionDataCache = Map<string, Awaited<ReturnType<typeof fetchCollectionData>>>
+
+function buildPullRequestBody(items: DraftCartItem[]): string {
+  const groupedLines = [...items]
     .sort((a, b) => a.path.localeCompare(b.path) || a.name.localeCompare(b.name))
     .map((item) => `- ${item.path}: ${collectionLabels[item.collection]} ${item.name} (${item.chainId})`)
 
   return ['This PR updates CMS metadata.', '', 'Changes:', ...groupedLines].join('\n')
 }
 
-async function buildPullRequestChanges(items: DraftCartItem[]) {
+async function buildCollectionDataCache(items: DraftCartItem[]): Promise<CollectionDataCache> {
   const collectionData = new Map<string, Awaited<ReturnType<typeof fetchCollectionData>>>()
-  const changesByPath = new Map<string, DraftCartItem[]>()
-
   for (const item of items) {
     if (!collectionData.has(item.collection)) {
       collectionData.set(item.collection, await fetchCollectionData(item.collection))
     }
-
-    const existing = changesByPath.get(item.path) ?? []
-    existing.push(item)
-    changesByPath.set(item.path, existing)
   }
 
-  return Array.from(changesByPath.entries()).map(([path, pathItems]) => {
-    const firstItem = pathItems[0]
-    const rawJsonChainMap = collectionData.get(firstItem.collection)?.rawJsonChainMap ?? {}
-    const sourceItems = rawJsonChainMap[firstItem.chainId]
+  return collectionData
+}
 
-    if (!sourceItems) {
-      throw new Error(`Missing source data for ${path}`)
+function groupItemsByPath(items: DraftCartItem[]): Map<string, DraftCartItem[]> {
+  const itemsByPath = new Map<string, DraftCartItem[]>()
+
+  for (const item of items) {
+    const pathItems = itemsByPath.get(item.path) ?? []
+    pathItems.push(item)
+    itemsByPath.set(item.path, pathItems)
+  }
+
+  return itemsByPath
+}
+
+function buildPathChange(
+  path: string,
+  pathItems: DraftCartItem[],
+  collectionData: CollectionDataCache,
+): PullRequestChange {
+  const firstItem = pathItems[0]
+  if (!firstItem) {
+    throw new Error(`Missing queued changes for ${path}`)
+  }
+
+  const rawJsonChainMap = collectionData.get(firstItem.collection)?.rawJsonChainMap ?? {}
+  const sourceItems = rawJsonChainMap[firstItem.chainId]
+
+  if (!sourceItems) {
+    throw new Error(`Missing source data for ${path}`)
+  }
+
+  const replacements = new Map(pathItems.map((item) => [item.address.toLowerCase(), item]))
+  let replacedCount = 0
+  const updatedItems = sourceItems.map((sourceItem) => {
+    const sourceAddress = String((sourceItem as { address: string }).address).toLowerCase()
+    const replacement = replacements.get(sourceAddress)
+    if (!replacement) {
+      return sourceItem
     }
 
-    const replacements = new Map(pathItems.map((item) => [item.address.toLowerCase(), item]))
-    let replacedCount = 0
-    const updatedItems = sourceItems.map((sourceItem) => {
-      const sourceAddress = String((sourceItem as { address: string }).address).toLowerCase()
-      const replacement = replacements.get(sourceAddress)
-      if (!replacement) {
-        return sourceItem
-      }
-
-      if (replacement.patch === undefined) {
-        throw new Error(
-          `Draft for ${replacement.name} is outdated. Open it again and update the draft before submitting.`,
-        )
-      }
-
-      replacedCount += 1
-      return applyDraftPatch(sourceItem, replacement.patch)
-    })
-
-    if (replacedCount !== pathItems.length) {
-      throw new Error(`Could not apply all queued changes for ${path}`)
+    if (replacement.patch === undefined) {
+      throw new Error(
+        `Draft for ${replacement.name} is outdated. Open it again and update the draft before submitting.`,
+      )
     }
 
-    return {
-      path,
-      contents: JSON.stringify(updatedItems, null, 2),
-    }
+    replacedCount += 1
+    return applyDraftPatch(sourceItem, replacement.patch)
   })
+
+  if (replacedCount !== pathItems.length) {
+    throw new Error(`Could not apply all queued changes for ${path}`)
+  }
+
+  return {
+    path,
+    contents: JSON.stringify(updatedItems, null, 2),
+  }
+}
+
+async function buildPullRequestChanges(items: DraftCartItem[]): Promise<PullRequestChange[]> {
+  const collectionData = await buildCollectionDataCache(items)
+  const itemsByPath = groupItemsByPath(items)
+
+  return Array.from(itemsByPath.entries()).map(([path, pathItems]) => {
+    return buildPathChange(path, pathItems, collectionData)
+  })
+}
+
+function getQueuedChangesLabel(count: number): string {
+  if (count === 0) {
+    return 'No queued changes'
+  }
+
+  return `${count} queued change${count === 1 ? '' : 's'}`
 }
 
 export default function HeaderDraftCart() {
@@ -80,6 +120,7 @@ export default function HeaderDraftCart() {
 
   const signedIn = Boolean(sessionStorage.getItem('github_token'))
   const items = useMemo(() => Object.values(itemsMap), [itemsMap])
+  const hasItems = items.length > 0
 
   const createPullRequest = useMutation({
     mutationFn: async () => {
@@ -133,10 +174,10 @@ export default function HeaderDraftCart() {
     >
       <div className="flex flex-col">
         <div className="px-6 py-4 border-b border-interactive-secondary-border text-lg">
-          {items.length === 0 ? 'No queued changes' : `${items.length} queued change${items.length === 1 ? '' : 's'}`}
+          {getQueuedChangesLabel(items.length)}
         </div>
 
-        {items.length > 0 && (
+        {hasItems && (
           <div className="max-h-96 overflow-y-auto">
             {items.map((item) => (
               <div
@@ -166,9 +207,9 @@ export default function HeaderDraftCart() {
         )}
 
         <div className="px-6 py-4 flex items-center gap-3 border-t border-interactive-secondary-border">
-          {!signedIn && items.length > 0 && <div className="text-sm opacity-70">Sign in to edit or submit drafts.</div>}
+          {!signedIn && hasItems && <div className="text-sm opacity-70">Sign in to edit or submit drafts.</div>}
 
-          {signedIn && items.length > 0 && (
+          {signedIn && hasItems && (
             <>
               <button
                 type="button"
@@ -182,7 +223,7 @@ export default function HeaderDraftCart() {
                 variant={createPullRequest.isPending ? 'busy' : 'primary'}
                 className="ml-auto flex items-center gap-3"
                 onClick={() => createPullRequest.mutate()}
-                disabled={items.length === 0}
+                disabled={!hasItems}
               >
                 <PiGitPullRequest />
                 <span>Create pull request</span>
