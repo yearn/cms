@@ -36,29 +36,30 @@ function getSearchRank(query: string, name: string, address: string) {
 
 export function useAssetSearchResults(query: string, enabled: boolean) {
   const { toggledChains } = useToggleChainStore()
+  const normalizedQuery = query.trim().toLowerCase()
+  const searchEnabled = enabled && normalizedQuery.length > 0
   const vaultsQuery = useQuery({
     queryKey: ['vaults-meta'],
     queryFn: () => fetchCollectionData('vaults'),
     staleTime: 1000 * 60 * 5,
-    enabled,
+    enabled: searchEnabled,
   })
   const strategiesQuery = useQuery({
     queryKey: ['strategies-meta'],
     queryFn: () => fetchCollectionData('strategies'),
     staleTime: 1000 * 60 * 5,
-    enabled,
+    enabled: searchEnabled,
   })
   const tokensQuery = useQuery({
     queryKey: ['tokens-meta'],
     queryFn: () => fetchCollectionData('tokens'),
     staleTime: 1000 * 60 * 5,
-    enabled,
+    enabled: searchEnabled,
   })
   const queries = [vaultsQuery, strategiesQuery, tokensQuery]
 
   const results = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase()
-    if (!enabled || !normalizedQuery) {
+    if (!searchEnabled) {
       return []
     }
 
@@ -94,11 +95,11 @@ export function useAssetSearchResults(query: string, enabled: boolean) {
         return a.name.localeCompare(b.name)
       })
       .slice(0, SEARCH_LIMIT)
-  }, [enabled, query, queries, toggledChains])
+  }, [normalizedQuery, queries, searchEnabled, toggledChains])
 
   return {
     results,
-    isLoading: enabled && queries.some((queryState) => queryState.isLoading),
-    isFetching: enabled && queries.some((queryState) => queryState.isFetching),
+    isLoading: searchEnabled && queries.some((queryState) => queryState.isLoading),
+    isFetching: searchEnabled && queries.some((queryState) => queryState.isFetching),
   }
 }

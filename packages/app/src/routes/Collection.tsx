@@ -9,6 +9,7 @@ import GithubSignIn, { useGithubUser } from '../components/GithubSignIn'
 import MetaData, { MetaDataProvider, useMetaData } from '../components/SchemaForm'
 import { useCollectionData } from '../hooks/useCollectionData'
 import {
+  buildDraftPatch,
   type DraftableCollection,
   getDraftCartItemId,
   getDraftCartPath,
@@ -44,6 +45,7 @@ function DraftActions({ collection }: { collection: CollectionKey }) {
             name: item.name || 'No name onchain',
             path: getDraftCartPath(collectionDraft, item.chainId),
             item: formState,
+            patch: buildDraftPatch(item, formState),
           })
         }
         disabled={!isDirty}

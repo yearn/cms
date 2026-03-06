@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
 import { useMemo } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
-import { type DraftCartItem, useDraftCartStore } from '../hooks/useDraftCartStore'
+import { applyDraftPatch, type DraftCartItem, useDraftCartStore } from '../hooks/useDraftCartStore'
 import { fetchCollectionData } from '../lib/collectionData'
 import Button from './eg/elements/Button'
 import { HoverCard, HoverCardTrigger } from './eg/HoverCard'
@@ -43,7 +43,7 @@ async function buildPullRequestChanges(items: DraftCartItem[]) {
       throw new Error(`Missing source data for ${path}`)
     }
 
-    const replacements = new Map(pathItems.map((item) => [item.address.toLowerCase(), item.item]))
+    const replacements = new Map(pathItems.map((item) => [item.address.toLowerCase(), item]))
     let replacedCount = 0
     const updatedItems = sourceItems.map((sourceItem) => {
       const sourceAddress = String((sourceItem as { address: string }).address).toLowerCase()
@@ -52,8 +52,14 @@ async function buildPullRequestChanges(items: DraftCartItem[]) {
         return sourceItem
       }
 
+      if (replacement.patch === undefined) {
+        throw new Error(
+          `Draft for ${replacement.name} is outdated. Open it again and update the draft before submitting.`,
+        )
+      }
+
       replacedCount += 1
-      return replacement
+      return applyDraftPatch(sourceItem, replacement.patch)
     })
 
     if (replacedCount !== pathItems.length) {
@@ -99,8 +105,13 @@ export default function HeaderDraftCart() {
       return result
     },
     onSuccess: (data) => {
-      clearItems()
-      window.open(data.pullRequestUrl, '_blank')
+      const popup = window.open(data.pullRequestUrl, '_blank', 'noopener,noreferrer')
+      if (popup) {
+        clearItems()
+        return
+      }
+
+      window.location.assign(data.pullRequestUrl)
     },
     onError: (error) => {
       console.error('PR creation failed:', error)

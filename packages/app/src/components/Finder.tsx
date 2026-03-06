@@ -17,10 +17,12 @@ export default function Finder({ className }: { className?: string }) {
   const location = useLocation()
   const navigate = useNavigate()
   const { finderString, setFinderString } = useFinder()
+  const hasQuery = finderString.trim().length > 0
   const pathParts = location.pathname.split('/').filter(Boolean)
   const isAssetDetailPage = pathParts.length === 3 && ['vaults', 'strategies', 'tokens'].includes(pathParts[0] ?? '')
-  const { results, isLoading, isFetching } = useAssetSearchResults(finderString, isAssetDetailPage)
-  const shouldShowDropdown = isAssetDetailPage && finderString.trim().length > 0
+  const searchEnabled = isAssetDetailPage && hasQuery
+  const { results, isLoading, isFetching } = useAssetSearchResults(finderString, searchEnabled)
+  const shouldShowDropdown = searchEnabled
 
   const handleSelect = (path: string) => {
     setFinderString('')
