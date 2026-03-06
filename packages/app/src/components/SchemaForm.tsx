@@ -1,6 +1,6 @@
 import type React from 'react'
 import type { ReactNode } from 'react'
-import { createContext, useContext, useState } from 'react'
+import { createContext, useContext, useEffect, useState } from 'react'
 import z from 'zod'
 import { cn } from '../../lib/cn'
 import Input from './eg/elements/Input'
@@ -34,11 +34,16 @@ export function useMetaData() {
 type MetaDataProviderProps = {
   schema: z.ZodType
   o: Record<string, any>
+  initialState?: Record<string, any>
   children: ReactNode
 }
 
-export function MetaDataProvider({ schema, o, children }: MetaDataProviderProps) {
-  const [formState, setFormState] = useState(o)
+export function MetaDataProvider({ schema, o, initialState, children }: MetaDataProviderProps) {
+  const [formState, setFormState] = useState(initialState ?? o)
+
+  useEffect(() => {
+    setFormState(initialState ?? o)
+  }, [initialState, o])
 
   const updateField = (path: string[], value: any) => {
     setFormState((prev) => {
@@ -72,11 +77,13 @@ const renderField = (
   value: any,
   update: (path: string[], value: any) => void,
   path: string[] = [],
+  readOnly = false,
 ) => {
   const fieldPath = [...path, key]
   const commonProps = {
     name: key,
-    value: value || '',
+    value: value ?? '',
+    disabled: readOnly,
     onChange: (e: React.ChangeEvent<any>) => {
       const val = schema.type === 'boolean' ? e.target.checked : e.target.value
       update(fieldPath, schema.type === 'number' ? parseFloat(val) : val)
@@ -85,9 +92,12 @@ const renderField = (
 
   switch (schema.type) {
     case 'number':
-      return <Input type="number" {...commonProps} />
+      return <Input type="number" {...commonProps} readOnly={readOnly} />
     case 'string':
       if (schema.enum) {
+        if (readOnly) {
+          return <Input type="text" value={value || ''} disabled readOnly className="w-96" />
+        }
         const options = schema.enum.map((e: string) => ({
           value: e,
           label: e,
@@ -104,11 +114,11 @@ const renderField = (
         )
       }
       if (TEXTAREA_FIELDS.includes(key)) {
-        return <Textarea {...commonProps} className="w-128 h-24 p-3 border rounded" />
+        return <Textarea {...commonProps} readOnly={readOnly} className="w-128 h-24 p-3 border rounded" />
       }
-      return <Input type="text" {...commonProps} className="w-128" autoComplete="off" />
+      return <Input type="text" {...commonProps} className="w-128" autoComplete="off" readOnly={readOnly} />
     case 'boolean':
-      return <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} />
+      return <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} disabled={readOnly} />
     case 'object':
       return (
         <fieldset className="flex flex-col gap-8">
@@ -117,12 +127,24 @@ const renderField = (
               <label htmlFor={k} className="w-42 text-right text-sm">
                 {k}
               </label>
-              {renderField(k, v, value?.[k], update, fieldPath)}
+              {renderField(k, v, value?.[k], update, fieldPath, readOnly)}
             </div>
           ))}
         </fieldset>
       )
     case 'array': {
+      if (readOnly) {
+        return (
+          <div className="w-128 flex flex-wrap gap-2">
+            {(value || []).map((item: string) => (
+              <div key={item} className="px-3 py-2 rounded-primary bg-primary-900 text-xs">
+                {item}
+              </div>
+            ))}
+          </div>
+        )
+      }
+
       // Convert array items to tag format for react-tag-autocomplete
       const selected = (value || []).map((item: any) => ({
         value: String(item || ''),
@@ -165,9 +187,10 @@ const renderField = (
 
 type MetaDataProps = {
   className?: string
+  readOnly?: boolean
 }
 
-export default function MetaData({ className }: MetaDataProps) {
+export default function MetaData({ className, readOnly = false }: MetaDataProps) {
   const { formState, updateField, schema } = useMetaData()
   const jsonSchema = z.toJSONSchema(schema)
   const readonlyFields = ['chainId', 'address', 'name', 'registry']
@@ -178,7 +201,7 @@ export default function MetaData({ className }: MetaDataProps) {
         .map(([key, schema]) => (
           <div key={key} className="py-3 flex items-center justify-between">
             <label htmlFor={key}>{key}</label>
-            {renderField(key, schema, formState[key], updateField)}
+            {renderField(key, schema, formState[key], updateField, [], readOnly)}
           </div>
         ))}
     </form>
