@@ -17,7 +17,50 @@ type CreatePRRequest = {
   body?: string
 }
 
-function getNormalizedChanges(body: CreatePRRequest) {
+type GitHubRef = {
+  object: {
+    sha: string
+  }
+}
+
+type GitHubCommit = {
+  tree: {
+    sha: string
+  }
+}
+
+type GitHubBlob = {
+  sha: string
+}
+
+type GitHubSha = {
+  sha: string
+}
+
+type GitHubTree = {
+  sha: string
+}
+
+type GitHubPullRequest = {
+  html_url: string
+}
+
+type GitHubRepo = {
+  default_branch: string
+}
+
+type GitHubUser = {
+  login: string
+}
+
+type TreeEntry = {
+  path: string
+  mode: '100644'
+  type: 'blob'
+  sha: string
+}
+
+function getNormalizedChanges(body: CreatePRRequest): FileChange[] {
   if (body.changes && body.changes.length > 0) {
     return body.changes
   }
@@ -27,6 +70,21 @@ function getNormalizedChanges(body: CreatePRRequest) {
   }
 
   return []
+}
+
+function getDefaultTitle(changes: FileChange[]): string {
+  return `Update CMS metadata (${changes.length} file${changes.length === 1 ? '' : 's'})`
+}
+
+function getDefaultBody(changes: FileChange[], username: string): string {
+  return `This PR updates ${changes.length} file${changes.length === 1 ? '' : 's'} in the CMS.\n\nUpdated by: ${username}`
+}
+
+function jsonResponse(body: unknown, status: number): Response {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { 'Content-Type': 'application/json' },
+  })
 }
 
 async function fetchGitHubJson<T>(url: string, token: string, init?: RequestInit): Promise<T> {
@@ -48,7 +106,32 @@ async function fetchGitHubJson<T>(url: string, token: string, init?: RequestInit
   return (await response.json()) as T
 }
 
-export default async function (req: Request): Promise<Response> {
+async function createTreeEntries(token: string, changes: FileChange[]): Promise<TreeEntry[]> {
+  return Promise.all(
+    changes.map(async (change) => {
+      const blob = await fetchGitHubJson<GitHubBlob>(
+        `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/blobs`,
+        token,
+        {
+          method: 'POST',
+          body: JSON.stringify({
+            content: change.contents,
+            encoding: 'utf-8',
+          }),
+        },
+      )
+
+      return {
+        path: change.path,
+        mode: '100644',
+        type: 'blob',
+        sha: blob.sha,
+      }
+    }),
+  )
+}
+
+export default async function handler(req: Request): Promise<Response> {
   if (req.method !== 'POST') return new Response('Method Not Allowed', { status: 405 })
 
   try {
@@ -57,39 +140,34 @@ export default async function (req: Request): Promise<Response> {
     const changes = getNormalizedChanges(body)
 
     if (!token || changes.length === 0 || changes.some((change) => !change.path || !change.contents)) {
-      return new Response(
-        JSON.stringify({
-          error: 'Missing required parameters: token and either changes[] or path + contents',
-        }),
+      return jsonResponse(
         {
-          status: 400,
-          headers: { 'Content-Type': 'application/json' },
+          error: 'Missing required parameters: token and either changes[] or path + contents',
         },
+        400,
       )
     }
 
-    const user = await fetchGitHubJson<{ login: string }>('https://api.github.com/user', token)
+    const user = await fetchGitHubJson<GitHubUser>('https://api.github.com/user', token)
     const username = user.login
 
-    const repo = await fetchGitHubJson<{ default_branch: string }>(
-      `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`,
-      token,
-    )
+    const repo = await fetchGitHubJson<GitHubRepo>(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}`, token)
     const defaultBranch = repo.default_branch
 
-    const refData = await fetchGitHubJson<{ object: { sha: string } }>(
+    const refData = await fetchGitHubJson<GitHubRef>(
       `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/ref/heads/${defaultBranch}`,
       token,
     )
     const baseCommitSha = refData.object.sha
 
-    const commitData = await fetchGitHubJson<{ tree: { sha: string } }>(
+    const commitData = await fetchGitHubJson<GitHubCommit>(
       `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/commits/${baseCommitSha}`,
       token,
     )
     const baseTreeSha = commitData.tree.sha
 
     const branchName = `${username}-${Date.now()}`
+    const defaultTitle = title || getDefaultTitle(changes)
 
     await fetchGitHubJson(`https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/refs`, token, {
       method: 'POST',
@@ -99,30 +177,9 @@ export default async function (req: Request): Promise<Response> {
       }),
     })
 
-    const treeEntries = await Promise.all(
-      changes.map(async (change) => {
-        const blob = await fetchGitHubJson<{ sha: string }>(
-          `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/blobs`,
-          token,
-          {
-            method: 'POST',
-            body: JSON.stringify({
-              content: change.contents,
-              encoding: 'utf-8',
-            }),
-          },
-        )
+    const treeEntries = await createTreeEntries(token, changes)
 
-        return {
-          path: change.path,
-          mode: '100644',
-          type: 'blob',
-          sha: blob.sha,
-        }
-      }),
-    )
-
-    const tree = await fetchGitHubJson<{ sha: string }>(
+    const tree = await fetchGitHubJson<GitHubTree>(
       `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/trees`,
       token,
       {
@@ -134,13 +191,13 @@ export default async function (req: Request): Promise<Response> {
       },
     )
 
-    const createdCommit = await fetchGitHubJson<{ sha: string }>(
+    const createdCommit = await fetchGitHubJson<GitHubSha>(
       `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/git/commits`,
       token,
       {
         method: 'POST',
         body: JSON.stringify({
-          message: title || `Update CMS metadata (${changes.length} file${changes.length === 1 ? '' : 's'})`,
+          message: defaultTitle,
           tree: tree.sha,
           parents: [baseCommitSha],
         }),
@@ -158,43 +215,35 @@ export default async function (req: Request): Promise<Response> {
       },
     )
 
-    const pullRequest = await fetchGitHubJson<{ html_url: string }>(
+    const pullRequest = await fetchGitHubJson<GitHubPullRequest>(
       `https://api.github.com/repos/${REPO_OWNER}/${REPO_NAME}/pulls`,
       token,
       {
         method: 'POST',
         body: JSON.stringify({
-          title: title || `Update CMS metadata (${changes.length} file${changes.length === 1 ? '' : 's'})`,
-          body:
-            pullRequestBody ||
-            `This PR updates ${changes.length} file${changes.length === 1 ? '' : 's'} in the CMS.\n\nUpdated by: ${username}`,
+          title: defaultTitle,
+          body: pullRequestBody || getDefaultBody(changes, username),
           head: branchName,
           base: defaultBranch,
         }),
       },
     )
 
-    return new Response(
-      JSON.stringify({
+    return jsonResponse(
+      {
         pullRequestUrl: pullRequest.html_url,
         success: true,
-      }),
-      {
-        status: 200,
-        headers: { 'Content-Type': 'application/json' },
       },
+      200,
     )
   } catch (error) {
     console.error('PR creation error:', error)
-    return new Response(
-      JSON.stringify({
+    return jsonResponse(
+      {
         error: 'Internal server error',
         details: error instanceof Error ? error.message : 'Unknown error',
-      }),
-      {
-        status: 500,
-        headers: { 'Content-Type': 'application/json' },
       },
+      500,
     )
   }
 }

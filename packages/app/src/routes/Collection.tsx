@@ -16,13 +16,35 @@ import {
   useDraftCartStore,
 } from '../hooks/useDraftCartStore'
 
-function DraftActions({ collection }: { collection: CollectionKey }) {
+type CollectionProps = {
+  collection: CollectionKey
+}
+
+type ProviderProps = CollectionProps & {
+  children: React.ReactNode
+}
+
+function DraftActions({ collection }: CollectionProps) {
   const { o: item, isDirty, formState } = useMetaData()
   const upsertItem = useDraftCartStore((state) => state.upsertItem)
   const removeItem = useDraftCartStore((state) => state.removeItem)
   const collectionDraft = collection as DraftableCollection
   const draftId = getDraftCartItemId(collectionDraft, item.chainId, item.address)
   const existingDraft = useDraftCartStore((state) => state.items[draftId])
+  const actionLabel = existingDraft ? 'Update draft' : 'Add to draft'
+
+  function handleUpsertDraft() {
+    upsertItem({
+      id: draftId,
+      collection: collectionDraft,
+      chainId: item.chainId,
+      address: item.address,
+      name: item.name || 'No name onchain',
+      path: getDraftCartPath(collectionDraft, item.chainId),
+      item: formState,
+      patch: buildDraftPatch(item, formState),
+    })
+  }
 
   return (
     <div className="my-6 ml-auto flex items-center gap-4">
@@ -33,31 +55,15 @@ function DraftActions({ collection }: { collection: CollectionKey }) {
         </Button>
       )}
 
-      <Button
-        variant="primary"
-        className="flex items-center gap-3"
-        onClick={() =>
-          upsertItem({
-            id: draftId,
-            collection: collectionDraft,
-            chainId: item.chainId,
-            address: item.address,
-            name: item.name || 'No name onchain',
-            path: getDraftCartPath(collectionDraft, item.chainId),
-            item: formState,
-            patch: buildDraftPatch(item, formState),
-          })
-        }
-        disabled={!isDirty}
-      >
+      <Button variant="primary" className="flex items-center gap-3" onClick={handleUpsertDraft} disabled={!isDirty}>
         <PiGitPullRequest />
-        <span>{existingDraft ? 'Update draft' : 'Add to draft'}</span>
+        <span>{actionLabel}</span>
       </Button>
     </div>
   )
 }
 
-function CollectionDetails({ collection }: { collection: CollectionKey }) {
+function CollectionDetails({ collection }: CollectionProps) {
   const { signedIn } = useGithubUser()
   const { o: item } = useMetaData()
 
@@ -84,16 +90,16 @@ function CollectionDetails({ collection }: { collection: CollectionKey }) {
   )
 }
 
-function Provider({ children, collection }: { children: React.ReactNode; collection: CollectionKey }) {
+function Provider({ children, collection }: ProviderProps) {
   const { chainId, address } = useParams()
   const collectionConfig = getCollection(collection)
   const { data } = useCollectionData(collection)
-  const draftId = getDraftCartItemId(collection as DraftableCollection, Number(chainId), address ?? '')
+  const collectionDraft = collection as DraftableCollection
+  const draftId = getDraftCartItemId(collectionDraft, Number(chainId), address ?? '')
   const draftItem = useDraftCartStore((state) => state.items[draftId])
+  const normalizedAddress = address?.toLowerCase()
 
-  const item = data.find(
-    (d: any) => d.chainId.toString() === chainId && d.address.toLowerCase() === address?.toLowerCase(),
-  )
+  const item = data.find((d: any) => d.chainId.toString() === chainId && d.address.toLowerCase() === normalizedAddress)
 
   if (!item) {
     throw new Error(`${collectionConfig.displayName.slice(0, -1)} not found`)

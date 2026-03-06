@@ -10,6 +10,10 @@ function isPlainObject(value: unknown): value is Record<string, unknown> {
   return typeof value === 'object' && value !== null && !Array.isArray(value)
 }
 
+function getDraftKeys(left: Record<string, unknown>, right: Record<string, unknown>): string[] {
+  return Array.from(new Set([...Object.keys(left), ...Object.keys(right)]))
+}
+
 function areDraftValuesEqual(left: unknown, right: unknown): boolean {
   if (Object.is(left, right)) {
     return true
@@ -25,8 +29,7 @@ function areDraftValuesEqual(left: unknown, right: unknown): boolean {
   }
 
   if (isPlainObject(left) && isPlainObject(right)) {
-    const keys = new Set([...Object.keys(left), ...Object.keys(right)])
-    return Array.from(keys).every((key) => areDraftValuesEqual(left[key], right[key]))
+    return getDraftKeys(left, right).every((key) => areDraftValuesEqual(left[key], right[key]))
   }
 
   return false
@@ -42,9 +45,8 @@ export function buildDraftPatch(base: unknown, draft: unknown): DraftValue {
   }
 
   const patch: Record<string, unknown> = {}
-  const keys = new Set([...Object.keys(base), ...Object.keys(draft)])
 
-  for (const key of keys) {
+  for (const key of getDraftKeys(base, draft)) {
     const nestedPatch = buildDraftPatch(base[key], draft[key])
     if (nestedPatch !== undefined) {
       patch[key] = nestedPatch
@@ -98,11 +100,11 @@ type DraftCartStore = {
 
 const STORAGE_KEY = 'draft-cart-store'
 
-export function getDraftCartItemId(collection: DraftableCollection, chainId: number, address: string) {
+export function getDraftCartItemId(collection: DraftableCollection, chainId: number, address: string): string {
   return `${collection}:${chainId}:${address.toLowerCase()}`
 }
 
-export function getDraftCartPath(collection: DraftableCollection, chainId: number) {
+export function getDraftCartPath(collection: DraftableCollection, chainId: number): string {
   return `packages/cdn/${collection}/${chainId}.json`
 }
 
@@ -119,8 +121,7 @@ export const useDraftCartStore = create<DraftCartStore>()(
         })),
       removeItem: (id) =>
         set((state) => {
-          const items = { ...state.items }
-          delete items[id]
+          const { [id]: _removedItem, ...items } = state.items
           return { items }
         }),
       clearItems: () => set({ items: {} }),

@@ -12,6 +12,21 @@ type CollectionDataMap = {
   tokens: TokenMetadata[]
 }
 
+type SortableCollectionItem = {
+  chainId: number
+  name?: string | null
+}
+
+function sortCollectionData<T extends SortableCollectionItem>(items: readonly T[]): T[] {
+  return [...items].sort((left, right) => {
+    if (left.chainId !== right.chainId) {
+      return left.chainId - right.chainId
+    }
+
+    return (left.name || '').localeCompare(right.name || '')
+  })
+}
+
 export function useCollectionData<K extends CollectionKey>(
   collectionKey: K,
 ): {
@@ -33,13 +48,7 @@ export function useCollectionData<K extends CollectionKey>(
   }, [query.data.flat, collection.schema]) as CollectionDataMap[K]
 
   const sortedData = useMemo(() => {
-    return typedData.sort((a, b) => {
-      if (a.chainId < b.chainId) return -1
-      if (a.chainId > b.chainId) return 1
-      if (a.name < b.name) return -1
-      if (a.name > b.name) return 1
-      return 0
-    })
+    return sortCollectionData<CollectionDataMap[K][number]>(typedData)
   }, [typedData]) as CollectionDataMap[K]
 
   return {
