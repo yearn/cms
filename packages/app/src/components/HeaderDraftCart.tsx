@@ -163,6 +163,7 @@ export default function HeaderDraftCart() {
   return (
     <HoverCard
       hoverCardId="header-draft-cart"
+      alignRight
       trigger={
         <HoverCardTrigger className="min-w-38 justify-start">
           <PiGitPullRequest />
