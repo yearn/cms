@@ -32965,5 +32965,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x9afad25833d0f47b3a3d9204ddf965cb172de0cb",
+    "chainId": 1,
+    "name": "OUSD/msUSD",
+    "symbol": "OUSDmsUSD",
+    "displayName": "OUSD/msUSD",
+    "displaySymbol": "OUSDmsUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
