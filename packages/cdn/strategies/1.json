@@ -17910,5 +17910,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2fbbbd461780850234d48f9030bbea356a2f2a66",
+    "name": "StrategyConvexFactory-OUSDmsUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x618781132e5c3866659e02a567db1dc3fa9d9e6e",
+    "name": "StrategyCurveBoostedFactory-OUSDmsUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
