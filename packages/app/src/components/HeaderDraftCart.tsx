@@ -4,6 +4,7 @@ import { PiGitPullRequest } from 'react-icons/pi'
 import { applyDraftPatch, type DraftCartItem, useDraftCartStore } from '../hooks/useDraftCartStore'
 import { fetchCollectionData } from '../lib/collectionData'
 import Button from './eg/elements/Button'
+import FlyInFromBottom from './eg/motion/FlyInFromBottom'
 import { HoverCard, HoverCardTrigger } from './eg/HoverCard'
 
 const collectionLabels = {
@@ -168,7 +169,7 @@ export default function HeaderDraftCart() {
         <HoverCardTrigger className="min-w-38 justify-start">
           <PiGitPullRequest />
           <span className="flex-1">Drafts</span>
-          <span className="text-sm opacity-70">{items.length}</span>
+          <FlyInFromBottom _key={`draft-count-${items.length}`} className="flex items-center"><span className="text-sm font-mono opacity-70">{items.length}</span></FlyInFromBottom>
         </HoverCardTrigger>
       }
       cardClassName="p-0 w-120"
