@@ -1078,5 +1078,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x9ee0adc61a7e4d3cb9999ac1a892947aff377528",
+    "name": "sUSDVE Stability Pool Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
