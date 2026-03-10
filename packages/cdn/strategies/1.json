@@ -17928,5 +17928,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf28dc8b6ded7e45f8cf84b9972487c8e1857a442",
+    "name": "syrupUSDC/USDC Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2f56d106c6df739bdbb777c2fee79ffaed88d179",
+    "name": "Arbitrum syrupUSDC/USDC Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
