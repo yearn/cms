@@ -926,5 +926,263 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 747474,
+    "address": "0xf352cdbe225b82cc458aca3c127f2935d7ee12cb",
+    "name": "Yearn yvvbUSDC to yvvbETH Yield Splitter",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xf352cdbe225b82cc458aca3c127f2935d7ee12cb"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 747474,
+    "address": "0xa03e39cdeac8c2823a6edc80956207294807c20d",
+    "name": "Yearn yvvbETH to yvvbUSDC Yield Splitter",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xa03e39cdeac8c2823a6edc80956207294807c20d"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 747474,
+    "address": "0x17e6ee30d939d1c0186ef98265e9a4e38a056aa1",
+    "name": "Yearn yvvbETH to yvvbWBTC Yield Splitter",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x17e6ee30d939d1c0186ef98265e9a4e38a056aa1"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Volatile",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 747474,
+    "address": "0x2f817617a682a18851e3eacbd945b214be70474e",
+    "name": "Yearn yvvbWBTC to yvvbUSDC Yield Splitter",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x2f817617a682a18851e3eacbd945b214be70474e"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 747474,
+    "address": "0x1166da048a9b0e840a57dd9dce5378e6c32e53c4",
+    "name": "Yearn yvvbUSDC to yvvbWBTC Yield Splitter",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x1166da048a9b0e840a57dd9dce5378e6c32e53c4"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 747474,
+    "address": "0x518ea05c41f89e36985a94c6df8782f6d3f45111",
+    "name": "Yearn yvvbWBTC to yvvbETH Yield Splitter",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x518ea05c41f89e36985a94c6df8782f6d3f45111"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Volatile",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]
