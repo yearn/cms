@@ -32976,5 +32976,27 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x57690e5287d36733664caa21fa2dc48c156e962d",
+    "chainId": 1,
+    "name": "OUSD/pmUSD",
+    "symbol": "OUSDpmUSD",
+    "displayName": "OUSD/pmUSD",
+    "displaySymbol": "OUSDpmUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xecb0f0d68c19bdaadaebe24f6752a4db34e2c2cb",
+    "chainId": 1,
+    "name": "pmUSD/crvUSD",
+    "symbol": "pmcrvUSD",
+    "displayName": "pmUSD/crvUSD",
+    "displaySymbol": "pmcrvUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

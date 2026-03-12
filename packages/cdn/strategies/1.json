@@ -17946,5 +17946,50 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xda2f1b3cba732d779cff56f0cf9d3bc8aea6cd8d",
+    "name": "USDC To sUSDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x0f00493df7e95388868d565013bf5776939946e3",
+    "name": "StrategyConvexFactory-pmcrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x05b67e301c9053bda7570fb4ec7e6dafaceb2c2c",
+    "name": "StrategyCurveBoostedFactory-OUSDpmUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf9abb81c70e58a4dac4507d2f8dcefccebe852ca",
+    "name": "StrategyConvexFactory-OUSDpmUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd3af67ae3015b8937aad8d9f17ea552f170c61a4",
+    "name": "StrategyCurveBoostedFactory-pmcrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
