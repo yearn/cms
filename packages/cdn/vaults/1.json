@@ -32241,7 +32241,7 @@
     "protocols": [],
     "inclusion": {
       "isSet": false,
-      "isYearn": false,
+      "isYearn": true,
       "isYearnJuiced": false,
       "isGimme": false,
       "isPoolTogether": false,
