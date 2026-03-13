@@ -32177,7 +32177,7 @@
     "type": "None",
     "kind": "None",
     "isRetired": false,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
