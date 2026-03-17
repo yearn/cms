@@ -1087,5 +1087,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xc5e041ae66f9060261f107dc6815e6cdbbe159cc",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldTurbo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xf9cd676dfa0dd1203e801c0199796979c9de6f13",
+    "name": "Chimi Strategy WETH Arcadia Tranche",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
