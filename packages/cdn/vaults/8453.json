@@ -4117,5 +4117,91 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 8453,
+    "address": "0xb3f14e3fda2147fa7574fd003ba40df266e0b90c",
+    "name": "Aave V3 USDC Lender",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xb3f14e3fda2147fa7574fd003ba40df266e0b90c"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 8453,
+    "address": "0x81bdd5e8fbde5a85a2d38761d03d2307fe69a329",
+    "name": "Aave V3 WETH Lender",
+    "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
+    "type": "Yearn Vault",
+    "kind": "Single Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x81bdd5e8fbde5a85a2d38761d03d2307fe69a329"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Volatile",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]
