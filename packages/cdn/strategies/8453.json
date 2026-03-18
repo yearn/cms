@@ -1105,5 +1105,59 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xc02c1ce6032cb674b953f5defd0d27b8b67f8c99",
+    "name": "Creative Bank Morpho MetaMorpho USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xbe0573e66c8002f9dda289c78c52be6f0bb65a69",
+    "name": "Creative Bank Aave V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x74d8fa4558737f68d7fbcf21f9985f62fcdd7ad0",
+    "name": "Creative Bank Spark USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x4062ae13752f69193027ff141c611cac1b21e328",
+    "name": "Creative Bank Compound V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xd473e0ce7b88583b5f14d60291c2445524bebcfe",
+    "name": "Creative Bank Curve 3pool USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x5e87a4a726a7319439ac0572220f9f0de27efd03",
+    "name": "Creative Bank Aerodrome Beefy USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
