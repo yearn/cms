@@ -1186,5 +1186,41 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x0d7ea22bffc06d3104a4e998088e8d4a92730d24",
+    "name": "Creative Bank Compound V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x12227e6018b00a654f962fad1e8f83a34b2a0fe5",
+    "name": "Creative Bank Spark USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xa958440ef031f06ef4248e40fb90d47ab8ddc269",
+    "name": "Creative Bank Curve 3pool USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x6263d3e82447eecda3b57b9e0557357a2e768b14",
+    "name": "Creative Bank Aave V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
