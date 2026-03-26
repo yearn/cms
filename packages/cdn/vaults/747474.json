@@ -823,7 +823,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This vault uses vbWBTC as collateral on Morpho markets to borrow vbUSDC. It then deposits that vbUSDC into Yearn's yvvbUSDC vault to earn yield there",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -836,7 +836,7 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": false,
+      "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
     }
@@ -866,7 +866,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This vault uses vbWETH as collateral on Morpho markets to borrow vbUSDC. It then deposits that USDC into Yearn's yvvbUSDC vault to earn yield there.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -879,7 +879,7 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": false,
+      "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
     }
@@ -909,7 +909,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This vault uses vbWBTC as collateral on Morpho markets to borrow vbUSDT. It then deposits that USDT into Yearn's yvvbUSDT vault to earn yield there.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -922,7 +922,7 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": false,
+      "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
     }
