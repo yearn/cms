@@ -9,65 +9,58 @@ import { useCollectionData } from '../hooks/useCollectionData'
 import { useToggleChainStore } from '../hooks/useToggleChainStore'
 import BackItUp from './BackItUp'
 import ListItem from './eg/elements/ListItem'
+import { useHoverSelect } from './eg/HoverSelect/useHoverSelect'
 import Skeleton from './eg/Skeleton'
 import TokenIcon from './eg/TokenIcon'
 import { useFinder } from './Finder'
+import VaultBooleanFilters from './VaultBooleanFilters'
 
-const INFINTE_SCROLL_FRAME_SIZE = 20
+const INFINITE_SCROLL_FRAME_SIZE = 20
+
+type SearchableListItem = {
+  chainId: number
+  address: string
+  name?: string
+  [key: string]: unknown
+}
+
+function renderCollectionListItem(path: string, item: SearchableListItem, name: string, onClick?: () => void) {
+  return (
+    <Link key={`${item.chainId}-${item.address}`} to={path} onClick={onClick} className="block w-full">
+      <ListItem variant="lg" className="gap-6">
+        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
+        <div className="flex flex-col gap-1">
+          <div className="font-mono text-sm opacity-70">
+            {item.address.slice(0, 6)}..{item.address.slice(-6)}
+          </div>
+          <div className="font-medium">{name}</div>
+        </div>
+      </ListItem>
+    </Link>
+  )
+}
+
+function matchesFinder(item: SearchableListItem, normalizedFinder: string) {
+  return item.name?.toLowerCase().includes(normalizedFinder) || item.address.toLowerCase().includes(normalizedFinder)
+}
+
+function matchesBooleanFilters(item: SearchableListItem, activeBooleanFilters: Set<string>) {
+  return Array.from(activeBooleanFilters).every((field) => item[field] === true)
+}
 
 // Template renderers for different collection types
 const listItemTemplates = {
-  vault: (item: VaultMetadata) => (
-    <Link
-      key={`${item.chainId}-${item.address}`}
-      to={`/vaults/${item.chainId}/${item.address}`}
-      className="block w-full"
-    >
-      <ListItem variant="lg" className="gap-6">
-        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
-        <div className="flex flex-col gap-1">
-          <div className="font-mono text-sm opacity-70">
-            {item.address.slice(0, 6)}..{item.address.slice(-6)}
-          </div>
-          <div className="font-medium">{item.name}</div>
-        </div>
-      </ListItem>
-    </Link>
-  ),
-  strategy: (item: StrategyMetadata) => (
-    <Link
-      key={`${item.chainId}-${item.address}`}
-      to={`/strategies/${item.chainId}/${item.address}`}
-      className="block w-full"
-    >
-      <ListItem variant="lg" className="gap-6">
-        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
-        <div className="flex flex-col gap-1">
-          <div className="font-mono text-sm opacity-70">
-            {item.address.slice(0, 6)}..{item.address.slice(-6)}
-          </div>
-          <div className="font-medium">{item.name || 'No name onchain'}</div>
-        </div>
-      </ListItem>
-    </Link>
-  ),
-  token: (item: TokenMetadata) => (
-    <Link
-      key={`${item.chainId}-${item.address}`}
-      to={`/tokens/${item.chainId}/${item.address}`}
-      className="block w-full"
-    >
-      <ListItem variant="lg" className="gap-6">
-        <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
-        <div className="flex flex-col gap-1">
-          <div className="font-mono text-sm opacity-70">
-            {item.address.slice(0, 6)}..{item.address.slice(-6)}
-          </div>
-          <div className="font-medium">{item.name || 'No name onchain'}</div>
-        </div>
-      </ListItem>
-    </Link>
-  ),
+  vault: (item: VaultMetadata, onClick?: () => void) =>
+    renderCollectionListItem(`/vaults/${item.chainId}/${item.address}`, item, item.name, onClick),
+  strategy: (item: StrategyMetadata, onClick?: () => void) =>
+    renderCollectionListItem(
+      `/strategies/${item.chainId}/${item.address}`,
+      item,
+      item.name || 'No name onchain',
+      onClick,
+    ),
+  token: (item: TokenMetadata, onClick?: () => void) =>
+    renderCollectionListItem(`/tokens/${item.chainId}/${item.address}`, item, item.name || 'No name onchain', onClick),
 } as const
 
 function List({ collection }: { collection: CollectionKey }) {
@@ -75,39 +68,52 @@ function List({ collection }: { collection: CollectionKey }) {
   const { toggledChains } = useToggleChainStore()
   const { data } = useCollectionData<typeof collection>(collection)
   const collectionConfig = getCollection(collection)
+  const { multiValues: activeBooleanFilters } = useHoverSelect<string>(`collection-filters-${collection}`, {
+    multiple: true,
+  })
+  const normalizedFinder = finderString.toLowerCase()
 
   const filter = useMemo(() => {
     return data.filter(
-      (item: any) =>
+      (item: SearchableListItem) =>
         toggledChains.has(item.chainId) &&
-        (item.name?.toLowerCase().includes(finderString.toLowerCase()) ||
-          item.address.toLowerCase().includes(finderString.toLowerCase())),
+        matchesBooleanFilters(item, activeBooleanFilters) &&
+        matchesFinder(item, normalizedFinder),
     )
-  }, [data, finderString, toggledChains])
+  }, [activeBooleanFilters, data, normalizedFinder, toggledChains])
 
-  const [items, setItems] = useState(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE))
-  useEffect(() => setItems(filter?.slice(0, INFINTE_SCROLL_FRAME_SIZE)), [filter])
+  const [items, setItems] = useState(filter?.slice(0, INFINITE_SCROLL_FRAME_SIZE))
+  useEffect(() => setItems(filter?.slice(0, INFINITE_SCROLL_FRAME_SIZE)), [filter])
   const hasMoreFrames = useMemo(() => items.length < filter.length, [items, filter])
   const fetchFrame = useCallback(() => {
     setItems((prevItems) => [
       ...prevItems,
-      ...filter.slice(prevItems.length, prevItems.length + INFINTE_SCROLL_FRAME_SIZE),
+      ...filter.slice(prevItems.length, prevItems.length + INFINITE_SCROLL_FRAME_SIZE),
     ])
   }, [filter])
+
+  const { setFinderString } = useFinder()
+
+  const clearFinderString = useCallback(() => {
+    setFinderString('')
+  }, [setFinderString])
 
   const template = listItemTemplates[collectionConfig.listItemTemplate]
 
   return (
-    <InfiniteScroll
-      scrollableTarget="main-scroll"
-      dataLength={items.length}
-      next={fetchFrame}
-      hasMore={hasMoreFrames}
-      loader={null}
-      className="flex flex-col items-start justify-start gap-6"
-    >
-      {items.map((item: any) => template(item))}
-    </InfiniteScroll>
+    <>
+      {collection === 'vaults' && <VaultBooleanFilters />}
+      <InfiniteScroll
+        scrollableTarget="main-scroll"
+        dataLength={items.length}
+        next={fetchFrame}
+        hasMore={hasMoreFrames}
+        loader={null}
+        className="flex flex-col items-start justify-start gap-6"
+      >
+        {items.map((item: any) => template(item, clearFinderString))}
+      </InfiniteScroll>
+    </>
   )
 }
 

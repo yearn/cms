@@ -57,6 +57,7 @@ export function HoverCard({
   cardClassName,
   wrapperClassName,
   children,
+  alignRight,
   onHoverStart,
   onHoverEnd,
 }: HoverCardProps) {
@@ -84,7 +85,8 @@ export function HoverCard({
         {trigger}
         <div
           className={cn(
-            'px-5 py-4 group-data-[open=false]:hidden group-hover:block absolute z-10000 top-full -left-5 -right-5',
+            'py-4 group-data-[open=false]:hidden group-hover:block absolute z-10000 top-full',
+            alignRight ? '-right-2' : 'px-5 -left-5 -right-5',
             wrapperClassName,
           )}
         >

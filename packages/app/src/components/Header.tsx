@@ -9,6 +9,9 @@ import ThemeToggle from './eg/ThemeToggle'
 import { Yearn } from './eg/Yearn'
 import Finder from './Finder'
 import GithubSignIn from './GithubSignIn'
+import HeaderDraftCart from './HeaderDraftCart'
+
+const ASSET_ROUTE_PREFIXES = ['/vaults', '/strategies', '/tokens'] as const
 
 export default function Header() {
   const navigate = useNavigate()
@@ -35,22 +38,8 @@ export default function Header() {
     return navigationOptions.find((option) => location.pathname.startsWith(option.value))?.value
   }, [navigationOptions, location.pathname])
 
-  // Check if current route should show chain filtering
-  const shouldShowChainSelect = useMemo(() => {
-    return (
-      location.pathname.includes('/vaults') ||
-      location.pathname.includes('/strategies') ||
-      location.pathname.includes('/tokens')
-    )
-  }, [location.pathname])
-
-  // Check if current route should show finder
-  const shouldShowFinder = useMemo(() => {
-    return (
-      location.pathname.includes('/vaults') ||
-      location.pathname.includes('/strategies') ||
-      location.pathname.includes('/tokens')
-    )
+  const supportsAssetTools = useMemo(() => {
+    return ASSET_ROUTE_PREFIXES.some((prefix) => location.pathname.includes(prefix))
   }, [location.pathname])
 
   return (
@@ -74,10 +63,10 @@ export default function Header() {
           triggerClassName="w-58"
         />
 
-        {shouldShowChainSelect && <ChainSelect />}
+        {supportsAssetTools && <ChainSelect />}
 
-        {shouldShowFinder && (
-          <div className="flex-1">
+        {supportsAssetTools && (
+          <div className="flex-1 relative">
             <Finder />
           </div>
         )}
@@ -85,6 +74,7 @@ export default function Header() {
 
       <div className="flex items-center gap-4">
         <ThemeToggle />
+        <HeaderDraftCart />
         <GithubSignIn />
       </div>
     </header>

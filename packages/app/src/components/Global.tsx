@@ -74,7 +74,7 @@ function GlobalDetails({ globalKey }: { globalKey: GlobalKey }) {
         {globalConfig.description && <div className="text-primary-400">{globalConfig.description}</div>}
       </div>
 
-      <MetaData className="w-200" />
+      <MetaData className="w-200" readOnly={!signedIn} />
       <Suspense fallback={<Skeleton className="h-12 w-96 my-6 ml-auto" />}>
         {signedIn && <PullRequestButton globalKey={globalKey} />}
         {!signedIn && <GithubSignIn className="my-6 ml-auto" />}

@@ -1,16 +1,30 @@
 import { useSuspenseQuery } from '@tanstack/react-query'
 import { useMemo } from 'react'
-import { getCdnUrl } from '../../lib/cdn'
-import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection } from '../../schemas/cms'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
 import type { TokenMetadata } from '../../schemas/TokenMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
+import { fetchCollectionData } from '../lib/collectionData'
 
 type CollectionDataMap = {
   vaults: VaultMetadata[]
   strategies: StrategyMetadata[]
   tokens: TokenMetadata[]
+}
+
+type SortableCollectionItem = {
+  chainId: number
+  name?: string | null
+}
+
+function sortCollectionData<T extends SortableCollectionItem>(items: readonly T[]): T[] {
+  return [...items].sort((left, right) => {
+    if (left.chainId !== right.chainId) {
+      return left.chainId - right.chainId
+    }
+
+    return (left.name || '').localeCompare(right.name || '')
+  })
 }
 
 export function useCollectionData<K extends CollectionKey>(
@@ -25,20 +39,7 @@ export function useCollectionData<K extends CollectionKey>(
 
   const query = useSuspenseQuery({
     queryKey: [`${collectionKey}-meta`],
-    queryFn: async () => {
-      const promises = Object.values(chains).map((chain) => fetch(`${getCdnUrl()}${collectionKey}/${chain.id}.json`))
-      const jsonPromises = (await Promise.all(promises)).flatMap((result) => result.json())
-      const jsons = await Promise.all(jsonPromises)
-
-      const chainKeys = Object.keys(chains).map(Number)
-      const rawJsonChainMap: Record<string, any> = {}
-      jsons.forEach((json, index) => {
-        const chainId = chains[chainKeys[index]].id
-        rawJsonChainMap[chainId] = json
-      })
-
-      return { flat: jsons.flat(), rawJsonChainMap }
-    },
+    queryFn: () => fetchCollectionData(collectionKey),
     staleTime: 1000 * 60 * 5,
   })
 
@@ -47,13 +48,7 @@ export function useCollectionData<K extends CollectionKey>(
   }, [query.data.flat, collection.schema]) as CollectionDataMap[K]
 
   const sortedData = useMemo(() => {
-    return typedData.sort((a, b) => {
-      if (a.chainId < b.chainId) return -1
-      if (a.chainId > b.chainId) return 1
-      if (a.name < b.name) return -1
-      if (a.name > b.name) return 1
-      return 0
-    })
+    return sortCollectionData<CollectionDataMap[K][number]>(typedData)
   }, [typedData]) as CollectionDataMap[K]
 
   return {

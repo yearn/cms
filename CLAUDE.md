@@ -16,10 +16,9 @@ This is ycms (Yearn CMS), a content management system built as a monorepo with t
 - `bun clean --lockfiles` - Also remove bun.lock files
 
 ### App Package (`packages/app`)
-- `bun dev` - Start all services (API server, ngrok tunnel, Vite dev server)
+- `bun dev` - Start all services (API server, Vite dev server)
 - `bun dev:client` - Start only Vite frontend dev server
 - `bun dev:server` - Start only Bun API server (port 3001)
-- `bun dev:ngrok` - Start only ngrok tunnel
 - `bun build` - Build for production (TypeScript compilation + Vite build)
 - `bun lint` - Run Biome linter
 - `bun lint:fix` - Run Biome linter with auto-fix
@@ -63,6 +62,25 @@ This is ycms (Yearn CMS), a content management system built as a monorepo with t
 ### Development Setup
 1. Copy `packages/app/.env.example` to `packages/app/.env` and configure
 2. Run `bun clean`, `bun install`, `bun dev`
+3. Open `http://127.0.0.1:3000` in your browser (use `127.0.0.1`, not `localhost`)
+
+### GitHub OAuth for Local Development
+GitHub OAuth is required for write operations (creating PRs, editing metadata). To set it up locally:
+
+**Option A: Shared dev OAuth app** — ask webops for the dev OAuth app client ID and secret.
+
+**Option B: Create your own GitHub OAuth app:**
+1. Go to GitHub → Settings → Developer settings → OAuth Apps → New OAuth App
+2. Set the callback URL to `http://127.0.0.1/api/auth/github/callback` (no port)
+3. Copy the client ID and secret into your `.env`
+
+Then configure your `.env`:
+- `VITE_GITHUB_CLIENT_ID` — your OAuth app's client ID
+- `GITHUB_CLIENT_SECRET` — your OAuth app's client secret
+- `VITE_GITHUB_REDIRECT_URI` — set to `http://127.0.0.1:3001/api/auth/github/callback` for local dev
+- `URL` — set to `http://127.0.0.1:3000` for local dev
+
+The `VITE_GITHUB_REDIRECT_URI` tells GitHub to redirect to your local API server port. GitHub allows any port on loopback addresses (`127.0.0.1`) as long as the registered callback URL uses the same host. Leave `VITE_GITHUB_REDIRECT_URI` unset in production to use the registered callback URL directly.
 
 ### CDN Access
 - Public CDN: `https://cdn.jsdelivr.net/gh/yearn/cms@main/packages/cdn`
