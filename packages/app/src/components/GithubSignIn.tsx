@@ -40,10 +40,15 @@ export default function GithubSignIn({ className }: { className?: string }) {
   const onSignInWithGithub = () => {
     if (!signedIn) {
       const auth_challenge = crypto.randomUUID()
+      const clientId = import.meta.env.VITE_GITHUB_CLIENT_ID
+      if (!clientId) {
+        throw new Error('Missing VITE_GITHUB_CLIENT_ID')
+      }
+
       sessionStorage.setItem('auth_challenge', auth_challenge)
       sessionStorage.setItem('post_auth_redirect', `${location.pathname}${location.search}${location.hash}`)
       const params = new URLSearchParams({
-        client_id: import.meta.env.VITE_GITHUB_CLIENT_ID,
+        client_id: clientId,
         state: auth_challenge,
         scope: 'public_repo',
       })
