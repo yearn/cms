@@ -32577,7 +32577,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This vault uses OETH as collateral on Morpho markets to borrow USDC. It then deposits that USDC into Yearn's yvUSDC-1 vault to earn yield there",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -32590,7 +32590,7 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": false,
+      "isMorpho": true,
       "isKatana": false,
       "isPublicERC4626": false
     }
