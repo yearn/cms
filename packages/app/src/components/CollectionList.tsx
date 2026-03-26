@@ -24,9 +24,9 @@ type SearchableListItem = {
   [key: string]: unknown
 }
 
-function renderCollectionListItem(path: string, item: SearchableListItem, name: string) {
+function renderCollectionListItem(path: string, item: SearchableListItem, name: string, onClick?: () => void) {
   return (
-    <Link key={`${item.chainId}-${item.address}`} to={path} className="block w-full">
+    <Link key={`${item.chainId}-${item.address}`} to={path} onClick={onClick} className="block w-full">
       <ListItem variant="lg" className="gap-6">
         <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
         <div className="flex flex-col gap-1">
@@ -50,11 +50,17 @@ function matchesBooleanFilters(item: SearchableListItem, activeBooleanFilters: S
 
 // Template renderers for different collection types
 const listItemTemplates = {
-  vault: (item: VaultMetadata) => renderCollectionListItem(`/vaults/${item.chainId}/${item.address}`, item, item.name),
-  strategy: (item: StrategyMetadata) =>
-    renderCollectionListItem(`/strategies/${item.chainId}/${item.address}`, item, item.name || 'No name onchain'),
-  token: (item: TokenMetadata) =>
-    renderCollectionListItem(`/tokens/${item.chainId}/${item.address}`, item, item.name || 'No name onchain'),
+  vault: (item: VaultMetadata, onClick?: () => void) =>
+    renderCollectionListItem(`/vaults/${item.chainId}/${item.address}`, item, item.name, onClick),
+  strategy: (item: StrategyMetadata, onClick?: () => void) =>
+    renderCollectionListItem(
+      `/strategies/${item.chainId}/${item.address}`,
+      item,
+      item.name || 'No name onchain',
+      onClick,
+    ),
+  token: (item: TokenMetadata, onClick?: () => void) =>
+    renderCollectionListItem(`/tokens/${item.chainId}/${item.address}`, item, item.name || 'No name onchain', onClick),
 } as const
 
 function List({ collection }: { collection: CollectionKey }) {
@@ -86,6 +92,12 @@ function List({ collection }: { collection: CollectionKey }) {
     ])
   }, [filter])
 
+  const { setFinderString } = useFinder()
+
+  const clearFinderString = useCallback(() => {
+    setFinderString('')
+  }, [setFinderString])
+
   const template = listItemTemplates[collectionConfig.listItemTemplate]
 
   return (
@@ -99,7 +111,7 @@ function List({ collection }: { collection: CollectionKey }) {
         loader={null}
         className="flex flex-col items-start justify-start gap-6"
       >
-        {items.map((item: any) => template(item))}
+        {items.map((item: any) => template(item, clearFinderString))}
       </InfiniteScroll>
     </>
   )

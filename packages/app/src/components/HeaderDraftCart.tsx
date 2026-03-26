@@ -1,11 +1,12 @@
 import { useMutation } from '@tanstack/react-query'
-import { useMemo } from 'react'
+import { type MouseEvent, useMemo } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
+import { useNavigate } from 'react-router-dom'
 import { applyDraftPatch, type DraftCartItem, useDraftCartStore } from '../hooks/useDraftCartStore'
 import { fetchCollectionData } from '../lib/collectionData'
 import Button from './eg/elements/Button'
-import FlyInFromBottom from './eg/motion/FlyInFromBottom'
 import { HoverCard, HoverCardTrigger } from './eg/HoverCard'
+import FlyInFromBottom from './eg/motion/FlyInFromBottom'
 
 const collectionLabels = {
   vaults: 'Vault',
@@ -118,6 +119,7 @@ export default function HeaderDraftCart() {
   const itemsMap = useDraftCartStore((state) => state.items)
   const removeItem = useDraftCartStore((state) => state.removeItem)
   const clearItems = useDraftCartStore((state) => state.clearItems)
+  const navigate = useNavigate()
 
   const signedIn = Boolean(sessionStorage.getItem('github_token'))
   const items = useMemo(() => Object.values(itemsMap), [itemsMap])
@@ -161,6 +163,16 @@ export default function HeaderDraftCart() {
     },
   })
 
+  function handleSelectDraft(item: DraftCartItem): void {
+    navigate(`/${item.collection}/${item.chainId}/${item.address}`)
+  }
+
+  function handleRemoveDraft(event: MouseEvent<HTMLButtonElement>, itemId: string): void {
+    event.preventDefault()
+    event.stopPropagation()
+    removeItem(itemId)
+  }
+
   return (
     <HoverCard
       hoverCardId="header-draft-cart"
@@ -169,7 +181,9 @@ export default function HeaderDraftCart() {
         <HoverCardTrigger className="min-w-38 justify-start">
           <PiGitPullRequest />
           <span className="flex-1">Drafts</span>
-          <FlyInFromBottom _key={`draft-count-${items.length}`} className="flex items-center"><span className="text-sm font-mono opacity-70">{items.length}</span></FlyInFromBottom>
+          <FlyInFromBottom _key={`draft-count-${items.length}`} className="flex items-center">
+            <span className="text-sm font-mono opacity-70">{items.length}</span>
+          </FlyInFromBottom>
         </HoverCardTrigger>
       }
       cardClassName="p-0 w-120"
@@ -184,21 +198,25 @@ export default function HeaderDraftCart() {
             {items.map((item) => (
               <div
                 key={item.id}
-                className="px-6 py-4 flex items-start gap-4 border-b border-interactive-secondary-border last:border-b-0"
+                className="px-6 py-4 flex items-start gap-4 border-b border-interactive-secondary-border last:border-b-0 transition-colors hover:bg-interactive-secondary-hover"
               >
-                <div className="flex-1 min-w-0">
+                <button
+                  type="button"
+                  className="flex-1 min-w-0 text-left px-0 py-0 cursor-pointer rounded transition-colors"
+                  onClick={() => handleSelectDraft(item)}
+                >
                   <div className="font-medium truncate">{item.name}</div>
                   <div className="text-sm opacity-70">
                     {collectionLabels[item.collection]} · chain {item.chainId}
                   </div>
                   <div className="font-mono text-xs opacity-60 truncate">{item.address}</div>
-                </div>
+                </button>
 
                 {signedIn && (
                   <button
                     type="button"
                     className="text-sm opacity-70 hover:opacity-100 transition-opacity"
-                    onClick={() => removeItem(item.id)}
+                    onClick={(event) => handleRemoveDraft(event, item.id)}
                   >
                     Remove
                   </button>
