@@ -8598,8 +8598,8 @@
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
     "type": "Automated Yearn Vault",
     "kind": "Legacy",
-    "isRetired": true,
-    "isHidden": true,
+    "isRetired": false,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": true,
@@ -21580,7 +21580,7 @@
       "isCove": false,
       "isMorpho": false,
       "isKatana": false,
-      "isPublicERC4626": false
+      "isPublicERC4626": true
     },
     "type": "Yearn Vault",
     "kind": "Legacy"
@@ -32577,7 +32577,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "This vault uses OETH as collateral on Morpho markets to borrow USDC. It then deposits that USDC into Yearn's yvUSDC-1 vault to earn yield there",
+    "description": "",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -32590,7 +32590,7 @@
       "isGimme": false,
       "isPoolTogether": false,
       "isCove": false,
-      "isMorpho": true,
+      "isMorpho": false,
       "isKatana": false,
       "isPublicERC4626": false
     }
