@@ -32998,5 +32998,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xd04e38dae7203f6ab49238ede14df7a5ba7da63e",
+    "chainId": 1,
+    "name": "ynETH/ynETHx",
+    "symbol": "ynETH/ETHx",
+    "displayName": "ynETH/ynETHx",
+    "displaySymbol": "ynETH/ETHx",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
