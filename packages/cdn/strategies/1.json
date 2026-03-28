@@ -18000,5 +18000,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2a88af74bd91977f0e6eae2a455872fd77a77df6",
+    "name": "StrategyCurveBoostedFactory-ynETH/ETHx",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x98310017b257ce3f385afff47d94dd5f6bfff891",
+    "name": "StrategyConvexFactory-ynETH/ETHx",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
