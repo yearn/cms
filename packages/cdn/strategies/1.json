@@ -18018,5 +18018,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x779b5b6afd7da2dc65e32d149e12e47b721bca39",
+    "name": "Morpho cbBTC/Sentora PYUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb22bb7b666a84212e4ff9c336b08a6965d7c8f27",
+    "name": "Morpho cbBTC/Sentora RLUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
