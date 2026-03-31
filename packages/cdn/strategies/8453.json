@@ -1222,5 +1222,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x57281d5e3744f0ba628c4aeb6b578001d6d5ef48",
+    "name": "Chimi Strategy USDC yoUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
