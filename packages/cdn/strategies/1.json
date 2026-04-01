@@ -18036,5 +18036,59 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7d3536382805f01b3c8c88a9a2037466c1fed424",
+    "name": "Aave v3 cbBTC/yvUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x64d67f70fa1a6898485d69b5916e1ce1e494b026",
+    "name": "Aave v3 cbBTC/ysUSDT Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcd89bdda5d0b93e4c9f96841717d12f26805867f",
+    "name": "Morpho cbBTC/Sentora RLUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcba881a129a8fe951c5909bdece34184b06ecafb",
+    "name": "Aave v3 cbBTC/ysRLUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3a36da4424906752c97532619757e232f4970a0f",
+    "name": "Aave v3 cbBTC/ysPYUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd1645ca9666b918dbf4f7af267a41accb36b6722",
+    "name": "Morpho cbBTC/Sentora PYUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
