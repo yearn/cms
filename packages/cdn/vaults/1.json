@@ -31850,7 +31850,7 @@
     "category": "Curve",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains frxUSD and RAAC's [pmUSD](https://pmusd.raac.io/).",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -32491,7 +32491,7 @@
     "category": "Curve",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains crvUSD and RAAC's [pmUSD](https://pmusd.raac.io/).",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
@@ -32534,7 +32534,7 @@
     "category": "Curve",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "This token represents a Curve liquidity pool. Holders earn fees from users trading in the pool, and can also deposit the LP to Curve's gauges to earn CRV emissions. This pool contains Origin's OUSD and RAAC's [pmUSD](https://pmusd.raac.io/).",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
