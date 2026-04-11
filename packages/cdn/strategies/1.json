@@ -18090,5 +18090,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2c1280922e7d913404760519e515ffc0b78a0bed",
+    "name": "wstETH/WETH Spark Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf4bdc0d2eb88dab87cf5594c9cf1c9f2048b4b0f",
+    "name": "wstETH/yvUSD Morpho Lender Borrower Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
