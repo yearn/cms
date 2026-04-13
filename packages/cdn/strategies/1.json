@@ -18108,5 +18108,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x05d13fba06956514a550d0560293f8bcbec2bcb8",
+    "name": "wstETH/yvUSD Morpho Lender Borrower Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
