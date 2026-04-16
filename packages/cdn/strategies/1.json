@@ -18117,5 +18117,77 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe0be46cc5ad2f56a7734a99ff403781b9c54c7b2",
+    "name": "Morpho V2 Sentora RLUSD Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x470e0e048f85cfd72eef325895e02c8d297e7435",
+    "name": "stETH Accumulator",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb44ee7869b9d47cd605b05022c8bd8612ebe53ee",
+    "name": "sUSD3 Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7e71d8a63ca904f832ed35b39911f7eec36c8928",
+    "name": "sUSDe/USDT Aave Looper Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5b16e7efe1ca05714477b8edcab4dee9b93a27c",
+    "name": "Katana yvUSDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3d2467cbf82332dbfb38997cbc4d2192694d9490",
+    "name": "Morpho V2 Sentora PYUSD Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xddcd9012d00d757c5261f028a20e2943f51a9ed8",
+    "name": "wstETH/WETH Aave Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xda29b5ddc82f968cd75ee69ff51a47d940318ebe",
+    "name": "jrUSDe Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
