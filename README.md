@@ -42,27 +42,31 @@ URL = http://127.0.0.1:3000
 
 `VITE_GITHUB_REDIRECT_URI` tells GitHub to redirect to your local dev server port. GitHub allows any port on `127.0.0.1` as long as the registered callback URL uses the same host. Leave it unset in production.
 
-#### Manual vault and strategy sync
+#### Vault, strategy, and token sync
+
+Automatic sync runs from `.github/workflows/sync.yml` every hour and on manual dispatch.
+
+- `packages/app/scripts/sync-vaults.ts` queries Kong GraphQL at `https://kong.yearn.fi/api/gql` using `vaults(yearn: true)`.
+- New vaults are detected by lowercased address and appended to `packages/cdn/vaults/<chainId>.json`.
+- `packages/app/scripts/sync-strategies.ts` and `packages/app/scripts/sync-tokens.ts` do the same for strategies and tokens.
+- The workflow commits and pushes only when something under `packages/cdn/` changed.
+
+To trigger the same workflow locally with `act`:
 ```bash
-
-act -j sync-vaults
+act -j sync-vaults-and-strategies
 # see https://github.com/nektos/act
-
 ```
 
-or
-
+To run the sync scripts directly:
 ```bash
-
 bun packages/app/scripts/sync-vaults.ts
 bun packages/app/scripts/sync-strategies.ts
 bun packages/app/scripts/sync-tokens.ts
-git add packages/app/cdn/vaults
-git add packages/app/cdn/strategies
-git add packages/app/cdn/tokens
+git add packages/cdn/vaults
+git add packages/cdn/strategies
+git add packages/cdn/tokens
 git commit -m 'Sync vaults strategies and tokens'
 git push
-
 ```
 
 ### cdn url
