@@ -1231,5 +1231,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xee05dbdcaf0ca060b973d5fc5b31e9b8327edb39",
+    "name": "Chimi Strategy USDC AvantisSeniorNew",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x8c208b0f4c698c9c80d33e6e3bc169de5d135946",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldInstant",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x513cee21afc13d6b0c1117c7a3ac61c171290c63",
+    "name": "Chimi Strategy WETH HarvestSeamless",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
