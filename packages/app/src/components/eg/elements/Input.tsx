@@ -1,5 +1,5 @@
 import { forwardRef, type InputHTMLAttributes } from 'react'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 
 export const InputClassName = cn(`
 relative px-4 py-3 

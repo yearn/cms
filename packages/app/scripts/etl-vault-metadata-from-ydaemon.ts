@@ -16,7 +16,7 @@ export const YDaemonVaultMetadataSchema = z.object({
   chainID: z.number(),
   address: AddressSchema,
   registry: optionalString(AddressSchema),
-  type: z.enum(['Yearn Vault', 'Experimental Yearn Vault', 'Automated Yearn Vault', 'Single Strategy']),
+  type: z.enum(['Yearn Vault', 'Experimental Yearn Vault', 'Automated Yearn Vault', 'Single Strategy', 'None']),
   kind: optionalString(z.enum(['Multi Strategy', 'Legacy', 'Single Strategy'])),
   endorsed: z.boolean().optional(),
   metadata: z

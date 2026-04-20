@@ -1,7 +1,7 @@
 import type { Transition } from 'framer-motion'
 import { motion } from 'framer-motion'
 import { useMemo } from 'react'
-import { cn } from '../cn'
+import { cn } from '../../../lib/cn'
 import { springs } from '../lib/motion'
 
 export default function FlyInFromBottom({

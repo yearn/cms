@@ -1,6 +1,6 @@
 import { getChainIconUrl } from '../../../lib/assets'
 import { chains } from '../../../lib/chains'
-import { cn } from './cn'
+import { cn } from '../../../lib/cn'
 import ImgOrBg from './ImgOrBg'
 
 type Props = {

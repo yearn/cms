@@ -1,4 +1,4 @@
-import z from 'zod'
+import { z } from 'zod'
 import { AddressSchema } from '.'
 
 export const StrategyMetadataSchema = z.object({

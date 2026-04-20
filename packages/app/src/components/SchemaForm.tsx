@@ -1,7 +1,7 @@
 import type React from 'react'
 import type { ReactNode } from 'react'
 import { createContext, useContext, useEffect, useState } from 'react'
-import z from 'zod'
+import { z } from 'zod'
 import { cn } from '../../lib/cn'
 import Input from './eg/elements/Input'
 import Switch from './eg/elements/Switch'
