@@ -63,6 +63,8 @@ export const StrategyMetadataSchema = z.object({
       'veDAO',
     ]),
   ),
+  githubCode: z.string().optional(),
+  strategyType: z.string().optional(),
 })
 
 export type StrategyMetadata = z.infer<typeof StrategyMetadataSchema>
