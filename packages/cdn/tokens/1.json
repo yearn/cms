@@ -33009,5 +33009,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xf76329c6dc10fdfbee6ca520d0bf4d474e95e46e",
+    "chainId": 1,
+    "name": "avUSD/frxUSD",
+    "symbol": "av/frxUSD",
+    "displayName": "avUSD/frxUSD",
+    "displaySymbol": "av/frxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
