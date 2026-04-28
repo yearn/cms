@@ -18216,5 +18216,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbaed9839573d349e42dfbf23a8916e5ab9caf2e3",
+    "name": "Morpho Steakhouse Prime Instant Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
