@@ -18243,5 +18243,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1b1177276cd9b630ec53c912eb6a8cf5a29ae6eb",
+    "name": "Parity Core USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
