@@ -1,6 +1,6 @@
 import type { ImgHTMLAttributes } from 'react'
 import { useMemo, useState } from 'react'
-import { cn } from './cn'
+import { cn } from '../../../lib/cn'
 
 interface ImgOrBg extends ImgHTMLAttributes<HTMLImageElement> {
   bgClassName?: string

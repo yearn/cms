@@ -1,4 +1,4 @@
-import z from 'zod'
+import { z } from 'zod'
 import { AddressSchema } from '.'
 
 export const StrategyMetadataSchema = z.object({
@@ -40,8 +40,10 @@ export const StrategyMetadataSchema = z.object({
       'League DAO',
       'Lido Finance',
       'MakerDAO',
+      'Morpho',
       'Mushroom Finance',
       'Notional Finance',
+      'Pendle',
       'Pool Together',
       'Scream',
       'Solidex Finance',
@@ -63,6 +65,8 @@ export const StrategyMetadataSchema = z.object({
       'veDAO',
     ]),
   ),
+  githubCode: z.string().optional(),
+  strategyType: z.string().optional(),
 })
 
 export type StrategyMetadata = z.infer<typeof StrategyMetadataSchema>

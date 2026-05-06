@@ -989,7 +989,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Morpho"
+    ],
+    "githubCode": "https://github.com/Schlagonia/Generic4626/blob/morpho/src/Strategies/Morpho/Mainnet/MorphoCompounder.sol",
+    "strategyType": "Compounder"
   },
   {
     "chainId": 1,
@@ -17414,7 +17418,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/Schlagonia/depositors/blob/susdc/src/USDCToUSDS.sol",
+    "strategyType": "Depositor"
   },
   {
     "chainId": 1,
@@ -17450,7 +17456,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/Schlagonia/tokenized-looper/blob/master/src/morpho/InfinifiMorphoLooper.sol",
+    "strategyType": "Looper"
   },
   {
     "chainId": 1,
@@ -17657,7 +17665,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Pendle"
+    ],
+    "githubCode": "https://github.com/johnnyonline/yv3-pendle-PT-strategy/blob/buy-pt/src/Strategy.sol",
+    "strategyType": ""
   },
   {
     "chainId": 1,
@@ -17936,7 +17948,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/Schlagonia/tokenized-looper/blob/aave/src/morpho/SyrupMorphoLooper.sol",
+    "strategyType": "Looper"
   },
   {
     "chainId": 1,
@@ -17945,7 +17959,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/Schlagonia/tokenized-cctp/blob/master/src/CCTPStrategy.sol",
+    "strategyType": "CCTP"
   },
   {
     "chainId": 1,
@@ -17954,7 +17970,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/Schlagonia/depositors/pull/2",
+    "strategyType": "Depositor"
   },
   {
     "chainId": 1,
@@ -18044,7 +18062,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Aave"
+    ],
+    "githubCode": "https://github.com/johnnyonline/yv3-aave-lender-borrower-strategy/blob/master/src/Strategy.sol",
+    "strategyType": "Lender-Borrower"
   },
   {
     "chainId": 1,
@@ -18053,7 +18075,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Aave"
+    ],
+    "githubCode": "https://github.com/johnnyonline/yv3-aave-lender-borrower-strategy/blob/master/src/Strategy.sol",
+    "strategyType": "Lender-Borrower"
   },
   {
     "chainId": 1,
@@ -18062,7 +18088,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Morpho"
+    ],
+    "githubCode": "https://github.com/Schlagonia/lender-borrower/blob/morpho/src/MorphoBlueLenderBorrower.sol",
+    "strategyType": "Lender-Borrower"
   },
   {
     "chainId": 1,
@@ -18071,7 +18101,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Aave"
+    ],
+    "githubCode": "https://github.com/johnnyonline/yv3-aave-lender-borrower-strategy/blob/master/src/Strategy.sol",
+    "strategyType": "Lender-Borrower"
   },
   {
     "chainId": 1,
@@ -18080,7 +18114,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Aave"
+    ],
+    "githubCode": "https://github.com/johnnyonline/yv3-aave-lender-borrower-strategy/blob/master/src/Strategy.sol",
+    "strategyType": "Lender-Borrower"
   },
   {
     "chainId": 1,
@@ -18089,7 +18127,11 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [
+      "Morpho"
+    ],
+    "githubCode": "https://github.com/Schlagonia/lender-borrower/blob/morpho/src/MorphoBlueLenderBorrower.sol",
+    "strategyType": "Lender-Borrower"
   },
   {
     "chainId": 1,
@@ -18143,7 +18185,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/fp-crypto/susd3-strategy/blob/master/src/Strategy.sol",
+    "strategyType": "Compounder"
   },
   {
     "chainId": 1,
@@ -18161,7 +18205,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/Schlagonia/tokenized-cctp/blob/master/src/KatanaStrategy.sol",
+    "strategyType": "CCTP"
   },
   {
     "chainId": 1,
@@ -18170,7 +18216,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/yearn/tokenized-strategy-periphery/blob/master/src/Bases/convertors/BaseConvertor.sol",
+    "strategyType": "Convertor"
   },
   {
     "chainId": 1,
@@ -18188,7 +18236,9 @@
     "isRetired": false,
     "displayName": "",
     "description": "",
-    "protocols": []
+    "protocols": [],
+    "githubCode": "https://github.com/yearn/tokenized-strategy-periphery/blob/master/src/Bases/convertors/BaseConvertor.sol",
+    "strategyType": "Convertor"
   },
   {
     "chainId": 1,
