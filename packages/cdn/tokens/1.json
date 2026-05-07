@@ -33020,5 +33020,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x516c3ecfe45f0820653e08dd7c93633d71b93cb5",
+    "chainId": 1,
+    "name": "CRV LlamaLend Recovery",
+    "symbol": "LL-CRV-rec",
+    "displayName": "CRV LlamaLend Recovery",
+    "displaySymbol": "LL-CRV-rec",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
