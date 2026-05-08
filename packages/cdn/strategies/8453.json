@@ -1258,5 +1258,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x7eb26c03015df1dd7c84913c70b77e5ac8e94eba",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldTurbo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x7daf1f38a46356d18b380a7a6efa6bbb4780ba82",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldInstant",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
