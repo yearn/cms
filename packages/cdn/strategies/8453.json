@@ -1276,5 +1276,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xbf7f085dab14c8e8b7ed88d96ec765fa1f16245d",
+    "name": "Chimi Strategy cbBTC YearnHorizon",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
