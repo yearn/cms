@@ -2033,5 +2033,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x5b674196812451b7cec024fe9d22d2c0b172fa75",
+    "chainId": 8453,
+    "name": "akita",
+    "symbol": "akita",
+    "displayName": "akita",
+    "displaySymbol": "akita",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
