@@ -1024,5 +1024,275 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x3ea7cc6c0e5449d3252114ed7800bad461b79eb1",
+    "name": "Chimi Strategy WETH HarvestAutopilot",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xebc5acbb9b613d831b7504d77a4b0d4ddfede743",
+    "name": "Chimi Strategy WETH MV2 ClearstarReactor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x591744d763a5422b7c566b3c6afd51257dc1fc5f",
+    "name": "sUSDVE Stability Pool Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x9dd822f3077cd2f0cd8a00bcc7295777a7712fc5",
+    "name": "Chimi Strategy USDC AvantisSeniorV2-1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x154d9cc90af1d6f53712a01975d29644f8422a9c",
+    "name": "Chimi Strategy WETH yoETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x3bfbdeafae4bf54416a15ce596bbec3143d0ef24",
+    "name": "Chimi Strategy WETH HarvestMoonwell",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x9ee0adc61a7e4d3cb9999ac1a892947aff377528",
+    "name": "sUSDVE Stability Pool Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xc5e041ae66f9060261f107dc6815e6cdbbe159cc",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldTurbo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xf9cd676dfa0dd1203e801c0199796979c9de6f13",
+    "name": "Chimi Strategy WETH Arcadia Tranche",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xc02c1ce6032cb674b953f5defd0d27b8b67f8c99",
+    "name": "Creative Bank Morpho MetaMorpho USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xbe0573e66c8002f9dda289c78c52be6f0bb65a69",
+    "name": "Creative Bank Aave V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x74d8fa4558737f68d7fbcf21f9985f62fcdd7ad0",
+    "name": "Creative Bank Spark USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x4062ae13752f69193027ff141c611cac1b21e328",
+    "name": "Creative Bank Compound V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xd473e0ce7b88583b5f14d60291c2445524bebcfe",
+    "name": "Creative Bank Curve 3pool USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x5e87a4a726a7319439ac0572220f9f0de27efd03",
+    "name": "Creative Bank Aerodrome Beefy USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xc66c4b5b1ebf98e045c7dab866eec2e30265b93f",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldTurbo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x52876c0214be2eef448ff61fbb82b392a3daf98c",
+    "name": "Chimi Strategy USDC Wasabi",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xdcd3950c34f9bde56a5cdba5c888668f4b16e38d",
+    "name": "sUSDVE Stability Pool Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x0d7ea22bffc06d3104a4e998088e8d4a92730d24",
+    "name": "Creative Bank Compound V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x12227e6018b00a654f962fad1e8f83a34b2a0fe5",
+    "name": "Creative Bank Spark USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xa958440ef031f06ef4248e40fb90d47ab8ddc269",
+    "name": "Creative Bank Curve 3pool USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x6263d3e82447eecda3b57b9e0557357a2e768b14",
+    "name": "Creative Bank Aave V3 USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x57281d5e3744f0ba628c4aeb6b578001d6d5ef48",
+    "name": "Chimi Strategy USDC yoUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xee05dbdcaf0ca060b973d5fc5b31e9b8327edb39",
+    "name": "Chimi Strategy USDC AvantisSeniorNew",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x8c208b0f4c698c9c80d33e6e3bc169de5d135946",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldInstant",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x513cee21afc13d6b0c1117c7a3ac61c171290c63",
+    "name": "Chimi Strategy WETH HarvestSeamless",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x7eb26c03015df1dd7c84913c70b77e5ac8e94eba",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldTurbo",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x7daf1f38a46356d18b380a7a6efa6bbb4780ba82",
+    "name": "Chimi Strategy USDC SteakhouseHighYieldInstant",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xbf7f085dab14c8e8b7ed88d96ec765fa1f16245d",
+    "name": "Chimi Strategy cbBTC YearnHorizon",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x23291e0f434e88b9c3c0197c97f310ef78a4e708",
+    "name": "Chimi Strategy USDC Arcadia",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
