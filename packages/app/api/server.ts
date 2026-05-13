@@ -4,6 +4,8 @@ import cdn from './cdn'
 import ping from './ping'
 import pr from './pr'
 
+const port = (Number(process.env.PORT) || 3000) + 1
+
 serve({
   fetch(req) {
     const url = new URL(req.url)
@@ -26,7 +28,7 @@ serve({
 
     return new Response('Not found', { status: 404 })
   },
-  port: 3001,
+  port,
 })
 
-console.log('🚀 api up')
+console.log(`🚀 api up on port ${port}`)

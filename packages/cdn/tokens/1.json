@@ -32877,5 +32877,159 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xb5571e76693ba60110b5811dd650ffefce1c955f",
+    "chainId": 1,
+    "name": "MUSD/USDC/USDT",
+    "symbol": "MUSD/2pool",
+    "displayName": "MUSD/USDC/USDT",
+    "displaySymbol": "MUSD/2pool",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xf75f2b5fc5f375e1ad3130dd0eec7219fe821204",
+    "chainId": 1,
+    "name": "ynRWAx/OUSD",
+    "symbol": "RWA/OUSD",
+    "displayName": "ynRWAx/OUSD",
+    "displaySymbol": "RWA/OUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xffd3b4d343a8964a5c3c1caac20f319c41a97bff",
+    "chainId": 1,
+    "name": "ynRWAx/ynUSDx",
+    "symbol": "yn-RWA/USD",
+    "displayName": "ynRWAx/ynUSDx",
+    "displaySymbol": "yn-RWA/USD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xb1c2db5d6ca03fce73dbd304d320bf76c55ae1b1",
+    "chainId": 1,
+    "name": "Tangent USD",
+    "symbol": "USG",
+    "displayName": "Tangent USD",
+    "displaySymbol": "USG",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xefa939f4932cff8a92fd6a7c5fe52cd2ad77f3ec",
+    "chainId": 1,
+    "name": "OUSD/crvUSD",
+    "symbol": "OUSDcrvUSD",
+    "displayName": "OUSD/crvUSD",
+    "displaySymbol": "OUSDcrvUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xc50e191f703fb3160fc15d8b168a8c740fec3666",
+    "chainId": 1,
+    "name": "cvgCVX/CVX1",
+    "symbol": "cvgCVXCVX1",
+    "displayName": "cvgCVX/CVX1",
+    "displaySymbol": "cvgCVXCVX1",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xae6ee608b297305abf3eb609b81febbb8f6a0bb3",
+    "chainId": 1,
+    "name": "tBTC/cbBTC",
+    "symbol": "tBTC/cbBTC",
+    "displayName": "tBTC/cbBTC",
+    "displaySymbol": "tBTC/cbBTC",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xb8ac7ce449ed72ff61de8043d67b507f9f523fa2",
+    "chainId": 1,
+    "name": "TriOGN",
+    "symbol": "OGNETHUSD",
+    "displayName": "TriOGN",
+    "displaySymbol": "OGNETHUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x9afad25833d0f47b3a3d9204ddf965cb172de0cb",
+    "chainId": 1,
+    "name": "OUSD/msUSD",
+    "symbol": "OUSDmsUSD",
+    "displayName": "OUSD/msUSD",
+    "displaySymbol": "OUSDmsUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x57690e5287d36733664caa21fa2dc48c156e962d",
+    "chainId": 1,
+    "name": "OUSD/pmUSD",
+    "symbol": "OUSDpmUSD",
+    "displayName": "OUSD/pmUSD",
+    "displaySymbol": "OUSDpmUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xecb0f0d68c19bdaadaebe24f6752a4db34e2c2cb",
+    "chainId": 1,
+    "name": "pmUSD/crvUSD",
+    "symbol": "pmcrvUSD",
+    "displayName": "pmUSD/crvUSD",
+    "displaySymbol": "pmcrvUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xd04e38dae7203f6ab49238ede14df7a5ba7da63e",
+    "chainId": 1,
+    "name": "ynETH/ynETHx",
+    "symbol": "ynETH/ETHx",
+    "displayName": "ynETH/ynETHx",
+    "displaySymbol": "ynETH/ETHx",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0xf76329c6dc10fdfbee6ca520d0bf4d474e95e46e",
+    "chainId": 1,
+    "name": "avUSD/frxUSD",
+    "symbol": "av/frxUSD",
+    "displayName": "avUSD/frxUSD",
+    "displaySymbol": "av/frxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x516c3ecfe45f0820653e08dd7c93633d71b93cb5",
+    "chainId": 1,
+    "name": "CRV LlamaLend Recovery",
+    "symbol": "LL-CRV-rec",
+    "displayName": "CRV LlamaLend Recovery",
+    "displaySymbol": "LL-CRV-rec",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

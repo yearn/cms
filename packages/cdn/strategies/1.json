@@ -17199,5 +17199,1085 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8092c20351cf4048b464df2144dc8a4dd49ce71d",
+    "name": "Morpho Gauntlet USDC Prime Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd144eaff17b0308a5154444907781382398aac61",
+    "name": "Aave V3 USDS Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb0d399e8a11e1c6df00e1fb5698936b5614e9259",
+    "name": "Holder wWGTXX",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xff03dce6d95aa7a30b75efbafd11384221b9f9b5",
+    "name": "DAI To USDC-1 Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd05950f6c8ad86bef2bb3041a761ea187ed13baf",
+    "name": "StakeDAO Gauge sdYFI Curve LP Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x48e66d65006007ef62b50735d070fc30d0242a93",
+    "name": "USDC To SKY USDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x5abcbbdbf617a21f7667e8cfd17fa16475d20db8",
+    "name": "Aave V3 WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6164217caa4ff58fb722d726391875ac0c5fb541",
+    "name": "DAI To Yearn Term USDS",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6c7150b9eb23ee563b28905791ad5b6c9cb6b21a",
+    "name": "Convex crvUSD-fxSAVE Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa1925f870a665bd35372f63694179578afd73f79",
+    "name": "Secured Finance JPYC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x27998440ec85f0df11ded26e6ab27c8d2a9d8cb2",
+    "name": "Aave V3 USDT Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9bf50e7589a562da2ecc0a87e2597efbdbde241b",
+    "name": "Aave V3 DAI Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb77d349d940ddb143bf7b30216ac9ee55d9194b1",
+    "name": "Aave V3 crvUSD Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x694cdd19ebee7a974ba8fe3af8b383bb256f2858",
+    "name": "Aave V3 USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3bbb0aef66b85b123bf23c2637853bdc66907b27",
+    "name": "USDC Test CCTP",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xae38b93d73040d3d3774df67b9de9d653b9cbb80",
+    "name": "MEV Capital Frontier USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x68b156ebce918e1c7e5f42b5ec6dc0eafe0b8667",
+    "name": "Katana vbUSDC yvUSDT Morpho LooperStrategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x16a834e016f2b5a5da7ebd4554e310b12c6a0ed0",
+    "name": "USDC Test CCTP",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1364c892035a93beb9971fda6b3d6a35459fc314",
+    "name": "Lockstake SKY-SPK",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6447b88c071b98900c40da7c7957537c977ef295",
+    "name": "HLP CCTP USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe046e2a2cbd54d9f9b83ea5f0cdf4b6d00430215",
+    "name": "YBS YYB Staker",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7bf1d269bf2cb79e628f51b93763b342fd059d1d",
+    "name": "PT stcUSD Jul 23 Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9e5eb3f20fd44ccf77a7a09a6358d7ce93ca16da",
+    "name": "StakeDAO YFI Locker Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9e0a5943dfc1a85b48c191aa7c10487297aa675b",
+    "name": "USDC To Spark USDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb73a2f9f57aaa125ade3a11a1e661d28a919c66d",
+    "name": "PT siUSD March 25 Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x5556e9aa55e7c52a3b7904583c4daa2cc61bcae7",
+    "name": "USDC Test CCTP",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8589462548984c5c0f2c0140fb276351b5a77fe1",
+    "name": "Curve Boosted crvUSD-WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x5f9dba2805411a8382fdb4e69d4f2da8efaf1f89",
+    "name": "Infinifi sIUSD Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbaadd4b44929606178fcdbd2f4309282f39d9da7",
+    "name": "Convex crvUSD-sreUSD Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1b88f199d42f2114de341c5b68e9c92af1c271ee",
+    "name": "USDC To sUSDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd09125515ed773fa7e4f78eae99187f28c86411f",
+    "name": "PT siUSD Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8ed5ab1ba2b2e434361858cbd3ca9f374e8b0359",
+    "name": "Staked cvgCVX Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb68f759efa587a83e59b094ca1ec982d5ea97581",
+    "name": "PT siUSD March 25 Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x5103d3ee6d599984609daaadd3a439152cc0c392",
+    "name": "Curve Boosted crvUSD-fxSAVE Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8a139829ea71452bf39fd1cbeb0a1058885a2b58",
+    "name": "Yeet It USD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2a1fabe68d1d23f34b5652e725c01c4c6116378d",
+    "name": "RZR-wstETH Aura Staker",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xca960e6df1150100586c51382f619efcccf72706",
+    "name": "Convex cvxCRV Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7bc019ef7022194feba5f7ff99424a438f68fc21",
+    "name": "Katana vbUSDC yvUSDT Morpho LooperStrategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa2b33d1a19a81c2092315f766dff6c53a3dc8844",
+    "name": "Morpho Gauntlet USDC Prime Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x206cefd7820d907f9d2c1332349001f7294bf802",
+    "name": "YBS YYB Staker",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xea1f78458cd7fb4225cd239506efad4237b12dab",
+    "name": "Arbitrum PT sUSDai Feb 18 Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6f6046e59501e484152d46045ba5eecf1cab8935",
+    "name": "Secured Finance JPYC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x685f05dab946fecc3d49fa70c833a67354377c93",
+    "name": "StrategyCurveBoostedFactory-MUSD/2pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x644301ef055e3a9c4cd2b64464c53f1913298bcd",
+    "name": "StrategyConvexFactory-MUSD/2pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1983923e5a3591afe036d38a8c8011e66cd76e9e",
+    "name": "Arbitrum Yearn Degen Morpho Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfb5beb6094bc8e4f4764ee78dd56d863df343dfb",
+    "name": "StrategyConvexFactory-yn-RWA/USD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4d43e518cf386567848cd3351b2f61e3a777d915",
+    "name": "StrategyCurveBoostedFactory-yn-RWA/USD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x185c5311659c8387c6d2452a4ab7f47db15756fe",
+    "name": "StrategyConvexFactory-RWA/OUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xeda1ce40443d74701a62b5001a5620a3c3b72309",
+    "name": "StrategyCurveBoostedFactory-RWA/OUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x28b47dbbc7af3482e900f2ed4885490deaea001f",
+    "name": "yLiquid WETHPosition Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4c0e4d3cb62b91afbbf1fe8e830f98a513c7234b",
+    "name": "USD3 Pendle PT Maxi",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbcc6180cc066f17b100a7302625e6845436d3c2c",
+    "name": "yLiquid WETHPosition Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x71a48f400d63432ec0fbe8a9db8124311a54b539",
+    "name": "StrategyCurveBoostedFactory-OUSDcrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb990dbb5214a815b8837c3ac04d7e6da36f55f0b",
+    "name": "StrategyConvexFactory-OUSDcrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd8c69a9c9077650b1c76ffd974b1653ccc165ce9",
+    "name": "LockStake SKY-SKY",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe5ae9a5def83b7e83e623444f6e9dcf16f149106",
+    "name": "StrategyConvexFactory-cvgCVXCVX1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7ffb8ca32426a3b45a3e5274f638a9059f31506b",
+    "name": "StrategyCurveBoostedFactory-cvgCVXCVX1",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2d44b4ee67462ab53e361593e908da1eee354ff6",
+    "name": "StrategyConvexFactory-tBTC/cbBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5c619bc8b6eb41860cd3068db485e79ab7e6b2a",
+    "name": "StrategyCurveBoostedFactory-tBTC/cbBTC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x024e6412903977ec11ad910e6148435a532f89c1",
+    "name": "USDaf tBTC Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcc5559a5d13d99b468b9c0e058e1327cf9014855",
+    "name": "USDaf sUSDS Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3589b93cadb464b6e1974cc9fc0c9be698ee49a5",
+    "name": "Liquity V2 wstETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1302f89b45781f0d333abc55262b668b44be8fa8",
+    "name": "USDaf sfrxUSD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1fb3f503d51480c25c1f2d64b6f4018d4c2805f7",
+    "name": "USDaf WBTC18 Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xaaafea48472f77563961cdb53291dedfb46f9040",
+    "name": "Locked yvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x99e1160e89c6c7fa4951531358d48728e7a29206",
+    "name": "USDaf scrvUSD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5e7d3f76a03006540f17668a0267c668ffb5b75",
+    "name": "Liquity V2 WETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb4ca3c9831b9f87b69f6c41d9619f09accb43428",
+    "name": "USDaf ysyBOLD Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6ed566b76838a08d04cbd6323231b08a2ec69005",
+    "name": "Liquity V2 rETH Stability Pool",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa62158fae053009abd436d17a4d10613441d4132",
+    "name": "StrategyCurveBoostedFactory-OGNETHUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xa6f8b33e46147d8052a3ec9efefa45987ff5230e",
+    "name": "StrategyConvexFactory-OGNETHUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x59b6c75eeb7dfe417505919c3e5a919b7c1b0773",
+    "name": "syrupUSDC/USDC Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x68d01e2915c39b85efe691dbb87bf93c6194a4a0",
+    "name": "Morpho WBTC/yvUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x9da810867e4aa706e02318bf7869f8530af663ad",
+    "name": "Morpho WBTC/yvUSDT-1 Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x78ae4b8e034ba8a3dc0260cf3d448f0b6aa4b80d",
+    "name": "lBTC/WBTC Aave Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7130570bcefcedbe9d15b5b11a33006156460f8f",
+    "name": "USDC To SKY USDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe5ebb5ca8680e2ade07622ccb11e61e6f9e66e83",
+    "name": "Yearn ETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x0851eedf2a2ea59a5cb688fcc4697d624fcc0576",
+    "name": "Aave v3 WBTC/USDC Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3357ab9c809c25379e44deb463613e8e17113050",
+    "name": "Katana vbWBTC/yvUSDC-1 Morpho Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2fbbbd461780850234d48f9030bbea356a2f2a66",
+    "name": "StrategyConvexFactory-OUSDmsUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x618781132e5c3866659e02a567db1dc3fa9d9e6e",
+    "name": "StrategyCurveBoostedFactory-OUSDmsUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf28dc8b6ded7e45f8cf84b9972487c8e1857a442",
+    "name": "syrupUSDC/USDC Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2f56d106c6df739bdbb777c2fee79ffaed88d179",
+    "name": "Arbitrum syrupUSDC/USDC Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xda2f1b3cba732d779cff56f0cf9d3bc8aea6cd8d",
+    "name": "USDC To sUSDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x0f00493df7e95388868d565013bf5776939946e3",
+    "name": "StrategyConvexFactory-pmcrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x05b67e301c9053bda7570fb4ec7e6dafaceb2c2c",
+    "name": "StrategyCurveBoostedFactory-OUSDpmUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf9abb81c70e58a4dac4507d2f8dcefccebe852ca",
+    "name": "StrategyConvexFactory-OUSDpmUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd3af67ae3015b8937aad8d9f17ea552f170c61a4",
+    "name": "StrategyCurveBoostedFactory-pmcrvUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5976a234574a7345efcbb3b0aaf5f435355d2db",
+    "name": "Morpho OETH/yvUSDC-1 Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2a88af74bd91977f0e6eae2a455872fd77a77df6",
+    "name": "StrategyCurveBoostedFactory-ynETH/ETHx",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x98310017b257ce3f385afff47d94dd5f6bfff891",
+    "name": "StrategyConvexFactory-ynETH/ETHx",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x779b5b6afd7da2dc65e32d149e12e47b721bca39",
+    "name": "Morpho cbBTC/Sentora PYUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb22bb7b666a84212e4ff9c336b08a6965d7c8f27",
+    "name": "Morpho cbBTC/Sentora RLUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7d3536382805f01b3c8c88a9a2037466c1fed424",
+    "name": "Aave v3 cbBTC/yvUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x64d67f70fa1a6898485d69b5916e1ce1e494b026",
+    "name": "Aave v3 cbBTC/ysUSDT Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcd89bdda5d0b93e4c9f96841717d12f26805867f",
+    "name": "Morpho cbBTC/Sentora RLUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcba881a129a8fe951c5909bdece34184b06ecafb",
+    "name": "Aave v3 cbBTC/ysRLUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3a36da4424906752c97532619757e232f4970a0f",
+    "name": "Aave v3 cbBTC/ysPYUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd1645ca9666b918dbf4f7af267a41accb36b6722",
+    "name": "Morpho cbBTC/Sentora PYUSD Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2c1280922e7d913404760519e515ffc0b78a0bed",
+    "name": "wstETH/WETH Spark Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf4bdc0d2eb88dab87cf5594c9cf1c9f2048b4b0f",
+    "name": "wstETH/yvUSD Morpho Lender Borrower Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x05d13fba06956514a550d0560293f8bcbec2bcb8",
+    "name": "wstETH/yvUSD Morpho Lender Borrower Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe0be46cc5ad2f56a7734a99ff403781b9c54c7b2",
+    "name": "Morpho V2 Sentora RLUSD Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x470e0e048f85cfd72eef325895e02c8d297e7435",
+    "name": "stETH Accumulator",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xb44ee7869b9d47cd605b05022c8bd8612ebe53ee",
+    "name": "sUSD3 Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7e71d8a63ca904f832ed35b39911f7eec36c8928",
+    "name": "sUSDe/USDT Aave Looper Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5b16e7efe1ca05714477b8edcab4dee9b93a27c",
+    "name": "Katana yvUSDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3d2467cbf82332dbfb38997cbc4d2192694d9490",
+    "name": "Morpho V2 Sentora PYUSD Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xddcd9012d00d757c5261f028a20e2943f51a9ed8",
+    "name": "wstETH/WETH Aave Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xda29b5ddc82f968cd75ee69ff51a47d940318ebe",
+    "name": "jrUSDe Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf1784a1bf0cbde0f868838dd093e65215343c4c0",
+    "name": "Morpho Yearn USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x27243c22cd9270ca4ff8317c05d2e04470c33698",
+    "name": "StrategyCurveBoostedFactory-av/frxUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf779f31d3daaa38ca15545ec581b2696f7a8e99b",
+    "name": "StrategyConvexFactory-av/frxUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xbaed9839573d349e42dfbf23a8916e5ab9caf2e3",
+    "name": "Morpho Steakhouse Prime Instant Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x76dd96710a73675d9cf9523a046f1587ca9031d4",
+    "name": "Parity Core ETH",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x80cbe6dac50064d2d695be7f3a3f580776d69224",
+    "name": "Curve rlUSD/USDC Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x1b1177276cd9b630ec53c912eb6a8cf5a29ae6eb",
+    "name": "Parity Core USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x55a13c52837cd0d18a3bb6bf320a005e7bdaefae",
+    "name": "StrategyConvexFactory-LL-CRV-rec",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x674a28b72a669b3bc451b2312aea057d610435be",
+    "name": "StrategyCurveBoostedFactory-LL-CRV-rec",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x533bcb3abe63c0b876d97b34184765b186a22e10",
+    "name": "Parity High Yield USDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
