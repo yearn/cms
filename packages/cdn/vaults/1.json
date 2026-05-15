@@ -32174,14 +32174,14 @@
     "address": "0x696d02db93291651ed510704c9b286841d506987",
     "name": "USD yVault",
     "registry": "0x0000000000000000000000000000000000000000",
-    "type": "None",
-    "kind": "None",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -32189,12 +32189,12 @@
       "target": "0x696d02db93291651ed510704c9b286841d506987"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Stable"
     },
     "category": "Stablecoin",
-    "displayName": "",
-    "displaySymbol": "",
-    "description": "",
+    "displayName": "yvUSD",
+    "displaySymbol": "yvUSD",
+    "description": "USD denominated, cross-chain, cross asset vault. Optionally lock shares to earn a higher yield by allowing the vault to take on longer duration positions.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [],
@@ -32233,9 +32233,9 @@
       "stability": "Unknown"
     },
     "category": "Stablecoin",
-    "displayName": "",
-    "displaySymbol": "",
-    "description": "",
+    "displayName": "yvUSD (Locked)",
+    "displaySymbol": "yvUSD",
+    "description": "USD denominated, cross-chain, cross asset vault. Optionally lock shares to earn a higher yield by allowing the vault to take on longer duration positions.",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [],
