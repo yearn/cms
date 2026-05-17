@@ -18279,5 +18279,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfb4f83c3923eab7b6254cd2399c206109970f95e",
+    "name": "USDC To SKY USDS Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x467ce10870747372968ba98463a1d9af9fb27751",
+    "name": "Flex yvUSD/USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
