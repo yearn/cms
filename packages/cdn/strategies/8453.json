@@ -1294,5 +1294,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x0372aef226493c80963ccbfc17394373b4c66bbe",
+    "name": "Chimi Strategy USDC Harvest40Acres",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
