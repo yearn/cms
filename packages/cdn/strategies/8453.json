@@ -1303,5 +1303,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x64503ed5bc2914653e9375680150d16246d0646a",
+    "name": "polYIELD sdSPECTRA BoostHub Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

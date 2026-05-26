@@ -2044,5 +2044,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x8e7801bac71e92993f6924e7d767d7dbc5fce0ae",
+    "chainId": 8453,
+    "name": "Stake DAO SPECTRA",
+    "symbol": "sdSPECTRA",
+    "displayName": "Stake DAO SPECTRA",
+    "displaySymbol": "sdSPECTRA",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
