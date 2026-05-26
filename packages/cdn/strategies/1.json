@@ -18297,5 +18297,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x46d8b51ca032829a87ee768855d3c3a20373de6c",
+    "name": "polYIELD sdFXN BoostHub Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x6b2c9df5469b491e1b6698a73a60a711e0e26977",
+    "name": "polYIELD sdCRV BoostHub Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

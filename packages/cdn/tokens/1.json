@@ -33031,5 +33031,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xe19d1c837b8a1c83a56cd9165b2c0256d39653ad",
+    "chainId": 1,
+    "name": "Stake DAO FXN",
+    "symbol": "sdFXN",
+    "displayName": "Stake DAO FXN",
+    "displaySymbol": "sdFXN",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
