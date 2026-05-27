@@ -18315,5 +18315,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2720539db82910adad80313ebc9730f8aeee9944",
+    "name": "polYIELD cvxCRV Autocompounding Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
