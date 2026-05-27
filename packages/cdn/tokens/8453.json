@@ -2055,5 +2055,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xe5f2fe713cdb192c85e67a912ff8891b4e636614",
+    "chainId": 8453,
+    "name": "Stratex USD",
+    "symbol": "stratUSD",
+    "displayName": "Stratex USD",
+    "displaySymbol": "stratUSD",
+    "description": "",
+    "category": "yVault",
+    "decimals": 6
   }
 ]
