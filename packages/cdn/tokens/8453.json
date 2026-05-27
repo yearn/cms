@@ -2066,5 +2066,27 @@
     "description": "",
     "category": "yVault",
     "decimals": 6
+  },
+  {
+    "address": "0x9213d24f617de982db528c95a701ed1b2af29cb2",
+    "chainId": 8453,
+    "name": "Stratex BTC",
+    "symbol": "stratBTC",
+    "displayName": "Stratex BTC",
+    "displaySymbol": "stratBTC",
+    "description": "",
+    "category": "yVault",
+    "decimals": 8
+  },
+  {
+    "address": "0xae35ff1bc4fbb45aaeef9768a3d9610786cac98b",
+    "chainId": 8453,
+    "name": "Stratex ETH",
+    "symbol": "stratETH",
+    "displayName": "Stratex ETH",
+    "displaySymbol": "stratETH",
+    "description": "",
+    "category": "yVault",
+    "decimals": 18
   }
 ]

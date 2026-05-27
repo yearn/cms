@@ -1321,5 +1321,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0xa0f7132df2d39065846541c9f54ea7f2415a20ca",
+    "name": "CurveYield stratETH Merkl QuickSwap Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x64ba5a423d5a103645999293863cfbe5568192bf",
+    "name": "CurveYield stratBTC Merkl QuickSwap Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x44653cb4d312328bc6a7aa88be517a96b9a9c3ed",
+    "name": "CurveYield stratUSD Merkl QuickSwap Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
