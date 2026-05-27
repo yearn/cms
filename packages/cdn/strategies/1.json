@@ -18324,5 +18324,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2d228334b2d507dcf2f2806200a5b40242c538dd",
+    "name": "CurveYield cvxCRV Autocompounding Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x728bc6a732d453b6764a3bfb85cdad551f1ae60b",
+    "name": "CurveYield sdCRV BoostHub Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x19653deb0d062b3c2e9298b1f1e995f7698c4de2",
+    "name": "CurveYield sdFXN BoostHub Strategy",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
