@@ -33042,5 +33042,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xefc6516323fbd28e80b85a497b65a86243a54b3e",
+    "chainId": 1,
+    "name": "BOLD/USDC Pool",
+    "symbol": "BOLDUSDC",
+    "displayName": "BOLD/USDC Pool",
+    "displaySymbol": "BOLDUSDC",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
