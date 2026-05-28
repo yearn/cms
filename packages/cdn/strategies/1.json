@@ -18351,5 +18351,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4177977b232131ea9661cd89374e6211642afae3",
+    "name": "StrategyCurveBoostedFactory-BOLDUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe609d56f66ea188e57171a883ad93d5b5af2e994",
+    "name": "StrategyConvexFactory-BOLDUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
