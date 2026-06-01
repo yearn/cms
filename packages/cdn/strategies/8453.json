@@ -1348,5 +1348,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x2a85f1fd4953c384d09e559d644dba4481dd123e",
+    "name": "Aerodrome USDC/USDT CL",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x5b0a5b420dc017bed3aad62aa5214bc718c50a16",
+    "name": "Aerodrome USDC/USDT CL",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
