@@ -33053,5 +33053,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xefc056790bb19702b2164ec6ea6ba3ae01d81195",
+    "chainId": 1,
+    "name": "USG/frxUSD",
+    "symbol": "USGfrxUSD",
+    "displayName": "USG/frxUSD",
+    "displaySymbol": "USGfrxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
