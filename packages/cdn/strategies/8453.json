@@ -1384,5 +1384,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x1f6b8c693d88f813d28b3aa21051337cb39e4c5f",
+    "name": "Aerodrome Mellow USDC/USDT Autopilot",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
