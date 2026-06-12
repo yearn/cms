@@ -1375,5 +1375,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 8453,
+    "address": "0x640e2af2d697c63baaaf175c914489e22fdd272b",
+    "name": "Chimi Strategy cbBTC Frontier",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
