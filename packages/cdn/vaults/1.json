@@ -32790,9 +32790,9 @@
       "stability": "Unknown"
     },
     "category": "Curve",
-    "displayName": "",
-    "displaySymbol": "",
-    "description": "",
+    "displayName": "BOLD-USDC",
+    "displaySymbol": "BOLDUSDC",
+    "description": "This is an LP Token Vault on Ethereum that accepts BOLDUSDC LP tokens from Curve and autocompounds the fees, incentives, and emissions, optimizing for best yield across Yearn and Convex's veCRV boosts. The LP position contains Liquity's BOLD stablecoin and Circle's USDC stablecoin. For more details, check out Liquity's [website](https://www.liquity.org/).",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
