@@ -18396,5 +18396,41 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x4ea09d42422477594806e7960620cd576dba78a6",
+    "name": "StrategyConvexFactory-USGUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xdea42a4a200bb75f087b40b2754558fbbe909aa0",
+    "name": "StrategyCurveBoostedFactory-USGUSDC",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x900462177870e167ebc8f8427da93ad23a29f013",
+    "name": "StrategyCurveBoostedFactory-USGsDOLA",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xd7ebdfda2c273a3f6ce346a3b9fdfaa786c1eb27",
+    "name": "StrategyConvexFactory-USGsDOLA",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

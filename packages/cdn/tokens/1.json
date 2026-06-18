@@ -33064,5 +33064,27 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x317837aed98bea887074d1f97fd3c83ebca6905b",
+    "chainId": 1,
+    "name": "USG/sDOLA",
+    "symbol": "USGsDOLA",
+    "displayName": "USG/sDOLA",
+    "displaySymbol": "USGsDOLA",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x97ba10115da528c113462ede9c20d7adc806d93f",
+    "chainId": 1,
+    "name": "USG/USDC",
+    "symbol": "USGUSDC",
+    "displayName": "USG/USDC",
+    "displaySymbol": "USGUSDC",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
