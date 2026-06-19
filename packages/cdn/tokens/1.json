@@ -33086,5 +33086,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xa3e7833775a9cc022db2c72eb900378f90ce89b4",
+    "chainId": 1,
+    "name": "Malamute.Finance",
+    "symbol": "MALLY",
+    "displayName": "Malamute.Finance",
+    "displaySymbol": "MALLY",
+    "description": "",
+    "category": "",
+    "decimals": 9
   }
 ]
