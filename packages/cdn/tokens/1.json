@@ -33097,5 +33097,16 @@
     "description": "",
     "category": "",
     "decimals": 9
+  },
+  {
+    "address": "0xafec61e7a604f8f81f7cab64ec75bfa07c542630",
+    "chainId": 1,
+    "name": "ftUSD/USDC",
+    "symbol": "ftUSDUSDC",
+    "displayName": "ftUSD/USDC",
+    "displaySymbol": "ftUSDUSDC",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
