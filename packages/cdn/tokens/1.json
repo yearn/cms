@@ -33108,5 +33108,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x7ba89bc658c07569cfa6d7947adaa80181a24568",
+    "chainId": 1,
+    "name": "USD3/frxUSD",
+    "symbol": "USD3frxUSD",
+    "displayName": "USD3/frxUSD",
+    "displaySymbol": "USD3frxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
