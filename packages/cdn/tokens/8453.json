@@ -2088,5 +2088,16 @@
     "description": "",
     "category": "yVault",
     "decimals": 18
+  },
+  {
+    "address": "0xbfcd661be34c99920036f176876746b9f5b68c26",
+    "chainId": 8453,
+    "name": "Vaultedge Debt Token",
+    "symbol": "USDVE",
+    "displayName": "Vaultedge Debt Token",
+    "displaySymbol": "USDVE",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
