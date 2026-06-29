@@ -1,5 +1,5 @@
 import { type ButtonHTMLAttributes, forwardRef } from 'react'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 
 export type Variant = 'accent' | 'primary' | 'secondary' | 'error' | 'busy'
 

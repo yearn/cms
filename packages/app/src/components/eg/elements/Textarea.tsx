@@ -1,5 +1,5 @@
 import { forwardRef, type TextareaHTMLAttributes } from 'react'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 import { InputClassName } from './Input'
 
 type Props = TextareaHTMLAttributes<HTMLTextAreaElement> & {
