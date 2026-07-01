@@ -33119,5 +33119,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x57129759d0e23116c1e7402dbc084e53d2e209a2",
+    "chainId": 1,
+    "name": "iREET/pmUSD",
+    "symbol": "iREETpmUSD",
+    "displayName": "iREET/pmUSD",
+    "displaySymbol": "iREETpmUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
