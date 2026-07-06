@@ -18576,5 +18576,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc5acdb4b177be6e775ef04a846fec690718e31fe",
+    "name": "V2 Router",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
