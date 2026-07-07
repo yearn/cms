@@ -25,7 +25,7 @@ type ProviderProps = CollectionProps & {
   children: React.ReactNode
 }
 
-const TOKEN_ASSETS_URL = 'https://token-assets.yearn.fi/'
+const TOKEN_ASSETS_URL = 'https://token-assets.yearn.fi'
 
 const TOKEN_LOGO_FILES = [
   { fileName: 'logo.svg', label: 'SVG' },
@@ -81,6 +81,14 @@ function TokenLogoDownloads() {
   const availableLogos = logoFiles.filter((logoFile) =>
     availableFiles.some((file) => file.fileName === logoFile.fileName),
   )
+  const tokenAssetsUploadUrl = useMemo(() => {
+    const params = new URLSearchParams({
+      chain: String(token.chainId),
+      address: token.address,
+    })
+
+    return `${TOKEN_ASSETS_URL}?${params.toString()}`
+  }, [token.address, token.chainId])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -148,7 +156,7 @@ function TokenLogoDownloads() {
               </div>
             </div>
           )}
-          <a href={TOKEN_ASSETS_URL} target="_blank" rel="noreferrer" className={TOKEN_LOGO_BUTTON_CLASS}>
+          <a href={tokenAssetsUploadUrl} target="_blank" rel="noreferrer" className={TOKEN_LOGO_BUTTON_CLASS}>
             Add or update logo
           </a>
         </div>
