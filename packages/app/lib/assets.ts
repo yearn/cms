@@ -8,3 +8,11 @@ export function getChainIconUrl(chainId: number) {
 export function getTokenIconUrl(chainId: number, address: string) {
   return `${BASE_URL}tokens/${chainId}/${address.toLowerCase()}/logo.svg`
 }
+
+export function getTokenLogoUrl(
+  chainId: number,
+  address: string,
+  fileName: 'logo.svg' | 'logo-32.png' | 'logo-128.png',
+) {
+  return `${BASE_URL}tokens/${chainId}/${address.toLowerCase()}/${fileName}`
+}
