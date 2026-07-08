@@ -295,5 +295,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0xb542f002f4fc811effe6465205872cc0fb5ae24c",
+    "name": "Morpho Steakhouse High Yield USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
