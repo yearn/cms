@@ -33130,5 +33130,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x7e13876b92f1a62c599c231f783f682e96b91761",
+    "chainId": 1,
+    "name": "stLINK/LINK-ng",
+    "symbol": "stLINK-ng",
+    "displayName": "stLINK/LINK-ng",
+    "displaySymbol": "stLINK-ng",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]

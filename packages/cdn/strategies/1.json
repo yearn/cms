@@ -18585,5 +18585,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7415833902a478228e467c3e1028eacee1f38d61",
+    "name": "StrategyConvexFactory-stLINK-ng",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf4a8719db2b1aa15c3774ec9d399b3c08745e5d5",
+    "name": "StrategyCurveBoostedFactory-stLINK-ng",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
