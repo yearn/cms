@@ -18603,5 +18603,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x369d94320d06492de265c025bfaa4cf513a1845f",
+    "name": "Parity High Yield USDC v2",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x047cfddd06018f53f54262fe64f2744ecd463fea",
+    "name": "Parity Core USDC v2",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
