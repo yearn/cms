@@ -33141,5 +33141,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x2c2a700766886290359ccf39cb2173a39af1cef9",
+    "chainId": 1,
+    "name": "dUSD/sfrxUSD",
+    "symbol": "dsfrxUSD",
+    "displayName": "dUSD/sfrxUSD",
+    "displaySymbol": "dsfrxUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
