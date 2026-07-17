@@ -304,5 +304,50 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0xc7f81e552bc0feb746e92a84bb1aaf9a59a8b9a6",
+    "name": "Morpho Yearn OG v2 USDT Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0x6e0d2096ba6a3fe35c8186077f81bef2c33e5bed",
+    "name": "Morpho Yearn OG v2 USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0xb75b4974f0799d6c8125676f90266a424cad0a24",
+    "name": "Morpho Yearn OG v2 WETH Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0x2ce2ca72ec2fe11fdfeb67b980dd83c8144fdfd2",
+    "name": "Morpho Gauntlet v2 USDT Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 747474,
+    "address": "0x1320ea83ac4c689a812574c4eae7d4bdfab25a42",
+    "name": "Morpho Steakhouse Prime v2 USDC Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
