@@ -33152,5 +33152,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x104d6a1b97a6cef88d905d7b865a378d90be932a",
+    "chainId": 1,
+    "name": "DUSD/frxUSD",
+    "symbol": "frxUSDDUSD",
+    "displayName": "DUSD/frxUSD",
+    "displaySymbol": "frxUSDDUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
