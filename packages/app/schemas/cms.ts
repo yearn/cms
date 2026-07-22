@@ -26,7 +26,7 @@ export const collections = {
     schema: StrategyMetadataSchema,
     displayName: 'Strategies',
     icon: 'strategy',
-    searchFields: ['name', 'address'] as const,
+    searchFields: ['name', 'address', 'githubCode', 'strategyType'] as const,
     filterableBooleanFields: [] as const,
     listItemTemplate: 'strategy' as const,
   },

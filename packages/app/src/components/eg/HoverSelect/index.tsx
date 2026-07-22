@@ -1,6 +1,6 @@
 import { type ReactNode, useCallback, useMemo } from 'react'
 import { PiCaretDownBold } from 'react-icons/pi'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 import { HoverCard, HoverCardTrigger } from '../HoverCard'
 import { type SelectOption, useHoverSelect } from './useHoverSelect'
 
