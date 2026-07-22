@@ -2650,7 +2650,7 @@
     "address": "0x950f384f566b82cca6380f75ae42e2bbe9b357b2",
     "name": "Velodrome v2 MIM-USDC.e Factory yVault",
     "registry": "0x79286dd38c9017e5423073bac11f53357fc5c128",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
