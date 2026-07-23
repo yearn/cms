@@ -1,5 +1,5 @@
+import { usePathname, useRouter } from 'next/navigation'
 import type { ReactNode } from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
 import { create } from 'zustand'
 import { chains } from '../../lib/chains'
 import { type SearchResult, useAssetSearchResults } from '../hooks/useAssetSearchResults'
@@ -63,17 +63,17 @@ function renderDropdownContent(
 }
 
 export default function Finder({ className }: FinderProps) {
-  const location = useLocation()
-  const navigate = useNavigate()
+  const pathname = usePathname()
+  const router = useRouter()
   const { finderString, setFinderString } = useFinder()
   const hasQuery = finderString.trim().length > 0
-  const isAssetDetailPage = isAssetDetailPath(location.pathname)
+  const isAssetDetailPage = isAssetDetailPath(pathname)
   const searchEnabled = isAssetDetailPage && hasQuery
   const { results, isLoading, isFetching } = useAssetSearchResults(finderString, searchEnabled)
 
   function handleSelect(path: string): void {
     setFinderString('')
-    navigate(path)
+    router.push(path)
   }
 
   return (

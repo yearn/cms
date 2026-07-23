@@ -3,6 +3,8 @@
   "private": true,
   "scripts": {
     "dev": "(cd packages/app && bun dev)",
+    "build": "(cd packages/app && bun run build)",
+    "preview": "(cd packages/app && bun run preview)",
     "lint": "biome check packages/",
     "lint:fix": "biome check --write packages/",
     "format": "biome format --write packages/",
@@ -12,6 +14,6 @@
     "packages/**"
   ],
   "devDependencies": {
-    "@biomejs/biome": "2.2.0"
+    "@biomejs/biome": "2.4.16"
   }
 }
