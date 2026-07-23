@@ -44,6 +44,13 @@ URL = http://127.0.0.1:3000
 `NEXT_PUBLIC_GITHUB_REDIRECT_URI` tells GitHub to redirect to your local dev server port. GitHub allows any port
 on `127.0.0.1` as long as the registered callback URL uses the same host. Leave it unset in production.
 
+## Token asset uploads
+
+The **Add token logo** action on `/tokens` prepares the SVG, generates the required PNG sizes, and opens a pull
+request against `yearn/tokenAssets`. Override that target with `TOKEN_ASSETS_REPO_OWNER` and
+`TOKEN_ASSETS_REPO_NAME` when testing against another repository. On-chain token-name lookup uses
+`RPC_URI_FOR_<chainId>` (preferred) or `RPC_<chainId>` when configured, with public defaults for supported chains.
+
 #### Manual vault and strategy sync
 ```bash
 
