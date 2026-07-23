@@ -7,16 +7,22 @@ export function useChainSelect() {
   const chainIds = Object.keys(chains).map(Number)
 
   const clearAll = () => {
-    chainIds.forEach((chainId) => toggleChain(chainId, false))
+    chainIds.forEach((chainId) => {
+      toggleChain(chainId, false)
+    })
   }
 
   const selectAll = (chainIds: number[]) => {
     // First clear all
     Object.keys(chains)
       .map(Number)
-      .forEach((chainId) => toggleChain(chainId, false))
+      .forEach((chainId) => {
+        toggleChain(chainId, false)
+      })
     // Then select the provided ones
-    chainIds.forEach((chainId) => toggleChain(chainId, true))
+    chainIds.forEach((chainId) => {
+      toggleChain(chainId, true)
+    })
   }
 
   return {

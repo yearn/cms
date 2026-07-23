@@ -1,6 +1,5 @@
-const BASE_URL = import.meta.env.VITE_ASSETS_CDN_URL?.endsWith('/')
-  ? import.meta.env.VITE_ASSETS_CDN_URL
-  : `${import.meta.env.VITE_ASSETS_CDN_URL}/`
+const ASSETS_CDN_URL = process.env.NEXT_PUBLIC_ASSETS_CDN_URL || 'https://cdn.jsdelivr.net/gh/yearn/tokenAssets@main'
+const BASE_URL = ASSETS_CDN_URL.endsWith('/') ? ASSETS_CDN_URL : `${ASSETS_CDN_URL}/`
 
 export function getChainIconUrl(chainId: number) {
   return `${BASE_URL}chains/${chainId}/logo.svg`

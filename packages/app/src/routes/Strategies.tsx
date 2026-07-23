@@ -47,7 +47,7 @@ function List() {
       {items.map((strategy: StrategyMetadata) => (
         <Link
           key={`${strategy.chainId}-${strategy.address}`}
-          to={`/strategies/${strategy.chainId}/${strategy.address}`}
+          href={`/strategies/${strategy.chainId}/${strategy.address}`}
           className="flex items-center gap-6 text-lg"
         >
           <TokenIcon chainId={strategy.chainId} address={strategy.address as `0x${string}`} showChain size={48} />

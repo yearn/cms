@@ -19,7 +19,7 @@ export default async function (req: Request): Promise<Response> {
   const error = url.searchParams.get('error')
 
   // If envars aren't set
-  if (!process.env.VITE_GITHUB_CLIENT_ID || !process.env.GITHUB_CLIENT_SECRET) {
+  if (!process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID || !process.env.GITHUB_CLIENT_SECRET) {
     return new Response(JSON.stringify({ error: 'Envars not set' }), {
       status: 500,
       headers: { 'Content-Type': 'application/json' },
@@ -51,7 +51,7 @@ export default async function (req: Request): Promise<Response> {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
       body: new URLSearchParams({
-        client_id: process.env.VITE_GITHUB_CLIENT_ID,
+        client_id: process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID,
         client_secret: process.env.GITHUB_CLIENT_SECRET,
         code: code,
       }),
