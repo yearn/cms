@@ -1,3 +1,5 @@
+import Image from 'next/image'
+import Link from 'next/link'
 import { useParams } from 'next/navigation'
 import { Suspense, useEffect, useMemo, useState } from 'react'
 import { PiGitPullRequest, PiTrash } from 'react-icons/pi'
@@ -24,8 +26,6 @@ type CollectionProps = {
 type ProviderProps = CollectionProps & {
   children: React.ReactNode
 }
-
-const TOKEN_ASSETS_URL = 'https://token-assets.yearn.fi'
 
 const TOKEN_LOGO_FILES = [
   { fileName: 'logo.svg', label: 'SVG' },
@@ -87,7 +87,7 @@ function TokenLogoDownloads() {
       address: token.address,
     })
 
-    return `${TOKEN_ASSETS_URL}?${params.toString()}`
+    return `/tokens/upload?${params.toString()}`
   }, [token.address, token.chainId])
 
   useEffect(() => {
@@ -121,7 +121,8 @@ function TokenLogoDownloads() {
       <div>logo</div>
       <div className="w-128 flex flex-col items-start gap-4">
         {showPreview && (
-          <img
+          <Image
+            unoptimized
             src={previewLogo.url}
             alt={`${token.name} token logo`}
             width={128}
@@ -156,9 +157,9 @@ function TokenLogoDownloads() {
               </div>
             </div>
           )}
-          <a href={tokenAssetsUploadUrl} target="_blank" rel="noreferrer" className={TOKEN_LOGO_BUTTON_CLASS}>
+          <Link href={tokenAssetsUploadUrl} className={TOKEN_LOGO_BUTTON_CLASS}>
             Add or update logo
-          </a>
+          </Link>
         </div>
       </div>
     </div>
