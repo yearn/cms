@@ -1,6 +1,6 @@
+import { useParams } from 'next/navigation'
 import { Suspense } from 'react'
 import { PiGitPullRequest, PiTrash } from 'react-icons/pi'
-import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
 import Button from '../components/eg/elements/Button'
@@ -91,7 +91,7 @@ function CollectionDetails({ collection }: CollectionProps) {
 }
 
 function Provider({ children, collection }: ProviderProps) {
-  const { chainId, address } = useParams()
+  const { chainId, address } = useParams<{ chainId: string; address: string }>()
   const collectionConfig = getCollection(collection)
   const { data } = useCollectionData(collection)
   const collectionDraft = collection as DraftableCollection
@@ -125,7 +125,7 @@ function CollectionSkeleton() {
 }
 
 function Collection() {
-  const { collection } = useParams()
+  const { collection } = useParams<{ collection: string }>()
 
   if (!collection || !getCollectionKeys().includes(collection as any)) {
     throw new Error(`Collection ${collection} not found`)

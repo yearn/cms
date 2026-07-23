@@ -19,7 +19,8 @@ bun dev
 
 Open `http://127.0.0.1:3000` in your browser (use `127.0.0.1`, not `localhost` — required for GitHub OAuth).
 
-To run on a custom port: `PORT=4000 bun dev`. The API server runs on PORT+1 automatically. Update `VITE_GITHUB_REDIRECT_URI` and `URL` in your `.env` to match.
+To run on a custom port: `PORT=4000 bun dev`. Next.js serves the UI and API routes on the same port. Update
+`NEXT_PUBLIC_GITHUB_REDIRECT_URI` and `URL` in your `.env` to match.
 
 ## GitHub OAuth Setup
 
@@ -34,13 +35,14 @@ Sign-in is required to edit metadata and create PRs. To set up OAuth for local d
 
 Configure `packages/app/.env`:
 ```
-VITE_GITHUB_CLIENT_ID = <your client id>
+NEXT_PUBLIC_GITHUB_CLIENT_ID = <your client id>
 GITHUB_CLIENT_SECRET = <your client secret>
-VITE_GITHUB_REDIRECT_URI = http://127.0.0.1:3000/api/auth/github/callback
+NEXT_PUBLIC_GITHUB_REDIRECT_URI = http://127.0.0.1:3000/api/auth/github/callback
 URL = http://127.0.0.1:3000
 ```
 
-`VITE_GITHUB_REDIRECT_URI` tells GitHub to redirect to your local dev server port. GitHub allows any port on `127.0.0.1` as long as the registered callback URL uses the same host. Leave it unset in production.
+`NEXT_PUBLIC_GITHUB_REDIRECT_URI` tells GitHub to redirect to your local dev server port. GitHub allows any port
+on `127.0.0.1` as long as the registered callback URL uses the same host. Leave it unset in production.
 
 #### Manual vault and strategy sync
 ```bash

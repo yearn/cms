@@ -1,6 +1,7 @@
+import Link from 'next/link'
+import { useParams } from 'next/navigation'
 import { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { Link, useParams } from 'react-router-dom'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
 import type { TokenMetadata } from '../../schemas/TokenMetadata'
@@ -26,7 +27,7 @@ type SearchableListItem = {
 
 function renderCollectionListItem(path: string, item: SearchableListItem, name: string, onClick?: () => void) {
   return (
-    <Link key={`${item.chainId}-${item.address}`} to={path} onClick={onClick} className="block w-full">
+    <Link key={`${item.chainId}-${item.address}`} href={path} onClick={onClick} className="block w-full">
       <ListItem variant="lg" className="gap-6">
         <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
         <div className="flex flex-col gap-1">
@@ -133,7 +134,7 @@ function CollectionSkeleton() {
 }
 
 function CollectionList() {
-  const { collection } = useParams()
+  const { collection } = useParams<{ collection: string }>()
   if (!collection || !getCollectionKeys().includes(collection as any)) {
     throw new Error(`Collection ${collection} not found`)
   }

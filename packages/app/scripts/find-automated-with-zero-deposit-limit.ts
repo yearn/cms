@@ -13,10 +13,7 @@ const RPC_ENV_BY_CHAIN: Record<(typeof CHAIN_IDS)[number], string[]> = {
   8453: ['RPC_URI_FOR_8453', 'RPC_8453', 'RPC_BASE'],
 }
 
-const DEFAULT_OUTPUT_PATH = resolve(
-  import.meta.dir,
-  '../../../docs/temp/automated-deposit-limit-zero.json'
-)
+const DEFAULT_OUTPUT_PATH = resolve(import.meta.dir, '../../../docs/temp/automated-deposit-limit-zero.json')
 
 const args = process.argv.slice(2)
 const shouldRetire = args.includes('--retire')
@@ -103,7 +100,7 @@ async function main() {
               error: error instanceof Error ? error.message : String(error),
             })
           }
-        })
+        }),
       )
     }
 
@@ -126,8 +123,7 @@ async function main() {
       }
       if (changed) {
         await Bun.write(filePath, JSON.stringify(vaults, null, 2) + '\n')
-        const migrationNote =
-          migrationDisabled > 0 ? `, disabled ${migrationDisabled} migrations` : ''
+        const migrationNote = migrationDisabled > 0 ? `, disabled ${migrationDisabled} migrations` : ''
         console.log(`Updated ${filePath} (retired ${zeroDepositLimit.length}${migrationNote})`)
       }
     }
@@ -139,7 +135,7 @@ async function main() {
     }
 
     console.log(
-      `Chain ${chainId}: automated=${automated.length} zeroDepositLimit=${zeroDepositLimit.length} errors=${errors.length}`
+      `Chain ${chainId}: automated=${automated.length} zeroDepositLimit=${zeroDepositLimit.length} errors=${errors.length}`,
     )
   }
 

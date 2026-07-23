@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
+import { useRouter } from 'next/navigation'
 import { type MouseEvent, useMemo } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
-import { useNavigate } from 'react-router-dom'
 import { applyDraftPatch, type DraftCartItem, useDraftCartStore } from '../hooks/useDraftCartStore'
 import { fetchCollectionData } from '../lib/collectionData'
 import Button from './eg/elements/Button'
@@ -119,7 +119,7 @@ export default function HeaderDraftCart() {
   const itemsMap = useDraftCartStore((state) => state.items)
   const removeItem = useDraftCartStore((state) => state.removeItem)
   const clearItems = useDraftCartStore((state) => state.clearItems)
-  const navigate = useNavigate()
+  const router = useRouter()
 
   const signedIn = Boolean(sessionStorage.getItem('github_token'))
   const items = useMemo(() => Object.values(itemsMap), [itemsMap])
@@ -164,7 +164,7 @@ export default function HeaderDraftCart() {
   })
 
   function handleSelectDraft(item: DraftCartItem): void {
-    navigate(`/${item.collection}/${item.chainId}/${item.address}`)
+    router.push(`/${item.collection}/${item.chainId}/${item.address}`)
   }
 
   function handleRemoveDraft(event: MouseEvent<HTMLButtonElement>, itemId: string): void {
