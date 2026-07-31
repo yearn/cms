@@ -34,11 +34,15 @@ const SVG_ALLOWED_TAGS = [
   'pattern',
   'title',
   'desc',
+  'text',
+  'tspan',
   'symbol',
   'use',
 ]
 
-const SVG_ALLOWED_ATTRIBUTES = {
+const SVG_ALLOWED_TAG_SET = new Set(SVG_ALLOWED_TAGS)
+
+const SVG_ALLOWED_ATTRIBUTES: Record<string, string[]> = {
   svg: ['xmlns', 'xmlns:xlink', 'viewBox', 'width', 'height', 'preserveAspectRatio'],
   path: ['d', 'pathLength'],
   circle: ['cx', 'cy', 'r'],
@@ -51,12 +55,15 @@ const SVG_ALLOWED_ATTRIBUTES = {
   radialGradient: ['cx', 'cy', 'r', 'fx', 'fy', 'fr', 'gradientUnits', 'gradientTransform', 'spreadMethod'],
   stop: ['offset', 'stop-color', 'stop-opacity'],
   pattern: ['x', 'y', 'width', 'height', 'patternUnits', 'patternContentUnits', 'patternTransform', 'viewBox'],
+  text: ['x', 'y', 'dx', 'dy', 'font-size', 'font-family', 'font-weight', 'text-anchor', 'dominant-baseline'],
+  tspan: ['x', 'y', 'dx', 'dy', 'font-size', 'font-family', 'font-weight', 'text-anchor', 'dominant-baseline'],
   use: ['href', 'xlink:href', 'x', 'y', 'width', 'height'],
   '*': [
     'id',
     'fill',
     'fill-opacity',
     'fill-rule',
+    'clip-rule',
     'stroke',
     'stroke-width',
     'stroke-linecap',
@@ -72,6 +79,8 @@ const SVG_ALLOWED_ATTRIBUTES = {
     'vector-effect',
   ],
 }
+
+const SVG_URL_ATTRIBUTES = new Set(['fill', 'stroke', 'clip-path', 'mask'])
 
 function fail(message: string): never {
   throw new UploadValidationError(message)
@@ -146,6 +155,48 @@ function collectFileParts(form: FormData, items: UploadItem[]) {
   return parts
 }
 
+function isAllowedSvgAttribute(tagName: string, attributeName: string) {
+  return (
+    (SVG_ALLOWED_ATTRIBUTES[tagName] || []).includes(attributeName) ||
+    (SVG_ALLOWED_ATTRIBUTES['*'] || []).includes(attributeName)
+  )
+}
+
+function isSafeSvgAttributeValue(attributeName: string, value: string) {
+  if (attributeName === 'href' || attributeName === 'xlink:href') return /^#[a-zA-Z_][\w:.-]*$/.test(value)
+  if (SVG_URL_ATTRIBUTES.has(attributeName) && value.includes('\\')) return false
+  if (/url\s*\(/i.test(value)) return /^url\(#[a-zA-Z_][\w:.-]*\)$/.test(value)
+  return true
+}
+
+function findUnsupportedSvgContent(source: string) {
+  const tags = new Set<string>()
+  const attributes = new Set<string>()
+
+  sanitizeHtml(source, {
+    allowedTags: false,
+    allowedAttributes: false,
+    allowVulnerableTags: true,
+    parser: { lowerCaseTags: false, lowerCaseAttributeNames: false },
+    transformTags: {
+      '*': (tagName, tagAttributes) => {
+        if (!SVG_ALLOWED_TAG_SET.has(tagName)) {
+          tags.add(`<${tagName}>`)
+        } else {
+          for (const [attributeName, value] of Object.entries(tagAttributes)) {
+            if (!isAllowedSvgAttribute(tagName, attributeName) || !isSafeSvgAttributeValue(attributeName, value)) {
+              attributes.add(`${attributeName} on <${tagName}>`)
+            }
+          }
+        }
+        return { tagName, attribs: tagAttributes }
+      },
+    },
+  })
+
+  return { tags: [...tags], attributes: [...attributes] }
+}
+
 function sanitizeSvg(bytes: Uint8Array, field: string) {
   let source: string
   try {
@@ -154,6 +205,15 @@ function sanitizeSvg(bytes: Uint8Array, field: string) {
     fail(`${field} must be UTF-8 SVG content`)
   }
   if (/<!\s*(?:doctype|entity)\b/i.test(source)) fail(`${field} must not contain DTD or entity declarations`)
+
+  const unsupported = findUnsupportedSvgContent(source)
+  if (unsupported.tags.length || unsupported.attributes.length) {
+    const details = [
+      unsupported.tags.length ? `tags: ${unsupported.tags.join(', ')}` : '',
+      unsupported.attributes.length ? `attributes: ${unsupported.attributes.join(', ')}` : '',
+    ].filter(Boolean)
+    fail(`${field} contains unsupported SVG content (${details.join('; ')})`)
+  }
 
   const sanitized = sanitizeHtml(source, {
     allowedTags: SVG_ALLOWED_TAGS,
@@ -165,10 +225,7 @@ function sanitizeSvg(bytes: Uint8Array, field: string) {
       '*': (tagName, attributes) => {
         const safeAttributes = { ...attributes }
         for (const [name, value] of Object.entries(safeAttributes)) {
-          if (/url\s*\(/i.test(value) && !/^url\(#[a-zA-Z_][\w:.-]*\)$/.test(value)) delete safeAttributes[name]
-          if ((name === 'href' || name === 'xlink:href') && !/^#[a-zA-Z_][\w:.-]*$/.test(value)) {
-            delete safeAttributes[name]
-          }
+          if (!isSafeSvgAttributeValue(name, value)) delete safeAttributes[name]
         }
         return { tagName, attribs: safeAttributes }
       },

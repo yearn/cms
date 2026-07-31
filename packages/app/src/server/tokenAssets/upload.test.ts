@@ -38,6 +38,35 @@ function requestFor(form: FormData, token = 'token') {
   } as Request
 }
 
+function mockGitHubUpload() {
+  const uploadedBlobs: string[] = []
+  globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+    const url = String(input)
+    const method = init?.method || 'GET'
+    if (url.endsWith('/user')) return Response.json({ login: 'reviewer' })
+    if (method === 'GET' && url.endsWith('/repos/yearn/tokenAssets')) {
+      return Response.json({ default_branch: 'main' })
+    }
+    if (method === 'GET' && url.includes('/git/refs/heads/main')) return Response.json({ object: { sha: 'base' } })
+    if (method === 'GET' && url.endsWith('/git/commits/base')) {
+      return Response.json({ sha: 'base', tree: { sha: 'base-tree' } })
+    }
+    if (method === 'POST' && url.endsWith('/git/blobs')) {
+      const body = JSON.parse(String(init?.body)) as { content: string }
+      uploadedBlobs.push(Buffer.from(body.content, 'base64').toString('utf8'))
+      return Response.json({ sha: `blob-${uploadedBlobs.length}` })
+    }
+    if (method === 'POST' && url.endsWith('/git/trees')) return Response.json({ sha: 'tree' })
+    if (method === 'POST' && url.endsWith('/git/commits')) return Response.json({ sha: 'commit' })
+    if (method === 'POST' && url.endsWith('/git/refs')) return Response.json({ ref: 'refs/heads/reviewer-assets' })
+    if (method === 'POST' && url.endsWith('/pulls')) {
+      return Response.json({ html_url: 'https://github.com/yearn/tokenAssets/pull/1' })
+    }
+    throw new Error(`Unexpected GitHub request: ${method} ${url}`)
+  }) as unknown as typeof fetch
+  return uploadedBlobs
+}
+
 describe('handleTokenAssetUpload validation', () => {
   test('rejects a non-SVG part before calling GitHub', async () => {
     let fetchCalls = 0
@@ -95,46 +124,83 @@ describe('handleTokenAssetUpload validation', () => {
     expect(arrayBufferCalls).toBe(0)
   })
 
-  test('sanitizes SVG content and reaches the GitHub commit flow for valid files', async () => {
+  test('commits supported text and presentation attributes faithfully', async () => {
     const svg = new File(
       [
-        '<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"><script>alert(1)</script><path d="M0 0" fill="url(https://evil.test/a)"/></svg>',
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><linearGradient id="gradient"><stop offset="0" stop-color="#0657f9"/></linearGradient><clipPath id="clip"><rect width="24" height="24"/></clipPath><symbol id="mark"><circle cx="12" cy="12" r="10"/></symbol></defs><path d="M0 0" fill="url(#gradient)" clip-path="url(#clip)" fill-rule="evenodd" clip-rule="evenodd"/><use href="#mark" x="0" y="0" width="24" height="24"/><text x="12" y="17" dx="0" dy="0" font-size="14" font-family="sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="auto">Y<tspan x="12" y="20">V</tspan></text></svg>',
       ],
       'logo.svg',
       { type: 'image/svg+xml' },
     )
-    const uploadedBlobs: string[] = []
-    globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
-      const url = String(input)
-      const method = init?.method || 'GET'
-      if (url.endsWith('/user')) return Response.json({ login: 'reviewer' })
-      if (method === 'GET' && url.endsWith('/repos/yearn/tokenAssets')) {
-        return Response.json({ default_branch: 'main' })
-      }
-      if (method === 'GET' && url.includes('/git/refs/heads/main')) return Response.json({ object: { sha: 'base' } })
-      if (method === 'GET' && url.endsWith('/git/commits/base')) {
-        return Response.json({ sha: 'base', tree: { sha: 'base-tree' } })
-      }
-      if (method === 'POST' && url.endsWith('/git/blobs')) {
-        const body = JSON.parse(String(init?.body)) as { content: string }
-        uploadedBlobs.push(Buffer.from(body.content, 'base64').toString('utf8'))
-        return Response.json({ sha: `blob-${uploadedBlobs.length}` })
-      }
-      if (method === 'POST' && url.endsWith('/git/trees')) return Response.json({ sha: 'tree' })
-      if (method === 'POST' && url.endsWith('/git/commits')) return Response.json({ sha: 'commit' })
-      if (method === 'POST' && url.endsWith('/git/refs')) return Response.json({ ref: 'refs/heads/reviewer-assets' })
-      if (method === 'POST' && url.endsWith('/pulls'))
-        return Response.json({ html_url: 'https://github.com/yearn/tokenAssets/pull/1' })
-      throw new Error(`Unexpected GitHub request: ${method} ${url}`)
-    }) as unknown as typeof fetch
+    const uploadedBlobs = mockGitHubUpload()
 
     const response = await handleTokenAssetUpload(requestFor(formWithFiles(svg)))
-    const sanitizedSvg = uploadedBlobs.find((blob) => blob.startsWith('<svg'))
+    const committedSvg = uploadedBlobs.find((blob) => blob.startsWith('<svg'))
 
     expect(response.status).toBe(200)
-    expect(sanitizedSvg).toContain('<path d="M0 0">')
-    expect(sanitizedSvg).not.toContain('script')
-    expect(sanitizedSvg).not.toContain('onload')
-    expect(sanitizedSvg).not.toContain('evil.test')
+    expect(committedSvg).toContain('clip-rule="evenodd"')
+    expect(committedSvg).toContain('fill="url(#gradient)"')
+    expect(committedSvg).toContain('clip-path="url(#clip)"')
+    expect(committedSvg).toContain('href="#mark"')
+    expect(committedSvg).toContain(
+      '<text x="12" y="17" dx="0" dy="0" font-size="14" font-family="sans-serif" font-weight="700" text-anchor="middle" dominant-baseline="auto">Y<tspan x="12" y="20">V</tspan></text>',
+    )
+  })
+
+  test('rejects dangerous tags, event handlers, and external references instead of rewriting them', async () => {
+    const svg = new File(
+      [
+        '<svg xmlns="http://www.w3.org/2000/svg" onload="alert(1)"><script>alert(1)</script><path d="M0 0" fill="url(https://evil.test/a)"/><use href="https://evil.test/mark"/></svg>',
+      ],
+      'logo.svg',
+      { type: 'image/svg+xml' },
+    )
+    const uploadedBlobs = mockGitHubUpload()
+
+    const response = await handleTokenAssetUpload(requestFor(formWithFiles(svg)))
+    const result = (await response.json()) as { error: string }
+
+    expect(response.status).toBe(400)
+    expect(result.error).toContain('tags: <script>')
+    expect(result.error).toContain('onload on <svg>')
+    expect(result.error).toContain('fill on <path>')
+    expect(result.error).toContain('href on <use>')
+    expect(result.error).not.toContain('evil.test')
+    expect(uploadedBlobs).toHaveLength(0)
+  })
+
+  test('rejects CSS styling and names every unsupported construct', async () => {
+    const svg = new File(
+      [
+        '<svg xmlns="http://www.w3.org/2000/svg"><style>.a{fill:#0657f9}</style><rect class="a" width="24" height="24" style="fill:\\75 rl(https://evil.test/a)"/></svg>',
+      ],
+      'logo.svg',
+      { type: 'image/svg+xml' },
+    )
+    const uploadedBlobs = mockGitHubUpload()
+
+    const response = await handleTokenAssetUpload(requestFor(formWithFiles(svg)))
+    const result = (await response.json()) as { error: string }
+
+    expect(response.status).toBe(400)
+    expect(result.error).toContain('tags: <style>')
+    expect(result.error).toContain('class on <rect>')
+    expect(result.error).toContain('style on <rect>')
+    expect(uploadedBlobs).toHaveLength(0)
+  })
+
+  test('keeps rejecting DTD and entity declarations', async () => {
+    const svg = new File(
+      ['<!DOCTYPE svg [<!ENTITY xxe SYSTEM "file:///etc/passwd">]><svg xmlns="http://www.w3.org/2000/svg"/>'],
+      'logo.svg',
+      { type: 'image/svg+xml' },
+    )
+    mockGitHubUpload()
+
+    const response = await handleTokenAssetUpload(requestFor(formWithFiles(svg)))
+    const result = (await response.json()) as { error: string }
+
+    expect(response.status).toBe(400)
+    expect(result.error).toContain('must not contain DTD or entity declarations')
   })
 })
