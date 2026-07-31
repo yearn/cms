@@ -19,6 +19,7 @@ export default function ImgOrBg({ className, bgClassName, children, ...imageProp
       >
         {children}
       </div>
+      {/* biome-ignore lint/performance/noImgElement: This generic primitive intentionally forwards native img props. */}
       <img
         {...imageProps}
         alt={imageProps.alt ?? ''}

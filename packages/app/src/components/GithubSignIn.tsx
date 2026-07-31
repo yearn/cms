@@ -30,6 +30,7 @@ export function useGithubUser() {
 function GithubAvatar() {
   const { avatar, signedIn } = useGithubUser()
   if (!signedIn) return <div className="w-6 h-6 rounded-full" />
+  // biome-ignore lint/performance/noImgElement: GitHub avatars use dynamic external hosts and are not LCP content.
   return <img src={avatar ?? ''} alt="Github avatar" className="w-6 h-6 rounded-full" />
 }
 

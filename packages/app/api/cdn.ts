@@ -1,7 +1,47 @@
-export const config = { runtime: 'edge' }
+import { readFile } from 'node:fs/promises'
+import { basename, dirname, extname, resolve } from 'node:path'
 
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
+
+function getLocalCdnRoot() {
+  const cwd = process.cwd()
+  return basename(cwd) === 'app' && basename(dirname(cwd)) === 'packages'
+    ? resolve(cwd, '../cdn')
+    : resolve(cwd, 'packages/cdn')
+}
+
+function getContentType(path: string) {
+  switch (extname(path)) {
+    case '.json':
+      return 'application/json; charset=utf-8'
+    case '.svg':
+      return 'image/svg+xml'
+    case '.png':
+      return 'image/png'
+    default:
+      return 'application/octet-stream'
+  }
+}
+
+async function readLocalCdn(path: string) {
+  try {
+    const contents = await readFile(resolve(getLocalCdnRoot(), path))
+    return new Response(new Uint8Array(contents), {
+      status: 200,
+      headers: {
+        'content-type': getContentType(path),
+        'cache-control': 'no-store',
+        'access-control-allow-origin': '*',
+      },
+    })
+  } catch (error) {
+    if (error instanceof Error && 'code' in error && error.code === 'ENOENT') {
+      return new Response('not found', { status: 404 })
+    }
+    throw error
+  }
+}
 
 function getPath(url: URL) {
   const schema = url.searchParams.get('schema')
@@ -51,6 +91,8 @@ export default async function (req: Request): Promise<Response> {
     if (!/^[a-zA-Z0-9/_.-]+$/.test(path) || path.includes('..') || path.startsWith('/')) {
       return new Response('invalid path', { status: 400 })
     }
+
+    if (process.env.NODE_ENV !== 'production') return readLocalCdn(path)
 
     const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
     const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`

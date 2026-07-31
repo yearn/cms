@@ -69,6 +69,9 @@ git push
 
 ### cdn url
 
+During `bun dev`, same-origin `/cdn/*` requests read directly from `packages/cdn`, so local metadata edits are
+available without publishing them. Production requests use the API proxy and a commit-pinned jsDelivr URL.
+
 ```url
 
 https://cdn.jsdelivr.net/gh/yearn/cms@main/packages/cdn
