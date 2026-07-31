@@ -3,6 +3,13 @@ export type AssetFileKind = 'svg' | 'png32' | 'png128'
 export type AssetFiles = Partial<Record<AssetFileKind, File>>
 export type PreviewMap = Partial<Record<AssetFileKind, string>>
 
+export type UploadUrlParams = {
+  mode?: AssetMode
+  chainId?: string
+  address?: string
+  name?: string
+}
+
 export type TokenAssetItem = {
   id: string
   chainId: string
@@ -67,6 +74,38 @@ export function isEvmAddress(value: string) {
   return /^0x[a-fA-F0-9]{40}$/.test(value)
 }
 
+export function applyUploadUrlParams(
+  params: UploadUrlParams,
+  tokenItems: TokenAssetItem[],
+  chainItems: ChainAssetItem[],
+) {
+  const nextTokenItems = tokenItems.length ? tokenItems : [createTokenAssetItem()]
+  const nextChainItems = chainItems.length ? chainItems : [createChainAssetItem()]
+  const [restoredToken, ...otherTokens] = nextTokenItems
+  const [restoredChain, ...otherChains] = nextChainItems
+  const tokenIdentityChanged =
+    (params.chainId !== undefined && params.chainId.trim() !== restoredToken.chainId.trim()) ||
+    (params.address !== undefined && params.address.toLowerCase() !== restoredToken.address.toLowerCase())
+  const chainIdentityChanged = params.chainId !== undefined && params.chainId.trim() !== restoredChain.chainId.trim()
+  const firstToken = tokenIdentityChanged ? createTokenAssetItem() : restoredToken
+  const firstChain = chainIdentityChanged ? createChainAssetItem() : restoredChain
+
+  return {
+    mode: params.mode ?? (params.address ? 'token' : undefined),
+    tokenItems: [
+      {
+        ...firstToken,
+        chainId: params.chainId ?? firstToken.chainId,
+        address: params.address ?? firstToken.address,
+        name: params.name ?? firstToken.name,
+        resolveError: '',
+      },
+      ...otherTokens,
+    ],
+    chainItems: [{ ...firstChain, chainId: params.chainId ?? firstChain.chainId }, ...otherChains],
+  }
+}
+
 export function buildPreviewFromFiles(files: AssetFiles): PreviewMap {
   return {
     svg: files.svg ? URL.createObjectURL(files.svg) : undefined,
@@ -123,6 +162,51 @@ function renderImageToPng(image: HTMLImageElement, size: number) {
 export async function dataUrlToFile(dataUrl: string, name: string) {
   const response = await fetch(dataUrl)
   return new File([await response.blob()], name, { type: 'image/png' })
+}
+
+async function getPngFile(item: TokenAssetItem | ChainAssetItem, kind: 'png32' | 'png128') {
+  if (item.generatePng) {
+    const preview = item.preview[kind]
+    if (!preview) throw new Error(`Missing generated ${kind} preview`)
+    return dataUrlToFile(preview, kind === 'png32' ? 'logo-32.png' : 'logo-128.png')
+  }
+
+  const file = item.files[kind]
+  if (!file) throw new Error(`Missing manual ${kind} file`)
+  return file
+}
+
+export async function buildTokenAssetFormData(
+  mode: AssetMode,
+  tokenItems: TokenAssetItem[],
+  chainItems: ChainAssetItem[],
+  title: string,
+  body: string,
+) {
+  const form = new FormData()
+  const items = mode === 'token' ? tokenItems : chainItems
+  form.append('target', mode)
+  form.append(
+    'items',
+    JSON.stringify(
+      items.map((item) => ({
+        id: item.id,
+        chainId: item.chainId,
+        ...(mode === 'token' ? { address: (item as TokenAssetItem).address } : {}),
+      })),
+    ),
+  )
+  form.append('prTitle', title)
+  form.append('prBody', body)
+
+  await Promise.all(
+    items.map(async (item) => {
+      if (item.files.svg) form.append(`svg_${item.id}`, item.files.svg)
+      form.append(`png32_${item.id}`, await getPngFile(item, 'png32'))
+      form.append(`png128_${item.id}`, await getPngFile(item, 'png128'))
+    }),
+  )
+  return form
 }
 
 export async function readUploadDraft(): Promise<UploadDraft | null> {

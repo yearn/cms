@@ -86,9 +86,10 @@ function TokenLogoDownloads() {
       chain: String(token.chainId),
       address: token.address,
     })
+    if (token.name) params.set('name', token.name)
 
     return `/tokens/upload?${params.toString()}`
-  }, [token.address, token.chainId])
+  }, [token.address, token.chainId, token.name])
 
   useEffect(() => {
     const controller = new AbortController()

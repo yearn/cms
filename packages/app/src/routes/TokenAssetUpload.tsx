@@ -13,6 +13,7 @@ import {
   PiWarningCircle,
   PiX,
 } from 'react-icons/pi'
+import { createPublicClient, http } from 'viem'
 import { chains } from '../../lib/chains'
 import { cn } from '../components/eg/cn'
 import Button from '../components/eg/elements/Button'
@@ -23,12 +24,13 @@ import {
   type AssetFileKind,
   type AssetFiles,
   type AssetMode,
+  applyUploadUrlParams,
   buildPreviewFromFiles,
+  buildTokenAssetFormData,
   type ChainAssetItem,
   clearUploadDraft,
   createChainAssetItem,
   createTokenAssetItem,
-  dataUrlToFile,
   generatePngPreviews,
   isEvmAddress,
   type PreviewMap,
@@ -37,14 +39,10 @@ import {
   revokePreviewMap,
   saveUploadDraft,
   type TokenAssetItem,
+  type UploadUrlParams,
 } from '../lib/tokenAssetUpload'
 
-export type UploadUrlParams = {
-  mode?: AssetMode
-  chainId?: string
-  address?: string
-  name?: string
-}
+export type { UploadUrlParams } from '../lib/tokenAssetUpload'
 
 type Status = {
   tone: 'info' | 'error' | 'success'
@@ -55,29 +53,6 @@ type Status = {
 
 const inputLabelClassName = 'mb-2 block text-sm font-bold'
 const chainOptions = Object.values(chains).sort((a, b) => a.name.localeCompare(b.name))
-
-function applyUrlParams(params: UploadUrlParams, tokenItems: TokenAssetItem[], chainItems: ChainAssetItem[]) {
-  const nextTokenItems = tokenItems.length ? tokenItems : [createTokenAssetItem()]
-  const nextChainItems = chainItems.length ? chainItems : [createChainAssetItem()]
-  const [firstToken, ...otherTokens] = nextTokenItems
-  const [firstChain, ...otherChains] = nextChainItems
-  const address = params.address ?? firstToken.address
-
-  return {
-    mode: params.mode ?? (params.address ? 'token' : undefined),
-    tokenItems: [
-      {
-        ...firstToken,
-        chainId: params.chainId ?? firstToken.chainId,
-        address,
-        name: params.name ?? firstToken.name,
-        resolveError: '',
-      },
-      ...otherTokens,
-    ],
-    chainItems: [{ ...firstChain, chainId: params.chainId ?? firstChain.chainId }, ...otherChains],
-  }
-}
 
 export default function TokenAssetUpload({ initialParams = {} }: { initialParams?: UploadUrlParams }) {
   const [mode, setMode] = useState<AssetMode>(initialParams.mode ?? 'token')
@@ -127,7 +102,9 @@ export default function TokenAssetUpload({ initialParams = {} }: { initialParams
         ...item,
         preview: buildPreviewFromFiles(item.files),
       }))
-      const withParams = applyUrlParams(initialParams, restoredTokens, restoredChains)
+      const withParams = applyUploadUrlParams(initialParams, restoredTokens, restoredChains)
+      if (withParams.tokenItems[0]?.id !== restoredTokens[0]?.id) revokePreviewMap(restoredTokens[0]?.preview || {})
+      if (withParams.chainItems[0]?.id !== restoredChains[0]?.id) revokePreviewMap(restoredChains[0]?.preview || {})
       setMode(withParams.mode ?? draft?.mode ?? 'token')
       setTokenItems(withParams.tokenItems)
       setChainItems(withParams.chainItems)
@@ -219,14 +196,24 @@ export default function TokenAssetUpload({ initialParams = {} }: { initialParams
 
     updateTokenItem(id, (current) => ({ ...current, resolvingName: true, resolveError: '' }))
     try {
-      const response = await fetch('/api/token-assets/erc20-name', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ chainId: Number(item.chainId), address: item.address }),
+      const client = createPublicClient({
+        transport: http(`https://rpc.yearn.fi/chain/${item.chainId}`),
       })
-      const result = (await response.json()) as { name?: string; error?: string }
-      if (!response.ok || !result.name) throw new Error(result.error || 'Token name was not returned')
-      updateTokenItem(id, (current) => ({ ...current, name: current.name || result.name || '', resolvingName: false }))
+      const name = await client.readContract({
+        address: item.address.toLowerCase() as `0x${string}`,
+        abi: [
+          {
+            type: 'function',
+            name: 'name',
+            stateMutability: 'view',
+            inputs: [],
+            outputs: [{ type: 'string' }],
+          },
+        ],
+        functionName: 'name',
+      })
+      if (!name) throw new Error('Token name was not returned')
+      updateTokenItem(id, (current) => ({ ...current, name: current.name || name, resolvingName: false }))
     } catch {
       updateTokenItem(id, (current) => ({
         ...current,
@@ -292,7 +279,7 @@ export default function TokenAssetUpload({ initialParams = {} }: { initialParams
     setSubmitting(true)
     setStatus({ tone: 'info', title: 'Creating pull request', message: 'Uploading the images to tokenAssets.' })
     try {
-      const form = await buildFormData(mode, tokenItems, chainItems, prTitle, prBody)
+      const form = await buildTokenAssetFormData(mode, tokenItems, chainItems, prTitle, prBody)
       const response = await fetch('/api/token-assets/upload', {
         method: 'POST',
         headers: { Authorization: `Bearer ${token}` },
@@ -824,42 +811,4 @@ function defaultPrMetadata(mode: AssetMode, tokenItems: TokenAssetItem[], chainI
       ...paths.map((path) => `- ${path}`),
     ].join('\n'),
   }
-}
-
-async function buildFormData(
-  mode: AssetMode,
-  tokenItems: TokenAssetItem[],
-  chainItems: ChainAssetItem[],
-  title: string,
-  body: string,
-) {
-  const form = new FormData()
-  const items = mode === 'token' ? tokenItems : chainItems
-  form.append('target', mode)
-  form.append(
-    'items',
-    JSON.stringify(
-      items.map((item) => ({
-        id: item.id,
-        chainId: item.chainId,
-        ...(mode === 'token' ? { address: (item as TokenAssetItem).address } : {}),
-      })),
-    ),
-  )
-  form.append('prTitle', title)
-  form.append('prBody', body)
-  await Promise.all(
-    items.map(async (item) => {
-      if (item.files.svg) form.append(`svg_${item.id}`, item.files.svg)
-      form.append(
-        `png32_${item.id}`,
-        item.files.png32 ?? (await dataUrlToFile(item.preview.png32 || '', 'logo-32.png')),
-      )
-      form.append(
-        `png128_${item.id}`,
-        item.files.png128 ?? (await dataUrlToFile(item.preview.png128 || '', 'logo-128.png')),
-      )
-    }),
-  )
-  return form
 }

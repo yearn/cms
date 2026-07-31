@@ -12,6 +12,16 @@ type FileChange = {
   contentBase64: string
 }
 
+export class GitHubApiError extends Error {
+  readonly status: number
+
+  constructor(status: number, method: string, url: string) {
+    super(`GitHub API ${method} ${new URL(url).pathname} failed with status ${status}`)
+    this.name = 'GitHubApiError'
+    this.status = status
+  }
+}
+
 async function githubRequest<T>(token: string, method: string, url: string, body?: unknown): Promise<T> {
   const response = await fetch(url, {
     method,
@@ -24,7 +34,7 @@ async function githubRequest<T>(token: string, method: string, url: string, body
   })
 
   if (!response.ok) {
-    throw new Error(`${method} ${url} -> ${response.status}: ${await response.text()}`)
+    throw new GitHubApiError(response.status, method, url)
   }
 
   return (await response.json()) as T
@@ -138,7 +148,7 @@ async function ensureFork(token: string, owner: string, repo: string, login: str
   try {
     await githubRequest(token, 'POST', `https://api.github.com/repos/${owner}/${repo}/forks`)
   } catch (error) {
-    if (!String(error).includes('422')) throw error
+    if (!(error instanceof GitHubApiError) || error.status !== 422) throw error
   }
 
   for (let attempt = 0; attempt < 10; attempt += 1) {
@@ -206,7 +216,7 @@ export async function openTokenAssetsPullRequest(params: {
     )
     return pullRequest.html_url
   } catch (error) {
-    if (!String(error).includes('403')) throw error
+    if (!(error instanceof GitHubApiError) || error.status !== 403) throw error
   }
 
   const login = await getUserLogin(params.token)
