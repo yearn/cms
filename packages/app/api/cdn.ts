@@ -3,6 +3,7 @@ import { basename, dirname, extname, resolve } from 'node:path'
 
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
+const LOCAL_NOT_FOUND_CODES = new Set(['ENOENT', 'EISDIR', 'ENOTDIR', 'ENAMETOOLONG', 'EACCES'])
 
 function getLocalCdnRoot() {
   const cwd = process.cwd()
@@ -36,7 +37,8 @@ async function readLocalCdn(path: string) {
       },
     })
   } catch (error) {
-    if (error instanceof Error && 'code' in error && error.code === 'ENOENT') {
+    const code = error && typeof error === 'object' && 'code' in error ? error.code : undefined
+    if (typeof code === 'string' && LOCAL_NOT_FOUND_CODES.has(code)) {
       return new Response('not found', { status: 404 })
     }
     throw error
@@ -92,7 +94,7 @@ export default async function (req: Request): Promise<Response> {
       return new Response('invalid path', { status: 400 })
     }
 
-    if (process.env.NODE_ENV !== 'production') return readLocalCdn(path)
+    if (process.env.NODE_ENV !== 'production') return await readLocalCdn(path)
 
     const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
     const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`
@@ -107,7 +109,8 @@ export default async function (req: Request): Promise<Response> {
     headers.set('access-control-allow-origin', '*')
 
     return new Response(upstreamRes.body, { status: 200, headers })
-  } catch (e: any) {
-    return new Response(e?.message || 'error', { status: 500 })
+  } catch (error) {
+    console.error('[api/cdn]', error)
+    return new Response('internal error', { status: 500 })
   }
 }
