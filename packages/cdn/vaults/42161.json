@@ -130,7 +130,7 @@
     "address": "0x074943fefe3391d033a15557dfa1b6f246ce5fd0",
     "name": "eETH LP (25 APR 2024)",
     "registry": "0xff31a1b020c868f6ea3f61eb953344920eeca3af",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": true,
     "isBoosted": false,
