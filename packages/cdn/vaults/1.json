@@ -33165,19 +33165,20 @@
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
-    "isAutomated": false,
+    "isAutomated": true,
     "isHighlighted": false,
-    "isPool": false,
+    "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
       "target": "0xb53b70cb960feeaf2093df3c733e368f6d254898"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Stable",
+      "stableBaseAsset": "USD"
     },
     "category": "Curve",
-    "displayName": "",
+    "displayName": "DUSD-frxUSD LP",
     "displaySymbol": "",
     "description": "",
     "sourceURI": "",
