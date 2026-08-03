@@ -33165,9 +33165,9 @@
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
-    "isAutomated": false,
+    "isAutomated": true,
     "isHighlighted": false,
-    "isPool": false,
+    "isPool": true,
     "shouldUseV2APR": false,
     "migration": {
       "available": false,
