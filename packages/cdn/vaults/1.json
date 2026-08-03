@@ -33174,16 +33174,17 @@
       "target": "0xb53b70cb960feeaf2093df3c733e368f6d254898"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Stable",
+      "stableBaseAsset": "USD"
     },
     "category": "Curve",
-    "displayName": "",
+    "displayName": "DUSD-frxUSD LP",
     "displaySymbol": "",
     "description": "",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
-      "Yearn"
+      "Curve"
     ],
     "inclusion": {
       "isSet": true,
