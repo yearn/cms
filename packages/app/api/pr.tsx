@@ -1,5 +1,3 @@
-export const config = { runtime: 'edge' }
-
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
 

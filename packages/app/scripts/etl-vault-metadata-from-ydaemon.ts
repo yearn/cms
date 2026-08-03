@@ -129,7 +129,7 @@ async function updateNames(vaults: VaultMetadata[]) {
       const batch = vaultsForChain.slice(i, i + batchSize)
       const names = await rpc.multicall({
         contracts: batch.map((vault) => ({
-          address: vault.address,
+          address: vault.address as `0x${string}`,
           abi: parseAbi(['function name() view returns (string)']),
           functionName: 'name',
         })),
@@ -153,7 +153,7 @@ async function main() {
     const files = await readdir(source)
 
     for (const file of files.filter((file) => file.endsWith('.json'))) {
-      const chainId = parseInt(file.split('.')[0] ?? '0')
+      const chainId = parseInt(file.split('.')[0] ?? '0', 10)
       if (chainId === 0) {
         throw new Error('chainId === 0')
       }

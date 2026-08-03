@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
+import { useParams } from 'next/navigation'
 import { Suspense } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
-import { useParams } from 'react-router-dom'
 import { chains } from '../../lib/chains'
 import { StrategyMetadataSchema } from '../../schemas/StrategyMetadata'
 import type { VaultMetadata } from '../../schemas/VaultMetadata'
@@ -93,7 +93,7 @@ function StrategyDetails() {
 }
 
 function Provider({ children }: { children: React.ReactNode }) {
-  const { chainId, address } = useParams()
+  const { chainId, address } = useParams<{ chainId: string; address: string }>()
   const { strategies } = useStrategyMeta()
 
   const strategy = strategies.find(

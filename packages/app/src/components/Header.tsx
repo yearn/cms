@@ -1,6 +1,6 @@
+import { usePathname, useRouter } from 'next/navigation'
 import { useMemo } from 'react'
 import { PiDatabase, PiGlobe } from 'react-icons/pi'
-import { useLocation, useNavigate } from 'react-router-dom'
 import { getCollection, getCollectionKeys } from '../../schemas/cms'
 import { ChainSelect } from './eg/ChainSelect'
 import Button from './eg/elements/Button'
@@ -14,8 +14,8 @@ import HeaderDraftCart from './HeaderDraftCart'
 const ASSET_ROUTE_PREFIXES = ['/vaults', '/strategies', '/tokens'] as const
 
 export default function Header() {
-  const navigate = useNavigate()
-  const location = useLocation()
+  const router = useRouter()
+  const pathname = usePathname()
 
   const navigationOptions = useMemo(() => {
     const collections = getCollectionKeys().map((key) => ({
@@ -35,19 +35,19 @@ export default function Header() {
   }, [])
 
   const currentOption = useMemo(() => {
-    return navigationOptions.find((option) => location.pathname.startsWith(option.value))?.value
-  }, [navigationOptions, location.pathname])
+    return navigationOptions.find((option) => pathname.startsWith(option.value))?.value
+  }, [navigationOptions, pathname])
 
   const supportsAssetTools = useMemo(() => {
-    return ASSET_ROUTE_PREFIXES.some((prefix) => location.pathname.includes(prefix))
-  }, [location.pathname])
+    return ASSET_ROUTE_PREFIXES.some((prefix) => pathname.includes(prefix))
+  }, [pathname])
 
   return (
     <header className="px-8 w-full min-h-20 sticky top-0 z-10 flex items-center gap-8 justify-between border-b border-interactive-secondary-border backdrop-blur-lg">
       <div className="flex items-center gap-8 grow">
         <Button
           variant="primary"
-          onClick={() => navigate('/')}
+          onClick={() => router.push('/')}
           className="!p-0 !h-auto !rounded-full !border-none"
           aria-label="Navigate to home"
         >
@@ -59,7 +59,7 @@ export default function Header() {
           options={navigationOptions}
           placeholder="Navigate to..."
           defaultValue={currentOption}
-          onChange={(value) => value && navigate(value as string)}
+          onChange={(value) => value && router.push(value as string)}
           triggerClassName="w-58"
         />
 

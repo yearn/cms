@@ -1,7 +1,3 @@
-export const config = {
-  runtime: 'edge',
-}
-
 export default async function (req: Request): Promise<Response> {
   if (req.method !== 'GET') return new Response('Method Not Allowed', { status: 405 })
 

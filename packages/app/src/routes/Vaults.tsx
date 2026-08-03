@@ -47,7 +47,7 @@ function List() {
       {items.map((vault: VaultMetadata) => (
         <Link
           key={`${vault.chainId}-${vault.address}`}
-          to={`/vaults/${vault.chainId}/${vault.address}`}
+          href={`/vaults/${vault.chainId}/${vault.address}`}
           className="flex items-center gap-6 text-lg"
         >
           <TokenIcon chainId={vault.chainId} address={vault.address as `0x${string}`} showChain size={48} />

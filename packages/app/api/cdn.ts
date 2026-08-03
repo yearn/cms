@@ -1,7 +1,49 @@
-export const config = { runtime: 'edge' }
+import { readFile } from 'node:fs/promises'
+import { basename, dirname, extname, resolve } from 'node:path'
 
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
+const LOCAL_NOT_FOUND_CODES = new Set(['ENOENT', 'EISDIR', 'ENOTDIR', 'ENAMETOOLONG', 'EACCES'])
+
+function getLocalCdnRoot() {
+  const cwd = process.cwd()
+  return basename(cwd) === 'app' && basename(dirname(cwd)) === 'packages'
+    ? resolve(cwd, '../cdn')
+    : resolve(cwd, 'packages/cdn')
+}
+
+function getContentType(path: string) {
+  switch (extname(path)) {
+    case '.json':
+      return 'application/json; charset=utf-8'
+    case '.svg':
+      return 'image/svg+xml'
+    case '.png':
+      return 'image/png'
+    default:
+      return 'application/octet-stream'
+  }
+}
+
+async function readLocalCdn(path: string) {
+  try {
+    const contents = await readFile(resolve(getLocalCdnRoot(), path))
+    return new Response(new Uint8Array(contents), {
+      status: 200,
+      headers: {
+        'content-type': getContentType(path),
+        'cache-control': 'no-store',
+        'access-control-allow-origin': '*',
+      },
+    })
+  } catch (error) {
+    const code = error && typeof error === 'object' && 'code' in error ? error.code : undefined
+    if (typeof code === 'string' && LOCAL_NOT_FOUND_CODES.has(code)) {
+      return new Response('not found', { status: 404 })
+    }
+    throw error
+  }
+}
 
 function getPath(url: URL) {
   const schema = url.searchParams.get('schema')
@@ -52,6 +94,8 @@ export default async function (req: Request): Promise<Response> {
       return new Response('invalid path', { status: 400 })
     }
 
+    if (process.env.NODE_ENV !== 'production') return await readLocalCdn(path)
+
     const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
     const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`
     const upstreamRes = await fetch(upstream)
@@ -65,7 +109,8 @@ export default async function (req: Request): Promise<Response> {
     headers.set('access-control-allow-origin', '*')
 
     return new Response(upstreamRes.body, { status: 200, headers })
-  } catch (e: any) {
-    return new Response(e?.message || 'error', { status: 500 })
+  } catch (error) {
+    console.error('[api/cdn]', error)
+    return new Response('internal error', { status: 500 })
   }
 }

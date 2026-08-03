@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.3/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.4.16/schema.json",
   "linter": {
     "enabled": true,
     "rules": {
@@ -40,10 +40,26 @@
     "indentWidth": 2,
     "lineWidth": 120
   },
+  "overrides": [
+    {
+      "includes": [
+        "packages/app/src/components/eg/HoverCard/index.tsx",
+        "packages/app/src/components/eg/HoverSelect/index.tsx"
+      ],
+      "linter": {
+        "rules": {
+          "a11y": {
+            "useSemanticElements": "off"
+          }
+        }
+      }
+    }
+  ],
   "files": {
     "ignoreUnknown": true,
     "includes": [
-      "**/*.{js,jsx,ts,tsx}"
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/next-env.d.ts"
     ]
   },
   "vcs": {

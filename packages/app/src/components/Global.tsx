@@ -1,7 +1,7 @@
 import { useMutation } from '@tanstack/react-query'
+import { useParams } from 'next/navigation'
 import { Suspense } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
-import { useParams } from 'react-router-dom'
 import { type GlobalKey, getGlobal, getGlobalKeys } from '../../schemas/cms'
 import { useGlobalData } from '../hooks/useGlobalData'
 import Button from './eg/elements/Button'
@@ -107,7 +107,7 @@ function GlobalSkeleton() {
 }
 
 function Global() {
-  const { globalKey } = useParams()
+  const { globalKey } = useParams<{ globalKey: string }>()
 
   if (!globalKey || !getGlobalKeys().includes(globalKey as any)) {
     throw new Error(`Global ${globalKey} not found`)

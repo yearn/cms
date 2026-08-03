@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Project Overview
 
 This is ycms (Yearn CMS), a content management system built as a monorepo with two main packages:
-- `packages/app` - React-based frontend with Bun API backend
+- `packages/app` - Next.js application with App Router pages and API route handlers
 - `packages/cdn` - Static JSON data files for vaults and strategies across multiple blockchain networks
 
 ## Development Commands
@@ -16,29 +16,29 @@ This is ycms (Yearn CMS), a content management system built as a monorepo with t
 - `bun clean --lockfiles` - Also remove bun.lock files
 
 ### App Package (`packages/app`)
-- `bun dev` - Start all services (API server, Vite dev server)
-- `bun dev:client` - Start only Vite frontend dev server
-- `bun dev:server` - Start only Bun API server (port 3001)
-- `bun build` - Build for production (TypeScript compilation + Vite build)
+- `bun dev` - Start the Next.js development server on port 3000
+- `bun dev:client` - Alias for the Next.js development server
+- `bun build` - Create a production Next.js build
 - `bun lint` - Run Biome linter
 - `bun lint:fix` - Run Biome linter with auto-fix
-- `bun preview` - Preview production build
+- `bun tslint` - Run TypeScript without emitting files
+- `bun preview` - Start the production build with `next start`
 
 ## Architecture
 
-### Frontend (React + Vite)
+### Frontend (Next.js App Router)
 - React 19 with TypeScript
-- Router: React Router DOM v7 with nested routes
+- Native App Router pages under `packages/app/app`
 - State: Zustand for client state, TanStack Query for server state
 - Styling: Tailwind CSS v4
 - UI Components: Custom components with Radix UI primitives
-- Build: Vite with React plugin
+- Build: Next.js with the Tailwind PostCSS adapter
 
-### Backend (Bun Server)
-- Simple HTTP server using Bun's native `serve()` API (port 3001)
+### Backend (Next.js Route Handlers)
+- API handlers run on the same port as the frontend under `packages/app/app/api`
 - Routes: `/api/ping`, `/api/auth/github/callback`, `/api/pr`, `/api/cdn/*`
 - GitHub OAuth integration for authentication
-- CDN proxy endpoints for accessing vault/strategy metadata
+- Local development reads metadata from `packages/cdn`; production proxies commit-pinned files through jsDelivr
 
 ### Data Management
 - **Schemas**: Zod schemas for VaultMetadata and StrategyMetadata validation
@@ -75,19 +75,26 @@ GitHub OAuth is required for write operations (creating PRs, editing metadata). 
 3. Copy the client ID and secret into your `.env`
 
 Then configure your `.env`:
-- `VITE_GITHUB_CLIENT_ID` — your OAuth app's client ID
+- `NEXT_PUBLIC_CDN_URL` — optional public CMS data URL; leave empty to use the same-origin `/cdn` route
+- `NEXT_PUBLIC_ASSETS_CDN_URL` — public token and chain asset CDN URL
+- `NEXT_PUBLIC_GITHUB_CLIENT_ID` — your OAuth app's client ID
 - `GITHUB_CLIENT_SECRET` — your OAuth app's client secret
-- `VITE_GITHUB_REDIRECT_URI` — set to `http://127.0.0.1:3001/api/auth/github/callback` for local dev
+- `NEXT_PUBLIC_GITHUB_REDIRECT_URI` — set to `http://127.0.0.1:3000/api/auth/github/callback` for local dev
 - `URL` — set to `http://127.0.0.1:3000` for local dev
 
-The `VITE_GITHUB_REDIRECT_URI` tells GitHub to redirect to your local API server port. GitHub allows any port on loopback addresses (`127.0.0.1`) as long as the registered callback URL uses the same host. Leave `VITE_GITHUB_REDIRECT_URI` unset in production to use the registered callback URL directly.
+The public GitHub redirect setting tells GitHub to return to the callback route on the same Next.js server. GitHub
+allows any port on loopback addresses (`127.0.0.1`) as long as the registered callback URL uses the same host.
+Leave it unset in production to use the OAuth application's registered callback URL directly.
 
 ### CDN Access
 - Public CDN: `https://cdn.jsdelivr.net/gh/yearn/cms@main/packages/cdn`
-- Local development proxies through `/api/cdn/*` endpoints
+- Local development serves `packages/cdn` through `/api/cdn/*`
+- Production proxies `/cdn/*` through the Node.js route handler to a commit-pinned jsDelivr URL
 
 ## Key Files
-- `packages/app/api/server.ts` - Main API server setup
+- `packages/app/app/layout.tsx` - Root layout and application providers
+- `packages/app/app/[collection]/page.tsx` - Collection route entry point
+- `packages/app/app/api/pr/route.ts` - Pull request API route
+- `packages/app/app/api/cdn/[...path]/route.ts` - CDN proxy API route
 - `packages/app/schemas/*` - Zod validation schemas
-- `packages/app/src/main.tsx` - React app entry point and routing
 - `packages/cdn/{vaults,strategies}/*.json` - Blockchain metadata by chain ID

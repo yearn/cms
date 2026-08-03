@@ -1,6 +1,8 @@
+import Link from 'next/link'
+import { useParams, useRouter } from 'next/navigation'
 import { Suspense, useCallback, useEffect, useMemo, useState } from 'react'
+import { PiUploadSimple } from 'react-icons/pi'
 import InfiniteScroll from 'react-infinite-scroll-component'
-import { Link, useParams } from 'react-router-dom'
 import { type CollectionKey, getCollection, getCollectionKeys } from '../../schemas/cms'
 import type { StrategyMetadata } from '../../schemas/StrategyMetadata'
 import type { TokenMetadata } from '../../schemas/TokenMetadata'
@@ -8,6 +10,7 @@ import type { VaultMetadata } from '../../schemas/VaultMetadata'
 import { useCollectionData } from '../hooks/useCollectionData'
 import { useToggleChainStore } from '../hooks/useToggleChainStore'
 import BackItUp from './BackItUp'
+import Button from './eg/elements/Button'
 import ListItem from './eg/elements/ListItem'
 import { useHoverSelect } from './eg/HoverSelect/useHoverSelect'
 import Skeleton from './eg/Skeleton'
@@ -26,7 +29,7 @@ type SearchableListItem = {
 
 function renderCollectionListItem(path: string, item: SearchableListItem, name: string, onClick?: () => void) {
   return (
-    <Link key={`${item.chainId}-${item.address}`} to={path} onClick={onClick} className="block w-full">
+    <Link key={`${item.chainId}-${item.address}`} href={path} onClick={onClick} className="block w-full">
       <ListItem variant="lg" className="gap-6">
         <TokenIcon chainId={item.chainId} address={item.address as `0x${string}`} showChain size={48} />
         <div className="flex flex-col gap-1">
@@ -64,6 +67,7 @@ const listItemTemplates = {
 } as const
 
 function List({ collection }: { collection: CollectionKey }) {
+  const router = useRouter()
   const { finderString } = useFinder()
   const { toggledChains } = useToggleChainStore()
   const { data } = useCollectionData<typeof collection>(collection)
@@ -103,6 +107,20 @@ function List({ collection }: { collection: CollectionKey }) {
   return (
     <>
       {collection === 'vaults' && <VaultBooleanFilters />}
+      {collection === 'tokens' && (
+        <div className="mb-6 flex items-center gap-4">
+          <div className="font-bold">Token assets</div>
+          <Button
+            type="button"
+            variant="secondary"
+            className="h-10 gap-2 px-5 text-base"
+            onClick={() => router.push('/tokens/upload')}
+          >
+            <PiUploadSimple />
+            Add token logo
+          </Button>
+        </div>
+      )}
       <InfiniteScroll
         scrollableTarget="main-scroll"
         dataLength={items.length}
@@ -133,7 +151,7 @@ function CollectionSkeleton() {
 }
 
 function CollectionList() {
-  const { collection } = useParams()
+  const { collection } = useParams<{ collection: string }>()
   if (!collection || !getCollectionKeys().includes(collection as any)) {
     throw new Error(`Collection ${collection} not found`)
   }
