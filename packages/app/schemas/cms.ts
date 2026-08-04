@@ -12,6 +12,7 @@ export const collections = {
     filterableBooleanFields: [
       'isRetired',
       'isHidden',
+      'isNeverShown',
       'isAggregator',
       'isBoosted',
       'isAutomated',
