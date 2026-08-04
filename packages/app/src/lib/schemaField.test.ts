@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'bun:test'
 import { z } from 'zod'
-import { isSchemaFieldReadOnly } from './schemaField'
+import { isSchemaFieldObsolete, isSchemaFieldReadOnly } from './schemaField'
 
 describe('isSchemaFieldReadOnly', () => {
   test('keeps an ordinary field editable', () => {
@@ -12,8 +12,10 @@ describe('isSchemaFieldReadOnly', () => {
       legacyField: z.string().meta({ obsolete: true }),
     })
     const jsonSchema = z.toJSONSchema(schema)
+    const legacyField = jsonSchema.properties?.legacyField ?? {}
 
-    expect(isSchemaFieldReadOnly(jsonSchema.properties?.legacyField ?? {}, false)).toBe(true)
+    expect(isSchemaFieldObsolete(legacyField)).toBe(true)
+    expect(isSchemaFieldReadOnly(legacyField, false)).toBe(true)
   })
 
   test('honors form-wide read-only mode', () => {
