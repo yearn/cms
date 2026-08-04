@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { createContext, useContext, useEffect, useState } from 'react'
 import z from 'zod'
 import { cn } from '../../lib/cn'
+import { isSchemaFieldObsolete, isSchemaFieldReadOnly } from '../lib/schemaField'
 import Input from './eg/elements/Input'
 import Switch from './eg/elements/Switch'
 import Textarea from './eg/elements/Textarea'
@@ -91,6 +92,15 @@ function getEnumOptions(values: string[]) {
     value,
     label: value,
   }))
+}
+
+function FieldLabel({ name, schema, className }: { name: string; schema: JSONSchema; className?: string }) {
+  return (
+    <label htmlFor={name} className={className}>
+      {name}
+      {isSchemaFieldObsolete(schema) && <span className="ml-2 text-xs opacity-60">[obsolete]</span>}
+    </label>
+  )
 }
 
 function renderReadOnlyArray(value: string[]) {
@@ -191,9 +201,7 @@ function renderObjectField(
     <fieldset className="flex flex-col gap-8">
       {Object.entries(schema.properties || {}).map(([key, childSchema]) => (
         <div key={key} className="flex items-center justify-between gap-6">
-          <label htmlFor={key} className="w-42 text-right text-sm">
-            {key}
-          </label>
+          <FieldLabel name={key} schema={childSchema} className="w-42 text-right text-sm" />
           {renderField(key, childSchema, value?.[key], update, fieldPath, readOnly)}
         </div>
       ))}
@@ -210,10 +218,11 @@ function renderField(
   readOnly = false,
 ) {
   const fieldPath = [...path, key]
+  const fieldReadOnly = isSchemaFieldReadOnly(schema, readOnly)
   const commonProps = {
     name: key,
     value: value ?? '',
-    disabled: readOnly,
+    disabled: fieldReadOnly,
     onChange: (e: React.ChangeEvent<any>) => {
       const val = schema.type === 'boolean' ? e.target.checked : e.target.value
       update(fieldPath, schema.type === 'number' ? parseFloat(val) : val)
@@ -222,15 +231,17 @@ function renderField(
 
   switch (schema.type) {
     case 'number':
-      return <Input type="number" {...commonProps} readOnly={readOnly} />
+      return <Input type="number" {...commonProps} readOnly={fieldReadOnly} />
     case 'string':
-      return renderStringField(key, schema, value, commonProps, update, fieldPath, readOnly)
+      return renderStringField(key, schema, value, commonProps, update, fieldPath, fieldReadOnly)
     case 'boolean':
-      return <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} disabled={readOnly} />
+      return (
+        <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} disabled={fieldReadOnly} />
+      )
     case 'object':
-      return renderObjectField(schema, value, update, fieldPath, readOnly)
+      return renderObjectField(schema, value, update, fieldPath, fieldReadOnly)
     case 'array':
-      return renderArrayField(key, schema, value, update, fieldPath, readOnly)
+      return renderArrayField(key, schema, value, update, fieldPath, fieldReadOnly)
     default:
       return null
   }
@@ -251,7 +262,7 @@ export default function MetaData({ className, readOnly = false }: MetaDataProps)
         .filter(([key]) => !READ_ONLY_FIELDS.includes(key))
         .map(([key, schema]) => (
           <div key={key} className="py-3 flex items-center justify-between">
-            <label htmlFor={key}>{key}</label>
+            <FieldLabel name={key} schema={schema} />
             {renderField(key, schema, formState[key], updateField, [], readOnly)}
           </div>
         ))}

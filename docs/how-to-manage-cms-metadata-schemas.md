@@ -45,7 +45,22 @@ For fields like `protocols`, `type`, or `stability`, add new values to the enum:
 protocols: z.array(z.enum(['Curve', 'Balancer', 'NewProtocol'])),
 ```
 
-### 4. Test your changes
+### 4. Marking fields as obsolete
+
+To keep a field visible in the CMS while preventing further edits, mark it as obsolete in its Zod metadata:
+
+```ts
+legacyField: z.string().optional().meta({ obsolete: true }),
+```
+
+The `obsolete` flag is schema metadata only. It is not included in CDN metadata and cannot be changed from the CMS.
+Obsolete fields remain visible, validated, and present in saved metadata, but their form controls are disabled. Marking
+an object as obsolete also disables all fields nested inside it.
+
+Do not remove the field from the schema or make unrelated changes to its validation when marking it obsolete. This
+preserves compatibility with existing metadata.
+
+### 5. Test your changes
 
 ```bash
 bun dev
