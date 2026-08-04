@@ -3,6 +3,7 @@ import type { ReactNode } from 'react'
 import { createContext, useContext, useEffect, useState } from 'react'
 import z from 'zod'
 import { cn } from '../../lib/cn'
+import { isSchemaFieldReadOnly } from '../lib/schemaField'
 import Input from './eg/elements/Input'
 import Switch from './eg/elements/Switch'
 import Textarea from './eg/elements/Textarea'
@@ -210,10 +211,11 @@ function renderField(
   readOnly = false,
 ) {
   const fieldPath = [...path, key]
+  const fieldReadOnly = isSchemaFieldReadOnly(schema, readOnly)
   const commonProps = {
     name: key,
     value: value ?? '',
-    disabled: readOnly,
+    disabled: fieldReadOnly,
     onChange: (e: React.ChangeEvent<any>) => {
       const val = schema.type === 'boolean' ? e.target.checked : e.target.value
       update(fieldPath, schema.type === 'number' ? parseFloat(val) : val)
@@ -222,15 +224,17 @@ function renderField(
 
   switch (schema.type) {
     case 'number':
-      return <Input type="number" {...commonProps} readOnly={readOnly} />
+      return <Input type="number" {...commonProps} readOnly={fieldReadOnly} />
     case 'string':
-      return renderStringField(key, schema, value, commonProps, update, fieldPath, readOnly)
+      return renderStringField(key, schema, value, commonProps, update, fieldPath, fieldReadOnly)
     case 'boolean':
-      return <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} disabled={readOnly} />
+      return (
+        <Switch checked={value || false} onChange={(checked) => update(fieldPath, checked)} disabled={fieldReadOnly} />
+      )
     case 'object':
-      return renderObjectField(schema, value, update, fieldPath, readOnly)
+      return renderObjectField(schema, value, update, fieldPath, fieldReadOnly)
     case 'array':
-      return renderArrayField(key, schema, value, update, fieldPath, readOnly)
+      return renderArrayField(key, schema, value, update, fieldPath, fieldReadOnly)
     default:
       return null
   }
