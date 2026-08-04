@@ -9,7 +9,7 @@ export const VaultMetadataSchema = z.object({
   type: z.enum(['Yearn Vault', 'Experimental Yearn Vault', 'Automated Yearn Vault', 'Single Strategy', 'None']),
   kind: z.enum(['Multi Strategy', 'Legacy', 'Single Strategy', 'None']),
   isRetired: z.boolean(),
-  isHidden: z.boolean(),
+  isHidden: z.boolean().meta({ obsolete: true }),
   isAggregator: z.boolean(),
   isBoosted: z.boolean(),
   isAutomated: z.boolean(),
