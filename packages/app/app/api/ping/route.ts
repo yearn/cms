@@ -1,4 +1,4 @@
-import handler from '@/api/ping'
+import handler from '@/src/server/ping'
 
 export const runtime = 'nodejs'
 

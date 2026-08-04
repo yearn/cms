@@ -1,4 +1,4 @@
-import handler from '@/api/cdn'
+import handler from '@/src/server/cdn'
 
 export const runtime = 'nodejs'
 

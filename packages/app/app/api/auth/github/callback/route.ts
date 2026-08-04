@@ -1,4 +1,4 @@
-import handler from '@/api/auth/github/callback'
+import handler from '@/src/server/auth/github/callback'
 
 export const runtime = 'nodejs'
 
