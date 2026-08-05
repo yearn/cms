@@ -1,4 +1,4 @@
-import handler from '@/api/pr'
+import handler from '@/src/server/pr'
 
 export const runtime = 'nodejs'
 
