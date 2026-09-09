@@ -18657,5 +18657,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xc818a0be1bb2ce820cfdefad5f890667e885f39d",
+    "name": "Flex yvcrvUSD-2/USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7501eae6b5c2cb0a6edac908e3a679b20edd737b",
+    "name": "Flex yvUSD/USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xdd58aefe74585da2c7ad3d3df0f3aeeab05b5176",
+    "name": "Flex ysyBOLD/USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
