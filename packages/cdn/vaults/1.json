@@ -33224,7 +33224,7 @@
     "category": "Stablecoin",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "Flex USDC is an allocator vault managed by the Yearn Curation team. It lends USDC across several Flex markets, with the Vaults team setting each market's allocation and caps. information about Flex and its Markets can be found at https://flexmeow.com. ",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
