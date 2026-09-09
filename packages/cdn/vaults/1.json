@@ -9067,7 +9067,7 @@
     "registry": "0xe9e8c89c8fc7e8b8f23425688eb68987231178e5",
     "type": "Yearn Vault",
     "kind": "Multi Strategy",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
@@ -33211,7 +33211,7 @@
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,
-    "isHighlighted": false,
+    "isHighlighted": true,
     "isPool": false,
     "shouldUseV2APR": false,
     "migration": {
@@ -33219,7 +33219,7 @@
       "target": "0x863687e4e9751b57f38b4b0eba04744c72d0f7b8"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Stable"
     },
     "category": "Stablecoin",
     "displayName": "",
