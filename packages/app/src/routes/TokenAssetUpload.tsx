@@ -34,6 +34,7 @@ import {
   generatePngPreviews,
   isEvmAddress,
   type PreviewMap,
+  readTokenAssetUploadResponse,
   readUploadDraft,
   replaceFilePreview,
   revokePreviewMap,
@@ -285,14 +286,13 @@ export default function TokenAssetUpload({ initialParams = {} }: { initialParams
         headers: { Authorization: `Bearer ${token}` },
         body: form,
       })
-      const result = (await response.json()) as { prUrl?: string; error?: string }
-      if (!response.ok) throw new Error(result.error || `Upload failed (${response.status})`)
+      const prUrl = await readTokenAssetUploadResponse(response)
 
       setStatus({
         tone: 'success',
         title: 'Pull request created',
         message: 'Review the generated changes on GitHub before merging.',
-        prUrl: result.prUrl,
+        prUrl,
       })
       setReviewing(false)
       void clearUploadDraft()
