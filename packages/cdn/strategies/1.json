@@ -18684,5 +18684,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x13f6cb609959a43c3be29407766a683b42e26d28",
+    "name": "Spark wstETH to yvUSD Lender Borrower Accumulator",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x72978421a29d83ca76e9e5a72eabe2b363454596",
+    "name": "USDC to ysyBOLD Convertor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x5e8a9acd00adced69b30d36929cbf7d4d4f9ae1f",
+    "name": "Spark WETH/USDS (yvUSD) Lender Borrower",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
