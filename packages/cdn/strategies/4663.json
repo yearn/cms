@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "chainId": 4663,
+    "address": "0xc7d60abfa6f4d79c2c42bf84a54795bd8c586957",
+    "name": "spUSDG/USDG Morpho Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  }
+]
