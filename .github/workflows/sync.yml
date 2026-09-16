@@ -20,6 +20,7 @@ jobs:
       RPC_42161: ${{ secrets.RPC_42161 }}
       RPC_747474: ${{ secrets.RPC_747474 }}
       RPC_8453: ${{ secrets.RPC_8453 }}
+      RPC_4663: ${{ secrets.RPC_4663 }}
 
     steps:
       - name: Checkout repository
