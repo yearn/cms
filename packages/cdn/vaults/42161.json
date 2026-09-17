@@ -2451,7 +2451,7 @@
     "address": "0x976a1c749cd8153909e0b04eebe931ef8957b15b",
     "name": "PHPTest",
     "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
-    "isRetired": false,
+    "isRetired": true,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
