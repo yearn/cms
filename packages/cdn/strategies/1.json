@@ -18711,5 +18711,14 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7e4a6a89583e117c641ab3ce8897209800a3f2e3",
+    "name": "Flex yvWETH-2/WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
