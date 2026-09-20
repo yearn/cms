@@ -18720,5 +18720,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x896557783d9067ce9c9459668982a8776356e760",
+    "name": "Curve Boosted crvUSD-sfrxUSD Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3745a317e08bd12dfd31088729fc0081c66cd40c",
+    "name": "Curve Boosted crvUSD-sDOLA Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x8824f63f990fde4b46c6f2ec26356472db680563",
+    "name": "Curve Boosted crvUSD-syrupUSDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
