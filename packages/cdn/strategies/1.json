@@ -18747,5 +18747,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcadf62b59406a05754581c31c04f8f7b54af1e6e",
+    "name": "USDC to Grove USDS Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xe060b80438771f13078048c3b0d930efeca6e622",
+    "name": "Grove USDS Compounder",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
