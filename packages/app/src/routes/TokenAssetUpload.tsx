@@ -15,7 +15,7 @@ import {
 } from 'react-icons/pi'
 import { createPublicClient, http } from 'viem'
 import { chains } from '../../lib/chains'
-import { cn } from '../components/eg/cn'
+import { cn } from '../../lib/cn'
 import Button from '../components/eg/elements/Button'
 import Card from '../components/eg/elements/Card'
 import Input from '../components/eg/elements/Input'

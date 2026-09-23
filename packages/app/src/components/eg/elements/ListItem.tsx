@@ -1,6 +1,6 @@
 import type { HTMLAttributes } from 'react'
 import { forwardRef } from 'react'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 
 export type ListItemProps = HTMLAttributes<HTMLDivElement> & {
   className?: string
