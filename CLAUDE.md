@@ -17,7 +17,6 @@ This is ycms (Yearn CMS), a content management system built as a monorepo with t
 
 ### App Package (`packages/app`)
 - `bun dev` - Start the Next.js development server on port 3000
-- `bun dev:client` - Alias for the Next.js development server
 - `bun build` - Create a production Next.js build
 - `bun lint` - Run Biome linter
 - `bun lint:fix` - Run Biome linter with auto-fix
