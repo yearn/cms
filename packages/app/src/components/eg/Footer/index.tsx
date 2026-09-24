@@ -1,5 +1,5 @@
 import { forwardRef, type HTMLAttributes } from 'react'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 
 export type FooterProps = HTMLAttributes<HTMLElement> & {
   className?: string
