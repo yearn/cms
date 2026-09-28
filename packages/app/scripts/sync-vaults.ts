@@ -13,15 +13,17 @@ interface KongVault {
 }
 
 interface KongResponse {
+  errors?: { message: string }[]
   data: {
     vaults: KongVault[]
   }
 }
 
 const KONG_ENDPOINT = 'https://kong.yearn.fi/api/gql'
+const KONG_PAGE_SIZE = 1000
 const KONG_QUERY = `
-  query {
-    vaults(yearn: true) {
+  query Vaults($limit: Int!, $offset: Int!) {
+    vaults(yearn: true, limit: $limit, offset: $offset) {
       chainId
       address
       name
@@ -34,31 +36,42 @@ const KONG_QUERY = `
 
 const SUPPORTED_CHAIN_IDS = Object.keys(chains).map(Number)
 
-async function fetchVaultsFromKong(): Promise<KongVault[]> {
+export async function fetchVaultsFromKong(): Promise<KongVault[]> {
   console.log('Fetching vaults from Kong API...')
+  const vaults: KongVault[] = []
 
-  const response = await fetch(KONG_ENDPOINT, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      query: KONG_QUERY,
-    }),
-  })
+  for (let offset = 0; ; offset += KONG_PAGE_SIZE) {
+    const response = await fetch(KONG_ENDPOINT, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        query: KONG_QUERY,
+        variables: { limit: KONG_PAGE_SIZE, offset },
+      }),
+    })
 
-  if (!response.ok) {
-    throw new Error(`Kong request failed: ${response.status} ${response.statusText}`)
+    if (!response.ok) {
+      throw new Error(`Kong request failed: ${response.status} ${response.statusText}`)
+    }
+
+    const result: KongResponse = await response.json()
+
+    if (result.errors?.length) {
+      throw new Error(`Kong GraphQL request failed: ${result.errors.map((error) => error.message).join(', ')}`)
+    }
+
+    if (!Array.isArray(result.data?.vaults)) {
+      throw new Error('Invalid Kong response structure')
+    }
+
+    vaults.push(...result.data.vaults)
+    if (result.data.vaults.length < KONG_PAGE_SIZE) break
   }
 
-  const result: KongResponse = await response.json()
-
-  if (!result.data?.vaults) {
-    throw new Error('Invalid Kong response structure')
-  }
-
-  console.log(`Fetched ${result.data.vaults.length} vaults from Kong API`)
-  return result.data.vaults
+  console.log(`Fetched ${vaults.length} vaults from Kong API`)
+  return vaults
 }
 
 async function loadExistingVaults(chainId: number): Promise<VaultMetadata[]> {
@@ -489,4 +502,6 @@ async function main(): Promise<void> {
   }
 }
 
-main()
+if (import.meta.main) {
+  main()
+}
