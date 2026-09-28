@@ -209,6 +209,30 @@ export async function buildTokenAssetFormData(
   return form
 }
 
+export async function readTokenAssetUploadResponse(response: Response): Promise<string> {
+  // The hosting layer can return text or HTML before the upload handler runs.
+  const result: unknown = await response.json().catch(() => null)
+  const payload = result && typeof result === 'object' ? result : null
+  const requestId = response.headers.get('x-vercel-id')
+  const reference = requestId ? ` Reference: ${requestId}.` : ''
+
+  if (!response.ok) {
+    const error = payload && 'error' in payload ? payload.error : null
+    if (typeof error === 'string' && error.trim()) throw new Error(error)
+    const message =
+      response.status === 413
+        ? 'Upload is too large. Use smaller image files or upload fewer assets at once.'
+        : `Upload failed (HTTP ${response.status}). Check GitHub for an existing pull request before retrying.`
+    throw new Error(`${message}${reference}`)
+  }
+
+  const prUrl = payload && 'prUrl' in payload ? payload.prUrl : null
+  if (typeof prUrl !== 'string' || !prUrl.trim()) {
+    throw new Error(`Could not confirm pull request creation. Check GitHub before retrying.${reference}`)
+  }
+  return prUrl
+}
+
 export async function readUploadDraft(): Promise<UploadDraft | null> {
   try {
     const db = await openDraftDb()

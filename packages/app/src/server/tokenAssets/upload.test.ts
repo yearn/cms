@@ -38,7 +38,7 @@ function requestFor(form: FormData, token = 'token') {
   } as Request
 }
 
-function mockGitHubUpload() {
+function mockGitHubUpload(uploadedPaths: string[] = []) {
   const uploadedBlobs: string[] = []
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
     const url = String(input)
@@ -56,7 +56,11 @@ function mockGitHubUpload() {
       uploadedBlobs.push(Buffer.from(body.content, 'base64').toString('utf8'))
       return Response.json({ sha: `blob-${uploadedBlobs.length}` })
     }
-    if (method === 'POST' && url.endsWith('/git/trees')) return Response.json({ sha: 'tree' })
+    if (method === 'POST' && url.endsWith('/git/trees')) {
+      const body = JSON.parse(String(init?.body)) as { tree: Array<{ path: string }> }
+      uploadedPaths.push(...body.tree.map((entry) => entry.path))
+      return Response.json({ sha: 'tree' })
+    }
     if (method === 'POST' && url.endsWith('/git/commits')) return Response.json({ sha: 'commit' })
     if (method === 'POST' && url.endsWith('/git/refs')) return Response.json({ ref: 'refs/heads/reviewer-assets' })
     if (method === 'POST' && url.endsWith('/pulls')) {
@@ -68,6 +72,26 @@ function mockGitHubUpload() {
 }
 
 describe('handleTokenAssetUpload validation', () => {
+  test('uploads chain 4663 through a serialized multipart request', async () => {
+    const paths: string[] = []
+    mockGitHubUpload(paths)
+    const form = formWithFiles()
+    form.set('target', 'chain')
+    form.set('items', JSON.stringify([{ id: 'asset', chainId: '4663' }]))
+
+    const response = await handleTokenAssetUpload(
+      new Request('http://localhost/api/token-assets/upload', {
+        method: 'POST',
+        headers: { Authorization: 'Bearer token' },
+        body: form,
+      }),
+    )
+
+    expect(response.status).toBe(200)
+    expect(await response.json()).toEqual({ ok: true, prUrl: 'https://github.com/yearn/tokenAssets/pull/1' })
+    expect(paths).toEqual(['chains/4663/logo.svg', 'chains/4663/logo-32.png', 'chains/4663/logo-128.png'])
+  })
+
   test('rejects a non-SVG part before calling GitHub', async () => {
     let fetchCalls = 0
     globalThis.fetch = (async () => {

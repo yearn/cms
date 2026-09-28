@@ -4,11 +4,49 @@ import {
   buildTokenAssetFormData,
   createChainAssetItem,
   createTokenAssetItem,
+  readTokenAssetUploadResponse,
   type TokenAssetItem,
 } from './tokenAssetUpload'
 
 const ADDRESS_A = '0x000000000000000000000000000000000000000a'
 const ADDRESS_B = '0x000000000000000000000000000000000000000b'
+
+describe('readTokenAssetUploadResponse', () => {
+  test('reports a plain-text hosting failure with its HTTP status and request reference', async () => {
+    const response = new Response('Internal Server Error\n\nInternal Server Error\nOwJJ7qGq1RCHHKTAYiiqSts419khc33C', {
+      status: 500,
+      headers: { 'x-vercel-id': 'iad1::request-id' },
+    })
+    await expect(readTokenAssetUploadResponse(response)).rejects.toThrow(
+      'Upload failed (HTTP 500). Check GitHub for an existing pull request before retrying. Reference: iad1::request-id.',
+    )
+  })
+
+  test('gives actionable feedback for a hosting payload limit', async () => {
+    const response = new Response('<html>Request Entity Too Large</html>', { status: 413 })
+    await expect(readTokenAssetUploadResponse(response)).rejects.toThrow('Upload is too large.')
+  })
+
+  test('preserves validation and authentication errors returned by the upload handler', async () => {
+    for (const status of [400, 401, 502]) {
+      const response = Response.json({ error: 'Specific upload error' }, { status })
+      await expect(readTokenAssetUploadResponse(response)).rejects.toThrow('Specific upload error')
+    }
+  })
+
+  test('rejects unconfirmed success so the caller keeps the draft and review', async () => {
+    for (const body of ['', '<html>Error</html>', 'null', '{}', '{"prUrl":42}', '{"prUrl":""}']) {
+      await expect(readTokenAssetUploadResponse(new Response(body))).rejects.toThrow(
+        'Could not confirm pull request creation.',
+      )
+    }
+  })
+
+  test('returns the confirmed pull request URL', async () => {
+    const prUrl = 'https://github.com/yearn/tokenAssets/pull/1'
+    expect(await readTokenAssetUploadResponse(Response.json({ ok: true, prUrl }))).toBe(prUrl)
+  })
+})
 
 function draftToken(): TokenAssetItem {
   const svg = new File(['<svg/>'], 'draft.svg', { type: 'image/svg+xml' })
