@@ -11,7 +11,7 @@
     "clean": "bash clean.sh"
   },
   "workspaces": [
-    "packages/**"
+    "packages/*"
   ],
   "devDependencies": {
     "@biomejs/biome": "2.4.16"
