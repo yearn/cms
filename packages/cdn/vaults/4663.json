@@ -1,1 +1,44 @@
-[]
+[
+  {
+    "chainId": 4663,
+    "address": "0xc7d60abfa6f4d79c2c42bf84a54795bd8c586957",
+    "name": "spUSDG/USDG Morpho Looper",
+    "registry": "0x0000000000000000000000000000000000000000",
+    "type": "None",
+    "kind": "None",
+    "isRetired": false,
+    "isHidden": true,
+    "isNeverShown": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xc7d60abfa6f4d79c2c42bf84a54795bd8c586957"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Stablecoin",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [],
+    "inclusion": {
+      "isSet": false,
+      "isYearn": false,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  }
+]
