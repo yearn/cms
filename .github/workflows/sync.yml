@@ -10,17 +10,9 @@ jobs:
   sync-vaults-and-strategies:
     runs-on: ubuntu-latest
 
-    env:
-      RPC_1: ${{ secrets.RPC_1 }}
-      RPC_10: ${{ secrets.RPC_10 }}
-      RPC_100: ${{ secrets.RPC_100 }}
-      RPC_137: ${{ secrets.RPC_137 }}
-      RPC_146: ${{ secrets.RPC_146 }}
-      RPC_250: ${{ secrets.RPC_250 }}
-      RPC_42161: ${{ secrets.RPC_42161 }}
-      RPC_747474: ${{ secrets.RPC_747474 }}
-      RPC_8453: ${{ secrets.RPC_8453 }}
-      RPC_4663: ${{ secrets.RPC_4663 }}
+    permissions:
+      contents: write
+      id-token: write
 
     steps:
       - name: Checkout repository
@@ -35,6 +27,15 @@ jobs:
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Load RPC URLs from Doppler
+        uses: dopplerhq/secrets-fetch-action@451892f16195f9ac360e1a5bcbf0b5fd0e957534 # v2.0.0
+        with:
+          auth-method: oidc
+          doppler-identity-id: ${{ vars.DOPPLER_PRODUCTION_IDENTITY_ID }}
+          doppler-project: cms
+          doppler-config: sync
+          inject-env-vars: true
 
       - name: Run sync-vaults.ts
         run: bun run scripts/sync-vaults.ts
@@ -67,3 +68,11 @@ jobs:
           git add packages/cdn/tokens/
           git commit -m "🤖 Sync vaults, strategies and tokens"
           git push
+
+      - name: Deploy updated metadata
+        if: steps.verify-changed-files.outputs.changed == 'true' && github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: gh workflow run vercel-deploy.yml --ref "$DEFAULT_BRANCH"
