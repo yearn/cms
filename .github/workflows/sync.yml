@@ -10,23 +10,22 @@ jobs:
   sync-vaults-and-strategies:
     runs-on: ubuntu-latest
 
-    env:
-      RPC_1: ${{ secrets.RPC_1 }}
-      RPC_10: ${{ secrets.RPC_10 }}
-      RPC_100: ${{ secrets.RPC_100 }}
-      RPC_137: ${{ secrets.RPC_137 }}
-      RPC_146: ${{ secrets.RPC_146 }}
-      RPC_250: ${{ secrets.RPC_250 }}
-      RPC_42161: ${{ secrets.RPC_42161 }}
-      RPC_747474: ${{ secrets.RPC_747474 }}
-      RPC_8453: ${{ secrets.RPC_8453 }}
-      RPC_4663: ${{ secrets.RPC_4663 }}
+    permissions:
+      contents: write
+      id-token: write
 
     steps:
+      - name: Create GitHub App token
+        id: app-token
+        uses: actions/create-github-app-token@bcd2ba49218906704ab6c1aa796996da409d3eb1 # v3.2.0
+        with:
+          app-id: ${{ vars.SYNC_APP_ID }}
+          private-key: ${{ secrets.SYNC_APP_PRIVATE_KEY }}
+
       - name: Checkout repository
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
 
       - name: Setup Bun
         uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6 # v2
@@ -35,6 +34,15 @@ jobs:
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Load RPC URLs from Doppler
+        uses: dopplerhq/secrets-fetch-action@451892f16195f9ac360e1a5bcbf0b5fd0e957534 # v2.0.0
+        with:
+          auth-method: oidc
+          doppler-identity-id: ${{ vars.DOPPLER_PRODUCTION_IDENTITY_ID }}
+          doppler-project: cms
+          doppler-config: sync
+          inject-env-vars: true
 
       - name: Run sync-vaults.ts
         run: bun run scripts/sync-vaults.ts
