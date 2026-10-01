@@ -33254,7 +33254,7 @@
     "isNeverShown": false,
     "isAggregator": false,
     "isBoosted": false,
-    "isAutomated": false,
+    "isAutomated": true,
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
@@ -33263,12 +33263,12 @@
       "target": "0xfac55fafd0b55bfb8dd41f735efcc195ada9891f"
     },
     "stability": {
-      "stability": "Unknown"
+      "stability": "Volatile"
     },
     "category": "Volatile",
     "displayName": "",
     "displaySymbol": "",
-    "description": "",
+    "description": "Flex WETH is an allocator vault managed by the Yearn Curation team. It lends WETH across several Flex markets, with the Vaults team setting each market's allocation and caps. information about Flex and its Markets can be found at https://flexmeow.com. ",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
