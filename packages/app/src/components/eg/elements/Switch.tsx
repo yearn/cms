@@ -1,5 +1,5 @@
 import * as _Switch from '@radix-ui/react-switch'
-import { cn } from '../cn'
+import { cn } from '../../../../lib/cn'
 
 const Switch = ({
   label,

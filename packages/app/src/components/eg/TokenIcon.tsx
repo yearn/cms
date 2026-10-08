@@ -1,6 +1,6 @@
 import { getTokenIconUrl } from '../../../lib/assets'
+import { cn } from '../../../lib/cn'
 import ChainIcon from './ChainIcon'
-import { cn } from './cn'
 import ImgOrBg from './ImgOrBg'
 
 type Props = {
