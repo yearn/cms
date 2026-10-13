@@ -33163,5 +33163,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x68102ff5406475881462880a8da3c9bc9181ad6c",
+    "chainId": 1,
+    "name": "Flying Tulip Pool",
+    "symbol": "FT/ftUSD",
+    "displayName": "Flying Tulip Pool",
+    "displaySymbol": "FT/ftUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
