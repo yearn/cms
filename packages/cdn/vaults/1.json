@@ -32944,13 +32944,13 @@
     "address": "0x2434ccb738f4260a71c41eea641a77936ac1bbe0",
     "name": "Curve ftUSDUSDC Factory yVault",
     "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
-    "type": "Yearn Vault",
+    "type": "Automated Yearn Vault",
     "kind": "Legacy",
     "isRetired": false,
     "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
-    "isAutomated": false,
+    "isAutomated": true,
     "isHighlighted": false,
     "isPool": false,
     "shouldUseV2APR": false,
@@ -33269,6 +33269,49 @@
     "displayName": "",
     "displaySymbol": "",
     "description": "Flex WETH is an allocator vault managed by the Yearn Curation team. It lends WETH across several Flex markets, with the Vaults team setting each market's allocation and caps. information about Flex and its Markets can be found at https://flexmeow.com. ",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
+  },
+  {
+    "chainId": 1,
+    "address": "0x63658f6bc7f6bec9868584cebcb0e0dec449c33a",
+    "name": "Curve FT/ftUSD Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "type": "Automated Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": false,
+    "isHidden": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": true,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x63658f6bc7f6bec9868584cebcb0e0dec449c33a"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Curve",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
     "sourceURI": "",
     "uiNotice": "",
     "protocols": [
