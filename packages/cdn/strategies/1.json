@@ -18783,5 +18783,32 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf7b5d8b432e8c57b4a388c2d833a473091fbf284",
+    "name": "yvUSD Levered",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xf0a070c0c5b808abb8eef6838f178d44a6d9376e",
+    "name": "yvUSD Equity",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2d4f47208853a3d20eadcbda0f03900771c6eba3",
+    "name": "yvUSD Fixed",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
