@@ -215,7 +215,7 @@
     "name": "Woofy yVault",
     "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
     "isRetired": true,
-    "isHidden": true,
+    "isHidden": false,
     "isAggregator": false,
     "isBoosted": false,
     "isAutomated": false,

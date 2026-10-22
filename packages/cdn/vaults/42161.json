@@ -1818,7 +1818,7 @@
     "address": "0x630c9050e6b0014c6fe4c214d4840909345adb7d",
     "name": "Curve FRAX-VST Pool Vault",
     "registry": "0x3199437193625dccd6f9c9e98bdf93582200eb1f",
-    "isRetired": true,
+    "isRetired": false,
     "isHidden": true,
     "isAggregator": false,
     "isBoosted": false,
