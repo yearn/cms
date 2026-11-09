@@ -33185,5 +33185,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xc6ac08424ee6d1373f03611b96f5da849594b6d8",
+    "chainId": 1,
+    "name": "sUSG/reUSD",
+    "symbol": "sUSDreUSD",
+    "displayName": "sUSG/reUSD",
+    "displaySymbol": "sUSDreUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
