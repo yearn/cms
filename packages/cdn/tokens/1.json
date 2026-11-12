@@ -33196,5 +33196,27 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xc73151dca19fff7a16ae421a9fb35455832d66d3",
+    "chainId": 1,
+    "name": "Curve.fi Factory USD Metapool: DUSD/FRAXBP",
+    "symbol": "DUSDFRAXBP3CRV-f",
+    "displayName": "Curve.fi Factory USD Metapool: DUSD/FRAXBP",
+    "displaySymbol": "DUSDFRAXBP3CRV-f",
+    "description": "",
+    "category": "",
+    "decimals": 18
+  },
+  {
+    "address": "0x4de61e58f5f1e495e3bc58516268bba25b5a57fd",
+    "chainId": 1,
+    "name": "sdUSD/sfrxUSD",
+    "symbol": "sdsfrxrUSD",
+    "displayName": "sdUSD/sfrxUSD",
+    "displaySymbol": "sdsfrxrUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
