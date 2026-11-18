@@ -33631,5 +33631,49 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 1,
+    "address": "0x5486e6b6ac66cc789d4b548e1227d781f44e39ba",
+    "name": "Curve USGOUSD Factory yVault",
+    "registry": "0xaf1f5e1c19cb68b30aad73846effdf78a5863319",
+    "type": "Yearn Vault",
+    "kind": "Legacy",
+    "isRetired": false,
+    "isHidden": false,
+    "isNeverShown": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0x5486e6b6ac66cc789d4b548e1227d781f44e39ba"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "Curve",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]

@@ -18891,5 +18891,23 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x2bae1f2619d5bfb7b9fe098a42eebd475af9248a",
+    "name": "StrategyCurveBoostedFactory-USGOUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xec8c28d29a11aa7a64fe0b673ef64c3ae5cec5ea",
+    "name": "StrategyConvexFactory-USGOUSD",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]

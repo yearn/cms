@@ -33218,5 +33218,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xf182fe2f1a1014543848e261087b6740b78acf71",
+    "chainId": 1,
+    "name": "USG/OUSD",
+    "symbol": "USGOUSD",
+    "displayName": "USG/OUSD",
+    "displaySymbol": "USGOUSD",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
