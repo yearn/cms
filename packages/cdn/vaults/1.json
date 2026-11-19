@@ -33675,5 +33675,49 @@
       "isKatana": false,
       "isPublicERC4626": false
     }
+  },
+  {
+    "chainId": 1,
+    "address": "0xce918671e6d9e56e19c5cbc4dc45655d80c65265",
+    "name": "SWAN yVault",
+    "registry": "0xd40ecf29e001c76dcc4cc0d9cd50520ce845b038",
+    "type": "Yearn Vault",
+    "kind": "Multi Strategy",
+    "isRetired": false,
+    "isHidden": false,
+    "isNeverShown": false,
+    "isAggregator": false,
+    "isBoosted": false,
+    "isAutomated": false,
+    "isHighlighted": false,
+    "isPool": false,
+    "shouldUseV2APR": false,
+    "migration": {
+      "available": false,
+      "target": "0xce918671e6d9e56e19c5cbc4dc45655d80c65265"
+    },
+    "stability": {
+      "stability": "Unknown"
+    },
+    "category": "",
+    "displayName": "",
+    "displaySymbol": "",
+    "description": "",
+    "sourceURI": "",
+    "uiNotice": "",
+    "protocols": [
+      "Yearn"
+    ],
+    "inclusion": {
+      "isSet": true,
+      "isYearn": true,
+      "isYearnJuiced": false,
+      "isGimme": false,
+      "isPoolTogether": false,
+      "isCove": false,
+      "isMorpho": false,
+      "isKatana": false,
+      "isPublicERC4626": false
+    }
   }
 ]

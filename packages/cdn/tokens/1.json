@@ -33229,5 +33229,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xd0a32f6d4850f9d6df7d4f8f84af1fcd3cf993cc",
+    "chainId": 1,
+    "name": "SwanDAO",
+    "symbol": "SWAN",
+    "displayName": "SwanDAO",
+    "displaySymbol": "SWAN",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
