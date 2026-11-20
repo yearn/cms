@@ -22,7 +22,6 @@ function PullRequestButton({ globalKey }: { globalKey: GlobalKey }) {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          token: sessionStorage.getItem('github_token'),
           path,
           contents: JSON.stringify(formState, null, 2),
         }),

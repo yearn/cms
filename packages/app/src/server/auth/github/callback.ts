@@ -1,3 +1,5 @@
+import { getCookie, STATE_COOKIE, sessionCookies } from './session'
+
 interface GitHubTokenResponse {
   access_token?: string
   token_type?: string
@@ -38,6 +40,13 @@ export default async function (req: Request): Promise<Response> {
     })
   }
 
+  if (state !== getCookie(req, STATE_COOKIE)) {
+    return new Response(JSON.stringify({ error: 'bad auth challenge' }), {
+      status: 400,
+      headers: { 'Content-Type': 'application/json' },
+    })
+  }
+
   try {
     // Exchange code for access token
     const tokenResponse = await fetch('https://github.com/login/oauth/access_token', {
@@ -55,17 +64,23 @@ export default async function (req: Request): Promise<Response> {
 
     const tokenData = (await tokenResponse.json()) as GitHubTokenResponse
 
-    if (tokenData.error) {
+    if (tokenData.error || !tokenData.access_token) {
       return new Response(JSON.stringify({ error: tokenData.error_description }), {
         status: 400,
         headers: { 'Content-Type': 'application/json' },
       })
     }
 
+    const userResponse = await fetch('https://api.github.com/user', {
+      headers: { Authorization: `Bearer ${tokenData.access_token}`, Accept: 'application/vnd.github.v3+json' },
+    })
+    if (!userResponse.ok) throw new Error(`GitHub user request failed (${userResponse.status})`)
+    const { login } = (await userResponse.json()) as { login: string }
+
     const redirect = new URL('/auth/github/success', process.env.URL || 'http://localhost:3000')
-    redirect.searchParams.set('token', tokenData.access_token ?? '')
-    redirect.searchParams.set('state', state)
-    return Response.redirect(redirect.toString(), 302)
+    const headers = new Headers({ Location: redirect.toString(), 'Cache-Control': 'no-store' })
+    for (const cookie of sessionCookies(req, tokenData.access_token, login)) headers.append('Set-Cookie', cookie)
+    return new Response(null, { status: 302, headers })
   } catch (error) {
     console.error(error)
     return new Response(JSON.stringify({ error: 'Failed to exchange code for token' }), {

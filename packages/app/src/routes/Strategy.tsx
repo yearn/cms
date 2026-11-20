@@ -31,7 +31,6 @@ function PullRequestButton() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          token: sessionStorage.getItem('github_token'),
           path,
           contents: JSON.stringify(updatedArray, null, 2),
         }),

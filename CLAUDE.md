@@ -36,7 +36,7 @@ This is ycms (Yearn CMS), a content management system built as a monorepo with t
 
 ### Backend (Next.js Route Handlers)
 - API handlers run on the same port as the frontend under `packages/app/app/api`
-- Routes: `/api/ping`, `/api/auth/github/callback`, `/api/pr`, `/api/cdn/*`
+- Routes: `/api/ping`, `/api/auth/github/callback`, `/api/auth/github/logout`, `/api/pr`, `/api/cdn/*`
 - GitHub OAuth integration for authentication
 - Local development reads metadata from `packages/cdn`; production proxies commit-pinned files through jsDelivr
 

@@ -20,6 +20,7 @@ import Button from '../components/eg/elements/Button'
 import Card from '../components/eg/elements/Card'
 import Input from '../components/eg/elements/Input'
 import Switch from '../components/eg/elements/Switch'
+import { getGithubLogin } from '../lib/githubSession'
 import {
   type AssetFileKind,
   type AssetFiles,
@@ -65,7 +66,7 @@ export default function TokenAssetUpload({ initialParams = {} }: { initialParams
   const [submitting, setSubmitting] = useState(false)
   const [draftReady, setDraftReady] = useState(false)
   const [status, setStatus] = useState<Status | null>(null)
-  const signedIn = Boolean(sessionStorage.getItem('github_token'))
+  const signedIn = Boolean(getGithubLogin())
 
   const canSubmit = useMemo(() => {
     if (mode === 'chain') {
@@ -275,15 +276,13 @@ export default function TokenAssetUpload({ initialParams = {} }: { initialParams
   }
 
   async function submitPullRequest() {
-    const token = sessionStorage.getItem('github_token')
-    if (!token) return
+    if (!signedIn) return
     setSubmitting(true)
     setStatus({ tone: 'info', title: 'Creating pull request', message: 'Uploading the images to tokenAssets.' })
     try {
       const form = await buildTokenAssetFormData(mode, tokenItems, chainItems, prTitle, prBody)
       const response = await fetch('/api/token-assets/upload', {
         method: 'POST',
-        headers: { Authorization: `Bearer ${token}` },
         body: form,
       })
       const prUrl = await readTokenAssetUploadResponse(response)

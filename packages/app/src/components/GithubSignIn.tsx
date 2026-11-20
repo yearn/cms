@@ -1,30 +1,14 @@
-import { useSuspenseQuery } from '@tanstack/react-query'
 import { usePathname, useSearchParams } from 'next/navigation'
 import { Suspense } from 'react'
 import { PiGithubLogoFill } from 'react-icons/pi'
 import { cn } from '../../lib/cn'
+import { getGithubLogin } from '../lib/githubSession'
 import Button from './eg/elements/Button'
 import Skeleton from './eg/Skeleton'
 
 export function useGithubUser() {
-  const token = sessionStorage.getItem('github_token')
-  const signedIn = Boolean(token)
-
-  const { data } = useSuspenseQuery({
-    queryKey: ['githubUser', token],
-    queryFn: async () => {
-      if (!signedIn) return null
-      const res = await fetch('https://api.github.com/user', {
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      })
-      if (!res.ok) throw new Error('Failed to fetch user')
-      return res.json()
-    },
-  })
-
-  return { signedIn, avatar: data?.avatar_url }
+  const login = getGithubLogin()
+  return { signedIn: Boolean(login), avatar: login ? `https://github.com/${login}.png?size=48` : undefined }
 }
 
 function GithubAvatar() {
@@ -47,7 +31,8 @@ export default function GithubSignIn({ className }: { className?: string }) {
         throw new Error('Missing NEXT_PUBLIC_GITHUB_CLIENT_ID')
       }
 
-      sessionStorage.setItem('auth_challenge', auth_challenge)
+      // biome-ignore lint/suspicious/noDocumentCookie: the OAuth callback verifies state against this cookie.
+      document.cookie = `github_oauth_state=${auth_challenge}; Path=/api/auth/github; SameSite=Lax; Max-Age=600${window.location.protocol === 'https:' ? '; Secure' : ''}`
       const query = searchParams.toString()
       sessionStorage.setItem('post_auth_redirect', `${pathname}${query ? `?${query}` : ''}${window.location.hash}`)
       const params = new URLSearchParams({
@@ -60,8 +45,7 @@ export default function GithubSignIn({ className }: { className?: string }) {
       }
       window.location.href = `https://github.com/login/oauth/authorize?${params.toString()}`
     } else {
-      sessionStorage.removeItem('github_token')
-      window.location.reload()
+      fetch('/api/auth/github/logout', { method: 'POST' }).then((response) => response.ok && window.location.reload())
     }
   }
 

@@ -1,3 +1,5 @@
+import { getGithubToken, isCrossSiteRequest } from './auth/github/session'
+
 const REPO_OWNER = process.env.REPO_OWNER || 'yearn'
 const REPO_NAME = process.env.REPO_NAME || 'cms'
 
@@ -7,7 +9,6 @@ type FileChange = {
 }
 
 type CreatePRRequest = {
-  token: string
   path?: string
   contents?: string
   changes?: FileChange[]
@@ -68,6 +69,10 @@ function getNormalizedChanges(body: CreatePRRequest): FileChange[] {
   }
 
   return []
+}
+
+export function isAllowedPath(path: string): boolean {
+  return /^packages\/cdn\/[\w./-]+$/.test(path) && !path.split('/').some((part) => part === '' || /^\.+$/.test(part))
 }
 
 function getDefaultTitle(changes: FileChange[]): string {
@@ -132,18 +137,27 @@ async function createTreeEntries(token: string, changes: FileChange[]): Promise<
 export default async function handler(req: Request): Promise<Response> {
   if (req.method !== 'POST') return new Response('Method Not Allowed', { status: 405 })
 
+  if (isCrossSiteRequest(req)) return jsonResponse({ error: 'Cross-site request' }, 403)
+
   try {
+    const token = getGithubToken(req)
+    if (!token) return jsonResponse({ error: 'Not signed in' }, 401)
+
     const body = (await req.json()) as CreatePRRequest
-    const { token, title, body: pullRequestBody } = body
+    const { title, body: pullRequestBody } = body
     const changes = getNormalizedChanges(body)
 
-    if (!token || changes.length === 0 || changes.some((change) => !change.path || !change.contents)) {
+    if (changes.length === 0 || changes.some((change) => !change.path || !change.contents)) {
       return jsonResponse(
         {
-          error: 'Missing required parameters: token and either changes[] or path + contents',
+          error: 'Missing required parameters: either changes[] or path + contents',
         },
         400,
       )
+    }
+
+    if (changes.some((change) => !isAllowedPath(change.path))) {
+      return jsonResponse({ error: 'Only packages/cdn/** paths can be changed' }, 400)
     }
 
     const user = await fetchGitHubJson<GitHubUser>('https://api.github.com/user', token)
