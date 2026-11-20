@@ -33240,5 +33240,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0x3e6751c4be3850ba5b4231339b3f3d3db6d2fd74",
+    "chainId": 1,
+    "name": "yscvxCRV/CRV",
+    "symbol": "yscvxCRVLP",
+    "displayName": "yscvxCRV/CRV",
+    "displaySymbol": "yscvxCRVLP",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
