@@ -33,7 +33,7 @@ function formWithFiles(
 
 function requestFor(form: FormData, token = 'token') {
   return {
-    headers: new Headers({ Authorization: `Bearer ${token}` }),
+    headers: new Headers({ Cookie: `github_token=${token}`, 'Sec-Fetch-Site': 'same-origin' }),
     formData: async () => form,
   } as Request
 }
@@ -82,7 +82,7 @@ describe('handleTokenAssetUpload validation', () => {
     const response = await handleTokenAssetUpload(
       new Request('http://localhost/api/token-assets/upload', {
         method: 'POST',
-        headers: { Authorization: 'Bearer token' },
+        headers: { Cookie: 'github_token=token', 'Sec-Fetch-Site': 'same-origin' },
         body: form,
       }),
     )

@@ -4,6 +4,7 @@ import { type MouseEvent, useMemo } from 'react'
 import { PiGitPullRequest } from 'react-icons/pi'
 import { applyDraftPatch, type DraftCartItem, useDraftCartStore } from '../hooks/useDraftCartStore'
 import { fetchCollectionData } from '../lib/collectionData'
+import { getGithubLogin } from '../lib/githubSession'
 import Button from './eg/elements/Button'
 import { HoverCard, HoverCardTrigger } from './eg/HoverCard'
 import FlyInFromBottom from './eg/motion/FlyInFromBottom'
@@ -121,7 +122,7 @@ export default function HeaderDraftCart() {
   const clearItems = useDraftCartStore((state) => state.clearItems)
   const router = useRouter()
 
-  const signedIn = Boolean(sessionStorage.getItem('github_token'))
+  const signedIn = Boolean(getGithubLogin())
   const items = useMemo(() => Object.values(itemsMap), [itemsMap])
   const hasItems = items.length > 0
 
@@ -133,7 +134,6 @@ export default function HeaderDraftCart() {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          token: sessionStorage.getItem('github_token'),
           title: 'Update CMS metadata',
           body: buildPullRequestBody(items),
           changes: await buildPullRequestChanges(items),

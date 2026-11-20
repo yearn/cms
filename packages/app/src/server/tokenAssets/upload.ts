@@ -1,4 +1,5 @@
 import sanitizeHtml from 'sanitize-html'
+import { getGithubToken, isCrossSiteRequest } from '../auth/github/session'
 import { GitHubApiError, getUserLogin, openTokenAssetsPullRequest } from './github'
 
 type UploadItem = {
@@ -279,8 +280,8 @@ function defaultMetadata(target: string, items: UploadItem[], paths: string[]) {
 
 export async function handleTokenAssetUpload(request: Request) {
   try {
-    const authorization = request.headers.get('authorization') || ''
-    const token = authorization.startsWith('Bearer ') ? authorization.slice(7) : ''
+    if (isCrossSiteRequest(request)) return Response.json({ error: 'Cross-site request' }, { status: 403 })
+    const token = getGithubToken(request)
     if (!token) return Response.json({ error: 'Missing GitHub token' }, { status: 401 })
 
     const form = await request.formData()
