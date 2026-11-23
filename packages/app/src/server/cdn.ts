@@ -96,7 +96,7 @@ export default async function (req: Request): Promise<Response> {
 
     if (process.env.NODE_ENV !== 'production') return await readLocalCdn(path)
 
-    const HEAD = process.env.VERCEL_GIT_COMMIT_SHA || 'main'
+    const HEAD = process.env.GIT_COMMIT_SHA || 'main'
     const upstream = `https://cdn.jsdelivr.net/gh/${REPO_OWNER}/${REPO_NAME}@${HEAD}/packages/cdn/${path}`
     const upstreamRes = await fetch(upstream)
 
