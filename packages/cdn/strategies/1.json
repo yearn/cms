@@ -18936,5 +18936,77 @@
     "displayName": "",
     "description": "",
     "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x61b1def6d44d5052dbac0ad20e4648f7f9d708d5",
+    "name": "Flex wstETH/WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x3bf60b6cd2a0d5543fbb680a287e204b49b3544b",
+    "name": "USDC to yvUSDS-1 Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x774b9e40c571867ca5f5660d245467ff631126ef",
+    "name": "Flex siUSD/USDC Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x763907df6ce37baef1b7eaf7e67e43ac59578568",
+    "name": "siUSD/USDC Flex Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x7f33b05c34f7384a325436263f24500679cc76c4",
+    "name": "Flex wstETH/WETH Lender",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0x31c92fe1def31e0a280f5a1bb7b30b4bb4b072a0",
+    "name": "USDC to yvUSDS-1 Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xfedbe4377c42365b2349f85869e8464d15ba704b",
+    "name": "wstETH/WETH Flex Looper",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
+  },
+  {
+    "chainId": 1,
+    "address": "0xcb1eb72f2a27e9ead2e2fb3f0aac7e4ee39f2eeb",
+    "name": "USDC to yvUSDS-1 Depositor",
+    "isRetired": false,
+    "displayName": "",
+    "description": "",
+    "protocols": []
   }
 ]
