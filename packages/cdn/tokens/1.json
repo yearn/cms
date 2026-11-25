@@ -33251,5 +33251,16 @@
     "description": "",
     "category": "",
     "decimals": 18
+  },
+  {
+    "address": "0xa19bf6fbf05624282cb6ed498f4761f22e084edd",
+    "chainId": 1,
+    "name": "SDT/WETH ",
+    "symbol": "SDTWETH",
+    "displayName": "SDT/WETH ",
+    "displaySymbol": "SDTWETH",
+    "description": "",
+    "category": "",
+    "decimals": 18
   }
 ]
